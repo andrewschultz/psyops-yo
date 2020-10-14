@@ -54,3 +54,29 @@ check swearing mildly: try swearing obscenely instead;
 
 the block swearing mildly rule is not listed in any rulebook.
 the block swearing obscenely rule is not listed in any rulebook.
+
+volume unsorted
+
+chapter Stalest Ale
+
+the Stalest Ale is a thing.
+
+chapter aide
+
+the Staidest Aide is a person.
+
+chapter alkie
+
+the Stalkiest Alkie is a person.
+
+chapter tsarist saris
+
+the tsarist saris are a thing.
+
+chapter Escapees' Cape
+
+the escapees' cape is a thing.
+
+check taking escapees' cape:
+	say "You take it. You win.";
+	end the story finally saying "Stablest! Able!"
