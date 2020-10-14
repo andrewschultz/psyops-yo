@@ -17,3 +17,12 @@ book Ur Church
 Ur Church is northeast of Strangest Range. It is north of Strangest Range. printed name is "Ur-Church". "Passages lead southwest and southeast[or-well]."
 
 Ur Church is north of Attentat Tent. It is northwest of Attentat Tent.
+
+volume verbs
+
+check swearing obscenely: say "Sheesh! Ee!" instead;
+
+check swearing mildly: try swearing obscenely instead;
+
+the block swearing mildly rule is not listed in any rulebook.
+the block swearing obscenely rule is not listed in any rulebook.
