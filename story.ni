@@ -4,6 +4,8 @@ volume definitions
 
 include Trivial Niceties by Andrew Schultz
 
+include Psyops Yo Tests by Andrew Schultz.
+
 a doubler is a kind of thing. a doubler can be doubled. a doubler is usually not doubled. a doubler has text called xtra-text.
 
 a doubler has a rule called a guess-rule.
@@ -85,13 +87,13 @@ the Stalkiest Alkie is a person in Strangest Range. "A stalkiest alkie paces bac
 
 chapter cap
 
-the cap is a doubler in Strangest Range. xtra-text of cap is "escapes". "A cap sits on the ground here. It seems nailed down. Maybe there is a way to free it.". description is "The cap seem to be stuck in place.". guess-rule is guess-cap rule. zaploc is ingrowing row. zaptext is "The Tormentor Men squint at your escapes cap. They're actually a bit impressed. They start with the usual insults, but you deflect them. They say it must be the cap, but the cap ... escapes after a breeze blows it away. You forget to go running after it as the Tormentor Men insult you more, but you've become immune. They give up and go away."
+the cap is a doubler in Strangest Range. xtra-text of cap is "escapes". "A cap sits on the ground here. It seems nailed down. Maybe there is a way to free it.". description is "The cap seem to be stuck in place.". guess-rule is guess-cap rule. zaploc is Ingrowing Row. zaptext is "The Tormentor Men squint at your escapes cap. They're actually a bit impressed. They start with the usual insults, but you deflect them. They say it must be the cap, but the cap ... escapes after a breeze blows it away. You forget to go running after it as the Tormentor Men insult you more, but you've become immune. They give up and go away."
 
 this is the guess-cap rule: say "The cap jumps up into your hands!"
 
 book Ingrowing Row
 
-Ingrowing Row is east of Strangest Range. It is in Top Stops. "You seem worried about violence here. Passages lead north (or northwest) and west[or-well]."
+Ingrowing Row is east of Strangest Range. It is in Top Stops. "You feel a bit crowded here. Passages lead north (or northwest) and west[or-well]."
 
 chapter Tormentor Men
 
@@ -202,9 +204,9 @@ book rooms
 
 Ehs Ehs is a hexroom. "This is the west room in what seems to be a hexagonal ring. [hexround].". printed name is "Ehs, Ehs". word-to-include is "sheesh". guess-right-text is "You effectively dismiss the eh's with something more powerful. You're a bit sick of not being able to go [hexdir], and you hear a thud from behind the [tent].". clue-text is "The EHs you hear make you wish you could throw back something at them. Something double-powered, perhaps"
 
-Prep Area is a hexroom. it is northeast of Ehs Ehs. "This is the northwest room in what seems to be a hexagonal ring. [hexround].". word-to-include is "teammate". guess-right-text is "Someone comes along and bangs at the barrier [hexdir]. You hear a small cracking.". clue-text is "You feel like you are being watched. You want to duck out and in, but not in the standard directions"
+Prep Area is a hexroom. it is northeast of Ehs Ehs. "This is the northwest room in what seems to be a hexagonal ring. [hexround].". word-to-include is "reappear". guess-right-text is "Someone comes along and bangs at the barrier [hexdir]. You hear a small cracking.". clue-text is "You feel like you are being watched. You want to duck out and in, but not in the standard directions"
 
-Grain Grain is a hexroom. it is east of Prep Area. "This is the northeast room in what seems to be a hexagonal ring. [hexround].". printed name is "Grain, Grain". word-to-include is "reappear". guess-right-text is "You back out a bit, then reappear.". clue-text is "You feel on trial. Well, not quite, but you feel a need for acquital for ... something"
+Grain Grain is a hexroom. it is east of Prep Area. "This is the northeast room in what seems to be a hexagonal ring. [hexround].". word-to-include is "arraigning". printed name is "Grain, Grain". guess-right-text is "You back out a bit, then reappear.". clue-text is "You feel on trial. Well, not quite, but you feel a need for acquital for ... something"
 
 Meta Meat is a hexroom. it is southeast of Ehs Ehs. "This is the southwest room in what seems to be a hexagonal ring. [hexround].". word-to-include is "teammate". guess-right-text is "You find the guts to turn the place into something more gross, but manageable.". clue-text is "You feel as if a friend or confidante could help you make a dent in the Attentat Tent, here"
 
