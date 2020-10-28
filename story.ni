@@ -16,15 +16,14 @@ check taking a doubler: say "No, you don't see any reason to take [the noun]. To
 
 a person has text called talk-text.
 
-a room can be hex-ok. a room is usually not hex-ok.
-
 definition: a direction (called d) is viable:
 	if the room d of location of player is nowhere, no;
 	yes;
 
 to say igulf: say "The Ingulfing Gulf surrounds you every way except [list of viable directions]"
 
-to say hexround: say "You can skirt the Attentat Tent in the center by going [list of viable directions]"
+to say hexround:
+	say "You can skirt the Attentat Tent in the center by going [list of viable directions]"
 
 a room has a direction called cross-dir.
 
@@ -162,26 +161,14 @@ rule for printing a parser error:
 			now UT is doubled;
 			point-check;
 			the rule succeeds;
-	repeat through table of verb points:
-		unless the player is in room-word entry, next;
-		if location of player is hex-ok:
-			say "You already unlocked this room.";
-			the rule succeeds;
-		if the player's command matches the regular expression "\b[word-to-include entry]\b":
-			say "[guess-right-text entry][line break]";
-			increment the score;
+	if location of player is not hex-ok:
+		if the player's command matches the regular expression "\b[word-to-include of location of player]\b":
+			say "[guess-right-text of location of player][line break]";
+			point-check;
 			now location of player is hex-ok;
 			if hexcount is 6, say "A hidden metro-tromometer beeps. As you locate it, you hear a shattering. The barrier to the center of the hexagon becomes less opaque and then falls. You can go the ground behind it crumbles. But through it, you do not see a gaping pit, but a shiny new place to go. Full of others who enjoy thinking up or about this sort of weird puzzle.";
+			the rule succeeds;
 	continue the action;
-
-table of verb points
-room-word	word-to-include	guess-right-text
-ehs ehs	"sheesh"	"You effectively dismiss the eh's with something more powerful. You're a bit sick of not being able to go [hexdir], and a swift kick at the opaque barrier seems to make it bend a bit."
-meta meat	"teammate"	"Someone comes along and bangs at the barrier [hexdir]. You hear a small cracking."
-prep area	"reappear"	"You back out a bit, then reappear."
-Tines Inset	"intestines"	"You find the guts to turn the place into something more gross, but manageable."
-Grain Grain	"arraigning"	"The grain turns into a court of law, but since you have no guilt, you are free to go."
-Pechan Pechan	"happenchance"	"You suddenly find a lucky way out."
 
 to decide which number is hexcount: decide on number of hex-ok rooms;
 
@@ -189,17 +176,21 @@ to decide which direction is hexdir: decide on the best route from the location 
 
 volume Ingoing O
 
-Ehs Ehs is a room. "This is the west room in what seems to be a hexagonal ring. [hexround]."
+rule for printing the name of a hex-ok hexroom: say "[word-to-include of the item described in title case]"
 
-Prep Area is northeast of Ehs Ehs. "This is the northwest room in what seems to be a hexagonal ring. [hexround]."
+a hexroom is a kind of room. a hexroom has text called word-to-include. a hexroom has text called guess-right-text. a hexroom can be hex-ok. a hexroom is usually not hex-ok.
 
-Grain Grain is east of Prep Area. "This is the northeast room in what seems to be a hexagonal ring. [hexround]."
+Ehs Ehs is a hexroom. "This is the west room in what seems to be a hexagonal ring. [hexround].". printed name is "Ehs, Ehs". word-to-include is "sheesh". guess-right-text is "You effectively dismiss the eh's with something more powerful. You're a bit sick of not being able to go [hexdir], and a swift kick at the opaque barrier seems to make it bend a bit."
 
-Meta Meat is southeast of Ehs Ehs. "This is the southwest room in what seems to be a hexagonal ring. [hexround]."
+Prep Area is a hexroom. it is northeast of Ehs Ehs. "This is the northwest room in what seems to be a hexagonal ring. [hexround].". word-to-include is "teammate". guess-right-text is "Someone comes along and bangs at the barrier [hexdir]. You hear a small cracking."
 
-Tines Inset is east of Meta Meat. "This is the southeast room in what seems to be a hexagonal ring. [hexround]."
+Grain Grain is a hexroom. it is east of Prep Area. "This is the northeast room in what seems to be a hexagonal ring. [hexround].". printed name is "Grain, Grain". word-to-include is "reappear". guess-right-text is "You back out a bit, then reappear."
 
-Pechan Pechan is southeast of Grain Grain. It is northeast of Tines Inset. "This is the west room in what seems to be a hexagonal ring. [hexround].[paragraph break]Oh, a pechan is an odd word for stomach. You may need luck to solve the secret of this room."
+Meta Meat is a hexroom. it is southeast of Ehs Ehs. "This is the southwest room in what seems to be a hexagonal ring. [hexround].". word-to-include is "teammate". guess-right-text is "You find the guts to turn the place into something more gross, but manageable."
+
+Tines Inset is a hexroom. it is east of Meta Meat. "This is the southeast room in what seems to be a hexagonal ring. [hexround].". word-to-include is "intestines". guess-right-text is "The grain turns into a court of law, but since you have no guilt, you are free to go."
+
+Pechan Pechan is a hexroom. it is southeast of Grain Grain. It is northeast of Tines Inset. "This is the west room in what seems to be a hexagonal ring. [hexround].[paragraph break]Oh, a pechan is an odd word for stomach. You may need luck to solve the secret of this room.". word-to-include is "happenchance". guess-right-text is "You suddenly find a lucky way out."
 
 Einstein St is east of Ehs Ehs. It is southeast of Prep Area. It is southwest of Grain Grain. It is northeast of Meta Meat. It is northwest of Tines Inset.
 
