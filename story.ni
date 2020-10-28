@@ -190,6 +190,16 @@ to decide which direction is hexdir: decide on the best route from the location 
 
 volume Ingoing O
 
+book backdrop
+
+the Attentat Tent is a backdrop. "It seems to almost lurch aggressively at you as if to push you back. It's blocking your way [hexdir]."
+
+when play begins: adjust-tent;
+
+to adjust-tent: move Attentat Tent backdrop to all not hex-ok hexrooms.
+
+book rooms
+
 Ehs Ehs is a hexroom. "This is the west room in what seems to be a hexagonal ring. [hexround].". printed name is "Ehs, Ehs". word-to-include is "sheesh". guess-right-text is "You effectively dismiss the eh's with something more powerful. You're a bit sick of not being able to go [hexdir], and you hear a thud from behind the [tent].". clue-text is "The EHs you hear make you wish you could throw back something at them. Something double-powered, perhaps"
 
 Prep Area is a hexroom. it is northeast of Ehs Ehs. "This is the northwest room in what seems to be a hexagonal ring. [hexround].". word-to-include is "teammate". guess-right-text is "Someone comes along and bangs at the barrier [hexdir]. You hear a small cracking.". clue-text is "You feel like you are being watched. You want to duck out and in, but not in the standard directions"
