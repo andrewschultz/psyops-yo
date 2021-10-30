@@ -213,12 +213,25 @@ Mo Demode is a room.
 
 volume verbs
 
-check swearing obscenely: say "Yucky! Uck!" instead;
+check swearing obscenely: say "[one of]Yucky! Uck[or]Sheesh! Ee[or]Shush, U[in random order]! [one of](There's two more. Because I care.)[or][line break][stopping]" instead;
 
 check swearing mildly: try swearing obscenely instead;
 
 the block swearing mildly rule is not listed in any rulebook.
 the block swearing obscenely rule is not listed in any rulebook.
+
+chapter xyzzying
+
+xyzzying is an action out of world.
+
+understand the command "xyzzy" as something new.
+
+understand "xyzzy" as xyzzying.
+
+carry out xyzzying:
+	say "Hark! Sharks!";
+	end the game in death;
+	the rule succeeds;
 
 volume unsorted
 
