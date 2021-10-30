@@ -2,7 +2,7 @@
 
 volume definitions
 
-include Trivial Niceties by Andrew Schultz
+include Trivial Niceties by Andrew Schultz.
 
 include Psyops Yo Tests by Andrew Schultz.
 
@@ -14,7 +14,7 @@ a doubler has text called zaptext. a doubler has a room called zaploc.
 
 before printing the name of a doubler (called dub): if dub is doubled, say "[xtra-text of dub] ".
 
-check taking a doubler: say "No, you don't see any reason to take [the noun]. Too plain. Maybe you have a way to jazz it up." instead;
+check taking a doubler: say "No, you don't see any reason to take [the noun] as-is. Too plain. Maybe you have a way to jazz it up." instead;
 
 a person has text called talk-text.
 
@@ -44,24 +44,22 @@ a room has text called clue-text.
 
 to say psgs: say "[if number of viable directions is 0]There aren't any passages out. There should be, but there aren't[else if number of viable directions is 1]You can only go [random viable direction][else]Passages lead [list of viable directions][end if]"
 
-section hexroom definitions
+volume when play begins
 
-rule for printing the name of a hex-ok hexroom: say "[word-to-include of the item described in title case]"
-
-a hexroom is a kind of room. a hexroom has text called word-to-include. a hexroom has text called guess-right-text. a hexroom can be hex-ok. a hexroom is usually not hex-ok.
-
-a hexroom has text called clue-text
-
-to say hexround:
-	say "You can [if hexcount is 6]enter the remains of[else]skirt[end if] the Attentat Tent to the [hexdir] by going [list of viable directions][if hexcount is 6], but you probably want to go [hexdir][end if]";
-	if location of player is not hex-ok:
-		say ". [clue-text of location of player]";
-		if number of visited hexrooms is 6 and hexcount is 0:
-			say ". You keep feeling jumbled when you think of all the room names. Whatever you need to do, there are no things to change, so you need to do something new, here"
+when play begins:
+	say "You'd have liked a nice end-of-month trip to the discount warehouse without any hiccups. Was that too much to ask? Apparently it was. Costco St. seemed quiet enough, until that horribly ghostly voice 'Why save a few dollars ... when you could save ...?'";
+	wfak;
+	say "You should have known the ghost was not going to help you save a LOT of dollars instead, but you couldn't resist. Costco St. took a dark turn, and you wound up somewhere much darker.";
+	wfak;
+	say "The ghost pointed to the dark blobs in the sky. 'Un-Suns!' Then to the distance, where the sound spoke for itself. A yowly owl! 'It sits!' cried the ghost. You ask for more help, but the ghost is already fading away with an 'I.e. ... DIED!'";
 
 volume map basics
 
-check going nowhere: say "You try to, but you realize you might step into ... the INGULFING GULF." instead;
+check going nowhere: say "You try to, but you realize you might step into ... the INGULFING GULF. You can, however, go [list of viable directions]." instead;
+
+definition: a direction (called d) is viable:
+	if the room d of location of player is nowhere, no;
+	yes;
 
 Top Stops is a region.
 
