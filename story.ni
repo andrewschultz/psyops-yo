@@ -129,26 +129,36 @@ book Dwell'd Well
 
 to say or-well: if score > 0, say ". There's also a way down";
 
-Dwell'd Well is a room. "[well-up].[paragraph break][if score is 3]A voice also whispers ... 'Cad!'[paragraph break]And it makes you feel guilty and silly. You thought did well to expand some things by two letters, but it feels so basic now. Perhaps three or even four is the way to go here, for a bit of magic to pass through again."
+Dwell'd Well is a room. "[well-up].[paragraph break][if score is 4]The way down is a huge hole in the shape of a D. You could probably just go down and get on with things, but maybe it's not all that simple[if score is 3]A voice also whispers ... 'Cad!'[paragraph break]And it makes you feel guilty and silly. You thought did well to expand some things by two letters, but it feels so basic now. Perhaps three or even four is the way to go here, for a bit of magic to pass through again[else]It's almost too peaceful here. As if something is not quite ready to happen yet[end if]."
 
 to say well-up: say "There are three ways to go back up, here: north, southwest, and southeast"
 
-check going nowhere in dwell'd well: say "[well-up]." instead;
+check going down in Dwell'd Well:
+	if player is in Dwell'd Well:
+		if the score < 3, say "You can't go further down. At least, not now, you can't." instead;
+		if the score < 4, say "'Cad ... cad ...' voices say. You need to shake them off." instead;
+		say "'Ingoing, O!' you shout as you explore further down...";
+		wfak;
+		say "...and you wind up in Saves Ave. It is a nice enough place to live. People seem to appreciate you. Things are okay, for about a week. Then... then, you realize you are just a block over from Raver Ave. It's not so bad at first, but the raves get bigger and bigger as time goes on. Everyone greets the host with a 'Shucks, Huck,' though you're never in a good enough mood to. Not that it's the worst place to live, but you sense you could have done better.";
+		end the story;
+		the rule succeeds;
+	if the score is 0, say "Nothing there, yet." instead;
 
 check going up in Dwell'd Well: say "[well-up]." instead;
 
-check going down:
-	if player is in Dwell'd Well:
-		if the score < 3, say "You can't go further down. At least, not now, you can't." instead;
-		say "'Ingoing, O!' you shout as you explore further down...";
-		move player to Ehs Ehs;
-	if the score is 0, say "Nothing there, yet." instead;
+check going nowhere in dwell'd well: say "[well-up]." instead;
 
 the cad is a privately-named doubler. it is scenery. xtra-text is "abracadabra". guess-rule is guess-cad rule.
 
 this is the guess-cad rule:
-	say "You hear lightning. A hole opens beneath the well. You feel momentarily silly abracadabra isn't a real-real word, but you could probably beat yourself up until Black Friday over whether or not you had enough style points, here. You don't see much to do here, so you slip off to...";
-	move player to Ehs Ehs;
+	say "You hear lightning. A hole opens beneath the well. You feel momentarily silly abracadabra isn't a real-real word, but you could probably beat yourself up until Black Friday over whether or not you had enough style points, here. A hole opens up below! It's in the shape of a [b]D[r], which suggests you can just go (D) for down.[paragraph break]And yet ... perhaps you can get style points ...";
+	move okeydokey to Dwell'd Well;
+
+the okeydokey is privately-named scenery. "You shouldn't see this.". xtra-text is "okey ?dokey". guess-rule is guess-okeydokey rule.
+
+
+
+volume points
 
 chapter point-check
 
@@ -157,6 +167,7 @@ to point-check:
 	if the score is 1:
 		say "A passage rumbles open below. It's [if number of visited rooms is 2]off to the side. Maybe you should visit the last place above ground before following it, though[else]in the middle of the three areas you've explored[end if].";
 		change down exit of Ur Church to Dwell'd Well;
+		change south exit of Ur Church to Dwell'd Well;
 		change down exit of Strangest Range to Dwell'd Well;
 		change down exit of Ingrowing Row to Dwell'd Well;
 		change north exit of Dwell'd Well to Ur Church;
@@ -175,49 +186,9 @@ rule for printing a parser error:
 			now UT is doubled;
 			point-check;
 			the rule succeeds;
-	if location of player is not hex-ok:
-		if the player's command matches the regular expression "\b[word-to-include of location of player]\b":
-			say "[guess-right-text of location of player][line break]";
-			point-check;
-			now location of player is hex-ok;
-			if hexcount is 6, say "A hidden metro-tromometer beeps. As you locate it, you hear a shattering. The barrier to the center of the hexagon becomes less opaque and then falls. You can go the ground behind it crumbles. But through it, you do not see a gaping pit, but a shiny new place to go. Full of others who enjoy thinking up or about this sort of weird puzzle.";
-			the rule succeeds;
 	continue the action;
 
-to decide which number is hexcount: decide on number of hex-ok rooms;
-
-to decide which direction is hexdir: decide on the best route from the location of the player to Einstein St;
-
-volume Ingoing O
-
-book backdrop
-
-the Attentat Tent is a backdrop. "It seems to almost lurch aggressively at you as if to push you back. It's blocking your way [hexdir]."
-
-when play begins: adjust-tent;
-
-to adjust-tent: move Attentat Tent backdrop to all not hex-ok hexrooms.
-
-book rooms
-
-Ehs Ehs is a hexroom. "This is the west room in what seems to be a hexagonal ring. [hexround].". printed name is "Ehs, Ehs". word-to-include is "sheesh". guess-right-text is "You effectively dismiss the eh's with something more powerful. You're a bit sick of not being able to go [hexdir], and you hear a thud from behind the [tent].". clue-text is "The EHs you hear make you wish you could throw back something at them. Something double-powered, perhaps"
-
-Prep Area is a hexroom. it is northeast of Ehs Ehs. "This is the northwest room in what seems to be a hexagonal ring. [hexround].". word-to-include is "reappear". guess-right-text is "Someone comes along and bangs at the barrier [hexdir]. You hear a small cracking.". clue-text is "You feel like you are being watched. You want to duck out and in, but not in the standard directions"
-
-Grain Grain is a hexroom. it is east of Prep Area. "This is the northeast room in what seems to be a hexagonal ring. [hexround].". word-to-include is "arraigning". printed name is "Grain, Grain". guess-right-text is "You back out a bit, then reappear.". clue-text is "You feel on trial. Well, not quite, but you feel a need for acquital for ... something"
-
-Meta Meat is a hexroom. it is southeast of Ehs Ehs. "This is the southwest room in what seems to be a hexagonal ring. [hexround].". word-to-include is "teammate". guess-right-text is "You find the guts to turn the place into something more gross, but manageable.". clue-text is "You feel as if a friend or confidante could help you make a dent in the Attentat Tent, here"
-
-Tines Inset is a hexroom. it is east of Meta Meat. "This is the southeast room in what seems to be a hexagonal ring. [hexround].". word-to-include is "intestines". guess-right-text is "The grain turns into a court of law, but since you have no guilt, you are free to go.". clue-text is "You feel disjointed from the whole body of rooms here"
-
-Pechan Pechan is a hexroom. it is southeast of Grain Grain. It is northeast of Tines Inset. "This is the west room in what seems to be a hexagonal ring. [hexround].". word-to-include is "happenchance". guess-right-text is "You suddenly find a lucky way out.". clue-text is "Oh, a pechan is an odd word for stomach. You may need luck to solve the secret of this room. Some skill, maybe, but enough skill so your luck matters".
-
-Einstein St is east of Ehs Ehs. It is southeast of Prep Area. It is southwest of Grain Grain. It is northeast of Meta Meat. It is northwest of Tines Inset.
-
-check going to Einstein St:
-	if hexcount < 6, say "The Attentat Tent pushes back aggressively at you." instead;
-	say "You stride nervously [hexdir], wondering who or what you will see. People all around are forming or creating logic puzzles. There is no war between crossword, Sudoku, Kakuro general logic-problem aficionados or people who like odder, weirder puzzles. There's something for everyone, and everyone is doing their own thing. People can even rate Karateka! It's all quite nice. But of course it can't last forever. It might get boring. Fortunately, an estates tat (with a very legible gib) explains the magic words 'meantime, anti' means you need to summon escapees['] capes to go back to the real world, and 'Rehire! Hi!' forms a request to come back. Which might not succeed. But eventually, when you really need the break, you will get it.[paragraph break]Oh, wait. I forgot to tell you the name of this place. It is:";
-	end the story finally saying "EINSTEIN ST."
+volume random
 
 volume meta
 
@@ -243,4 +214,3 @@ volume unsorted
 chapter tsarist saris
 
 the saris are a thing.
-
