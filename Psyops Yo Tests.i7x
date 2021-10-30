@@ -10,15 +10,17 @@ test u2 with "e/mahatma/nw/stalest/sw/escapes/e"
 
 test mid with "d/abracadabra"
 
-test d0 with "ne/e/se/sw/w/nw/"
+test e1 with "d"
 
-test d1 with "sheesh/ne/reappear/e/arraigning/se/happenchance/sw/intestines/w/teammate/ne"
+test e2 with "okeydokey"
 
-test d2 with "se/teammate/e/intestines/ne/happenchance/nw/arraigning/w/reappear/sw/sheesh/e"
+test e3 with "okey dokey"
 
-test f1 with "test u1/test mid/test d1"
+test w1 with "test u1/test u2/test mid/test e1".
 
-test f2 with "test u2/test mid/test d2"
+test w2 with "test u1/test u2/test mid/test e2".
+
+test w3 with "test u1/test u2/test mid/test e3".
 
 Psyops Yo Tests ends here.
 
