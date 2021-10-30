@@ -83,7 +83,7 @@ volume Top Stops
 
 book Strangest Range
 
-Strangest Range is a room in Top Stops. "Passages lead north (or northeast) and east[or-well]."
+Strangest Range is a room in Top Stops. "[unsuns]Passages lead north[if score < 3] (or northeast)[else], northeast[end if] and east[or-well]."
 
 chapter alkie
 
@@ -135,7 +135,7 @@ book Dwell'd Well
 
 to say or-well: if score > 0, say ". There's also a way down";
 
-Dwell'd Well is a room. "[well-up].[paragraph break][if score is 4]The way down is a huge hole in the shape of a D. You could probably just go down and get on with things, but maybe it's not all that simple[if score is 3]A voice also whispers ... 'Cad!'[paragraph break]And it makes you feel guilty and silly. You thought did well to expand some things by two letters, but it feels so basic now. Perhaps three or even four is the way to go here, for a bit of magic to pass through again[else]It's almost too peaceful here. As if something is not quite ready to happen yet[end if]."
+Dwell'd Well is a room. "[well-up].[paragraph break][if score >= 4]The way down is a huge hole in the shape of a D. You could probably just go down and get on with things, but maybe it's not all that simple[else if score is 3]A voice also whispers ... 'Cad!'[paragraph break]And it makes you feel guilty and silly. You thought did well to expand some things by two letters, but it feels so basic now. Perhaps three or even four is the way to go here, for a bit of magic to pass through again[else]It's almost too peaceful here. As if something is not quite ready to happen yet[end if]."
 
 to say well-up: say "There are three ways to go back up, here: north, southwest, and southeast"
 
@@ -182,7 +182,8 @@ to point-check:
 		change north exit of Dwell'd Well to Ur Church;
 		change southwest exit of Dwell'd Well to Strangest Range;
 		change southeast exit of Dwell'd Well to Ingrowing Row;
-	if the score is 3, move cad to dwell'd well;
+	if the score is 3:
+		say "'Oo! Noon!' a voice cries. But then a louder one booms 'I ... DERIDER!' And yet you still feel you haven't done enough, or you've gotten lucky. You feel like such a ... well, CAD. Yes. No other word will do, and probably only one word will fix how you feel.";
 	process the notify score changes rule;
 
 book point verbs
