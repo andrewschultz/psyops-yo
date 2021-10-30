@@ -6,6 +6,8 @@ include Trivial Niceties by Andrew Schultz.
 
 include Undo Output Control by Erik Temple.
 
+include Old School Verb Total Carnage by Andrew Schultz.
+
 include Psyops Yo Tests by Andrew Schultz.
 
 the description of the player is "Not dazzling, but frankly, you're relieved not to be wearing a tutu or muumuu.".
@@ -15,6 +17,8 @@ a doubler is a kind of thing. a doubler can be doubled. a doubler is usually not
 a doubler has a rule called a guess-rule.
 
 a doubler has text called zaptext. a doubler has a room called zaploc.
+
+the maximum score is 6.
 
 before printing the name of a doubler (called dub): if dub is doubled, say "[xtra-text of dub] ".
 
@@ -145,6 +149,8 @@ check going down in Dwell'd Well:
 	if player is in Dwell'd Well:
 		if the score < 3, say "You can't go further down. At least, not now, you can't." instead;
 		if the score < 4, say "'Cad ... cad ...' voices say. You need to shake them off." instead;
+		if ok is true and apple iie is moot:
+			say "Hey, wait. [b]OKEYDOKEY[r] would work now. You should say that, instead." instead;
 		say "'Ingoing, O!' you shout as you explore further down...";
 		wfak;
 		say "...and you wind up in Saves Ave. It is a nice enough place to live. People seem to appreciate you. Things are okay, for about a week. Then... then, you realize you are just a block over from Raver Ave. It's not so bad at first, but the raves get bigger and bigger as time goes on. Everyone greets the host with a 'Shucks, Huck,' though you're never in a good enough mood to. Not that it's the worst place to live, but you sense you could have done better.";
@@ -156,18 +162,36 @@ check going up in Dwell'd Well: say "[well-up]." instead;
 
 check going nowhere in dwell'd well: say "[well-up]." instead;
 
-the cad is a privately-named doubler in Dwell'd Well. it is scenery. xtra-text is "abracadabra". guess-rule is guess-cad rule.
+chapter cad
+
+the cad is a privately-named doubler. it is scenery. xtra-text is "abracadabra". guess-rule is guess-cad rule.
 
 this is the guess-cad rule:
-	say "You hear lightning. A hole opens beneath the well. You feel momentarily silly abracadabra isn't a real-real word, but you could probably beat yourself up until Black Friday over whether or not you had enough style points, here. A hole opens up below! It's in the shape of a [b]D[r], which suggests you can just go (D) for down.[paragraph break]And yet ... perhaps you can get style points ...";
+	say "You hear lightning. A hole opens beneath the well. You feel momentarily silly abracadabra isn't a real-real word, but you could probably beat yourself up until Black Friday over whether or not you had enough style points, here. A hole opens up below! It's in the shape of a [b]D[r], which suggests you can just go (D) for down.[paragraph break]And yet ... perhaps you can get style points ... for that, or the mysterious Apple IIe which appeared in the hole.";
 	move okeydokey to Dwell'd Well;
+	move Apple IIe to Dwell'd Well;
+
+chapter okeydokey
 
 the okeydokey is a privately-named doubler. it is scenery. "You shouldn't see this.". xtra-text is "okey ?dokey". guess-rule is guess-okeydokey rule.
 
+ok is a truth state that varies.
+
 this is the guess-okeydokey rule:
+	if apple iie is not moot:
+		say "Yes! You're excited! But you run down too fast. The last thing you see is a princess, whose martial-arts move leaves you doubled over, fatally injured.[died]Okay, not really. But if you want the good ending, I'm gonna force you to name that ancient Apple IIe game. It's a classic.";
+		now ok is true;
+		the rule fails;
 	say "Yes, it's a bit reflexive and self-referential. But it's worth a try. As you climb down, you wind up finding a secret passage that leads ... somewhere new. You feel smart immediately when you arrive. You feel you will discover many new things. That's only natural, considering you've just made it to...[paragraph break][b]EINSTEIN ST.[r]";
 	end the story finally saying "I DID! I DID!";
-	process the every turn rules;
+	process the shutdown rules;
+
+chapter Apple IIe
+
+the Apple IIe is a doubler. it is scenery. xtra-text is "karateka". guess-rule is guess-karateka rule. "The Apple IIe has the word RATE written across it in orange. You obviously don't have time for silly games right now, but if you did, maybe there's a game you could rate!"
+
+this is the guess-karateka rule:
+	say "Boy, you sure could go for a game of Karateka now. You're a bit more apprehensive of running into the hole, now, as there may be a princess waiting to deck you on the other side.[paragraph break]As you contemplate this, the Apple IIe, sadly, blows up. But hey, there's always emulation, and save states are handy for if you mess up, anyway.";
 
 volume points
 
@@ -185,18 +209,25 @@ to point-check:
 		change southwest exit of Dwell'd Well to Strangest Range;
 		change southeast exit of Dwell'd Well to Ingrowing Row;
 	if the score is 3:
-		say "'Oo! Noon!' a voice cries. But then a louder one booms 'I ... DERIDER!' And yet you still feel you haven't done enough, or you've gotten lucky. You feel like such a ... well, CAD. Yes. No other word will do, and probably only one word will fix how you feel.";
+		say "'Oo! Noon!' a voice cries. But then a louder one booms 'I ... DERIDER!' The un-suns become less dark, and the Ingulfing Gulf wanes and retreats.[paragraph break]And yet you still feel you haven't done enough, or you've gotten lucky. You feel like such a ... well, CAD. Yes. No other word will do, and probably only one word will fix how you feel.";
 	process the notify score changes rule;
 
 book point verbs
 
-rule for printing a parser error:
+the point score check rule is listed first in the for printing a parser error rules.
+
+rule for printing a parser error (this is the point score check rule):
 	repeat with UT running through touchable not doubled doublers:
 		if the player's command matches the regular expression "\b[xtra-text of UT]\b":
 			process guess-rule of UT;
-			now player has UT;
-			now UT is doubled;
-			point-check;
+			if the rule failed, the rule succeeds;
+			if UT is Apple IIe:
+				moot Apple IIe;
+				point-check;
+			else if UT is a doubler:
+				now player has UT;
+				now UT is doubled;
+				point-check;
 			the rule succeeds;
 	continue the action;
 
@@ -206,6 +237,9 @@ report undoing an action: say "Edited it!";
 
 rule for printing a parser error when the latest parser error is the i beg your pardon error:
 	say "'Be-dumbed?' a cruel voice mocks.";
+
+rule for printing a parser error when the latest parser error is the not a verb i recognise error:
+	say "[this-game] has a very simplified parser. You just need a magic word to figure what to do with items that are lying around[if score is 3] or, right now, the voice saying 'Cad.' [else]. [end if]There's a way to change anything in your way. Oh, and walk around. Some other commands are in here as a joke."
 
 procedural rule: ignore the print final score rule.
 
