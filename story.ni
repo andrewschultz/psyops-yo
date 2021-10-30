@@ -1,10 +1,12 @@
-"Psyops, Yo" by Andrew Schultz
+"Psyops, Yo" by MP Kempke and Hamish Amis
 
 volume definitions
 
 include Trivial Niceties by Andrew Schultz.
 
 include Psyops Yo Tests by Andrew Schultz.
+
+the description of the player is "Not dazzling, but frankly, you're relieved not to be wearing a tutu or muumuu.".
 
 a doubler is a kind of thing. a doubler can be doubled. a doubler is usually not doubled. a doubler has text called xtra-text.
 
@@ -42,16 +44,20 @@ section room definitions
 
 a room has text called clue-text.
 
-to say psgs: say "[if number of viable directions is 0]There aren't any passages out. There should be, but there aren't[else if number of viable directions is 1]You can only go [random viable direction][else]Passages lead [list of viable directions][end if]"
+to say unsuns:
+	if un suns are not moot, say "The un-suns hang menacingly in the sky, blotting things out and causing general depression and dreariness. ";
 
 volume when play begins
 
 when play begins:
-	say "You'd have liked a nice end-of-month trip to the discount warehouse without any hiccups. Was that too much to ask? Apparently it was. Costco St. seemed quiet enough, until that horribly ghostly voice 'Why save a few dollars ... when you could save ...?'";
+	say "You'd have liked a nice end-of-month trip to the discount warehouse without any hiccups. Was that too much to ask? Apparently it was. Costco St. seemed quiet enough, until that horribly ghostly voice 'Why save a few dollars ... when you could save ... the TOP STOPS?'";
 	wfak;
 	say "You should have known the ghost was not going to help you save a LOT of dollars instead, but you couldn't resist. Costco St. took a dark turn, and you wound up somewhere much darker.";
 	wfak;
-	say "The ghost pointed to the dark blobs in the sky. 'Un-Suns!' Then to the distance, where the sound spoke for itself. A yowly owl! 'It sits!' cried the ghost. You ask for more help, but the ghost is already fading away with an 'I.e. ... DIED!'";
+	say "The ghost pointed to the dark blobs in the sky. 'Un-Suns!' Then to the distance, where the sound spoke for itself. A yowly owl! Wan swans! 'It sits!' cried the ghost, un-grammatically. You ask for more help, but the ghost is already fading away with an 'I.e. ... DIED!'";
+	move un suns backdrop to all rooms in Top Stops;
+
+the un suns are a backdrop. "They're totally, like, dark and gloomy and stuff. Just the thought of them makes you think, 'O, wow!'"
 
 volume map basics
 
@@ -148,15 +154,18 @@ check going up in Dwell'd Well: say "[well-up]." instead;
 
 check going nowhere in dwell'd well: say "[well-up]." instead;
 
-the cad is a privately-named doubler. it is scenery. xtra-text is "abracadabra". guess-rule is guess-cad rule.
+the cad is a privately-named doubler in Dwell'd Well. it is scenery. xtra-text is "abracadabra". guess-rule is guess-cad rule.
 
 this is the guess-cad rule:
 	say "You hear lightning. A hole opens beneath the well. You feel momentarily silly abracadabra isn't a real-real word, but you could probably beat yourself up until Black Friday over whether or not you had enough style points, here. A hole opens up below! It's in the shape of a [b]D[r], which suggests you can just go (D) for down.[paragraph break]And yet ... perhaps you can get style points ...";
 	move okeydokey to Dwell'd Well;
 
-the okeydokey is privately-named scenery. "You shouldn't see this.". xtra-text is "okey ?dokey". guess-rule is guess-okeydokey rule.
+the okeydokey is a privately-named doubler. it is scenery. "You shouldn't see this.". xtra-text is "okey ?dokey". guess-rule is guess-okeydokey rule.
 
-
+this is the guess-okeydokey rule:
+	say "Yes, it's a bit reflexive and self-referential. But it's worth a try. As you climb down, you wind up finding a secret passage that leads ... somewhere new. You feel smart immediately when you arrive. You feel you will discover many new things. That's only natural, considering you've just made it to...[paragraph break][b]EINSTEIN ST.[r]";
+	end the story finally saying "I DID! I DID!";
+	process the every turn rules;
 
 volume points
 
@@ -189,6 +198,8 @@ rule for printing a parser error:
 	continue the action;
 
 volume random
+
+procedural rule: ignore the print final score rule.
 
 volume meta
 
