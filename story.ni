@@ -50,20 +50,30 @@ section room definitions
 
 a room has text called clue-text.
 
-to say unsuns:
+to say unsuns-gulf:
 	if un suns are not moot, say "The un-suns hang menacingly in the sky, blotting things out and causing general depression and dreariness. ";
+	say "Passages through the Ingulfing Gulf lead ";
 
 volume when play begins
 
 when play begins:
-	say "You'd have liked a nice end-of-month trip to the discount warehouse without any hiccups. Was that too much to ask? Apparently it was. Costco St. seemed quiet enough, until that horribly ghostly voice 'Why save a few dollars ... when you could save ... the TOP STOPS?'";
+	say "What with your nice job at DecodeCo, you don't NEED to save money, but you do enjoy your nice end-of-month trip to the discount warehouse without any hiccups. Was that too much to ask? Apparently it was. Costco St. seemed quiet enough, until that horribly ghostly voice 'Why save a few dollars ... when you could save ... the TOP STOPS?'";
 	wfak;
 	say "You should have known the ghost was not going to help you save a LOT of dollars instead, but you couldn't resist. Costco St. took a dark turn, and you wound up somewhere much darker.";
 	wfak;
 	say "The ghost pointed to the dark blobs in the sky. 'Un-Suns!' Then to the distance, where the sound spoke for itself. A yowly owl! Wan swans! 'It sits!' cried the ghost, un-grammatically. You ask for more help, but the ghost is already fading away with an 'I.e. ... DIED!'";
 	move un suns backdrop to all rooms in Top Stops;
+	now the right hand status line is "[score]/[maximum score]";
 
-the un suns are a backdrop. "They're totally, like, dark and gloomy and stuff. Just the thought of them makes you think, 'O, wow!'"
+the un suns are a backdrop. printed name is "un-suns". "[if score >= 3]They're much less gloomy now. You did what you could.[else]They're totally, like, dark and gloomy and stuff. Just the thought of them makes you think, 'O, wow!'[end if]"
+
+the ingulfing gulf is a backdrop. "[if score >= 3]It's receded quite a bit, but you don't want to fight through it. You sense your destiny is down[else]You really don't want to even touch it[end if]."
+
+instead of doing something with a backdrop:
+	if current action is not examining:
+		say "Sadly, [the noun] leaves you so helpless you can't do much more than examine [if noun is plural-named]them[else]it[end if]. So you do.";
+		try examining noun instead;
+	continue the action;
 
 volume map basics
 
@@ -80,20 +90,23 @@ Ingoing O is a region.
 talking is an action applying to one thing.
 
 understand "t [something]" and "talk [something]" as talking.
+understand "t" and "talk" as talking.
 
 check talking a person: say "[talk-text of noun][line break]" instead;
 
 check talking: say "You don't need to talk to anyone or anything, though people may give some silly response." instead;
 
+talk-text of the player is "You give yourself a chic 'Hi.'"
+
 volume Top Stops
 
 book Strangest Range
 
-Strangest Range is a room in Top Stops. "[unsuns]Passages lead north[if score < 3] (or northeast)[else], northeast[end if] and east[or-well]."
+Strangest Range is a room in Top Stops. "[unsuns-gulf]north[if score < 3] (or northeast)[else], northeast[end if] and east[or-well]."
 
 chapter alkie
 
-the Stalkiest Alkie is a person in Strangest Range. "A stalkiest alkie paces back and forth, looking for something here and not looking for it.". description is "Like so many people who drink a lot, the Alkie may both want a drink and want an excuse never to want a drink again.".
+the Stalkiest Alkie is a person in Strangest Range. "[one of]'Uh, hi, I'm the stalkiest alkie! People told me a pejorative like that would help me drink less, but somehow it made me drink more. Guess I'm stuck with it, though, unless someone can help me.'[or]The stalkiest alkie, stuck with a pejorative name, paces back and forth, looking for something here and not looking for it.[stopping]". description is "Like so many people who drink a lot, the Alkie may both want a drink and want an excuse never to want a drink again.". talk-text is "'If you could find something that'd turn me off alcohol forever, that'd be awesome! Why, I'd take it from your hands before you had a chance to give it to me.'"
 
 chapter cap
 
@@ -103,21 +116,21 @@ this is the guess-cap rule: say "The cap jumps up into your hands!"
 
 book Ingrowing Row
 
-Ingrowing Row is east of Strangest Range. It is in Top Stops. "You seem worried about violence here. Passages lead north (or northwest) and west[or-well]."
+Ingrowing Row is east of Strangest Range. It is in Top Stops. "[unsuns-gulf]north (or northwest) and west[or-well]."
 
 chapter Tormentor Men
 
-The Tormentor Men are plural-named people in Ingrowing Row. "Tormentor men stand here. They aren't laughing at you ... at least not while you're looking.". talk-text is "'Derider?! I?!' they all respond."
+The Tormentor Men are plural-named people in Ingrowing Row. "Tormentor men stand here. They aren't laughing at you ... at least not while you're looking.". talk-text is "'Derider?! I?!' they all respond.[paragraph break]They roll their eyes, but at least they're not attacking you. Maybe it's more fun for them to drag things out. Perhaps you could lure them into chasing after something that can't be tormented. They'd probably jump before you know it."
 
 chapter hat
 
-the hat is a doubler in Ingrowing Row. xtra-text of hat is "mahatma". guess-rule is guess-hat rule. "A hat, not looking very special, lies here.". description is "The hat is [if hat is doubled]much more impressive now it's a mahatma hat[else]unimpressive, but you think it could be so much more. You hope, anyway. You don't have a lot to work with, here[end if].". zaploc is Ur Church. zaptext is "The [aide] looks at the hat and shrugs. You wonder if you should be the one wearing it, but no, it seems to fit them better. They thank you, bless you, and then go out to spread decency and kindness to others."
+the hat is a doubler in Ingrowing Row. xtra-text of hat is "mahatma". guess-rule is guess-hat rule. "A hat, not looking very special, lies here.". description is "The hat is [if hat is doubled]much more impressive now it's a mahatma hat[else]unimpressive, but you think it could be so much more. You hope, anyway. You don't have a lot to work with, here[end if].". zaploc is Ur Church. zaptext is "The [aide] grabs the hat. 'This is what I need! It will give me the peace of mind to re-prep and re-prep the sanctifying rituals that will lessen the un-suns['] horrible influence! It fits them perfectly. They thank you, bless you, and then go out to spread decency and kindness to others. Oh, and do whatever they need to, to the un-suns."
 
 this is the guess-hat rule: say "The hat suddenly looks a little more dignified."
 
 book Ur Church
 
-Ur Church is northeast of Strangest Range. It is north of Strangest Range. It is in Top Stops. printed name is "Ur-Church". "Passages lead southwest and southeast[or-well]."
+Ur Church is northeast of Strangest Range. It is north of Strangest Range. It is in Top Stops. printed name is "Ur-Church". "[unsuns-gulf]southwest and southeast[or-well]. The oppressive noise has changed, though that's not what you need to change somewhere."
 
 Ur Church is north of Ingrowing Row. It is northwest of Ingrowing Row.
 
@@ -127,11 +140,11 @@ check going in Ur Church:
 
 chapter aide
 
-the Staidest Aide is a person in Ur Church. "A staidest aide stands around here, touching their head as if they need to put something on it to TRULY seem official.". description is "The Staidest Aide looks back at you, trying to tip a non-existent cap and failing.". talk-text is "'Beg, un-begun.'".
+the Staidest Aide is a person in Ur Church. "A staidest aide stands around here, touching their head as if they need to put something on it to TRULY seem official.". description is "The Staidest Aide looks back at you, trying to tip non-existent headgear and failing.". talk-text is "'Beg, un-begun.'".
 
 chapter Stalest Ale
 
-the Ale is a doubler in Ur Church. xtra-text is "stalest". description is "[if ale is doubled]It doesn't look especially menacing, but you really don't want to drink it[else]It's plain, as if it could become something else, or assume a more useful quality, for better or worse[end if].". "Some ale lies here. As-is, it's a bit plain to take. Maybe it can become more palatable, or less.". guess-rule is guess-ale rule. zaptext is "On seeing the [ale], the [alkie] pulls it from your hands and takes a swig, then makes a face. 'Ugh! How could you...?' but after some reflection, says 'You know, I always wanted to give this stuff up. This reminds me how nasty it tasted once I started. Might not be a full cure, but thanks.' Relieved, the [alkie] walks away.". zaploc is Strangest Range.
+the Ale is a doubler in Ur Church. xtra-text is "stalest". description is "[if ale is doubled]It doesn't look especially menacing, but you really don't want to drink it[else]It's plain, as if it could become something else, or assume a more useful quality, for better or worse[end if].". "Some ale lies here. As-is, it's a bit plain to take. Maybe it can become more palatable, or less.". guess-rule is guess-ale rule. zaptext is "On seeing the [ale], the [alkie] pulls it from your hands and takes a swig, then makes a face. 'Ugh! How could you...?' but after some reflection, says 'You know, I always wanted to give this stuff up. This reminds me how nasty it tasted once I started. Might not be a full cure, but hey, has to be better than Swines['] Wine, right? Hey! You know what? This is nasty enough, it will poison some pawn-spawns outlets.' Filled with purpose, the (ex-)[alkie] walks away.". zaploc is Strangest Range.
 
 this is the guess-ale rule: say "The ale bubbles momentarily and seems to change to a sicklier hue. For whatever reason, you feel less guilty taking it now."
 
