@@ -85,13 +85,13 @@ the Stalkiest Alkie is a person in Strangest Range. "A stalkiest alkie paces bac
 
 chapter cap
 
-the cap is a doubler in Strangest Range. xtra-text of cap is "escapes". "A cap sits on the ground here. It seems nailed down. Maybe there is a way to free it.". description is "The cap seem to be stuck in place.". guess-rule is guess-cap rule. zaploc is Ingrowing Row. zaptext is "The Tormentor Men squint at your escapes cap. They're actually a bit impressed. They start with the usual insults, but you deflect them. They say it must be the cap, but the cap ... escapes after a breeze blows it away. You forget to go running after it as the Tormentor Men insult you more, but you've become immune. They give up and go away."
+the cap is a doubler in Strangest Range. xtra-text of cap is "escapes". "A cap sits on the ground here. It seems nailed down. Maybe there is a way to free it.". description is "The cap seem to be stuck in place.". guess-rule is guess-cap rule. zaploc is Ingrowing Row. zaptext is "The Tormentor Men squint at your escapes cap. They start with the usual insults, but you deflect them. They're actually a bit impressed. They say it must be the cap, but the cap ... escapes after a breeze blows it away. The Tormentor Men go chasing after it, because they can't have anyone else wearing it and failing to heed them. The cap blows far away, taking the Tormentor Men with."
 
 this is the guess-cap rule: say "The cap jumps up into your hands!"
 
 book Ingrowing Row
 
-Ingrowing Row is east of Strangest Range. It is in Top Stops. "You feel a bit crowded here. Passages lead north (or northwest) and west[or-well]."
+Ingrowing Row is east of Strangest Range. It is in Top Stops. "You seem worried about violence here. Passages lead north (or northwest) and west[or-well]."
 
 chapter Tormentor Men
 
@@ -99,7 +99,7 @@ The Tormentor Men are plural-named people in Ingrowing Row. "Tormentor men stand
 
 chapter hat
 
-the hat is a doubler in Ingrowing Row. xtra-text of hat is "mahatma". guess-rule is guess-hat rule. "A hat, not looking very special, lies here.". description is "The hat is [if hat is doubled]much more impressive now it's a mahatma hat[else]unimpressive, but you think it could be so much more. You hope, anyway. You don't have a lot to work with, here[end if].". zaploc is Ur Church. zaptext is "The [aide] looks at the hat and shrugs. You wonder if you should be the one wearing it, but no, it seems to fit them better. They thank you."
+the hat is a doubler in Ingrowing Row. xtra-text of hat is "mahatma". guess-rule is guess-hat rule. "A hat, not looking very special, lies here.". description is "The hat is [if hat is doubled]much more impressive now it's a mahatma hat[else]unimpressive, but you think it could be so much more. You hope, anyway. You don't have a lot to work with, here[end if].". zaploc is Ur Church. zaptext is "The [aide] looks at the hat and shrugs. You wonder if you should be the one wearing it, but no, it seems to fit them better. They thank you, bless you, and then go out to spread decency and kindness to others."
 
 this is the guess-hat rule: say "The hat suddenly looks a little more dignified."
 
@@ -119,7 +119,7 @@ the Staidest Aide is a person in Ur Church. "A staidest aide stands around here,
 
 chapter Stalest Ale
 
-the Ale is a doubler in Ur Church. xtra-text is "stalest". description is "[if ale is doubled]It doesn't look especially menacing, but you really don't want to drink it[else]It's plain, as if it could become something else, or assume a more useful quality, for better or worse[end if].". "Some ale lies here. As-is, it's a bit plain to take. Maybe it can become more palatable, or less.". guess-rule is guess-ale rule. zaptext is "On seeing the [ale], the [alkie] pulls it from your hands and takes a swig, then makes a face. 'Ugh! How could you...?' but after some reflection, says 'You know, I always wanted to give this stuff up. This reminds me how nasty it tasted once I started. Might not be a full cure, but thanks.'". zaploc is Strangest Range.
+the Ale is a doubler in Ur Church. xtra-text is "stalest". description is "[if ale is doubled]It doesn't look especially menacing, but you really don't want to drink it[else]It's plain, as if it could become something else, or assume a more useful quality, for better or worse[end if].". "Some ale lies here. As-is, it's a bit plain to take. Maybe it can become more palatable, or less.". guess-rule is guess-ale rule. zaptext is "On seeing the [ale], the [alkie] pulls it from your hands and takes a swig, then makes a face. 'Ugh! How could you...?' but after some reflection, says 'You know, I always wanted to give this stuff up. This reminds me how nasty it tasted once I started. Might not be a full cure, but thanks.' Relieved, the [alkie] walks away.". zaploc is Strangest Range.
 
 this is the guess-ale rule: say "The ale bubbles momentarily and seems to change to a sicklier hue. For whatever reason, you feel less guilty taking it now."
 
