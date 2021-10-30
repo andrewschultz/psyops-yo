@@ -4,6 +4,8 @@ volume definitions
 
 include Trivial Niceties by Andrew Schultz.
 
+include Undo Output Control by Erik Temple.
+
 include Psyops Yo Tests by Andrew Schultz.
 
 the description of the player is "Not dazzling, but frankly, you're relieved not to be wearing a tutu or muumuu.".
@@ -198,7 +200,12 @@ rule for printing a parser error:
 			the rule succeeds;
 	continue the action;
 
-volume random
+volume parser errors / meta
+
+report undoing an action: say "Edited it!";
+
+rule for printing a parser error when the latest parser error is the i beg your pardon error:
+	say "'Be-dumbed?' a cruel voice mocks.";
 
 procedural rule: ignore the print final score rule.
 
@@ -217,6 +224,8 @@ volume verbs
 check swearing obscenely: say "[one of]Yucky! Uck[or]Sheesh! Ee[or]Shush, U[in random order]! [one of](There's two more. Because I care.)[or][line break][stopping]" instead;
 
 check swearing mildly: try swearing obscenely instead;
+
+check waiting: say "Meantime? ... ANTI!" instead;
 
 the block swearing mildly rule is not listed in any rulebook.
 the block swearing obscenely rule is not listed in any rulebook.
