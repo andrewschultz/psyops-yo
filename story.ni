@@ -277,6 +277,20 @@ check waiting: say "Meantime? ... ANTI!" instead;
 the block swearing mildly rule is not listed in any rulebook.
 the block swearing obscenely rule is not listed in any rulebook.
 
+chapter abouting
+
+abouting is an action out of world.
+
+understand the command "about" as something new.
+understand the command "credits" as something new.
+
+understand "about" as abouting.
+understand "credits" as abouting.
+
+carry out abouting:
+	say "This was originally conceived as a 2020 EctoComp entry, but life got in the way. As it was, I had bigger plans, but they were too much and took away from the focus. They will go in another game.[paragraph break]While there was no time for outside testing, I'd like to thank Olaf Nowacki for moral support. He has an entry in the Petite Mort too! Oh, and the IFComp 2021 authors['] subforum. Several of them entered something, too![paragraph break]I would also like to thank JJ Guest for creating EctoComp, Duncan Bowsman for stepping in and Ruber Eaglenest for running it currently, and itch.io for hosting EctoComp and other comps that help me just remember to play others['] stuff.";
+	the rule succeeds;
+
 chapter xyzzying
 
 xyzzying is an action out of world.
@@ -285,9 +299,10 @@ understand the command "xyzzy" as something new.
 
 understand "xyzzy" as xyzzying.
 
+to say died: say "[paragraph break][b]*** You have died ***[r][paragraph break]"
+
 carry out xyzzying:
-	say "Hark! Sharks!";
-	end the game in death;
+	say "Hark! Sharks![died]But wait, you were resurrected! Someone raised a...[paragraph break]... puts on shades ...[paragraph break]fund of undo!";
 	the rule succeeds;
 
 volume unsorted
