@@ -46,6 +46,12 @@ definition: a person (called pe) is npcish:
 	if pe is the player, no;
 	yes;
 
+rule for supplying a missing noun when talking:
+	if number of people in location of player is 2:
+		now noun is random npcish person in location of player;
+	else:
+		now noun is the player.
+
 section room definitions
 
 a room has text called clue-text.
