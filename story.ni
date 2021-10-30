@@ -255,6 +255,19 @@ Mo Demode is a room.
 
 volume verbs
 
+the block attacking rule is not listed in any rulebook.
+the block singing rule is not listed in any rulebook.
+the block listening rule is not listed in any rulebook.
+
+check attacking: say "Ai! Maim! (Violence is not the keyword.)" instead;
+
+check singing: say "A tune you've never heard before comes in your head. You know it instinctively to be [i]On, Sons[r]." instead;
+
+check listening:
+	if player is in Ur Church, say "There's a gong on somewhere." instead;
+	if player is in Dwell'd Well and score is 3, say "'Cad! Cad!'" instead;
+	say "Random taunts: '[one of]O tot[or]Er, perp[or]U pop[in random order]!'" instead;
+
 check swearing obscenely: say "[one of]Yucky! Uck[or]Sheesh! Ee[or]Shush, U[in random order]! [one of](There's two more. Because I care.)[or][line break][stopping]" instead;
 
 check swearing mildly: try swearing obscenely instead;
