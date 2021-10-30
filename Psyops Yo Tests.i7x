@@ -14,13 +14,13 @@ test e1 with "d"
 
 test e2 with "okeydokey"
 
-test e3 with "okey dokey"
+test e3 with "karateka/okey dokey"
 
-test w1 with "test u1/test u2/test mid/test e1".
+test w1 with "test u1/test mid/test e1".
 
-test w2 with "test u1/test u2/test mid/test e2".
+test w2 with "test u2/test mid/test e2".
 
-test w3 with "test u1/test u2/test mid/test e3".
+test w3 with "test u1/test mid/test e3".
 
 Psyops Yo Tests ends here.
 
