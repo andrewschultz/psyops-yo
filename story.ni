@@ -10,6 +10,10 @@ include Old School Verb Total Carnage by Andrew Schultz.
 
 include Psyops Yo Tests by Andrew Schultz.
 
+release along with cover art.
+
+release along with the "Parchment" interpreter.
+
 the description of the player is "Not dazzling, but frankly, you're relieved not to be wearing a tutu or muumuu.".
 
 a doubler is a kind of thing. a doubler can be doubled. a doubler is usually not doubled. a doubler has text called xtra-text.
