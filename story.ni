@@ -262,7 +262,21 @@ rule for printing a parser error when the latest parser error is the i beg your 
 	say "'Be-dumbed?' a cruel voice mocks.";
 
 rule for printing a parser error when the latest parser error is the not a verb i recognise error:
-	say "[this-game] has a very simplified parser. You just need a magic word to figure what to do with items that are lying around[if score is 3] or, right now, the voice saying 'Cad.' [else]. [end if]There's a way to change anything in your way. Oh, and walk around. Some other commands are in here as a joke."
+	say "Nothing magical happens. If you're trying a more generic command, type [b]V[r] or [b]VERBS[r] to see them.";
+
+chapter verbsing
+
+verbsing is an action out of world.
+
+understand the command "verbs" as something new.
+understand the command "v" as something new.
+
+understand "verbs" as verbsing.
+understand "v" as verbsing.
+
+carry out verbsing:
+	say "[this-game] has a very simplified parser. You can go in the standard directions, including diagonals. [b]TALK[r]ing is also an option, e.g. [b]T NPC[r], or [b]TALK NPC[r] or [b]TALK TO NPC[r].[paragraph break]You will just need to figure out magic words to figure what to do with items that are lying around[if score is 3] or, right now, the voice saying 'Cad.' [else].[paragraph break]Some other commands are implemented as a joke.";
+	the rule succeeds;
 
 procedural rule: ignore the print final score rule.
 
@@ -311,7 +325,7 @@ understand "about" as abouting.
 understand "credits" as abouting.
 
 carry out abouting:
-	say "This was originally conceived as a 2020 EctoComp entry, but life got in the way. As it was, I had bigger plans, but they were too much and took away from the focus. They will go in another game.[paragraph break]While there was no time for outside testing, I'd like to thank Olaf Nowacki for moral support. He has an entry in the Petite Mort too! Oh, and the IFComp 2021 authors['] subforum. Several of them entered something, too![paragraph break]I would also like to thank JJ Guest for creating EctoComp, Duncan Bowsman for stepping in and Ruber Eaglenest for running it currently, and itch.io for hosting EctoComp and other comps that help me just remember to play others['] stuff.";
+	say "This was originally conceived as a 2020 EctoComp entry, but life got in the way. As it was, I had bigger plans, but they were too much and took away from the focus. They will go in another game.[paragraph break]While there was no time for outside testing, I'd like to thank Olaf Nowacki for moral support. He has an entry in the Petite Mort too! Oh, and the IFComp 2021 authors['] subforum. Several of them entered something, too![paragraph break]I would also like to thank JJ Guest for creating EctoComp, Duncan Bowsman for stepping in and Ruber Eaglenest for running it currently, and itch.io for hosting EctoComp and other comps that help me just remember to play others['] stuff.[paragraph break]Attributions for dirt texture in cover art: CC BY-SA 3.0 -- Heath Rezabek -- Vessel CC -- http://vessel.cc";
 	the rule succeeds;
 
 chapter xyzzying
