@@ -99,8 +99,9 @@ Ingoing O is a region.
 
 talking is an action applying to one thing.
 
-understand "t [something]" and "talk [something]" as talking.
+understand "t [something]" and "talk [something]" and "talk to [something]" as talking.
 understand "t" and "talk" as talking.
+understand "t" and "talk" and "talk to" as talking.
 
 check talking a person: say "[talk-text of noun][line break]" instead;
 
@@ -177,7 +178,7 @@ check going down in Dwell'd Well:
 		say "'Ingoing, O!' you shout as you explore further down...";
 		wfak;
 		say "...and you wind up in Saves Ave. It is a nice enough place to live. People seem to appreciate you. Things are okay, for about a week. Then... then, you realize you are just a block over from Raver Ave. It's not so bad at first, but the raves get bigger and bigger as time goes on. Everyone greets the host with a 'Shucks, Huck,' though you're never in a good enough mood to. Not that it's the worst place to live, but you sense you could have done better.";
-		end the story;
+		end the story finally saying "A 'YAY'";
 		the rule succeeds;
 	if the score is 0, say "Nothing there, yet." instead;
 
@@ -233,6 +234,7 @@ to point-check:
 		change southeast exit of Dwell'd Well to Ingrowing Row;
 	if the score is 3:
 		say "'Oo! Noon!' a voice cries. But then a louder one booms 'I ... DERIDER!' The un-suns become less dark, and the Ingulfing Gulf wanes and retreats.[paragraph break]And yet you still feel you haven't done enough, or you've gotten lucky. You feel like such a ... well, CAD. Yes. No other word will do, and probably only one word will fix how you feel.";
+		move cad to well;
 	process the notify score changes rule;
 
 book point verbs
@@ -282,6 +284,8 @@ procedural rule: ignore the print final score rule.
 
 volume meta
 
+book get rid of items
+
 to moot (th - a thing): move th to Mo Demode
 
 definition: a thing (called th) is moot:
@@ -289,6 +293,16 @@ definition: a thing (called th) is moot:
 	no;
 
 Mo Demode is a room.
+
+book post-completion
+
+Rule for amusing a victorious player:
+	say "Here is a list of things you can try:[line break]";
+	say "SING, ATTACK or WAIT.";
+	say "LISTEN is slightly different in the Church than other places.";
+	say "There are also responses for naughty words like BOTHER.";
+	say "WAIT/Z and empty commands and UNDO also give text.";
+	say "Oh, of course, XYZZY, too.";
 
 volume verbs
 
