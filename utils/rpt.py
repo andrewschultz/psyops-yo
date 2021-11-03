@@ -1,3 +1,8 @@
+# rpt.py
+# find repeater-double-word candidates
+#
+#
+
 import sys
 import os
 from collections import defaultdict
@@ -28,15 +33,31 @@ def find_overlaps(my_word):
         print(my_word, y, my_word + y)
 
 def read_stuff_in(file_name):
+    global my_words
     with open(file_name) as file:
         for (line_count, line) in enumerate (file, 1):
             ll = line.lower().strip()
             if ll not in my_words:
                 my_words[ll] = os.path.basename(file_name)
 
-file_list = [ "c:/writing/dict/brit-1word.txt" ]
-#file_list = [ "c:/writing/dict/brit-1word.txt", "c:/writing/dict/firsts.txt", "c:/writing/dict/lasts.txt" ]
-# first we read in everything
+def sweep_for_doubles(my_ary):
+    global my_words
+    my_words.clear()
+    for m in my_ary:
+        print("Reading in", m)
+        read_stuff_in(m)
+    count = 0
+    my_word_ary = sorted(my_words)
+    my_word_ary = sorted(my_word_ary, key = lambda x:len(x))
+    for x in my_word_ary:
+        l2 = x[0:2]
+        for q in range(lowest_word, 1 + len(x) // 2):
+            if x[:q] != x[-q:]: continue
+            if x[q:-q] in my_words:
+                if q == 1 and x[0] == 's' and '1word' in my_ary[0]:
+                    continue
+                count += 1
+                print(q, x, '+', x[q:-q], '=', x[:-q] * 2, count, my_words[x], my_words[x[q:-q]])
 
 try:
     lowest_word = int(sys.argv[1])
@@ -44,17 +65,8 @@ try:
 except:
     print("You can use a number as an argument for the shortest word.")
 
-for x in file_list:
-    read_stuff_in(x)
+sweep_for_doubles([ "c:/writing/dict/brit-1word.txt" ])
+sweep_for_doubles([ "c:/writing/dict/firsts.txt", "c:/writing/dict/lasts.txt" ])
 
 # then we check how it is different
 
-count = 0
-
-for x in my_words:
-    l2 = x[0:2]
-    for q in range(lowest_word, 1 + len(x) // 2):
-        if x[:q] != x[-q:]: continue
-        if x[q:-q] in my_words:
-            count += 1
-            print(q, x, '+', x[q:-q], '=', x[:-q] * 2, count, my_words[x], my_words[x[q:-q]])
