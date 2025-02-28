@@ -226,6 +226,9 @@ this is the guess-cad rule:
 	say "You hear lightning. A hole opens beneath the well. You feel momentarily silly abracadabra isn't a real-real word, but you could probably beat yourself up until Black Friday over whether or not you had enough style points, here. A hole opens up below! It's in the shape of a [b]D[r], which suggests you can just go (D) for down.[paragraph break]And yet ... perhaps you can get style points ... for that, or the mysterious Apple IIe which appeared in the hole.";
 	move okeydokey to Dwell'd Well;
 	move Apple IIe to Dwell'd Well;
+	now player has ur aura;
+
+the ur aura is a thing. printed name is "ur-aura". description is "It's sort of all about you. It makes you feel empowered."
 
 chapter okeydokey
 
