@@ -310,12 +310,13 @@ Mo Demode is a room.
 book post-completion
 
 Rule for amusing a victorious player:
-	say "Here is a list of things you can try:[line break]";
-	say "SING, SMELL, ATTACK or WAIT.";
-	say "LISTEN is slightly different in the Church than other places.";
-	say "There are also responses for naughty words like BOTHER.";
-	say "WAIT/Z and empty commands and UNDO also give text.";
-	say "Oh, of course, XYZZY, too.";
+	say "Here is a list of things you can try. I didn't keep track of them, so maybe you already did.[paragraph break]";
+	say "[b]YES[r], [b]NO[r], [b]SING[r], [b]ATTACK[r] or [b]WAIT[r]/[b]Z[r] give a fixed response.";
+	say "[b]SMELL[r] is slightly different near the end, with the Apple nearby.";
+	say "[b]LISTEN[r] is slightly different in the Church than other places.";
+	say "There are also responses for naughty words like [b]BOTHER[r].";
+	say "Empty commands and [b]UNDO[r] also give text.";
+	say "Oh, of course, [b]XYZZY[r], too.";
 
 volume standard rejectable verbs
 
