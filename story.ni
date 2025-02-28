@@ -105,6 +105,13 @@ instead of doing something with a backdrop:
 		try examining noun instead;
 	continue the action;
 
+the scowls cowl is a thing. the player wears the scowls cowl. description of scowls cowl is "It makes you feel down, and you can't pull it off. [if score is 0]Maybe helping other people will cheer you up[else if score is 1]It feels less oppressive now you've helped yourself a bit[else]You barely feel it now, but you can't throw it off just yet[end if]. "
+
+after examining scowls cowl for the first time:
+	say "You imagine a faux-cheery voice telling you to turn that frown upside-down! You're not wearing a tutu!";
+
+check taking off scowls cowl: say "It's stuck on you. Perhaps figuring what to do will be more effective to turn that frown upside down." instead;
+
 volume map basics
 
 check going nowhere: say "You try to, but you realize you might step into ... the INGULFING GULF. You can, however, go [list of viable directions]." instead;
@@ -334,6 +341,8 @@ Rule for amusing a victorious player:
 
 volume standard rejectable verbs
 
+chapter attacking
+
 the block attacking rule is not listed in any rulebook.
 
 check attacking: say "Ai! Maim! (Violence is not the keyword.)" instead;
@@ -346,6 +355,10 @@ understand "hit" as hitting.
 hitting is an action applying to one thing.
 
 check hitting: say "You think, pejoratively, of people who really were pretty awful. But you don't need violent fantasies and name-calling right now." instead;
+
+chapter dropping
+
+check dropping: say "You never need to drop anything in [this-game]. Items no longer useful should vanish." instead;
 
 chapter no/yes
 
