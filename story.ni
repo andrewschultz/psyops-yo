@@ -81,7 +81,7 @@ when play begins:
 	wfak;
 	say "You should have known the ghost was not going to help you save a LOT of dollars instead, but you couldn't resist. Costco St. took a dark turn, and you wound up somewhere much darker.";
 	wfak;
-	say "The ghost pointed to the dark blobs in the sky. 'Un-Suns!' Then to the distance, where the sound spoke for itself. A yowly owl! Wan swans! 'It sits!' cried the ghost, un-grammatically. You ask for more help, but the ghost is already fading away with an 'I.e. ... DIED!'";
+	say "The ghost points to the dark blobs in the sky. 'Lo! Blob?!' you say. 'Un-Suns!' it replies. Then to the distance, where sounds speak for themselves. A yowly owl! Wan swans! 'It sits!' cried the ghost, un-grammatically. You ask for more help, but the ghost is already fading away with an 'I.e. ... DIED!'";
 	move un suns backdrop to all rooms in Top Stops;
 	now the right hand status line is "[score]/[maximum score]";
 
@@ -187,7 +187,7 @@ check going down in Dwell'd Well:
 			say "Hey, wait. [b]OKEYDOKEY[r] would work now. You should say that, instead." instead;
 		say "'Ingoing, O!' you shout as you explore further down...";
 		wfak;
-		say "...and you wind up in Saves Ave. It is a nice enough place to live. People seem to appreciate you. Things are okay, for about a week. Then... then, you realize you are just a block over from Raver Ave. It's not so bad at first, but the raves get bigger and bigger as time goes on. Everyone greets the host with a 'Shucks, Huck,' though you're never in a good enough mood to. Not that it's the worst place to live, but you sense you could have done better.";
+		say "[line break]...and you wind up in Saves Ave. It is a nice enough place to live. People seem to appreciate you. Things are okay, for about a week. Then... then, you realize you are just a block over from Raver Ave. It's not so bad at first, but the raves get bigger and bigger as time goes on. Everyone greets the host with a 'Shucks, Huck,' though you're never in a good enough mood to. Not that it's the worst place to live, but you sense you could have done better.";
 		end the story finally saying "A 'YAY'";
 		the rule succeeds;
 	if the score is 0, say "Nothing there, yet." instead;
@@ -213,11 +213,11 @@ ok is a truth state that varies.
 
 this is the guess-okeydokey rule:
 	if apple iie is not moot:
-		say "Yes! You're excited! But you run down too fast. The last thing you see is a princess, whose martial-arts move leaves you doubled over, fatally injured.[died]Okay, not really. But if you want the good ending, I'm gonna force you to name that ancient Apple IIe game. It's a classic.";
+		say "Yes! You're excited! But you run down too fast. The last thing you see is a princess, whose martial-arts move leaves you doubled over, fatally injured.[run paragraph on][died]Okay, not really. But if you want the good ending, I'm gonna force you to name that ancient Apple IIe game. It's a classic.";
 		now ok is true;
 		the rule fails;
-	say "Yes, it's a bit reflexive and self-referential. But it's worth a try. As you climb down, you wind up finding a secret passage that leads ... somewhere new. You feel smart immediately when you arrive. You feel you will discover many new things. That's only natural, considering you've just made it to...[paragraph break][b]EINSTEIN ST.[r]";
-	end the story finally saying "I DID! I DID!";
+	say "Yes, it's a bit reflexive and self-referential. But it's worth a try. As you climb down, you wind up finding a secret passage that leads ... somewhere new. You feel smart immediately when you arrive, unable to suppress an 'I DID! I DID!' You feel you will discover many new things beyond that nice restaurant you see called L'Salsa.[paragraph break]That's only natural, considering you've just made it to...[paragraph break][b]EINSTEIN ST.[r][line break]You rightly feel like ...";
+	end the story finally saying "A MUCKAMUCK!";
 	process the shutdown rules;
 
 chapter Apple IIe
