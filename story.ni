@@ -134,7 +134,7 @@ check talking a person: say "[talk-text of noun][line break]" instead;
 
 check talking: say "You don't need to talk to anyone or anything, though people may give some silly response." instead;
 
-talk-text of the player is "You give yourself a chic 'Hi.'"
+talk-text of the player is "You give yourself a chic 'Hi' ... at 'orator.'"
 
 volume Top Stops
 
@@ -238,7 +238,7 @@ this is the guess-okeydokey rule:
 	wfak;
 	say "[b]EINSTEIN ST.[r]";
 	wfak;
-	say "Now, where to visit first? Perhaps that restaurant called L'Salsa, or the snack shop [i]Ho Choc[r]. In other establishments, hotshots eat couscous, or maybe mahi mahi, to ward off beriberi. Under a chiquichiqui and mingimingi and rewa-rewa.[paragraph break]You rightly feel like ...";
+	say "Now, where to visit first? Perhaps that restaurant called L'Salsa, or the snack shop [i]Ho Choc[r]. In other establishments, hotshots eat couscous, or maybe mahi mahi, or tout stouts to ward off beriberi. Under a chiquichiqui and mingimingi and rewa-rewa.[paragraph break]You rightly feel like ...";
 	end the story finally saying "A MUCKAMUCK!";
 	process the shutdown rules;
 
@@ -266,7 +266,7 @@ to point-check:
 		change southwest exit of Dwell'd Well to Strangest Range;
 		change southeast exit of Dwell'd Well to Ingrowing Row;
 	if the score is 3:
-		say "[line break]'Oo! Noon!' a voice cries. But then a louder one booms 'I ... DERIDER!' The un-suns become less dark, as pink spinks fly by them, and the Ingulfing Gulf wanes and retreats.[paragraph break]And yet you still feel you haven't done enough, or you've gotten lucky. You feel like such a ... well, CAD. Yes. No other word will do, and probably only one word will fix how you feel.";
+		say "[line break]'Oo! Noon!' a voice cries. But then a louder one booms 'I ... DERIDER!' The un-suns become less dark, as pink spinks fly by them, and the Ingulfing Gulf wanes and retreats.[paragraph break]The scowls cowl flies off you and blows away.[paragraph break]Yet with its absence you still feel you haven't done enough, or you've gotten lucky. You feel like such a ... well, CAD. Yes. No other word will do, and probably only one word will fix how you feel.";
 		move cad to well;
 	process the notify score changes rule;
 
@@ -296,7 +296,7 @@ report restoring the game: say "Hi! Rehire!";
 report undoing an action: say "Edited it!";
 
 rule for printing a parser error when the latest parser error is the i beg your pardon error:
-	say "'Be-dumbed?' a cruel voice mocks.";
+	say "'[one of]Um, be dumb[or]Be-dumbed[in random order]?' a cruel voice mocks.";
 
 rule for printing a parser error when the latest parser error is the not a verb i recognise error:
 	say "Nothing magical happens. If you're trying a more generic command, type [b]V[r] or [b]VERBS[r] to see them.";
