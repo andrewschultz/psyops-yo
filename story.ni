@@ -48,6 +48,14 @@ every turn when map region of location of player is Top Stops (this is the check
 			continue the action;
 	continue the action;
 
+first-loop is a truth state that varies.
+
+every turn when map region of location of player is Top Stops (this is the check first loop rule):
+	if first-loop is true, continue the action;
+	if number of unvisited rooms in Top Stops is 0:
+		now first-loop is true;
+		say "You've been around everywhere. Elapse, laps, you think to yourself.";
+
 definition: a person (called pe) is npcish:
 	if pe is the player, no;
 	yes;
