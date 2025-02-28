@@ -233,8 +233,9 @@ chapter point-check
 
 to point-check:
 	increment the score;
+	say "[line break][one of]Oh my. A raider-aide, for wherever you need to raid.[or]Another raider-aide![or]The final raider-aide, you assume.[stopping]";
 	if the score is 1:
-		say "A passage rumbles open below. It's [if number of visited rooms is 2]off to the side. Maybe you should visit the last place above ground before following it, though[else]in the middle of the three areas you've explored[end if].";
+		say "[line break]A passage rumbles open below. It's [if number of visited rooms is 2]off to the side. Maybe you should visit the last place above ground before following it, though[else]in the middle of the three areas you've explored[end if].";
 		change down exit of Ur Church to Dwell'd Well;
 		change south exit of Ur Church to Dwell'd Well;
 		change down exit of Strangest Range to Dwell'd Well;
@@ -243,7 +244,7 @@ to point-check:
 		change southwest exit of Dwell'd Well to Strangest Range;
 		change southeast exit of Dwell'd Well to Ingrowing Row;
 	if the score is 3:
-		say "'Oo! Noon!' a voice cries. But then a louder one booms 'I ... DERIDER!' The un-suns become less dark, and the Ingulfing Gulf wanes and retreats.[paragraph break]And yet you still feel you haven't done enough, or you've gotten lucky. You feel like such a ... well, CAD. Yes. No other word will do, and probably only one word will fix how you feel.";
+		say "[line break]'Oo! Noon!' a voice cries. But then a louder one booms 'I ... DERIDER!' The un-suns become less dark, as pink spinks fly by them, and the Ingulfing Gulf wanes and retreats.[paragraph break]And yet you still feel you haven't done enough, or you've gotten lucky. You feel like such a ... well, CAD. Yes. No other word will do, and probably only one word will fix how you feel.";
 		move cad to well;
 	process the notify score changes rule;
 
