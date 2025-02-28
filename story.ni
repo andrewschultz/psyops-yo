@@ -28,7 +28,7 @@ the maximum score is 6.
 
 before printing the name of a doubler (called dub): if dub is doubled, say "[xtra-text of dub] ".
 
-check taking a doubler: say "No, you don't see any reason to take [the noun] as-is. Too plain. Maybe you have a way to jazz it up." instead;
+check taking a doubler: say "You reach for [the noun], but you feel resistance. What is going on? Another look, and, well, it just seems too plain as-is. Maybe if you jazzed it up, it would be more worth taking, or feel more worth being taken." instead;
 
 a person has text called talk-text.
 
