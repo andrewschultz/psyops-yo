@@ -77,11 +77,15 @@ to say unsuns-gulf:
 volume when play begins
 
 when play begins:
-	say "What with your nice job at DecodeCo, you don't NEED to save money, but you do enjoy your nice end-of-month trip to the discount warehouse without any hiccups. Was that too much to ask? Apparently it was. Costco St. seemed quiet enough, until that horribly ghostly voice 'Why save a few dollars ... when you could save ... the TOP STOPS?'";
+	say "You finish reading the complete adventures of Tintin again. And you reflect on your life.";
+	wfak;
+	say "What with your nice job at DecodeCo, you don't NEED to save money, but you do enjoy your nice end-of-month trip to the discount warehouse without any hiccups. ";
+	wfak;
+	say "Was that too much to ask? Apparently it was, this time. Costco St. and the familiar trip by Logan Slogans seemed quiet enough, until that horribly ghostly voice 'Why save a few dollars ... when you could save ... the TOP STOPS?'";
 	wfak;
 	say "You should have known the ghost was not going to help you save a LOT of dollars instead, but you couldn't resist. Costco St. took a dark turn, and you wound up somewhere much darker.";
 	wfak;
-	say "The ghost points to the dark blobs in the sky. 'Lo! Blob?!' you say. 'Un-Suns!' it replies. Then to the distance, where sounds speak for themselves. A yowly owl! Wan swans! 'It sits!' cried the ghost, un-grammatically. You ask for more help, but the ghost is already fading away with an 'I.e. ... DIED!'";
+	say "The ghost points to the dark blobs in the sky. 'Lo! Blob?!' you say. 'Un-Suns!' it replies. Then to the distance, where sounds speak for themselves. A yowly owl! Wan swans! 'It sits!' cried the ghost, un-grammatically. You ask for more help, but the ghost taunts you with 'Un-begun? Beg!' Before you have a chance, it fades away with an 'I.e. ... DIED!'";
 	move un suns backdrop to all rooms in Top Stops;
 	now the right hand status line is "[score]/[maximum score]";
 
@@ -216,7 +220,11 @@ this is the guess-okeydokey rule:
 		say "Yes! You're excited! But you run down too fast. The last thing you see is a princess, whose martial-arts move leaves you doubled over, fatally injured.[run paragraph on][died]Okay, not really. But if you want the good ending, I'm gonna force you to name that ancient Apple IIe game. It's a classic.";
 		now ok is true;
 		the rule fails;
-	say "Yes, it's a bit reflexive and self-referential. But it's worth a try. As you climb down, you wind up finding a secret passage that leads ... somewhere new. You feel smart immediately when you arrive, unable to suppress an 'I DID! I DID!' You feel you will discover many new things beyond that nice restaurant you see called L'Salsa.[paragraph break]That's only natural, considering you've just made it to...[paragraph break][b]EINSTEIN ST.[r][line break]You rightly feel like ...";
+	say "Yes, it's a bit reflexive and self-referential. But it's worth a try. And, equaly hokey, the well swells![paragraph break].As you climb down, you wind up finding a secret passage that leads ... somewhere new. You feel smart immediately when you arrive, unable to suppress an 'I DID! I DID!'and needing no estates tat with a legible gib. Why, you don't even need to visit the Smiles Mile you see![paragraph break]Of course it's easy to feel all this, walking on ...";
+	wfak;
+	say "[b]EINSTEIN ST.[r]";
+	wfak;
+	say "Now, where to visit first? Perhaps that restaurant called L'Salsa, or the snack shop [i]Ho Choc[r]. In other establishments, hotshots eat couscous, or maybe mahi mahi, to ward off beriberi. Under a chiquichiqui and mingimingi and rewa-rewa.[paragraph break]You rightly feel like ...";
 	end the story finally saying "A MUCKAMUCK!";
 	process the shutdown rules;
 
