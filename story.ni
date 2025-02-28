@@ -12,6 +12,12 @@ Include Bold Final Question Rows by Andrew Schultz.
 
 include Psyops Yo Tests by Andrew Schultz.
 
+the story headline is "A slogs-log"
+
+the story genre is "Humor/wordplay"
+
+the release number is 2.
+
 release along with cover art.
 
 release along with the "Parchment" interpreter.
