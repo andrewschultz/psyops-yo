@@ -173,6 +173,7 @@ Ur Church is northeast of Strangest Range. It is north of Strangest Range. It is
 Ur Church is north of Ingrowing Row. It is northwest of Ingrowing Row.
 
 check going in Ur Church:
+	if noun is south and score is 0, say "There are passages southwest and southeast, but there is resistance south. For now." instead;
 	if noun is east, try going southeast instead;
 	if noun is west, try going southwest instead;
 
