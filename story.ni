@@ -8,6 +8,8 @@ include Undo Output Control by Erik Temple.
 
 include Old School Verb Total Carnage by Andrew Schultz.
 
+Include Bold Final Question Rows by Andrew Schultz.
+
 include Psyops Yo Tests by Andrew Schultz.
 
 release along with cover art.
@@ -257,6 +259,8 @@ rule for printing a parser error (this is the point score check rule):
 	continue the action;
 
 volume parser errors / meta
+
+report restoring the game: say "Hi! Rehire!";
 
 report undoing an action: say "Edited it!";
 
