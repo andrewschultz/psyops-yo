@@ -417,13 +417,39 @@ chapter abouting
 abouting is an action out of world.
 
 understand the command "about" as something new.
-understand the command "credits" as something new.
 
 understand "about" as abouting.
-understand "credits" as abouting.
 
 carry out abouting:
-	say "This was originally conceived as a 2020 EctoComp entry, but life got in the way. As it was, I had bigger plans, but they were too much and took away from the focus. They will go in another game.[paragraph break]While there was no time for outside testing, I'd like to thank Olaf Nowacki for moral support. He has an entry in the Petite Mort too! Oh, and the IFComp 2021 authors['] subforum. Several of them entered something, too![paragraph break]I would also like to thank JJ Guest for creating EctoComp, Duncan Bowsman for stepping in and Ruber Eaglenest for running it currently, and itch.io for hosting EctoComp and other comps that help me just remember to play others['] stuff.[paragraph break]Attributions for dirt texture in cover art: CC BY-SA 3.0 -- Heath Rezabek -- Vessel CC -- http://vessel.cc";
+	say "[this-game] was an entry to the EctoComp 2021 Petite Mort. originally conceived as a 2020 EctoComp entry, but life got in the way. As it was, I had bigger plans, but they were too much and took away from the focus. They will go in another game.[paragraph break][b]VERSIONS[r] shows version information. [b]CREDITS[r] shows credits.";
+	if score is 0:
+		say "[line break][this-game] requires word-guessing to win. However, I hope to make the mechanic obvious if you examine or walk around enough. There's a certain pattern to it all.";
+	the rule succeeds;
+
+chapter creditsing
+
+creditsing is an action out of world.
+
+understand the command "credits" as something new.
+
+understand "credits" as creditsing.
+
+carry out creditsing:
+	say "While there was no time for outside testing, I'd like to thank Olaf Nowacki for moral support. He has an entry in the Petite Mort too! Oh, and the IFComp 2021 authors['] subforum. Several of them entered something, too![paragraph break]I would also like to thank JJ Guest for creating EctoComp, Duncan Bowsman for stepping in and Ruber Eaglenest for running it currently, and itch.io for hosting EctoComp and other comps that help me just remember to play others['] stuff.[paragraph break]Attributions for dirt texture in cover art: CC BY-SA 3.0 -- Heath Rezabek -- Vessel CC -- http://vessel.cc[line break]";
+	the rule succeeds;
+
+chapter versionsing
+
+versionsing is an action out of world.
+
+understand the command "versions" as something new.
+
+understand "versions" as versionsing.
+
+carry out versionsing:
+	say "Version 1 was released October 30, 2021 to Itch.io. for the yearly EctoComp competition, Petite Mort division.";
+	say "Version 2 was released February 28, 2025 to Itch.io. with no new technical features, but with minor bug fixes and also 'appropriate' text that trickled in over the years.";
+	say "[line break]There will be a few more with cutesy random text. Stay tuned!";
 	the rule succeeds;
 
 chapter xyzzying
