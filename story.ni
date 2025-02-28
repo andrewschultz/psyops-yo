@@ -311,35 +311,61 @@ book post-completion
 
 Rule for amusing a victorious player:
 	say "Here is a list of things you can try:[line break]";
-	say "SING, ATTACK or WAIT.";
+	say "SING, SMELL, ATTACK or WAIT.";
 	say "LISTEN is slightly different in the Church than other places.";
 	say "There are also responses for naughty words like BOTHER.";
 	say "WAIT/Z and empty commands and UNDO also give text.";
 	say "Oh, of course, XYZZY, too.";
 
-volume verbs
+volume standard rejectable verbs
 
 the block attacking rule is not listed in any rulebook.
-the block singing rule is not listed in any rulebook.
-the block listening rule is not listed in any rulebook.
 
 check attacking: say "Ai! Maim! (Violence is not the keyword.)" instead;
 
-check singing: say "A tune you've never heard before comes in your head. You know it instinctively to be [i]On, Sons[r]." instead;
+chapter no/yes
+
+the block saying yes rule is not listed in any rulebook.
+the block saying no rule is not listed in any rulebook.
+
+check saying no: say "Discord is ... (cor!)" instead;
+
+check saying yes: say "A yay! A yay!" instead;
+
+chapter senses
+
+the block listening rule is not listed in any rulebook.
+the block smelling rule is not listed in any rulebook.
 
 check listening:
 	if player is in Ur Church, say "There's a gong on somewhere." instead;
 	if player is in Dwell'd Well and score is 3, say "'Cad! Cad!'" instead;
 	say "Random taunts: '[one of]O tot[or]Er, perp[or]U pop[in random order]!'" instead;
 
+check smelling:
+	if player is in well and apple is in well, say "ROM Aroma." instead;
+	say "Ethene, then..." instead;
+
+chapter singing
+
+the block singing rule is not listed in any rulebook.
+
+check singing: say "A tune you've never heard before comes in your head. You know it instinctively to be [i]On, Sons[r]." instead;
+
+chapter swearing
+
+the block swearing mildly rule is not listed in any rulebook.
+the block swearing obscenely rule is not listed in any rulebook.
+
 check swearing obscenely: say "[one of]Yucky! Uck[or]Sheesh! Ee[or]Shush, U[in random order]! [one of](There's two more. Because I care.)[or][line break][stopping]" instead;
 
 check swearing mildly: try swearing obscenely instead;
 
+chapter waiting
+
 check waiting: say "Meantime? ... ANTI!" instead;
 
-the block swearing mildly rule is not listed in any rulebook.
-the block swearing obscenely rule is not listed in any rulebook.
+volume meta verbs
 
 chapter abouting
 
