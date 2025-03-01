@@ -214,7 +214,7 @@ book Dwell'd Well
 
 to say or-well: if score > 0, say ". There's also a way down";
 
-Dwell'd Well is a room. "[well-up].[paragraph break][if score >= 4]The way down is a huge hole in the shape of a D. You could probably just go down and get on with things, but maybe it's not all that simple[else if score is 3]A voice also whispers ... 'Cad!'[paragraph break]And it makes you feel guilty and silly. You thought did well to expand some things by two letters, but it feels so basic now. Perhaps three or even four is the way to go here, for a bit of magic to pass through again[else]It's almost too peaceful here. As if something is not quite ready to happen yet. It's also very plain. You feel a pull from below but see no thatch't hatch to remove or older solders to pull at[end if].[paragraph break]The bookshelf, aka [i]Elite Lit[r], also stands here to distract you, if you need that."
+Dwell'd Well is a room. "[well-up].[paragraph break][if score >= 4]The way down is a huge hole in the shape of a D. You could probably just go down and get on with things, but maybe it's not all that simple[else if score is 3]A voice also whispers ... 'Cad!'[paragraph break]And it makes you feel guilty and silly. You thought did well to expand some things by two letters, but it feels so basic now. Perhaps three or even four is the way to go here, for a bit of magic to pass through again[else]It's almost too peaceful here. As if something is not quite ready to happen yet. It's also very plain. You feel a pull from below but see no thatch't hatch to remove or older solders to pull at[end if][if elite lit is in well].[paragraph break]The bookshelf, aka [i]Elite Lit[r], also stands here to distract you, if you need that[end if]."
 
 to say well-up: say "There are three ways to go back up, here: north, southwest, and southeast"
 
@@ -240,7 +240,15 @@ chapter cad
 the cad is a privately-named doubler. it is scenery. xtra-text is "abracadabra". guess-rule is guess-cad rule.
 
 this is the guess-cad rule:
-	say "You hear lightning. A hole opens beneath the well. You feel momentarily silly abracadabra isn't a real-real word, but you could probably beat yourself up until Black Friday over whether or not you had enough style points, here. You feel different, as if encompassed by something supernatural.[paragraph break]A hole opens up below! It's in the shape of a [b]D[r], which suggests you can just go (D) for down.[paragraph break]And yet ... perhaps you can get style points ... for that, or the mysterious Apple IIe which appeared in the hole. Funny, you'd have expected Le Coleco.[paragraph break]You can also, if you like, distract yourself with a bookshelf labeled (of course) [i]Elite Lit[r].";
+	say "You hear lightning. You wonder briefly if it is about to strike you down because abracadabra isn't a real-real word.";
+	wfak;
+	say "But you remain standing. Eh, you could probably beat yourself up until Black Friday over whether or not you had enough style points, here. You feel different, as if encompassed by something supernatural.";
+	wfak;
+	say "Dirt is cleared away to reveal a rod and lid beneath the well. They look plain, but you know the rod must be an erode-rod. As for the lid?";
+	wfak;
+	say "You incant 'ELIDE!'";
+	wfak;
+	say "A hole opens up below! It's in the shape of a [b]D[r], which suggests you can just go (D) for down.[paragraph break]And yet ... perhaps you can get style points ... for that, or the mysterious Apple IIe which appeared in the hole. Funny, you'd have expected Le Coleco.[paragraph break]You can also, if you like, distract yourself with a bookshelf labeled (of course) [i]Elite Lit[r].";
 	move okeydokey to Dwell'd Well;
 	move Apple IIe to Dwell'd Well;
 	move Elite Lit to Dwell'd Well;
