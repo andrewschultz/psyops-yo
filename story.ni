@@ -233,9 +233,10 @@ chapter cad
 the cad is a privately-named doubler. it is scenery. xtra-text is "abracadabra". guess-rule is guess-cad rule.
 
 this is the guess-cad rule:
-	say "You hear lightning. A hole opens beneath the well. You feel momentarily silly abracadabra isn't a real-real word, but you could probably beat yourself up until Black Friday over whether or not you had enough style points, here. You feel different, as if encompassed by something supernatural.[paragraph break]A hole opens up below! It's in the shape of a [b]D[r], which suggests you can just go (D) for down.[paragraph break]And yet ... perhaps you can get style points ... for that, or the mysterious Apple IIe which appeared in the hole. Funny, you'd have expected Le Coleco.";
+	say "You hear lightning. A hole opens beneath the well. You feel momentarily silly abracadabra isn't a real-real word, but you could probably beat yourself up until Black Friday over whether or not you had enough style points, here. You feel different, as if encompassed by something supernatural.[paragraph break]A hole opens up below! It's in the shape of a [b]D[r], which suggests you can just go (D) for down.[paragraph break]And yet ... perhaps you can get style points ... for that, or the mysterious Apple IIe which appeared in the hole. Funny, you'd have expected Le Coleco.[paragraph break]You can also, if you like, distract yourself with a bookshelf labeled (of course) [i]Elite Lit[r].";
 	move okeydokey to Dwell'd Well;
 	move Apple IIe to Dwell'd Well;
+	move Elite Lit to Dwell'd Well;
 	now player has ur aura;
 
 the ur aura is a thing. printed name is "ur-aura". description is "It's sort of all about you. It makes you feel empowered."
@@ -258,6 +259,27 @@ this is the guess-okeydokey rule:
 	say "Now, where to visit first? Perhaps that restaurant called L'Salsa, or the snack shop [i]Ho Choc[r]. In other establishments, hotshots eat couscous, or maybe mahi mahi, or tout stouts to ward off beriberi. Under a chiquichiqui and mingimingi and rewa-rewa.[paragraph break]You rightly feel like ...";
 	end the story finally saying "A MUCKAMUCK!";
 	process the shutdown rules;
+
+chapter Elite Lit
+
+when play begins:
+	sort table of elite lit books in random order;
+
+Elite Lit is a proper-named thing. description is "You note one of the books is [one-book].".
+
+elite-row is a number that varies.
+
+to say one-book:
+	increment elite-row;
+	choose row elite-row in table of elite lit books;
+	say "[i][bookname entry][r]";
+	if elite-row is number of rows in table of Elite Lit books:
+		say ". You've paged through everything here[one of][or] once again[stopping]";
+		now elite-row is 0;
+
+after examining Elite Lit for the first time:
+	say "[i][bracket][b]NOTE[r][i]: there are [number of rows in table of Elite Lit books] total books, and if you don't want to examine continually, you can read the game's source code on GitHub or in the deliverable.  The list is in Random Text.i7x.[close bracket][r][line break]";
+	continue the action;
 
 chapter Apple IIe
 
