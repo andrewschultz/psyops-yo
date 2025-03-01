@@ -96,6 +96,7 @@ when play begins:
 	say "The ghost points to the dark blobs in the sky. 'Lo! Blob?!' you say. 'Un-Suns!' it replies. Then to the distance, where sounds speak for themselves. A yowly owl! Wan swans! 'It sits!' cried the ghost, un-grammatically. You ask for more help, but the ghost taunts you with 'Un-begun? Beg!' Before you have a chance, it fades away with an 'I.e. ... DIED!'";
 	move un suns backdrop to all rooms in Top Stops;
 	move ingulfing gulf backdrop to all rooms in Top Stops;
+	move ingraining rain backdrop to all rooms in Top Stops;
 	now the right hand status line is "[score]/[maximum score]";
 
 volume backdrops
@@ -114,9 +115,13 @@ the un suns are a backdrop. printed name is "un-suns". "[if score >= 3]They're m
 
 chapter ingulfing gulf
 
-the ingulfing gulf is a backdrop. "[if score >= 3]It's receded quite a bit, but you don't want to fight through it. You sense your destiny is down[else]You really don't want to even touch it[end if]."
+the ingulfing gulf is a backdrop. "Ingraining rain slowly keeps filling it up, limiting your travel options. [if score >= 3]It's receded quite a bit, but you don't want to fight through it. You sense your destiny is down[else]You really don't want to even touch it[end if]."
 
 to say igulf: say "The Ingulfing Gulf surrounds you every way except [list of viable directions]"
+
+section ingraining rain
+
+the ingraining rain is a backdrop. "Well, it isn't terribly gaudy looking rain, but it's enough to prevent you from straying."
 
 volume the player
 
