@@ -1,5 +1,14 @@
 Psyops Yo version change log
 
+Version 3 (March *, 2025)
+
+--ELITE LIT now appears with random book names when you are near the end, with a note to look at source
+--ingulfing gulf was meant to be aboveground backdrop but never placed in-game
+--ingraining rain new aboveground backdrop
+--SCORE is now game-specific
+--INVENTORY is now game-specific
+--fixed VERSION to map to VERSIONS
+
 Version 2 (February 28, 2025)
 
 --many game text fixes
@@ -17,4 +26,4 @@ Version 1 (October 30, 2025)
 
 Changes to come:
 
---random text in the final area
+--more random text in the final area

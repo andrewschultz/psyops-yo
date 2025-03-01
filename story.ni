@@ -14,7 +14,7 @@ the story headline is "A slogs-log"
 
 the story genre is "Humor/wordplay"
 
-the release number is 2.
+the release number is 3.
 
 release along with cover art.
 
@@ -548,9 +548,10 @@ understand "version" as versioning.
 understand "versions" as versioning.
 
 carry out versioning:
-	say "Version 1 was released October 30, 2021 to Itch.io. for the yearly EctoComp competition, Petite Mort division.";
-	say "Version 2 was released February 28, 2025 to Itch.io. with no new technical features, but with minor bug fixes and also 'appropriate' text that trickled in over the years.";
-	say "[line break]There will be a few more with cutesy random text. Stay tuned!";
+	say "Version 1 was released October 30, 2021 to Itch.io for the yearly EctoComp competition, Petite Mort division.";
+	say "Version 2 was released February 28, 2025 to Itch.io with no new technical features, but with minor bug fixes and also 'appropriate' text that trickled in over the years.";
+	say "Version 3 was released March 1, 2025 to Itch.io with the Elite Lit/bookshelf in the final area containing random books.";
+	say "[line break]One more update with cutesy random text is planned, mostly names. Beyond that, nothing except for bug fixes.";
 	the rule succeeds;
 
 report versioning: say "To see extensions used in [this-game] and Inform's internal release data, type [b]EXT[r] or [b]EXTS[r].";
