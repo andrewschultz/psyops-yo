@@ -483,17 +483,41 @@ carry out creditsing:
 
 chapter versionsing
 
-versionsing is an action out of world.
+chapter renaming what versioning does
 
+section exting
+
+exting is an action out of world.
+
+understand the command "ext" as something new.
+understand the command "exts" as something new.
+
+understand "ext" as exting.
+understand "exts" as exting.
+
+to showext: (- ShowExtensionVersions(); -)
+
+carry out exting:
+	showext;
+	the rule succeeds;
+
+section redefine version
+
+versioning is an action out of world.
+
+understand the command "version" as something new.
 understand the command "versions" as something new.
 
-understand "versions" as versionsing.
+understand "version" as versioning.
+understand "versions" as versioning.
 
-carry out versionsing:
+carry out versioning:
 	say "Version 1 was released October 30, 2021 to Itch.io. for the yearly EctoComp competition, Petite Mort division.";
 	say "Version 2 was released February 28, 2025 to Itch.io. with no new technical features, but with minor bug fixes and also 'appropriate' text that trickled in over the years.";
 	say "[line break]There will be a few more with cutesy random text. Stay tuned!";
 	the rule succeeds;
+
+report versioning: say "To see extensions used in [this-game] and Inform's internal release data, type [b]EXT[r] or [b]EXTS[r].";
 
 chapter xyzzying
 
