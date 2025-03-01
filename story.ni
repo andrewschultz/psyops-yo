@@ -102,9 +102,6 @@ when play begins:
 	move ingulfing gulf backdrop to all rooms in Top Stops;
 	now the right hand status line is "[score]/[maximum score]";
 
-when play begins:
-	sort table of elite lit books in random order;
-
 volume backdrops
 
 chapter general backdrops
@@ -282,19 +279,19 @@ this is the guess-okeydokey rule:
 
 chapter Elite Lit
 
-Elite Lit is a proper-named scenery. description is "You note one of the books is [one-book].".
+Elite Lit is a proper-named scenery. description is "You note [one of]one[or]another[stopping] book title: [one-book][conditional-period]".
+
+skip-period is a truth state that varies.
+
+to say conditional-period:
+	if skip-period is true:
+		now skip-period is false;
+	else:
+		say ".[no line break]";
+
+to say skp: now skip-period is true;
 
 check taking elite lit: say "Where you're going you won't need books. Or if you do, they'll be the same ones as here, but in better condition." instead;
-
-elite-row is a number that varies.
-
-to say one-book:
-	increment elite-row;
-	choose row elite-row in table of elite lit books;
-	say "[i][bookname entry][r]";
-	if elite-row is number of rows in table of Elite Lit books:
-		say ". You've paged through everything here[one of][or] once again[stopping]";
-		now elite-row is 0;
 
 after examining Elite Lit for the first time:
 	say "[i][bracket][b]NOTE[r][i]: there are [number of rows in table of Elite Lit books] total books, and if you don't want to examine continually, you can read the game's source code on GitHub or in the deliverable.  The list is in Random Text.i7x.[close bracket][r][line break]";

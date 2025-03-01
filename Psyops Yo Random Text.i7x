@@ -4,7 +4,22 @@ Version 1/250228 of Psyops Yo Random Text by Andrew Schultz begins here.
 
 [UTILS: punc.py py, talf.py py]
 
+volume beginning randomization
+
+when play begins:
+	sort table of elite lit books in random order;
+
 volume elite lit books
+
+elite-row is a number that varies.
+
+to say one-book:
+	increment elite-row;
+	choose row elite-row in table of elite lit books;
+	say "[i][bookname entry][r]";
+	if elite-row is number of rows in table of Elite Lit books:
+		say ". You've paged through everything here[one of][or] once again[stopping]";
+		now elite-row is 0;
 
 table of elite lit books
 bookname
@@ -14,7 +29,7 @@ bookname
 "Aorta, Ort"
 "Are Dared"
 "Are Rarer"
-"Asia? Si!" [puncok]
+"[skp]Asia? Si!" [puncok]
 "Ataxia Taxi"
 "C an['] Yancy" [capsok]
 "Crib-Escribes"
@@ -26,19 +41,20 @@ bookname
 "Euro Neuron"
 "Gaging Agin[']"
 "Gen-D Agenda"
-"Hinch, Inc." [puncok]
+"[skp]Hinch, Inc." [puncok]
 "Hock Shocks"
-"Humph, Ump!" [puncok]
+"[skp]Humph, Ump!" [puncok]
 "I Be Tibet"
 "I Go Rigor"
 "I, Onion"
-"Ick! O, Sickos!" [puncok]
+"[skp]Ick! O, Sickos!" [puncok]
 "ID, Aida"
 "IDE Rider"
 "Io's Kiosk"
-"Kink: IN?!" [puncok]
+"[skp]Kink: IN?!" [puncok]
+"M and Amanda"
 "Ma Tomato"
-"Magma, G!" [puncok]
+"[skp]Magma, G!" [puncok]
 "Man, Imani"
 "Mo['] Demode"
 "No Bonobo"
