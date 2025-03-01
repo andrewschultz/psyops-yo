@@ -22,8 +22,6 @@ release along with the "Parchment" interpreter.
 
 the maximum score is 6.
 
-the description of the player is "Not dazzling, but frankly, you're relieved not to be wearing a tutu or muumuu.".
-
 chapter game specific includes
 
 include Psyops Yo Random Text by Andrew Schultz.
@@ -51,8 +49,6 @@ definition: a direction (called d) is viable:
 	yes;
 
 volume main bit(s)
-
-to say igulf: say "The Ingulfing Gulf surrounds you every way except [list of viable directions]"
 
 every turn when map region of location of player is Top Stops (this is the check returned item every turn rule):
 	repeat with UT running through doublers enclosed by the player:
@@ -103,17 +99,35 @@ when play begins:
 	wfak;
 	say "The ghost points to the dark blobs in the sky. 'Lo! Blob?!' you say. 'Un-Suns!' it replies. Then to the distance, where sounds speak for themselves. A yowly owl! Wan swans! 'It sits!' cried the ghost, un-grammatically. You ask for more help, but the ghost taunts you with 'Un-begun? Beg!' Before you have a chance, it fades away with an 'I.e. ... DIED!'";
 	move un suns backdrop to all rooms in Top Stops;
+	move ingulfing gulf backdrop to all rooms in Top Stops;
 	now the right hand status line is "[score]/[maximum score]";
 
-the un suns are a backdrop. printed name is "un-suns". "[if score >= 3]They're much less gloomy now. You did what you could.[else]They're totally, like, dark and gloomy and stuff. Just the thought of them makes you think, 'O, wow!'[end if]"
+when play begins:
+	sort table of elite lit books in random order;
 
-the ingulfing gulf is a backdrop. "[if score >= 3]It's receded quite a bit, but you don't want to fight through it. You sense your destiny is down[else]You really don't want to even touch it[end if]."
+volume backdrops
+
+chapter general backdrops
 
 instead of doing something with a backdrop:
 	if current action is not examining:
 		say "Sadly, [the noun] leaves you so helpless you can't do much more than examine [if noun is plural-named]them[else]it[end if]. So you do.";
 		try examining noun instead;
 	continue the action;
+
+chapter un suns
+
+the un suns are a backdrop. printed name is "un-suns". "[if score >= 3]They're much less gloomy now. You did what you could.[else]They're totally, like, dark and gloomy and stuff. Just the thought of them makes you think, 'O, wow!'[end if]"
+
+chapter ingulfing gulf
+
+the ingulfing gulf is a backdrop. "[if score >= 3]It's receded quite a bit, but you don't want to fight through it. You sense your destiny is down[else]You really don't want to even touch it[end if]."
+
+to say igulf: say "The Ingulfing Gulf surrounds you every way except [list of viable directions]"
+
+volume the player
+
+the description of the player is "Not dazzling, but frankly, you're relieved not to be wearing a tutu or muumuu.".
 
 the scowls cowl is a thing. the player wears the scowls cowl. description of scowls cowl is "It makes you feel down, and you can't pull it off. [if score is 0]Maybe helping other people will cheer you up[else if score is 1]It feels less oppressive now you've helped yourself a bit[else]You barely feel it now, but you can't throw it off just yet[end if]. "
 
