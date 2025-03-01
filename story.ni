@@ -346,13 +346,15 @@ chapter verbsing
 verbsing is an action out of world.
 
 understand the command "verbs" as something new.
+understand the command "verb" as something new.
 understand the command "v" as something new.
 
 understand "verbs" as verbsing.
+understand "verb" as verbsing.
 understand "v" as verbsing.
 
 carry out verbsing:
-	say "[this-game] has a very simplified parser. You can go in the standard directions, including diagonals. [b]TALK[r]ing is also an option, e.g. [b]T NPC[r], or [b]TALK NPC[r] or [b]TALK TO NPC[r].[paragraph break]You will just need to figure out magic words to figure what to do with items that are lying around[if score is 3] or, right now, the voice saying 'Cad.' [else].[paragraph break]Some other commands are implemented as a joke.";
+	say "[this-game] has a very simplified parser. You can win just by go in the standard directions, including diagonals, and by guessing magic words based on objects lying around[if cad is in well] or, right now, the voice saying 'Cad.' [else].[end if][line break][b]I[r] for inventory and [b]SCORE[r] for score give diagnostics.[paragraph break][b]TALK[r]ing is also an option, e.g. [b]T NPC[r], or [b]TALK NPC[r] or [b]TALK TO NPC[r]. No subject is actually needed, since no room has more than one NPC.[paragraph break]Some other standard Inform commands are implemented as jokes: for instance, the senses. But none are critical to winning the game.";
 	the rule succeeds;
 
 procedural rule: ignore the print final score rule.
