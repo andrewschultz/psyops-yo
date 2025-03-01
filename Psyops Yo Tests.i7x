@@ -1,8 +1,8 @@
 Version 1/201028 of Psyops Yo Tests by Andrew Schultz begins here.
 
-"This should briefly describe the purpose of Psyops Yo Tests."
+"Psyops Yo Tests, both with TEST command and testing specific things."
 
-volume silly tests
+volume basic parser tests
 
 test u1 with "escapes/ne/stalest/se/mahatma/w/"
 
@@ -21,6 +21,25 @@ test w1 with "test u1/test mid/test e1".
 test w2 with "test u2/test mid/test e2".
 
 test w3 with "test u1/test mid/test e3".
+
+volume full random
+
+chapter bksing
+
+bksing is an action out of world.
+
+understand the command "bks" as something new.
+
+understand "bks" as bksing.
+
+carry out bksing:
+	move elite lit to location of player;
+	let count be 0;
+	while count < number of rows in table of elite lit books:
+		say "[count] of [number of rows in table of elite lit books]:";
+		try examining elite lit;
+		increment count;
+	the rule succeeds;
 
 Psyops Yo Tests ends here.
 
