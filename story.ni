@@ -380,6 +380,16 @@ Rule for amusing a victorious player:
 	say "Empty commands and [b]UNDO[r] also give text.";
 	say "Oh, of course, [b]XYZZY[r], too.";
 
+volume redoing diagnostic verbs
+
+the announce the score rule is not listed in any rulebook.
+
+carry out requesting the score:
+	say "Total score: [score] / [maximum score].[paragraph break]";
+	if score is 0, say "You haven't figured out a magic word to say yet, but when you do, you'll get your first point." instead;
+	if score < 3, say "You have figured what to do with [score in words] of the three weird items aboveground." instead;
+	say "You have figured [score - 3 in words] of three things to do below ground." instead;
+
 volume standard rejectable verbs
 
 chapter attacking
