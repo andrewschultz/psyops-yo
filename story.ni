@@ -257,9 +257,11 @@ this is the guess-okeydokey rule:
 		say "Yes! You're excited! But you run down too fast. The last thing you see is a princess, whose martial-arts move leaves you doubled over, fatally injured.[run paragraph on][died]Okay, not really. But if you want the good ending, I'm gonna force you to name that ancient Apple IIe game. It's a classic.";
 		now okeydokey-tried is true;
 		the rule fails;
-	say "Yes, it's a bit reflexive and self-referential. But it's worth a try. And, equaly hokey, the well swells![paragraph break].As you climb down, you wind up finding a secret passage that leads ... somewhere new. You feel smart immediately when you arrive, unable to suppress an 'I DID! I DID!'and needing no estates tat with a legible gib. Why, you don't even need to visit the Smiles Mile you see![paragraph break]Of course it's easy to feel all this, walking on ...";
+	say "Yes, it's a bit reflexive and self-referential. But it's worth a try. And, equaly hokey, the well swells![paragraph break]As you climb down, you wind up finding a secret passage that leads ... somewhere new. You feel smart immediately when you arrive, unable to suppress an 'I DID! I DID!'and needing no estates tat with a legible gib. Why, you don't even need to visit the Smiles Mile you see![paragraph break]Of course it's easy to feel all this, walking on ...";
 	wfak;
 	say "[b]EINSTEIN ST.[r]";
+	increment the score;
+	follow the notify score changes rule;
 	wfak;
 	say "Now, where to visit first? Perhaps that restaurant called L'Salsa, or the snack shop [i]Ho Choc[r]. In other establishments, hotshots eat couscous, or maybe mahi mahi, or tout stouts to ward off beriberi. Under a chiquichiqui and mingimingi and rewa-rewa.[paragraph break]You rightly feel like ...";
 	end the story finally saying "A MUCKAMUCK!";
@@ -405,8 +407,10 @@ the announce the score rule is not listed in any rulebook.
 carry out requesting the score:
 	say "Total score: [score] / [maximum score].[paragraph break]";
 	if score is 0, say "You haven't figured out a magic word to say yet, but when you do, you'll get your first point." instead;
-	if score < 3, say "You have figured what to do with [score in words] of the three weird items aboveground." instead;
-	say "You have figured [score - 3 in words] of three things to do below ground." instead;
+	if score < 3, say "You have acquired [score in words] of the three weird items aboveground." instead;
+	if score is 4, say "You have four points and can just go down, nothing fancy, to win." instead;
+	if score is 5, say "You have five points and can now take the fancy way down for an extra special ending." instead;
+	say "How did you get here? You should've won the game by now." instead;
 
 volume standard rejectable verbs
 
