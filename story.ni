@@ -373,7 +373,10 @@ understand "verb" as verbsing.
 understand "v" as verbsing.
 
 carry out verbsing:
-	say "[this-game] has a very simplified parser. You can win just by go in the standard directions, including diagonals, and by guessing magic words based on objects lying around[if cad is in well] or, right now, the voice saying 'Cad.' [else].[end if][line break][b]I[r] for inventory and [b]SCORE[r] for score give diagnostics.[paragraph break][b]TALK[r]ing is also an option, e.g. [b]T NPC[r], or [b]TALK NPC[r] or [b]TALK TO NPC[r]. No subject is actually needed, since no room has more than one NPC.[paragraph break]Some other standard Inform commands are implemented as jokes: for instance, the senses. But none are critical to winning the game.";
+	say "[this-game] has a very simplified parser. You can win just by go in the standard directions, including diagonals, and by guessing magic words based on objects lying around[if cad is in well] or, right now, the voice saying 'Cad.' [else].[end if]";
+	say "[line break][b]I[r] for inventory and [b]SCORE[r] for score give diagnostics. Other meta-commands include [b]ABOUT[r] and [b]CREDITS[r].";
+	say "[line break][b]TALK[r]ing is also an option, e.g. [b]T NPC[r], or [b]TALK NPC[r] or [b]TALK TO NPC[r]. No subject is actually needed, since no room has more than one NPC.";
+	say "[line break]Some other standard Inform commands are implemented as jokes: for instance, the senses. But none are critical to winning the game.";
 	the rule succeeds;
 
 procedural rule: ignore the print final score rule.
@@ -498,8 +501,14 @@ chapter creditsing
 
 creditsing is an action out of world.
 
+understand the command "creds" as something new.
+understand the command "cred" as something new.
+understand the command "credit" as something new.
 understand the command "credits" as something new.
 
+understand "cred" as creditsing.
+understand "creds" as creditsing.
+understand "credit" as creditsing.
 understand "credits" as creditsing.
 
 carry out creditsing:
@@ -530,6 +539,8 @@ section redefine version
 
 versioning is an action out of world.
 
+understand the command "ver" as something new.
+understand the command "vers" as something new.
 understand the command "version" as something new.
 understand the command "versions" as something new.
 
