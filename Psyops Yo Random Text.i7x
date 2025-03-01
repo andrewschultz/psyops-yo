@@ -11,8 +11,6 @@ when play begins:
 
 volume elite lit books
 
-elite-row is a number that varies.
-
 to say one-book:
 	increment elite-row;
 	choose row elite-row in table of elite lit books;
@@ -24,6 +22,7 @@ to say one-book:
 table of elite lit books
 bookname
 "A's Eraser"
+"Ada, Dad"
 "Alameda, Lamed"
 "And, Er, Sanders"
 "Aorta, Ort"

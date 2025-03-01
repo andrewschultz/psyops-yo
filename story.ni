@@ -24,6 +24,10 @@ the maximum score is 6.
 
 chapter game specific includes
 
+include Psyops Yo Definitions by Andrew Schultz.
+
+include Psyops Yo Globals by Andrew Schultz.
+
 include Psyops Yo Random Text by Andrew Schultz.
 
 section testing - not for release
