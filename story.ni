@@ -166,6 +166,12 @@ book Strangest Range
 
 Strangest Range is a room in Top Stops. "[unsuns-gulf]north[if score < 3] (or northeast)[else], northeast[end if] and east[or-well]."
 
+init-about is a truth state that varies.
+
+after printing the locale description for Strangest Range when init-about is false:
+	now init-about is true;
+	say "[i][bracket][b]NOTE[r][i]: [this-game][i] requires specific unusual commands to win. You may wish to type [b]ABOUT[r][i] to find out more or [b]VERBS[r][i] t osee a list of useful or needed verbs.[close bracket][line break]";
+
 chapter alkie
 
 the Stalkiest Alkie is a person in Strangest Range. "[one of]'Uh, hi, I'm the stalkiest alkie! People told me a pejorative like that would help me drink less, but somehow it made me drink more. Guess I'm stuck with it, though, unless someone can help me.'[or]The stalkiest alkie, stuck with a pejorative name, paces back and forth, looking for something here and not looking for it.[stopping]". description is "Like so many people who drink a lot, the Alkie may both want a drink and want an excuse never to want a drink again.". talk-text is "'If you could find something that'd turn me off alcohol forever, that'd be awesome! Why, I'd take it from your hands before you had a chance to give it to me.'"
