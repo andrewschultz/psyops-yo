@@ -274,6 +274,7 @@ to point-check:
 		change southeast exit of Dwell'd Well to Ingrowing Row;
 	if the score is 3:
 		say "[line break]'Oo! Noon!' a voice cries. But then a louder one booms 'I ... DERIDER!' The un-suns become less dark, as pink spinks fly by them, and the Ingulfing Gulf wanes and retreats.[paragraph break]The scowls cowl flies off you and blows away.[paragraph break]Yet with its absence you still feel you haven't done enough, or you've gotten lucky. You feel like such a ... well, CAD. Yes. No other word will do, and probably only one word will fix how you feel.";
+		moot cowl;
 		move cad to well;
 	process the notify score changes rule;
 

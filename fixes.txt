@@ -1,0 +1,20 @@
+Psyops Yo version change log
+
+Version 2 (February 28, 2025)
+
+--many game text fixes
+--added to DID YOU TRY section
+--bolded final menu items
+--responses for YES NO HIT RESTORE
+--TALK ME, X ME provide better clues
+--DROP now blocks dropping
+--cowl is an item you wear at the start
+--metaverb ABOUT broken into CREDITS and VERBS
+
+Version 1 (October 30, 2025)
+
+--published on Itch.IO
+
+Changes to come:
+
+--random text in the final area
