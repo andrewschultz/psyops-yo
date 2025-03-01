@@ -496,7 +496,7 @@ understand the command "about" as something new.
 understand "about" as abouting.
 
 carry out abouting:
-	say "[this-game] was an entry to the EctoComp 2021 Petite Mort. originally conceived as a 2020 EctoComp entry, but life got in the way. As it was, I had bigger plans, but they were too much and took away from the focus. They will go in another game.[paragraph break][b]VERSIONS[r] shows version information. [b]CREDITS[r] shows credits.";
+	say "[this-game] was an entry to the EctoComp 2021 Petite Mort. It was originally conceived for 2020, but life got in the way. I'd had bigger plans, which took away from fun small stuff like this.[paragraph break][b]VERSIONS[r] shows version information. [b]CREDITS[r] shows credits. [b]EXT[r] shows extensions used.";
 	if score is 0:
 		say "[line break][this-game] requires word-guessing to win. However, I hope to make the mechanic obvious if you examine or walk around enough. There's a certain pattern to it all.";
 	the rule succeeds;
@@ -553,7 +553,7 @@ understand "versions" as versioning.
 
 carry out versioning:
 	say "Version 1 was released October 30, 2021 to Itch.io for the yearly EctoComp competition, Petite Mort division.";
-	say "Version 2 was released February 28, 2025 to Itch.io with no new technical features, but with minor bug fixes and also 'appropriate' text that trickled in over the years.";
+	say "Version 2 was released February 28, 2025 to Itch.io with no new technical features, but with minor bug fixes and also 'appropriate' text that trickled in over the years. Since then, Martin Amis, whose name cued Hamish, had left this world for over a year. RIP.";
 	say "Version 3 was released March 1, 2025 to Itch.io with the Elite Lit/bookshelf in the final area containing random books.";
 	say "[line break]One more update with cutesy random text is planned, mostly names. Beyond that, nothing except for bug fixes.";
 	the rule succeeds;
