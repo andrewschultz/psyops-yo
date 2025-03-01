@@ -46,10 +46,6 @@ check taking a doubler:
 
 a person has text called talk-text.
 
-definition: a direction (called d) is viable:
-	if the room d of location of player is nowhere, no;
-	yes;
-
 volume main bit(s)
 
 every turn when map region of location of player is Top Stops (this is the check returned item every turn rule):
@@ -67,10 +63,6 @@ every turn when map region of location of player is Top Stops (this is the check
 	if number of unvisited rooms in Top Stops is 0:
 		now first-loop is true;
 		say "You've been around everywhere. Elapse, laps, you think to yourself.";
-
-definition: a person (called pe) is npcish:
-	if pe is the player, no;
-	yes;
 
 rule for supplying a missing noun when talking:
 	if number of people in location of player is 2:
@@ -136,10 +128,6 @@ check taking off scowls cowl: say "It's stuck on you. Perhaps figuring what to d
 volume map basics
 
 check going nowhere: say "You try to, but you realize you might step into ... the INGULFING GULF. You can, however, go [list of viable directions]." instead;
-
-definition: a direction (called d) is viable:
-	if the room d of location of player is nowhere, no;
-	yes;
 
 Top Stops is a region.
 
@@ -377,10 +365,6 @@ volume meta
 book get rid of items
 
 to moot (th - a thing): move th to Mo Demode
-
-definition: a thing (called th) is moot:
-	if th is in Mo Demode, yes;
-	no;
 
 Mo Demode is a room.
 
