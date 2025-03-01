@@ -40,7 +40,11 @@ a doubler has text called zaptext. a doubler has a room called zaploc.
 
 before printing the name of a doubler (called dub): if dub is doubled, say "[xtra-text of dub] ".
 
-check taking a doubler: say "You reach for [the noun], but you feel resistance. What is going on? Another look, and, well, it just seems too plain as-is. Maybe if you jazzed it up, it would be more worth taking, or feel more worth being taken." instead;
+take-try is a truth state that varies.
+
+check taking a doubler:
+	now take-try is true;
+	say "You reach for [the noun], but you feel resistance. What is going on? Another look, and, well, it just seems too plain as-is. Maybe if you jazzed it up, it would be more worth taking, or feel more worth being taken." instead;
 
 a person has text called talk-text.
 
@@ -214,7 +218,7 @@ the Staidest Aide is a person in Ur Church. "A staidest aide stands around here,
 
 chapter Stalest Ale
 
-the Ale is a doubler in Ur Church. xtra-text is "stalest". description is "[if ale is doubled]It doesn't look especially menacing, but you really don't want to drink it[else]It's plain, as if it could become something else, or be more or less palatable, for better or worse[end if].". "Some ale lies here at a weird angle--it should really be falling over like that.". guess-rule is guess-ale rule. zaptext is "On seeing the [ale], the [alkie] pulls it from your hands and takes a swig, then makes a face. 'Ugh! How could you...?' but after some reflection, says 'You know, I always wanted to give this stuff up. This reminds me how nasty it tasted once I started. Might not be a full cure, but hey, has to be better than Swines['] Wine, right? Hey! You know what? This is nasty enough, it will poison some pawn-spawns outlets.' Filled with purpose, the (ex-)[alkie] walks away.". zaploc is Strangest Range.
+the ale is a doubler in Ur Church. xtra-text is "stalest". description is "[if ale is doubled]It doesn't look especially menacing, but you really don't want to drink it[else]It's plain, as if it could become something else, or be more or less palatable, for better or worse[end if].". "Some ale lies here at a weird angle--it should really be falling over like that.". guess-rule is guess-ale rule. zaptext is "On seeing the [ale], the [alkie] pulls it from your hands and takes a swig, then makes a face. 'Ugh! How could you...?' but after some reflection, says 'You know, I always wanted to give this stuff up. This reminds me how nasty it tasted once I started. Might not be a full cure, but hey, has to be better than Swines['] Wine, right? Hey! You know what? This is nasty enough, it will poison some pawn-spawns outlets.' Filled with purpose, the (ex-)[alkie] walks away.". zaploc is Strangest Range.
 
 this is the guess-ale rule: say "The ale bubbles momentarily and seems to change to a sicklier hue. For whatever reason, you feel less guilty taking it now."
 
@@ -412,9 +416,9 @@ The print standard inventory rule is not listed in the carry out taking inventor
 carry out taking inventory:
 	if scowls cowl is moot, say "You aren't carrying anything. You can't see anything worth taking. Just use your wits a bit more, and you can push through!" instead;
 	say "You're wearing that scowls cowl, and it's a [if score is 0]total[else if score is 1]considerable[else]bit of a[end if] drag.";
-	if score is 0, say "[line break]You haven't found anything that might help you. Stuff is lying around, but you haven't tried to take it yet/were unable to just pick it up." instead;
-	if number of carried doublers > 0, say "[line break]You have found a raider-aide[if score > 1] or [score in words][end if]: [list of carried doublers].";
-	if number of moot doublers > 0, say "[line break]You have successfully used a raider-aide[if score > 1] or [score in words][end if]: [list of moot doublers].";
+	if score is 0, say "[line break]You haven't found anything that might help you. Stuff is lying around, but you [if take-try is false]haven't tried to take it yet[else]were unable to just scoop it up[end if]." instead;
+	if number of carried doublers > 0, say "[line break]You have found a raider-aide[if number of carried doublers > 1] or [number of carried doublers in words][end if]: [the list of carried doublers].";
+	if number of moot doublers > 0, say "[line break]You have successfully used a raider-aide[if number of moot doublers > 1] or [number of moot doublers in words][end if]: [the list of moot doublers].";
 
 chapter score
 
