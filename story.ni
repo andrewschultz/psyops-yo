@@ -405,6 +405,19 @@ Rule for amusing a victorious player:
 
 volume redoing diagnostic verbs
 
+chapter inventory
+
+The print standard inventory rule is not listed in the carry out taking inventory rulebook.
+
+carry out taking inventory:
+	if scowls cowl is moot, say "You aren't carrying anything. You can't see anything worth taking. Just use your wits a bit more, and you can push through!" instead;
+	say "You're wearing that scowls cowl, and it's a [if score is 0]total[else if score is 1]considerable[else]bit of a[end if] drag.";
+	if score is 0, say "[line break]You haven't found anything that might help you. Stuff is lying around, but you haven't tried to take it yet/were unable to just pick it up." instead;
+	if number of carried doublers > 0, say "[line break]You have found a raider-aide[if score > 1] or [score in words][end if]: [list of carried doublers].";
+	if number of moot doublers > 0, say "[line break]You have successfully used a raider-aide[if score > 1] or [score in words][end if]: [list of moot doublers].";
+
+chapter score
+
 the announce the score rule is not listed in any rulebook.
 
 carry out requesting the score:
