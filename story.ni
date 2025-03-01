@@ -279,6 +279,9 @@ chapter Elite Lit
 
 Elite Lit is a proper-named scenery. description is "You note [one of]one[or]another[stopping] book title: [one-book][conditional-period]".
 
+check examining Elite Lit for the first time:
+	say "Wow! So many books! You have no idea how good they are. Perhaps there is a lost novel of  F. Kafka in here. Or not.[paragraph break]You can keep examining, to skim random titles. There are [number of rows in table of elite lit books] total." instead;
+
 to say conditional-period:
 	if skip-period is true:
 		now skip-period is false;

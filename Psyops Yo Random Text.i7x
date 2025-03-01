@@ -51,6 +51,7 @@ bookname
 "IDE Rider"
 "Io's Kiosk"
 "[skp]Kink: IN?!" [puncok]
+"Lass, I, Classic"
 "M and Amanda"
 "Ma Tomato"
 "[skp]Magma, G!" [puncok]

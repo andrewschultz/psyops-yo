@@ -36,9 +36,9 @@ carry out bksing:
 	move elite lit to location of player;
 	let count be 0;
 	while count < number of rows in table of elite lit books:
+		increment count;
 		say "[count] of [number of rows in table of elite lit books]:";
 		try examining elite lit;
-		increment count;
 	the rule succeeds;
 
 Psyops Yo Tests ends here.
