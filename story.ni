@@ -221,7 +221,7 @@ book Dwell'd Well
 
 to say or-well: if score > 0, say ". There's also a way down";
 
-Dwell'd Well is a room. "[well-up].[paragraph break][if score >= 4]The way down is a huge hole in the shape of a D. You could probably just go down and get on with things, but maybe it's not all that simple[else if score is 3]A voice also whispers ... 'Cad!'[paragraph break]And it makes you feel guilty and silly. You thought did well to expand some things by two letters, but it feels so basic now. Perhaps three or even four is the way to go here, for a bit of magic to pass through again[else]It's almost too peaceful here. As if something is not quite ready to happen yet. It's also very plain. You feel a pull from below but see no thatch't hatch to remove or older solders to pull at[end if]."
+Dwell'd Well is a room. "[well-up].[paragraph break][if score >= 4]The way down is a huge hole in the shape of a D. You could probably just go down and get on with things, but maybe it's not all that simple[else if score is 3]A voice also whispers ... 'Cad!'[paragraph break]And it makes you feel guilty and silly. You thought did well to expand some things by two letters, but it feels so basic now. Perhaps three or even four is the way to go here, for a bit of magic to pass through again[else]It's almost too peaceful here. As if something is not quite ready to happen yet. It's also very plain. You feel a pull from below but see no thatch't hatch to remove or older solders to pull at[end if].[paragraph break]The bookshelf, aka [i]Elite Lit[r], also stands here to distract you, if you need that."
 
 to say well-up: say "There are three ways to go back up, here: north, southwest, and southeast"
 
@@ -276,10 +276,9 @@ this is the guess-okeydokey rule:
 
 chapter Elite Lit
 
-when play begins:
-	sort table of elite lit books in random order;
+Elite Lit is a proper-named scenery. description is "You note one of the books is [one-book].".
 
-Elite Lit is a proper-named thing. description is "You note one of the books is [one-book].".
+check taking elite lit: say "Where you're going you won't need books. Or if you do, they'll be the same ones as here, but in better condition." instead;
 
 elite-row is a number that varies.
 
