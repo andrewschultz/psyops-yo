@@ -40,8 +40,6 @@ a doubler has text called zaptext. a doubler has a room called zaploc.
 
 before printing the name of a doubler (called dub): if dub is doubled, say "[xtra-text of dub] ".
 
-take-try is a truth state that varies.
-
 check taking a doubler:
 	now take-try is true;
 	say "You reach for [the noun], but you feel resistance. What is going on? Another look, and, well, it just seems too plain as-is. Maybe if you jazzed it up, it would be more worth taking, or feel more worth being taken." instead;
@@ -63,8 +61,6 @@ every turn when map region of location of player is Top Stops (this is the check
 			moot random npcish person in location of player;
 			continue the action;
 	continue the action;
-
-first-loop is a truth state that varies.
 
 every turn when map region of location of player is Top Stops (this is the check first loop rule):
 	if first-loop is true, continue the action;
@@ -167,8 +163,6 @@ book Strangest Range
 
 Strangest Range is a room in Top Stops. "[unsuns-gulf]north[if score < 3] (or northeast)[else], northeast[end if] and east[or-well]."
 
-init-about is a truth state that varies.
-
 after printing the locale description for Strangest Range when init-about is false:
 	now init-about is true;
 	say "[i][bracket][b]NOTE[r][i]: [this-game][i] requires specific unusual commands to win. You may wish to type [b]ABOUT[r][i] to find out more or [b]VERBS[r][i] t osee a list of useful or needed verbs.[close bracket][line break]";
@@ -236,7 +230,7 @@ check going down in Dwell'd Well:
 	if player is in Dwell'd Well:
 		if the score < 3, say "You can't go further down. At least, not now, you can't." instead;
 		if the score < 4, say "'Cad ... cad ...' voices say. You need to shake them off." instead;
-		if ok is true and apple iie is moot:
+		if okeydokey-tried is true and apple iie is moot:
 			say "Hey, wait. [b]OKEYDOKEY[r] would work now. You should say that, instead." instead;
 		say "'Ingoing, O!' you shout as you explore further down...";
 		wfak;
@@ -266,12 +260,10 @@ chapter okeydokey
 
 the okeydokey is a privately-named doubler. it is scenery. "You shouldn't see this.". xtra-text is "okey ?dokey". guess-rule is guess-okeydokey rule.
 
-ok is a truth state that varies.
-
 this is the guess-okeydokey rule:
 	if apple iie is not moot:
 		say "Yes! You're excited! But you run down too fast. The last thing you see is a princess, whose martial-arts move leaves you doubled over, fatally injured.[run paragraph on][died]Okay, not really. But if you want the good ending, I'm gonna force you to name that ancient Apple IIe game. It's a classic.";
-		now ok is true;
+		now okeydokey-tried is true;
 		the rule fails;
 	say "Yes, it's a bit reflexive and self-referential. But it's worth a try. And, equaly hokey, the well swells![paragraph break].As you climb down, you wind up finding a secret passage that leads ... somewhere new. You feel smart immediately when you arrive, unable to suppress an 'I DID! I DID!'and needing no estates tat with a legible gib. Why, you don't even need to visit the Smiles Mile you see![paragraph break]Of course it's easy to feel all this, walking on ...";
 	wfak;
@@ -284,8 +276,6 @@ this is the guess-okeydokey rule:
 chapter Elite Lit
 
 Elite Lit is a proper-named scenery. description is "You note [one of]one[or]another[stopping] book title: [one-book][conditional-period]".
-
-skip-period is a truth state that varies.
 
 to say conditional-period:
 	if skip-period is true:
