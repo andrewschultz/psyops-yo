@@ -388,11 +388,13 @@ book post-completion
 
 Rule for amusing a victorious player:
 	say "Here is a list of things you can try. I didn't keep track of them, so maybe you already did.[paragraph break]";
-	say "[b]YES[r], [b]NO[r], [b]SING[r], [b]ATTACK[r], or [b]WAIT[r]/[b]Z[r] give a fixed response.";
+	say "[b]YES[r], [b]NO[r], [b]SING[r], or [b]WAIT[r]/[b]Z[r] give a fixed response.";
+	say "There are also responses for naughty words like [b]BOTHER[r] and the semi-custom verb [b]HIT[r].";
+	say "[line break]Some verbs have a generic and specific response:[paragraph break]";
+	say "[b]ATTACK[r] gives a slightly different response for the Tormentor Men.";
 	say "[b]SMELL[r] is slightly different near the end, with the Apple nearby.";
 	say "[b]LISTEN[r] is slightly different in the Church than other places.";
-	say "There are also responses for naughty words like [b]BOTHER[r] and the semi-custom verb [b]HIT[r].";
-	say "Empty commands and [b]UNDO[r] also give text.";
+	say "[line break]Empty commands and [b]UNDO[r] also give text.";
 	say "Oh, of course, [b]XYZZY[r], too.";
 
 volume redoing diagnostic verbs
@@ -411,7 +413,9 @@ chapter attacking
 
 the block attacking rule is not listed in any rulebook.
 
-check attacking: say "Ai! Maim! (Violence is not the keyword.)" instead;
+check attacking:
+	if noun is tormentor men, say "They'd run you through a slaps-lap, or worse." instead;
+	say "Ai! Maim! (Violence is not the keyword.)" instead;
 
 understand the command "hit" as something new.
 understand the command "hit [something]" as something new.
