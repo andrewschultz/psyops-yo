@@ -10,8 +10,6 @@ include Old School Verb Total Carnage by Andrew Schultz.
 
 Include Bold Final Question Rows by Andrew Schultz.
 
-include Psyops Yo Tests by Andrew Schultz.
-
 the story headline is "A slogs-log"
 
 the story genre is "Humor/wordplay"
@@ -22,15 +20,25 @@ release along with cover art.
 
 release along with the "Parchment" interpreter.
 
+the maximum score is 6.
+
 the description of the player is "Not dazzling, but frankly, you're relieved not to be wearing a tutu or muumuu.".
+
+chapter game specific includes
+
+include Psyops Yo Random Text by Andrew Schultz.
+
+section testing - not for release
+
+include Psyops Yo Tests by Andrew Schultz.
+
+volume types
 
 a doubler is a kind of thing. a doubler can be doubled. a doubler is usually not doubled. a doubler has text called xtra-text.
 
 a doubler has a rule called a guess-rule.
 
 a doubler has text called zaptext. a doubler has a room called zaploc.
-
-the maximum score is 6.
 
 before printing the name of a doubler (called dub): if dub is doubled, say "[xtra-text of dub] ".
 
@@ -41,6 +49,8 @@ a person has text called talk-text.
 definition: a direction (called d) is viable:
 	if the room d of location of player is nowhere, no;
 	yes;
+
+volume main bit(s)
 
 to say igulf: say "The Ingulfing Gulf surrounds you every way except [list of viable directions]"
 
