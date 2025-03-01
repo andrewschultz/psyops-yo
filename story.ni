@@ -375,7 +375,7 @@ understand "v" as verbsing.
 
 carry out verbsing:
 	say "[this-game] has a very simplified parser. You can win just by go in the standard directions, including diagonals, and by guessing magic words based on objects lying around[if cad is in well] or, right now, the voice saying 'Cad.' [else].[end if]";
-	say "[line break][b]I[r] for inventory and [b]SCORE[r] for score give diagnostics. Other meta-commands include [b]ABOUT[r] and [b]CREDITS[r].";
+	say "[line break]Two useful diagnostic commands are [b]SCORE[r] for score, which also gives non-spoilery nudges, asnd [b]I[r] for inventory, though you won't need to carry much. Other meta-commands include [b]ABOUT[r], [b]CREDITS[r], [b]EXT[r] and [b]VERSIONS[r].";
 	say "[line break][b]TALK[r]ing is also an option, e.g. [b]T NPC[r], or [b]TALK NPC[r] or [b]TALK TO NPC[r]. No subject is actually needed, since no room has more than one NPC.";
 	say "[line break]Some other standard Inform commands are implemented as jokes: for instance, the senses. But none are critical to winning the game.";
 	the rule succeeds;
@@ -410,7 +410,7 @@ chapter inventory
 The print standard inventory rule is not listed in the carry out taking inventory rulebook.
 
 carry out taking inventory:
-	if scowls cowl is moot, say "You aren't carrying anything. You can't see anything worth taking. Just use your wits a bit more, and you can push through!" instead;
+	if scowls cowl is moot, say "You aren't carrying anything. You're even free of that scowls cowl! You can't see anything worth taking. [if score is 3]You just need to find a way out[else]That'll be handy to make the journey down a bit quicker[end if]." instead;
 	say "You're wearing that scowls cowl, and it's a [if score is 0]total[else if score is 1]considerable[else]bit of a[end if] drag.";
 	if score is 0, say "[line break]You haven't found anything that might help you. Stuff is lying around, but you [if take-try is false]haven't tried to take it yet[else]were unable to just scoop it up[end if]." instead;
 	if number of carried doublers > 0, say "[line break]You have found a raider-aide[if number of carried doublers > 1] or [number of carried doublers in words][end if]: [the list of carried doublers].";
@@ -423,9 +423,11 @@ the announce the score rule is not listed in any rulebook.
 carry out requesting the score:
 	say "Total score: [score] / [maximum score].[paragraph break]";
 	if score is 0, say "You haven't figured out a magic word to say yet, but when you do, you'll get your first point." instead;
-	if score < 3, say "You have acquired [score in words] of the three weird items aboveground." instead;
+	if score is 1, say "You have acquired a raider aide item, [the random carried doubler]." instead;
+	if score is 2, say "You have one raider aide item left to pick up." instead;
+	if score is 3, say "You don't need any other raider aide. You should [if well is visited]focus on what to do [in-here of well]go to the center, where you haven't been yet[end if]." instead;
 	if score is 4, say "You have four points and can just go down, nothing fancy, to win." instead;
-	if score is 5, say "You have five points and can now take the fancy way down for an extra special ending." instead;
+	if score is 5, say "You have five points and can now take the fancy way down for an extra special ending. Or just go down for a regular win." instead;
 	say "How did you get here? You should've won the game by now." instead;
 
 volume standard rejectable verbs
@@ -504,7 +506,9 @@ understand the command "about" as something new.
 understand "about" as abouting.
 
 carry out abouting:
-	say "[this-game] was an entry to the EctoComp 2021 Petite Mort. It was originally conceived for 2020, but life got in the way. I'd had bigger plans, which took away from fun small stuff like this.[paragraph break][b]VERSIONS[r] shows version information. [b]CREDITS[r] shows credits. [b]EXT[r] shows extensions used.";
+	say "[this-game] was an entry to the EctoComp 2021 Petite Mort. It was originally conceived for 2020, but life got in the way. I'd had bigger plans, which took away from fun small stuff like this.";
+	say "[line break]Source control is at [github].";
+	say "[line break][b]VERSIONS[r] shows version information. [b]CREDITS[r] shows credits. [b]EXT[r] shows extensions used. Abbreviations work, too.";
 	if score is 0:
 		say "[line break][this-game] requires word-guessing to win. However, I hope to make the mechanic obvious if you examine or walk around enough. There's a certain pattern to it all.";
 	the rule succeeds;
@@ -524,7 +528,10 @@ understand "credit" as creditsing.
 understand "credits" as creditsing.
 
 carry out creditsing:
-	say "While there was no time for outside testing, I'd like to thank Olaf Nowacki for moral support. He has an entry in the Petite Mort too! Oh, and the IFComp 2021 authors['] subforum. Several of them entered something, too![paragraph break]I would also like to thank JJ Guest for creating EctoComp, Duncan Bowsman for stepping in and Ruber Eaglenest for running it currently, and itch.io for hosting EctoComp and other comps that help me just remember to play others['] stuff.[paragraph break]Attributions for dirt texture in cover art: CC BY-SA 3.0 -- Heath Rezabek -- Vessel CC -- http://vessel.cc[line break]";
+	say "While there was no time for outside testing, I'd like to thank Olaf Nowacki for moral support. He has an entry in the Petite Mort too! Oh, and the IFComp 2021 authors['] subforum. Several of them entered something, too!";
+	say "[line break]I would also like to thank JJ Guest for creating EctoComp, Duncan Bowsman for stepping in and Ruber Eaglenest for running it currently, and itch.io for hosting EctoComp and other comps that help me just remember to play others['] stuff.";
+	say "[line break]Attributions for dirt texture in cover art: CC BY-SA 3.0 -- Heath Rezabek -- Vessel CC -- http://vessel.cc[line break]";
+	say "[line break]If you have a clever book or whatever to add, mail me at [email] or post an issue at [github].";
 	the rule succeeds;
 
 chapter versionsing
