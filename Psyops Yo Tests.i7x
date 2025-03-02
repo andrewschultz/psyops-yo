@@ -37,8 +37,8 @@ a randtexter can be churned. a randtexter is usually not churned.
 
 carry out churning:
 	if noun is not a randtexter:
-		say "You need a random text generating object. Here is the list: [the list of randtexters].";
-		list-unchurned;
+		say "You need a random text generating object. Here is the list:";
+		try churnnuming 0;
 		the rule fails;
 	move noun to location of player;
 	if noun is not churned and firsttext of noun is not empty:
@@ -64,6 +64,23 @@ Rule for printing a parser error when the latest parser error is the noun did no
 		list-unchurned;
 		the rule succeeds;
 	continue the action;
+
+section churnnum
+
+churnnuming is an action out of world applying to one number.
+
+understand "churn [number]" as churnnuming.
+
+carry out churnnuming:
+	let rtlist be the list of randtexters;
+	if number understood is 0:
+		repeat with X running from 1 to number of entries in rtlist:
+			say "[X]. [entry X of rtlist].";
+		the rule succeeds;
+	if number understood < 0 or number understood > number of entries in rtlist:
+		say "You need to type 0 for a list or 1-[number of entries in rtlist].";
+		the rule succeeds;
+	try churning entry (number understood) of rtlist;
 
 Psyops Yo Tests ends here.
 
