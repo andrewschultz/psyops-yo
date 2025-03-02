@@ -14,7 +14,7 @@ the story headline is "A slogs-log"
 
 the story genre is "Humor/wordplay"
 
-the release number is 3.
+the release number is 4.
 
 release along with cover art.
 

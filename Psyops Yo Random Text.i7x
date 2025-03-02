@@ -2,7 +2,10 @@ Version 1/250228 of Psyops Yo Random Text by Andrew Schultz begins here.
 
 "Random text for Psyops, Yo. The tables are alphabetized to pick off duplicates quickly."
 
-[UTILS: punc.py py, talf.py py]
+[UTILS:
+punc.py py checks punctuation and capitalization
+talf.py py checks table alphabetization
+]
 
 volume beginning randomization
 

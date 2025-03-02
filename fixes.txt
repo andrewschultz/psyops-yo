@@ -1,5 +1,14 @@
 Psyops Yo version change log
 
+Version 4 (March 2, 2025)
+
+--La Palapa, U DUD, Able Tablet are new items with random generated text in Well
+--Primp Rim added as backdrop guarding Well (disappears after first point)
+--U/UP from well now leads you to last aboveground room
+--new restaurant at end
+--wrote postmortem
+--(under the hood) code overhaul for random text generation
+
 Version 3 (March 1, 2025)
 
 --ELITE LIT now appears with random book names when you are near the end, with a note to look at source
