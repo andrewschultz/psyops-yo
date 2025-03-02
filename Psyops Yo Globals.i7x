@@ -13,6 +13,10 @@ chapter initial stuff
 first-loop is a truth state that varies.
 init-about is a truth state that varies.
 
+chapter room stuff
+
+last-well-room is a room that varies.
+
 chapter end stuff
 
 okeydokey-tried is a truth state that varies.

@@ -237,7 +237,7 @@ to say or-well: if score > 0, say ". There's also a way down between them, to [i
 
 Dwell'd Well is a room. "[well-up].[paragraph break][if score >= 4]The way down is a huge hole in the shape of a D. You could probably just go down and get on with things, but maybe it's not all that simple[else if score is 3]A voice also whispers ... 'Cad!'[paragraph break]And it makes you feel guilty and silly. You thought did well to expand some things by two letters, but it feels so basic now. Perhaps three or even four is the way to go here, for a bit of magic to pass through again[else]It's almost too peaceful here. As if something is not quite ready to happen yet. It's also very plain. You feel a pull from below but see no thatch't hatch to remove or older solders to pull at[end if][if elite lit is in well].[paragraph break]The bookshelf, aka [i]Elite Lit[r], also stands here to distract you, if you need that[end if]."
 
-to say well-up: say "There are three ways to go back up, here: north, southwest, and southeast"
+to say well-up: say "There are three ways to go back up, here: north, southwest, and southeast. Typing [b]U[r] or [b]UP[r] will lead you back the way you came, to the [b][last-well-room][r]"
 
 check going down in Dwell'd Well:
 	if player is in Dwell'd Well:
@@ -252,7 +252,12 @@ check going down in Dwell'd Well:
 		the rule succeeds;
 	if the score is 0, say "Nothing there, yet." instead;
 
-check going up in Dwell'd Well: say "[well-up]." instead;
+check going to Dwell'd Well:
+	now last-well-room is location of player;
+
+check going up in Dwell'd Well:
+	say "Going back up the way you came...";
+	move player to last-well-room;
 
 check going nowhere in dwell'd well: say "[well-up]." instead;
 
