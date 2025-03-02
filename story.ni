@@ -278,7 +278,7 @@ this is the guess-okeydokey rule:
 	increment the score;
 	follow the notify score changes rule;
 	wfak;
-	say "Now, where to visit first? Perhaps that restaurant called L'Salsa, or the snack shop [i]Ho Choc[r]. In other establishments, hotshots eat couscous, or maybe mahi mahi, or tout stouts to ward off beriberi. Under a chiquichiqui and mingimingi and rewa-rewa.[paragraph break]You rightly feel like ...";
+	say "Now, where to visit first? Perhaps that restaurant called [i]Yo, BYOB[r], or [i]L'Salsa[r], or the snack shop [i]Ho, Choc[r]. In other establishments, hotshots eat couscous, or maybe mahi mahi, or tout stouts to ward off beriberi. Under a chiquichiqui and mingimingi and rewa-rewa.[paragraph break]You rightly feel like ...";
 	end the story finally saying "A MUCKAMUCK!";
 	process the shutdown rules;
 
@@ -317,6 +317,10 @@ looptext of La Palapa is "Alas, you can lay claim to no such cool nicknames. But
 section U DUD NOT SNOTS
 
 U DUD NOT SNOTS is a randtexter. printed name is "U DUD/NOT, SNOTS". description is "Someone[one of][or] else[stopping] uninvited is [next-text of U DUD]."
+
+firsttext of U DUD is "Wow! That's a lot of unnvited people. Way more than invited. That Toronto Ron sure has standards! Or, at least, he thinks he does."
+
+randtable of U DUD is table of uninvited people.
 
 to say udud-to: move U DUD to Well;
 
