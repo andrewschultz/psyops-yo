@@ -97,6 +97,7 @@ when play begins:
 	move un suns backdrop to all rooms in Top Stops;
 	move ingulfing gulf backdrop to all rooms in Top Stops;
 	move ingraining rain backdrop to all rooms in Top Stops;
+	move primp rim backdrop to all rooms in Top Stops;
 	now the right hand status line is "[score]/[maximum score]";
 
 volume backdrops
@@ -104,10 +105,9 @@ volume backdrops
 chapter general backdrops
 
 instead of doing something with a backdrop:
-	if current action is not examining:
-		say "Sadly, [the noun] leaves you so helpless you can't do much more than examine [if noun is plural-named]them[else]it[end if]. So you do.";
-		try examining noun instead;
-	continue the action;
+	if current action is examining, continue the action;
+	say "Sadly, [the noun] leaves you so helpless you can't do much more than examine [if noun is plural-named]them[else]it[end if]. So you do.";
+	try examining noun;
 
 chapter un suns
 
@@ -122,6 +122,22 @@ to say igulf: say "The Ingulfing Gulf surrounds you every way except [list of vi
 section ingraining rain
 
 the ingraining rain is a backdrop. "Well, it isn't terribly gaudy looking rain, but it's enough to prevent you from straying."
+
+section primp rim
+
+the primp rim is a backdrop. "It blocks passage to [rimdir of location of player] and reflects you back. Well, a circus mirror-warped version of you[one of]. You poke at it -- it's surprisingly resilient. It seems to be guarding something, but how to get by it?[or].[stopping]"
+
+ to say primp-note: if score is 0, say ". [one of]A[or]The[stopping] primp-rim is wedged between those two passages, [rimdir of location of player]"
+
+ to say rimdir of (rm - a room):
+	if rm is ur church:
+		say "south";
+	else if rm is strangest range:
+		say "some odd direction between east and northeast";
+	else if rm is ingrowing row:
+		say "some odd direction between west and northwest";
+	else:
+		say "some weird direction it shouldn't--it shouldn't be here"
 
 volume the player
 
@@ -158,7 +174,7 @@ volume Top Stops
 
 book Strangest Range
 
-Strangest Range is a room in Top Stops. "[unsuns-gulf]north[if score < 3] (or northeast)[else], northeast[end if] and east[or-well]."
+Strangest Range is a room in Top Stops. "[unsuns-gulf]north[if score < 3] (or northeast)[else], northeast[end if] and east[or-well][primp-note]."
 
 after printing the locale description for Strangest Range when init-about is false:
 	now init-about is true;
@@ -176,7 +192,7 @@ this is the guess-cap rule: say "The cap jumps up into your hands!"
 
 book Ingrowing Row
 
-Ingrowing Row is east of Strangest Range. It is in Top Stops. "[unsuns-gulf]north (or northwest) and west[or-well]."
+Ingrowing Row is east of Strangest Range. It is in Top Stops. "[unsuns-gulf]north (or northwest) and west[or-well][primp-note]."
 
 chapter Tormentor Men
 
@@ -194,12 +210,12 @@ this is the guess-hat rule: say "The hat suddenly looks a little more dignified.
 
 book Ur Church
 
-Ur Church is northeast of Strangest Range. It is north of Strangest Range. It is in Top Stops. printed name is "Ur-Church". "[unsuns-gulf]southwest and southeast[or-well]. The oppressive noise has changed, though that's not what you need to change somewhere."
+Ur Church is northeast of Strangest Range. It is north of Strangest Range. It is in Top Stops. printed name is "Ur-Church". "[unsuns-gulf]southwest and southeast[or-well][primp-note]."
 
 Ur Church is north of Ingrowing Row. It is northwest of Ingrowing Row.
 
 check going in Ur Church:
-	if noun is south and score is 0, say "There are passages southwest and southeast, but there is resistance south. For now." instead;
+	if noun is south and score is 0, say "There are passages southwest and southeast, but the primp-rim blocks your way south. For now." instead;
 	if noun is east, try going southeast instead;
 	if noun is west, try going southwest instead;
 
@@ -217,7 +233,7 @@ understand "stalest" and "stalest ale" as ale when ale is doubled.
 
 book Dwell'd Well
 
-to say or-well: if score > 0, say ". There's also a way down";
+to say or-well: if score > 0, say ". There's also a way down between them, to [if player is in church]the south[else]a direction too diagonal for this parser[end if]";
 
 Dwell'd Well is a room. "[well-up].[paragraph break][if score >= 4]The way down is a huge hole in the shape of a D. You could probably just go down and get on with things, but maybe it's not all that simple[else if score is 3]A voice also whispers ... 'Cad!'[paragraph break]And it makes you feel guilty and silly. You thought did well to expand some things by two letters, but it feels so basic now. Perhaps three or even four is the way to go here, for a bit of magic to pass through again[else]It's almost too peaceful here. As if something is not quite ready to happen yet. It's also very plain. You feel a pull from below but see no thatch't hatch to remove or older solders to pull at[end if][if elite lit is in well].[paragraph break]The bookshelf, aka [i]Elite Lit[r], also stands here to distract you, if you need that[end if]."
 
@@ -349,7 +365,7 @@ to point-check:
 	increment the score;
 	say "[line break][one of]Oh my. A raider-aide, for wherever you need to raid.[or]Another raider-aide![or]The final raider-aide, you assume.[stopping]";
 	if the score is 1:
-		say "[line break]A passage rumbles open below. It's [if number of visited rooms is 2]off to the side. Maybe you should visit the last place above ground before following it, though[else]in the middle of the three areas you've explored[end if].";
+		say "[line break]The primp rim pulsates, then crumbles. It reveals a passage sloping down. It's [if number of visited rooms is 2]oddly off to the side. Maybe you should visit the last place above ground before following it, though[else]in the middle of the three areas you've explored[end if].";
 		change down exit of Ur Church to Dwell'd Well;
 		change south exit of Ur Church to Dwell'd Well;
 		change down exit of Strangest Range to Dwell'd Well;
@@ -357,6 +373,7 @@ to point-check:
 		change north exit of Dwell'd Well to Ur Church;
 		change southwest exit of Dwell'd Well to Strangest Range;
 		change southeast exit of Dwell'd Well to Ingrowing Row;
+		remove primp rim from play;
 	if the score is 3:
 		say "[line break]'Oo! Noon!' a voice cries. But then a louder one booms 'I ... DERIDER!' The un-suns become less dark, as pink spinks fly by them, and the Ingulfing Gulf wanes and retreats.[paragraph break]The scowls cowl flies off you and blows away.[paragraph break]Yet with its absence you still feel you haven't done enough, or you've gotten lucky. You feel like such a ... well, CAD. Yes. No other word will do, and probably only one word will fix how you feel.";
 		moot cowl;
