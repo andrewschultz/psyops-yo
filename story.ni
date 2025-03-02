@@ -141,7 +141,7 @@ the primp rim is a backdrop. "It blocks passage to [rimdir of location of player
 
 volume the player
 
-the description of the player is "Not dazzling, but frankly, you're relieved not to be wearing a tutu or muumuu.".
+the description of the player is "Not dazzling, but frankly, you're relieved not to be wearing a tutu or muumuu. You don't have a tat.".
 
 the scowls cowl is a thing. the player wears the scowls cowl. description of scowls cowl is "It makes you feel down, and you can't pull it off. [if score is 0]Maybe helping other people will cheer you up[else if score is 1]It feels less oppressive now you've helped yourself a bit[else]You barely feel it now, but you can't throw it off just yet[end if]. "
 
@@ -178,7 +178,7 @@ Strangest Range is a room in Top Stops. "[unsuns-gulf]north[if score < 3] (or no
 
 after printing the locale description for Strangest Range when init-about is false:
 	now init-about is true;
-	say "[i][bracket][b]NOTE[r][i]: [this-game][i] requires specific unusual commands to win. You may wish to type [b]ABOUT[r][i] to find out more or [b]VERBS[r][i] t osee a list of useful or needed verbs.[close bracket][line break]";
+	say "[i][bracket][b]NOTE[r][i]: [this-game][i] requires specific unusual commands to win. You may wish to type [b]ABOUT[r][i] to find out more or [b]VERBS[r][i] to see a list of useful or needed verbs.[close bracket][line break]";
 
 chapter alkie
 
@@ -186,7 +186,7 @@ the Stalkiest Alkie is a person in Strangest Range. "[one of]'Uh, hi, I'm the st
 
 chapter cap
 
-the cap is a doubler in Strangest Range. xtra-text of cap is "escapes". "A cap sits on the ground here. Its brim seems stuck.". description is "[if player has cap]It's not trying to escape you, but maybe it will help you escape[else]The way the cap lies on the ground suggests it's being held. It's not of particularly stiff material, but it's standing straight up[end if].". guess-rule is guess-cap rule. zaploc is Ingrowing Row. zaptext is "The Tormentor Men squint at your escapes cap. They start with the usual insults, but you deflect them. They're actually a bit impressed. They say it must be the cap, but the cap ... escapes after a breeze blows it away. The Tormentor Men go chasing after it, because they can't have anyone else wearing it and failing to heed them. The cap blows far away, taking the Tormentor Men with.[paragraph break]'Ehe! Heh!' you think to yourself, not even worrying if they'd chide you for cheating just now."
+the cap is a doubler in Strangest Range. xtra-text of cap is "escapes". "A cap sits on the ground here. Its brim seems stuck.". description is "[if player has cap]It's not trying to escape you, but maybe it will help you escape[else]The way the cap lies on the ground suggests it's being held. It's not of particularly stiff material, but it's standing straight up[end if].". guess-rule is guess-cap rule. zaploc is Ingrowing Row. zaptext is "The Tormentor Men squint at your escapes cap. They start with the usual insults, but you deflect them with yawny aw'n. They're actually a bit impressed. They say it must be the cap, but the cap ... escapes after a breeze blows it away. The Tormentor Men go chasing after it, because they can't have anyone else wearing it and failing to heed them. The cap blows far away, taking the Tormentor Men with.[paragraph break]'Ehe! Heh!' you think to yourself, not even worrying if they'd chide you for cheating just now."
 
 this is the guess-cap rule: say "The cap jumps up into your hands!"
 
@@ -221,7 +221,7 @@ check going in Ur Church:
 
 chapter aide
 
-the Staidest Aide is a person in Ur Church. "A staidest aide stands around here, touching their head as if they need to put something on it to TRULY seem official.". description is "The Staidest Aide looks back at you, trying to tip non-existent headgear and failing.". talk-text is "'Beg, un-begun.'".
+the Staidest Aide is a person in Ur Church. "A staidest aide stands around here, touching their head as if they need to put something on it to TRULY seem official.". description is "The Staidest Aide looks back at you, trying to tip non-existent headgear and failing.". talk-text is "You have a very anti-cantic talk about erasing evil and its pawn-spawns.".
 
 chapter Stalest Ale
 
@@ -235,7 +235,7 @@ book Dwell'd Well
 
 to say or-well: if score > 0, say ". There's also a way down between them, to [if player is in church]the south[else]a direction too diagonal for this parser[end if]";
 
-Dwell'd Well is a room. "[well-up].[paragraph break][if score >= 4]The way down is a huge hole in the shape of a D. You could probably just go down and get on with things, but maybe it's not all that simple[else if score is 3]A voice also whispers ... 'Cad!'[paragraph break]And it makes you feel guilty and silly. You thought did well to expand some things by two letters, but it feels so basic now. Perhaps three or even four is the way to go here, for a bit of magic to pass through again[else]It's almost too peaceful here. As if something is not quite ready to happen yet. It's also very plain. You feel a pull from below but see no thatch't hatch to remove or older solders to pull at[end if][if elite lit is in well].[paragraph break]The bookshelf, aka [i]Elite Lit[r], also stands here to distract you, if you need that[end if]."
+Dwell'd Well is a room. "[well-up].[paragraph break][if score >= 4]The way down is a huge hole in the shape of a D--voices from it seem to say 'Suss us.' You could probably just go down and get on with things, but maybe it's not all that simple[else if score is 3]A voice also whispers ... 'Cad!'[paragraph break]And it makes you feel guilty and silly. You thought did well to expand some things by two letters, but it feels so basic now. Perhaps three or even four is the way to go here, for a bit of magic to pass through again[else]It's almost too peaceful here. As if something is not quite ready to happen yet. It's also very plain. You feel a pull from below but see no thatch't hatch to remove or older solders to pull at[end if][if elite lit is in well].[paragraph break]The bookshelf, aka [i]Elite Lit[r], also stands here to distract you, if you need that[end if]."
 
 to say well-up: say "There are three ways to go back up, here: north, southwest, and southeast. Typing [b]U[r] or [b]UP[r] will lead you back the way you came, to the [b][last-well-room][r]"
 
@@ -290,7 +290,7 @@ the okeydokey is a privately-named doubler. it is scenery. "You shouldn't see th
 
 this is the guess-okeydokey rule:
 	if apple iie is not moot:
-		say "Yes! You're excited! But you run down too fast. The last thing you see is a princess, whose martial-arts move leaves you doubled over, fatally injured.[run paragraph on][died]Okay, not really. But if you want the good ending, I'm gonna force you to name that ancient Apple IIe game. It's a classic.";
+		say "Yes! You're excited! But you run down too fast. The last thing you see is a princess, whose 'Huh, U?!' expression (or is it 'Bub, U...') and martial-arts move leaves you doubled over, fatally injured.[run paragraph on][died]Okay, not really. But if you want the good ending, I'm gonna force you to name that ancient Apple IIe game. It's a classic.";
 		now okeydokey-tried is true;
 		the rule fails;
 	say "Yes, it's a bit reflexive and self-referential. But it's worth a try. And, equaly hokey, the well swells![paragraph break]As you climb down, you wind up finding a secret passage that leads ... somewhere new. You feel smart immediately when you arrive, unable to suppress an 'I DID! I DID!'and needing no estates tat with a legible gib. Why, you don't even need to visit the Smiles Mile you see![paragraph break]Of course it's easy to feel all this, walking on ...";
@@ -299,7 +299,7 @@ this is the guess-okeydokey rule:
 	increment the score;
 	follow the notify score changes rule;
 	wfak;
-	say "Now, where to visit first? Perhaps that restaurant called [i]Yo, BYOB[r], or [i]L'Salsa[r], or the snack shop [i]Ho, Choc[r]. In other establishments, hotshots eat couscous, or maybe mahi mahi, or tout stouts to ward off beriberi. Under a chiquichiqui and mingimingi and rewa-rewa.[paragraph break]You rightly feel like ...";
+	say "Now, where to visit first? Perhaps that restaurant called [i]Yo, BYOB[r], or [i]L'Salsa[r], or the snack shop [i]Ho, Choc[r]. In other establishments that'd please any ate-rater, hotshots eat couscous, or maybe mahi mahi, or tout stouts to ward off beriberi. Under a chiquichiqui and mingimingi and rewa-rewa.[paragraph break]You rightly feel like ...";
 	end the story finally saying "A MUCKAMUCK!";
 	process the shutdown rules;
 
@@ -493,7 +493,7 @@ the block attacking rule is not listed in any rulebook.
 
 check attacking:
 	if noun is tormentor men, say "They'd run you through a slaps-lap, or worse." instead;
-	say "Ai! Maim! (Violence is not the keyword.)" instead;
+	say "Ai! Maim?! (Violence is not the keyword.)" instead;
 
 understand the command "hit" as something new.
 understand the command "hit [something]" as something new.
