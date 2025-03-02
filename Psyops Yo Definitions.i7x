@@ -40,6 +40,8 @@ volume types
 
 a randtexter is a kind of thing. a randtexter has a table name called randtable. a randtexter has text called firsttext. a randtexter has text called looptext. a randtexter has a number called randindex. a randtexter is usually scenery.
 
+a randtexter can be lengthflagged. a randtexter is usually not lengthflagged.
+
 a randtexter has a truth state called random-seen.
 
 to say next-text of (rt - a randtexter):
@@ -50,19 +52,24 @@ to say next-text of (rt - a randtexter):
 		now randindex of rt is 0;
 		now note-rand-loop is true;
 
-check examining a randtexter for the first time:
+check examining a not lengthflagged randtexter:
 	if firsttext of noun is empty, continue the action;
-	say "[firsttext of noun][line break]" instead;
+	say "[firsttext of noun][line break]";
+	noterands noun;
+	the rule succeeds;
 
 report examining a randtexter when note-rand-loop is true (this is the randtexter loop report rule):
 	say "[looptext of noun][line break]";
 	now note-rand-loop is false;
 	continue the action;
 
-report examining a randtexter:
-	if random-seen of noun is true, continue the action;
-	now random-seen of noun is true;
-	say "[i][bracket][b]NOTE[r][i]: there are [number of rows in (randtable of noun) in words] [category of noun] to see with [the noun], [one of]and if you don't want to examine continually, you can read the game source on GitHub or in the deliverable. The list is in Psyops Yo Random Text.i7x[or][stopping].[close bracket][r][line break]";
+to noterands (rt - a randtexter):
+	now rt is lengthflagged;
+	say "[line break][i][bracket][b]NOTE[r][i]: there are [number of rows in (randtable of rt) in words] [category of rt] to see with [the rt][one of], and if you don't want to examine continually, you can read the game source on GitHub or in the
+ deliverable. The list is in Psyops Yo Random Text.i7x[or][stopping].[close bracket][r][line break]";
+
+report examining a not lengthflagged randtexter:
+	noterands noun;
 	continue the action;
 
 to say category of (rt - a randtexter):
