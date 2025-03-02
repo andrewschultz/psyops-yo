@@ -253,10 +253,12 @@ this is the guess-cad rule:
 	wfak;
 	say "You incant 'ELIDE!'";
 	wfak;
-	say "A hole opens up below! It's in the shape of a [b]D[r], which suggests you can just go (D) for down.[paragraph break]And yet ... perhaps you can get style points ... for that, or the mysterious Apple IIe which appeared in the hole. Funny, you'd have expected Le Coleco.[paragraph break]You can also, if you like, distract yourself with a bookshelf labeled (of course) [i]Elite Lit[r].";
+	say "A hole opens up below! It's in the shape of a [b]D[r], which suggests you can just go (D) for down.[paragraph break]And yet ... perhaps you can get style points ... for that, or the mysterious Apple IIe which appeared in the hole. Funny, you'd have expected Le Coleco.[paragraph break]But it's not all that appears. You can also, if you like, distract yourself with a bookshelf labeled (of course) [i]Elite Lit[r].[paragraph break]A place called La Palapa has its entrance blocked, and an Able Tablet appears on the side of the well, listing curious names.";
 	move okeydokey to Dwell'd Well;
 	move Apple IIe to Dwell'd Well;
 	move Elite Lit to Dwell'd Well;
+	move La Palapa to Dwell'd Well;
+	move the Able Tablet to Dwell'd Well;
 	now player has ur aura;
 
 the ur aura is a thing. printed name is "ur-aura". description is "It's sort of all about you. It makes you feel empowered."
@@ -301,6 +303,32 @@ to say conditional-period:
 to say skp: now skip-period is true;
 
 check taking elite lit: say "Where you're going you won't need books. Or if you do, they'll be the same ones as here, but in better condition." instead;
+
+section La Palapa
+
+La Palapa is a randtexter. description is "[one of]Beneath a stamp saying PROPERTY OF TORONTO RON, y[or]Y[stopping]ou note [one of]one[or]another[stopping] person allowed in: [next-text of La Palapa]."
+
+randtable of La Palapa is table of Palapa Invitees.
+
+firsttext of La Palapa is "[udud-to]Whoah! All sorts of names are written here. Names of people welcome and, on something you now notice called 'U DUD/NOT, SNOTS,' people unwelcome by Toronto Ron. 'Whew, he...' you think."
+
+looptext of La Palapa is "Alas, you can lay claim to no such cool nicknames. But you bet none of those people could ever see whatever's below here. It must be pretty cool!"
+
+section U DUD NOT SNOTS
+
+U DUD NOT SNOTS is a randtexter. printed name is "U DUD/NOT, SNOTS". description is "Someone[one of][or] else[stopping] uninvited is [next-text of U DUD]."
+
+to say udud-to: move U DUD to Well;
+
+looptext of U DUD NOT SNOTS is "That's a lot of people! Perhaps they could get together to form their own much kinder group than Toronto Ron's. Maybe the Oft-Softs or whatever." [??oft-say-soft]
+
+section Able Tablet
+
+the Able Tablet is a randtexter. firsttext of the Able Tablet is "It's pretty exclusive! Man, the names listed must be pretty clever. Either their last names, or their first and maybe middle names are initialed. None is as cool as, say, MP Kempke. That's only to be expected. But there are a lot to peruse!". description of Able Tablet is "You read an[one of][or]other[stopping] initialled name: [next-text of Able Tablet]."
+
+randtable of Able Tablet is table of initialed names.
+
+looptext of the Able Tablet is "After [one of]again [or][stopping]reviewing all the names, you reflect again, without any prodding whatsoever, that they're all pretty cool, but none is of course as cool as MP Kempke."
 
 chapter Apple IIe
 
