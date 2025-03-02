@@ -24,22 +24,46 @@ test w3 with "test u1/test mid/test e3".
 
 volume full random
 
-chapter bksing
+chapter churning
 
-bksing is an action out of world.
+churning is an action out of world applying to one visible thing.
 
-understand the command "bks" as something new.
+understand the command "churn" as something new.
 
-understand "bks" as bksing.
+understand "churn" as churning.
+understand "churn [any thing]" as churning.
 
-carry out bksing:
-	move elite lit to location of player;
+a randtexter can be churned. a randtexter is usually not churned.
+
+carry out churning:
+	if noun is not a randtexter:
+		say "You need a random text generating object. Here is the list: [the list of randtexters].";
+		list-unchurned;
+		the rule fails;
+	move noun to location of player;
+	if noun is not churned and firsttext of noun is not empty:
+		say "Initial examination to display firsttext property:";
+		try examining noun;
+	now noun is churned;
 	let count be 0;
-	while count < number of rows in table of elite lit books:
+	while count < number of rows in randtable of noun:
 		increment count;
-		say "[count] of [number of rows in table of elite lit books]:";
-		try examining elite lit;
+		say "([count] of [number of rows in randtable of noun], not shown in release mode)";
+		try examining noun;
 	the rule succeeds;
+
+to list-unchurned:
+	if number of not churned randtexters is 0:
+		say "You've already churned everything once, though.";
+	else:
+		say "Left to churn: [the list of not churned randtexters].";
+
+Rule for printing a parser error when the latest parser error is the noun did not make sense in that context error:
+	if action-to-be is the churning action:
+		say "You can only churn [the list of randtexters].";
+		list-unchurned;
+		the rule succeeds;
+	continue the action;
 
 Psyops Yo Tests ends here.
 
