@@ -280,12 +280,17 @@ this is the guess-okeydokey rule:
 	end the story finally saying "A MUCKAMUCK!";
 	process the shutdown rules;
 
-chapter Elite Lit
+chapter randtexter items
 
-Elite Lit is a proper-named scenery. description is "You note [one of]one[or]another[stopping] book title: [one-book][conditional-period]".
+section Elite Lit
 
-check examining Elite Lit for the first time:
-	say "Wow! So many books! You have no idea how good they are. Perhaps there is a lost novel of  F. Kafka in here. Or not.[paragraph break]You can keep examining, to skim random titles. There are [number of rows in table of elite lit books] total." instead;
+Elite Lit is a randtexter. description is "You note [one of]one[or]another[stopping] book title: [i][next-text of Elite Lit][r][conditional-period]".
+
+randtable of Elite Lit is table of elite lit books.
+
+firsttext of Elite Lit is "Wow! So many books! You have no idea how good they are. Perhaps there is a lost novel of  F. Kafka in here. Or not.[paragraph break]You can keep examining, to skim random titles.".
+
+looptext of Elite Lit is "You've paged through everything here[one of][or] once again[stopping]."
 
 to say conditional-period:
 	if skip-period is true:
@@ -296,10 +301,6 @@ to say conditional-period:
 to say skp: now skip-period is true;
 
 check taking elite lit: say "Where you're going you won't need books. Or if you do, they'll be the same ones as here, but in better condition." instead;
-
-after examining Elite Lit for the first time:
-	say "[i][bracket][b]NOTE[r][i]: there are [number of rows in table of Elite Lit books] total books, and if you don't want to examine continually, you can read the game's source code on GitHub or in the deliverable.  The list is in Random Text.i7x.[close bracket][r][line break]";
-	continue the action;
 
 chapter Apple IIe
 

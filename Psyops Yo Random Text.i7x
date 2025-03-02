@@ -11,16 +11,8 @@ when play begins:
 
 volume elite lit books
 
-to say one-book:
-	increment elite-row;
-	choose row elite-row in table of elite lit books;
-	say "[i][bookname entry][r]";
-	if elite-row is number of rows in table of Elite Lit books:
-		say ". You've paged through everything here[one of][or] once again[stopping]";
-		now elite-row is 0;
-
 table of elite lit books
-bookname
+randtext
 "A's Eraser"
 "Ada, Dad"
 "Alameda, Lamed"

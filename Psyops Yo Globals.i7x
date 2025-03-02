@@ -19,9 +19,9 @@ okeydokey-tried is a truth state that varies.
 
 chapter random text
 
-elite-row is a number that varies.
-
 skip-period is a truth state that varies.
+
+note-rand-loop is a truth state that varies.
 
 volume unsorted
 
