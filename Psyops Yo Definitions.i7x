@@ -4,7 +4,7 @@ Version 1/250301 of Psyops Yo Definitions by Andrew Schultz begins here.
 
 volume main definitions
 
-chapter room stub
+chapter room stub(s)
 
 to say in-here of (rm - a room):
 	if rm is not visited:
@@ -13,6 +13,9 @@ to say in-here of (rm - a room):
 		say "here";
 	else:
 		say "in [rm]";
+
+to say triangle-point:
+	say "You're at the [if player is in church]north[else if player is in range]southwest[else]southeast[end if] corner of an equilateral triangle of open spaces. "
 
 chapter directions
 

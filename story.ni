@@ -174,7 +174,7 @@ volume Top Stops
 
 book Strangest Range
 
-Strangest Range is a room in Top Stops. "[unsuns-gulf]north[if score < 3] (or northeast)[else], northeast[end if] and east[or-well][primp-note]."
+Strangest Range is a room in Top Stops. "[triangle-point][unsuns-gulf]north[if score < 3] (or northeast)[else], northeast[end if] and east[or-well][primp-note]."
 
 after printing the locale description for Strangest Range when init-about is false:
 	now init-about is true;
@@ -192,7 +192,7 @@ this is the guess-cap rule: say "The cap jumps up into your hands!"
 
 book Ingrowing Row
 
-Ingrowing Row is east of Strangest Range. It is in Top Stops. "[unsuns-gulf]north (or northwest) and west[or-well][primp-note]."
+Ingrowing Row is east of Strangest Range. It is in Top Stops. "[triangle-point][unsuns-gulf]north (or northwest) and west[or-well][primp-note]."
 
 chapter Tormentor Men
 
@@ -210,7 +210,7 @@ this is the guess-hat rule: say "The hat suddenly looks a little more dignified.
 
 book Ur Church
 
-Ur Church is northeast of Strangest Range. It is north of Strangest Range. It is in Top Stops. printed name is "Ur-Church". "[unsuns-gulf]southwest and southeast[or-well][primp-note]."
+Ur Church is northeast of Strangest Range. It is north of Strangest Range. It is in Top Stops. printed name is "Ur-Church". "[triangle-point][unsuns-gulf]southwest and southeast[or-well][primp-note]."
 
 Ur Church is north of Ingrowing Row. It is northwest of Ingrowing Row.
 
