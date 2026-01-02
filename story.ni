@@ -79,7 +79,7 @@ section room definitions
 a room has text called clue-text.
 
 to say unsuns-gulf:
-	if un suns are not moot, say "The un-suns hang menacingly in the sky, blotting things out and causing general depression and dreariness. ";
+	if un suns are not moot, say "The two un-suns hang menacingly in the sky, blotting things out and causing general depression and dreariness. ";
 	say "Passages through the Ingulfing Gulf lead ";
 
 volume when play begins
@@ -111,7 +111,7 @@ instead of doing something with a backdrop:
 
 chapter un suns
 
-the un suns are a backdrop. printed name is "un-suns". "[if score >= 3]They're much less gloomy now. You did what you could.[else]They're totally, like, dark and gloomy and stuff. Just the thought of them makes you think, 'O, wow!'[end if]"
+the un suns are a backdrop. printed name is "un-suns". "[if score >= 3]They're much less gloomy now you've sorted things out aboveground.[else]They're totally, like, dark and gloomy and stuff. Just the thought of them makes you think, 'O, wow!' They're so dark, you wonder if they could be called tar stars, too.[end if]"
 
 chapter ingulfing gulf
 
@@ -196,7 +196,7 @@ Ingrowing Row is east of Strangest Range. It is in Top Stops. "[triangle-point][
 
 chapter Tormentor Men
 
-The Tormentor Men are plural-named people in Ingrowing Row. "Tormentor men stand here. They aren't even throwing light slights at you ... at least not while you're looking. They definitely go in for a gag.". talk-text is "'Derider?! I?!' they all respond individually. Then, 'Ain't saints!'[paragraph break]There are a few mor taunts, well above 'Coo-coo,' 'Dum-dum,' 'Wah-wah' or 'Haw-haw.'[paragraph break]It's annoying, being a sheesh-ee, but at least they're not attacking you. Maybe it's more fun for them to drag things out. Perhaps you could lure them into chasing after something that can't be tormented. They'd probably jump before you know it[one of]. If they were French, they'd definitely, be a quip-equipe, with voices smooth as Le Oleo[or][stopping].". description is "They are wearing mock-smocks.".
+The Tormentor Men are plural-named people in Ingrowing Row. "Tormentor men stand here. They aren't even throwing light slights at you ... at least not while you're looking. They definitely go in for a gag.". talk-text is "'Derider?! I?!' they all respond individually. Then, 'Ain't saints!'[paragraph break]There are a few mor taunts, well above 'Coo-coo,' 'Dum-dum,' 'Wah-wah' or 'Haw-haw.'[paragraph break]It's annoying, being a sheesh-ee, but at least they're not attacking you. Maybe it's more fun for them to drag things out. Perhaps you could lure them into chasing after something that can't be tormented. They'd probably jump before you know it[one of]. If they were French, they'd definitely, be a quip-equipe, with voices smooth as Le Oleo[or][stopping].". description is "They are wearing mock-smocks. If they were female, perhaps they would be wearing oppressive tsarist saris.".
 
 after examining tormentor men for the first time: say "You feel momentary relief they're not a Getting-Ettin, looking to maul you. But you still want them to just go."
 
@@ -225,7 +225,7 @@ the Staidest Aide is a person in Ur Church. "A staidest aide stands around here,
 
 chapter Stalest Ale
 
-the ale is a doubler in Ur Church. xtra-text is "stalest". description is "[if ale is doubled]It doesn't look especially menacing, but you really don't want to drink it[else]It's plain, as if it could become something else, or be more or less palatable, for better or worse[end if].". "Some ale lies here at a weird angle--it should really be falling over like that.". guess-rule is guess-ale rule. zaptext is "On seeing the [ale], the [alkie] pulls it from your hands and takes a swig, then makes a face. 'Ugh! How could you...?' but after some reflection, says 'You know, I always wanted to give this stuff up. This reminds me how nasty it tasted once I started. Might not be a full cure, but hey, has to be better than Swines['] Wine, right? Hey! You know what? This is nasty enough, it will poison some pawn-spawns outlets.' Filled with purpose, the (ex-)[alkie] walks away.". zaploc is Strangest Range.
+the ale is a doubler in Ur Church. xtra-text is "stalest". description is "[if ale is doubled]It doesn't look especially menacing, but you really don't want to drink it[else]It's plain, as if it could become something else, or be more or less palatable, for better or worse[end if].". "Some ale lies here at a weird angle--how has it not fallen over?". guess-rule is guess-ale rule. zaptext is "On seeing the [ale], the [alkie] pulls it from your hands and takes a swig, then makes a face. 'Ugh! How could you...?' but after some reflection, says 'You know, I always wanted to give this stuff up. This reminds me how nasty it tasted once I started. Might not be a full cure, but hey, has to be better than Swines['] Wine, right? Hey! You know what? This is nasty enough, it will poison some pawn-spawns outlets.' Filled with purpose, the (ex-)[alkie] walks away.". zaploc is Strangest Range.
 
 this is the guess-ale rule: say "The ale bubbles momentarily and seems to change to a sicklier hue. For whatever reason, you feel less guilty taking it now."
 
@@ -311,7 +311,7 @@ Elite Lit is a randtexter. description is "You note [one of]one[or]another[stopp
 
 randtable of Elite Lit is table of elite lit books.
 
-firsttext of Elite Lit is "Wow! So many books! You have no idea how good they are. Perhaps there is a lost novel of  F. Kafka in here. Or not.[paragraph break]You can keep examining, to skim random titles.".
+firsttext of Elite Lit is "Wow! So many books! You have no idea how good they are. Perhaps there is a lost novel of F. Kafka in here. Or not.[paragraph break]You can keep examining, to skim random titles.".
 
 looptext of Elite Lit is "You've paged through everything here[one of][or] once again[stopping]."
 
@@ -645,7 +645,3 @@ carry out xyzzying:
 	the rule succeeds;
 
 volume unsorted
-
-chapter tsarist saris
-
-the saris are a thing.
