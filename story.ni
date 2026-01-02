@@ -86,13 +86,13 @@ volume when play begins
 
 when play begins:
 	say "You finish reading the complete adventures of Tintin again. And you reflect on your life.";
-	wfak;
-	say "What with your nice job at DecodeCo, you don't NEED to save money, but you do enjoy your nice end-of-month trip to the discount warehouse without any hiccups. ";
-	wfak;
+	wfas;
+	say "What with your nice job at DecodeCo, you don't NEED to save money, but you do enjoy your nice end-of-month trip to the discount warehouse without any hiccups.";
+	wfas;
 	say "Was that too much to ask? Apparently it was, this time. Costco St. and the familiar trip by Logan Slogans seemed quiet enough, until that horribly ghostly voice 'Why save a few dollars ... when you could save ... the TOP STOPS?'";
-	wfak;
+	wfas;
 	say "You should have known the ghost was not going to help you save a LOT of dollars instead, but you couldn't resist. Costco St. took a dark turn, and you wound up somewhere much darker.";
-	wfak;
+	wfas;
 	say "The ghost points to the dark blobs in the sky. 'Lo! Blob?!' you say. 'Un-Suns!' it replies. Then to the distance, where sounds speak for themselves. A yowly owl! Wan swans! 'It sits!' cried the ghost, un-grammatically. You ask for more help, but the ghost taunts you with 'Un-begun? Beg!' Before you have a chance, it fades away with an 'I.e. ... DIED!'";
 	move un suns backdrop to all rooms in Top Stops;
 	move ingulfing gulf backdrop to all rooms in Top Stops;
@@ -178,7 +178,7 @@ Strangest Range is a room in Top Stops. "[triangle-point][unsuns-gulf]north[if s
 
 after printing the locale description for Strangest Range when init-about is false:
 	now init-about is true;
-	say "[i][bracket][b]NOTE[r][i]: [this-game][i] requires specific unusual commands to win. You may wish to type [b]ABOUT[r][i] to find out more or [b]VERBS[r][i] to see a list of useful or needed verbs.[close bracket][line break]";
+	say "[i][bracket][b]NOTE[r][i]: [this-game][i] requires specific unusual commands to win. You may wish to type [b]ABOUT[r][i] to find out more or [b]VERBS[r][i] to see a list of useful or needed verbs. You may also get clues from walking around or from, well, the introductory text[close bracket][line break]";
 
 chapter alkie
 
@@ -246,8 +246,10 @@ check going down in Dwell'd Well:
 		if okeydokey-tried is true and apple iie is moot:
 			say "Hey, wait. [b]OKEYDOKEY[r] would work now. You should say that, instead." instead;
 		say "'Ingoing, O!' you shout as you explore further down...";
-		wfak;
-		say "[line break]...and you wind up in Saves Ave. It is a nice enough place to live. People seem to appreciate you. Things are okay, for about a week. Then... then, you realize you are just a block over from Raver Ave. It's not so bad at first, but the raves get bigger and bigger as time goes on. Everyone greets the host with a 'Shucks, Huck,' though you're never in a good enough mood to. Not that it's the worst place to live, but you sense you could have done better.";
+		wfas;
+		say "...and you land with a 'Lo, Plop' in ...";
+		wfas;
+		say "...Saves Ave. It is a nice enough place to live. People seem to appreciate you. Things are okay, for about a week. Then... then, you realize you are just a block over from Raver Ave. It's not so bad at first, but the raves get bigger and bigger as time goes on. Everyone greets the host with a 'Shucks, Huck,' though you're never in a good enough mood to. Not that it's the worst place to live, but you sense you could have done better.";
 		end the story finally saying "A 'YAY'";
 		the rule succeeds;
 	if the score is 0, say "Nothing there, yet." instead;
@@ -267,13 +269,13 @@ the cad is a privately-named doubler. it is scenery. xtra-text is "abracadabra".
 
 this is the guess-cad rule:
 	say "You hear lightning. You wonder briefly if it is about to strike you down because abracadabra isn't a real-real word.";
-	wfak;
+	wfas;
 	say "But you remain standing. Eh, you could probably beat yourself up until Black Friday over whether or not you had enough style points, here. You feel different, as if encompassed by something supernatural.";
-	wfak;
+	wfas;
 	say "Dirt is cleared away to reveal a rod and lid beneath the well. They look plain, but you know the rod must be an erode-rod. As for the lid?";
-	wfak;
+	wfas;
 	say "You incant 'ELIDE!'";
-	wfak;
+	wfas;
 	say "A hole opens up below! It's in the shape of a [b]D[r], which suggests you can just go (D) for down.[paragraph break]And yet ... perhaps you can get style points ... for that, or the mysterious Apple IIe which appeared in the hole. Funny, you'd have expected Le Coleco.[paragraph break]But it's not all that appears. You can also, if you like, distract yourself with a bookshelf labeled (of course) [i]Elite Lit[r].[paragraph break]A place called La Palapa has its entrance blocked, and an Able Tablet appears on the side of the well, listing curious names.";
 	move okeydokey to Dwell'd Well;
 	move Apple IIe to Dwell'd Well;
@@ -294,12 +296,12 @@ this is the guess-okeydokey rule:
 		now okeydokey-tried is true;
 		the rule fails;
 	say "Yes, it's a bit reflexive and self-referential. But it's worth a try. And, equaly hokey, the well swells![paragraph break]As you climb down, you wind up finding a secret passage that leads ... somewhere new. You feel smart immediately when you arrive, unable to suppress an 'I DID! I DID!'and needing no estates tat with a legible gib. Why, you don't even need to visit the Smiles Mile you see![paragraph break]Of course it's easy to feel all this, walking on ...";
-	wfak;
+	wfas;
 	say "[b]EINSTEIN ST.[r]";
 	increment the score;
 	follow the notify score changes rule;
-	wfak;
-	say "Now, where to visit first? Perhaps that restaurant called [i]Yo, BYOB[r], or [i]L'Salsa[r], or the snack shop [i]Ho, Choc[r]. In other establishments that'd please any ate-rater, hotshots eat couscous, or maybe mahi mahi, or tout stouts to ward off beriberi. Under a chiquichiqui and mingimingi and rewa-rewa.[paragraph break]You rightly feel like ...";
+	wfas;
+	say "Now, where to visit first? Perhaps that restaurant called [i]Yo, BYOB[r], or [i]L'Salsa[r], or the snack shop [i]Ho, Choc[r]. In other establishments that'd please any ate-rater, hotshots eat couscous, or maybe mahi mahi, or tout stouts to ward off beriberi. Under a chiquichiqui and mingimingi and rewa-rewa.[paragraph break]You make your choice. If there was better, you don't care. You can't help feeling like ...";
 	end the story finally saying "A MUCKAMUCK!";
 	process the shutdown rules;
 
