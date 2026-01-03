@@ -396,6 +396,8 @@ rule for printing a parser error (this is the point score check rule):
 
 volume parser errors / meta
 
+check restoring the game: say "A disembodied voice says 'Restores to...'";
+
 report restoring the game: say "Hi! Rehire!";
 
 report undoing an action: say "Edited it!";
@@ -419,8 +421,8 @@ understand "verb" as verbsing.
 understand "v" as verbsing.
 
 carry out verbsing:
-	say "[this-game] has a very simplified parser. You can win just by go in the standard directions, including diagonals, and by guessing magic words based on objects lying around[if cad is in well] or, right now, the voice saying 'Cad.' [else].[end if]";
-	say "[line break]Two useful diagnostic commands are [b]SCORE[r] for score, which also gives non-spoilery nudges, asnd [b]I[r] for inventory, though you won't need to carry much. Other meta-commands include [b]ABOUT[r], [b]CREDITS[r], [b]EXT[r] and [b]VERSIONS[r].";
+	say "[this-game] has a very simplified parser. You can win just by going in the standard directions, including diagonals, and by guessing magic words based on objects lying around[if cad is in well] or, right now, the voice saying 'Cad.' [else] and saying them, with or without the object name.[end if]";
+	say "[line break]Two useful diagnostic commands are [b]SCORE[r] for score, which also gives non-spoilery nudges, and [b]I[r] for inventory, though you won't need to carry much. Other meta-commands include [b]ABOUT[r], [b]CREDITS[r], [b]EXT[r] and [b]VERSIONS[r].";
 	say "[line break][b]TALK[r]ing is also an option, e.g. [b]T NPC[r], or [b]TALK NPC[r] or [b]TALK TO NPC[r]. No subject is actually needed, since no room has more than one NPC.";
 	say "[line break]Some other standard Inform commands are implemented as jokes: for instance, the senses. But none are critical to winning the game.";
 	the rule succeeds;
@@ -552,6 +554,7 @@ understand "about" as abouting.
 
 carry out abouting:
 	say "[this-game] was an entry to the EctoComp 2021 Petite Mort. It was originally conceived for 2020, but life got in the way. I'd had bigger plans, which took away from fun small stuff like this.";
+	say "The game is solvable in nine moves, though there are two bonus points.";
 	say "[line break]Source control is at [github].";
 	say "[line break][b]VERSIONS[r] shows version information. [b]CREDITS[r] shows credits. [b]EXT[r] shows extensions used. Abbreviations work, too.";
 	if score is 0:
@@ -573,15 +576,14 @@ understand "credit" as creditsing.
 understand "credits" as creditsing.
 
 carry out creditsing:
-	say "While there was no time for outside testing, I'd like to thank Olaf Nowacki for moral support. He has an entry in the Petite Mort too! Oh, and the IFComp 2021 authors['] subforum. Several of them entered something, too!";
-	say "[line break]I would also like to thank JJ Guest for creating EctoComp, Duncan Bowsman for stepping in and Ruber Eaglenest for running it currently, and itch.io for hosting EctoComp and other comps that help me just remember to play others['] stuff.";
+	say "I'd like to thank Olaf Nowacki for moral support during the original testing run-up--I left no time for testing. He had an entry in the Petite Mort too! Oh, and the IFComp 2021 authors['] subforum. Several of them entered something, too!";
+	say "[line break]I would also like to thank JJ Guest for creating EctoComp, Duncan Bowsman for stepping in and Ruber Eaglenest for running it in 2021 (and before and after,) and itch.io for hosting EctoComp and other comps that help me just remember to play others['] stuff.";
+	say "[line break]Wade Clarke and A. DiBianca sent transcripts which helped make version 4 more polished.";
 	say "[line break]Attributions for dirt texture in cover art: CC BY-SA 3.0 -- Heath Rezabek -- Vessel CC -- http://vessel.cc[line break]";
 	say "[line break]If you have a clever book or whatever to add, mail me at [email] or post an issue at [github].";
 	the rule succeeds;
 
-chapter versionsing
-
-chapter renaming what versioning does
+chapter EXT given VERSION functionality, with game versions for VERSION
 
 section exting
 
@@ -615,7 +617,7 @@ carry out versioning:
 	say "Version 1 was released October 30, 2021 to Itch.io for the yearly EctoComp competition, Petite Mort division.";
 	say "Version 2 was released February 28, 2025 to Itch.io with no new technical features, but with minor bug fixes and also 'appropriate' text that trickled in over the years. Since then, Martin Amis, whose name cued Hamish, had left this world for over a year. RIP.";
 	say "Version 3 was released March 1, 2025 to Itch.io with the Elite Lit/bookshelf in the final area containing random books.";
-	say "[line break]One more update with cutesy random text is planned, mostly names. Beyond that, nothing except for bug fixes.";
+	say "Version 4 was released January ?, 2026 to Itch.io with more bug fixes and clarifications.";
 	the rule succeeds;
 
 report versioning: say "To see extensions used in [this-game] and Inform's internal release data, type [b]EXT[r] or [b]EXTS[r].";
