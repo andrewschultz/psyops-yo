@@ -99,7 +99,9 @@ instead of doing something with a backdrop:
 
 chapter un suns
 
-the un suns are a plural-named backdrop. printed name is "un-suns". "[if score >= 3]They're much less gloomy now you've sorted things out aboveground.[else if score > 0]They're a little less gloomy now you've got your bearings.[else]They're totally, like, dark and gloomy and stuff. Just the thought of them makes you think, 'O, wow!' They're so dark, you wonder if they could be called tar stars, too.[end if]"
+the un suns are a plural-named backdrop. printed name is "un-suns". "[if score >= 3]They're much less gloomy now you've figured [suns-3] the cap, hat and ale.[else if score > 0]They're a little less gloomy now you've got your bearings.[else if score is 0]They're totally, like, dark and gloomy and stuff. Just the thought of them makes you think, 'O, wow!' They're so dark, you wonder if they could be called tar stars, too.[else]They don't bother you aall [end if]"
+
+to say suns-3: say "[if nmd is 3]what to do with[else]how to change[end if]"
 
 chapter ingulfin' gulf
 
@@ -236,7 +238,7 @@ to say or-well: if score > 0, say ". There's also a way down between them, [if p
 
 Dwell'd Well is a room. "[well-up].[paragraph break][if score is 5]You feel like you can enter the D-shaped hole with pizzazz and flair now, not just going down[else if score is 4]The way down is a huge hole in the shape of a D--voices from it seem to say 'Suss us.' You could probably just go down through the D-shaped hole and get on with things, but maybe you can be fancy about it[else if cad-around]There must be a way further down, but it can't be as easy as using the hat, cap and ale[else]It's almost too peaceful here. As if something is not quite ready to happen yet. It's also very plain. You feel a pull from below but see no thatch't hatch to remove or older solders to pull at[end if][if apple is in well]. An ancient dappled Apple home computer sits next to it[end if][if elite lit is in well].[paragraph break]The bookshelf, aka [i]Elite Lit[r], also stands here to distract you, if you need that. Next to it is an Able Tablet full of random author names[end if][if palapa is in well]. La Palapa is here, too, not that you an enter it, but you can examine it or read [dud] to see (un)-invitees[end if]."
 
-to say well-up: say "There are three ways to go back up, here: north, southwest, and southeast. Typing [b]U[r] or [b]UP[r] will lead you back the way you came, to the [b][last-well-room][r]. But there's nothing more to do aboveground, so you probably want to go [b]D[r] or [b]DOWN[r] [if score is 3]once[else]now[end if] you've found a way"
+to say well-up: say "There are three ways to go back up, here: north, southwest, and southeast. Typing [b]U[r] or [b]UP[r] will lead you back the way you just came, to the [b][last-well-room][r]. But there's nothing more to do aboveground, so you probably want to go [b]D[r] or [b]DOWN[r] [if score is 3]once[else]now[end if] you've found a way"
 
 check going down in Dwell'd Well:
 	if player is in Dwell'd Well:
@@ -392,7 +394,7 @@ chapter point-check
 
 to point-check:
 	increment the score;
-	say "[line break][one of]Oh my. A raider-aide, for wherever you need to raid.[or]Another raider-aide![or]The final raider-aide, you assume.[or]Perhaps it is time to go down.[stopping]";
+	say "[line break][one of]Oh my. A raider-aide, for wherever you need to raid.[or]Another raider-aide![or]The final raider-aide, you assume.[or]Perhaps it is time to go further down.[stopping]";
 	if the score is 1:
 		say "[line break]The primp rim pulsates, then crumbles. It reveals a passage sloping down, more intimidating and obscure than if a speaks-peak had risen. It's [if number of visited rooms is 2]oddly off to the side. Maybe you should visit the last place above ground before following it, though[else if number of visited rooms is 1]a bit forbidding. Maybe explore both paths aboveground, first[else]in the middle of the three areas you've explored[end if].";
 		change down exit of Ur Church to Dwell'd Well;
@@ -532,7 +534,7 @@ carry out requesting the score:
 	else if score is 3:
 		say "You don't need any other raider aide. You should [if ncd > 0]walk around to use what you have[else if well is visited]focus on what to do [in-here of well][else]go [b]DOWN[r] to the center, where you haven't been yet[end if].";
 	else if score is 4:
-		say "You have four points and can just go down, nothing fancy, to win.";
+		say "You have four points and can just go down [in-here of Well], nothing fancy, to win.";
 	else if score is 5:
 		say "You have five points and can now take the fancy way down for an extra special ending. Or just go down for a regular win.";
 	else:
