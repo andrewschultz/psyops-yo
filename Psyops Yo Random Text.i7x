@@ -20,14 +20,16 @@ book books (ha ha)
 Table of Elite Lit Books
 randtext
 "A Dad"
-"A's Eraser"
 "Ada, Dad"
 "Alameda, Lamed"
 "And, Er, Sanders"
 "Aorta, Ort"
 "Are Dared"
 "Are Rarer"
+"A's Ease"
+"A's Eraser"
 "[skp]Asia? Si!" [puncok]
+"At 'C' Hatch"
 "Ataxia Taxi"
 "C an['] Yancy" [capsok]
 "Crib-Escribes"
@@ -37,6 +39,7 @@ randtext
 "Devolved? Evolve"
 "Edged, G"
 "Ender-Senders"
+"E's Test"
 "Ethene, Then"
 "Euro Neuron"
 "Gaging Agin[']"
@@ -46,12 +49,16 @@ randtext
 "[skp]Humph, Ump!" [puncok]
 "[skp]Hush, US?!" [puncok]
 "I Be Tibet"
+"I, Eve, Sieves"
 "I Go Rigor"
 "I, Onion"
 "[skp]Ick! O, Sickos!" [puncok]
 "ID, Aida"
 "IDE Rider"
+"Ill, O Willow"
 "Io's Kiosk"
+"I've Dived"
+"I've River"
 "Kate Skates"
 "[skp]Kink: IN?!" [puncok]
 "Lass, I, Classic"
@@ -62,6 +69,7 @@ randtext
 "Mm, Emme"
 "Mo['] Demode"
 "No Bonobo"
+"[skp]O, Ciao, CIA!" [puncok] [capsok]
 "O LOL" [capsok]
 "O Mom"
 "O Pop"
@@ -74,6 +82,7 @@ randtext
 "Oo, Toot"
 "Or George"
 "Or Giorgi"
+"Oslo's L"
 "Ou Sous"
 "Ou Tout"
 "Over-Cover, C"
@@ -91,6 +100,7 @@ randtext
 "St. Asta"
 "Text Ex"
 "Then, Athena"
+"Tre's Stress"
 "Ug, Hugh"
 "Uh, Nuh'n"
 "Um, Sums"
@@ -106,6 +116,8 @@ randtext
 "Dabbed Abbe"
 "Danged Ange"
 "Dev'd Ev"
+"Druid Rui"
+"E Tha Lethal"
 "Honcho NC"
 "Level Eve"
 "Miami A"
@@ -141,6 +153,7 @@ randtext
 "Art Tartt"
 "Arya Maryam"
 "Avi David"
+"Avi Navin"
 "Ayanna Yann"
 "Desmond Esmon"
 "Di Edie"
@@ -149,7 +162,11 @@ randtext
 "Emilee Mile"
 "Erin Gering"
 "Eva Leval"
+"Evi Nevin"
 "Evie Revier"
+"Frances Cofrancesco"
+"Georg Ore"
+"Hank Shanks"
 "Ike Riker"
 "Ila Silas"
 "Illa Millam"
@@ -163,6 +180,7 @@ randtext
 "Ka Mikami"
 "Ken Okeno"
 "Kyle Skyles"
+"Lan Deslandes"
 "Maxima Xi"
 "Mina Kaminaka"
 "Mo Amoa"
@@ -172,6 +190,7 @@ randtext
 "Ola Nolan"
 "Omer Somers"
 "Ozie Rozier"
+"Randell Orandello"
 "Rayna Kraynak"
 "Ren Arena"
 "Ren Trent"
@@ -193,6 +212,8 @@ randtext
 "Zu Azua"
 
 book initialed names [ split into first and last for my own organization ]
+
+[all from able tablet]
 
 Table of Initialed Names [last initials]
 randtext
@@ -307,6 +328,7 @@ randtext
 "HL Ehle"
 "HN Ohno"
 "IA Nian"
+"IC Kick"
 "IH Mihm"
 "IK Eike"
 "IM Sims"
