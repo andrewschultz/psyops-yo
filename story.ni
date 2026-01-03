@@ -268,6 +268,9 @@ chapter cad
 the cad is a privately-named doubler. it is scenery. xtra-text is "abracadabra". guess-rule is guess-cad rule.
 
 this is the guess-cad rule:
+	if number of carried doublers > 0:
+		say "That feels right, but now is not the time yet. Perhaps you need to do something with [the list of carried doublers].";
+		the rule fails;
 	say "You hear lightning. You wonder briefly if it is about to strike you down because abracadabra isn't a real-real word.";
 	wfas;
 	say "But you remain standing. Eh, you could probably beat yourself up until Black Friday over whether or not you had enough style points, here. You feel different, as if encompassed by something supernatural.";

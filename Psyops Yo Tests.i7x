@@ -4,7 +4,7 @@ Version 1/201028 of Psyops Yo Tests by Andrew Schultz begins here.
 
 volume basic parser tests
 
-test u1 with "escapes/ne/stalest/se/mahatma/w/"
+test u1 with "escapes/ne/stalest/se/mahatma/w/ne"
 
 test u2 with "e/mahatma/nw/stalest/sw/escapes/e"
 
@@ -12,9 +12,9 @@ test mid with "d/abracadabra"
 
 test e1 with "d"
 
-test e2 with "okeydokey"
+test e2 with "karateka/d"
 
-test e3 with "karateka/okey dokey"
+test e3 with "okeydokey/karateka/okey dokey"
 
 test w1 with "test u1/test mid/test e1".
 
