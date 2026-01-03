@@ -270,13 +270,14 @@ this is the guess-cad rule:
 	move Elite Lit to Dwell'd Well;
 	move La Palapa to Dwell'd Well;
 	move the Able Tablet to Dwell'd Well;
+	move U DUD to Dwell'd Well;
 	now player has ur aura;
 
 the ur aura is a thing. printed name is "ur-aura". description is "It's sort of all about you. It makes you feel empowered."
 
 chapter okeydokey
 
-the okeydokey is a privately-named doubler. it is scenery. "You shouldn't see this.". xtra-text is "okey ?dokey". guess-rule is guess-okeydokey rule.
+the okeydokey is a privately-named not takeable doubler. it is scenery. "You shouldn't see this.". xtra-text is "okey ?dokey". guess-rule is guess-okeydokey rule.
 
 this is the guess-okeydokey rule:
 	if apple iie is not moot:
