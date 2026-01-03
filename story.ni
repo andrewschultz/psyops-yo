@@ -489,8 +489,14 @@ carry out taking inventory:
 	if scowls cowl is moot, say "You aren't carrying anything. You're even free of that scowls cowl! You can't see anything worth taking. [if score is 3]You just need to find a way out[else]That'll be handy to make the journey down a bit quicker[end if]." instead;
 	say "You're wearing that scowls cowl, and it's a [if score is 0]total[else if score is 1]considerable[else]bit of a[end if] drag.";
 	if score is 0, say "[line break]You haven't found anything that might help you. Stuff is lying around, but you [if take-try is false]haven't tried to take it yet[else]were unable to just scoop it up[end if]." instead;
-	if number of carried doublers > 0, say "[line break]You have found a raider-aide[if number of carried doublers > 1] or [number of carried doublers in words][end if]: [the list of carried doublers].";
-	if number of moot doublers > 0, say "[line break]You have successfully used a raider-aide[if number of moot doublers > 1] or [number of moot doublers in words][end if]: [the list of moot doublers].";
+	report-raider-aides;
+
+to report-raider-aides:
+	let ncd be number of carried doublers;
+	let nmd be number of moot doublers;
+	if nmd is 3, continue the action;
+	if ncd > 0, say "[line break]You have found a raider-aide[if number of carried doublers > 1]. Well, [number of carried doublers in words][end if]: [the list of carried doublers].";
+	if nmd > 0, say "[line break]You have successfully used a raider-aide[if number of moot doublers > 1] or [number of moot doublers in words][end if]: [the list of moot doublers].";
 
 chapter score
 
@@ -499,12 +505,19 @@ the announce the score rule is not listed in any rulebook.
 carry out requesting the score:
 	say "Total score: [score] / [maximum score]. [if score < 4](Well, 4 is the scores core.)[paragraph break]";
 	if score is 0, say "You haven't figured out a magic word to say yet, but when you do, you'll get your first point." instead;
-	if score is 1, say "You have acquired a raider aide item, [the random carried doubler]." instead;
-	if score is 2, say "You have one raider aide item left to pick up." instead;
-	if score is 3, say "You don't need any other raider aide. You should [if well is visited]focus on what to do [in-here of well][else]go [b]DOWN[r] to the center, where you haven't been yet[end if]." instead;
-	if score is 4, say "You have four points and can just go down, nothing fancy, to win." instead;
-	if score is 5, say "You have five points and can now take the fancy way down for an extra special ending. Or just go down for a regular win." instead;
-	say "How did you get here? You should've won the game by now." instead;
+	if score is 1:
+		say "You have acquired a raider aide item, [the random carried doubler].";
+	else if score is 2:
+		say "You have one raider aide item left to pick up.";
+	else if score is 3:
+		say "You don't need any other raider aide. You should [if number of carried doublers > 0]walk around to use what you have[else if well is visited]focus on what to do [in-here of well][else]go [b]DOWN[r] to the center, where you haven't been yet[end if].";
+	else if score is 4:
+		say "You have four points and can just go down, nothing fancy, to win.";
+	else if score is 5:
+		say "You have five points and can now take the fancy way down for an extra special ending. Or just go down for a regular win.";
+	else:
+		say "How did you manage to check the score? You should've won the game by now. That's a bug!";
+	report-raider-aides;
 
 volume standard rejectable verbs
 
