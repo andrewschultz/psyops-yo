@@ -240,8 +240,8 @@ to say well-up: say "There are three ways to go back up, here: north, southwest,
 
 check going down in Dwell'd Well:
 	if player is in Dwell'd Well:
-		if the score < 3, say "You can't go further down. At least, not now, you can't." instead;
-		if the score < 4, say "'Cad ... cad ...' voices say. You need to shake them off." instead;
+		if number of moot doublers < 3, say "You can't go further down. At least, not now, you can't." instead;
+		if score < 4, say "'Cad ... cad ...' voices say. You need to shake them off." instead;
 		if okeydokey-tried is true and apple iie is moot:
 			say "Hey, wait. [b]OKEYDOKEY[r] would work now. You should say that, instead." instead;
 		say "'Ingoing, O!' you shout as you explore further down...";
@@ -378,7 +378,7 @@ to point-check:
 	increment the score;
 	say "[line break][one of]Oh my. A raider-aide, for wherever you need to raid.[or]Another raider-aide![or]The final raider-aide, you assume.[or]Perhaps it is time to go down.[stopping]";
 	if the score is 1:
-		say "[line break]The primp rim pulsates, then crumbles. It reveals a passage sloping down. It's [if number of visited rooms is 2]oddly off to the side. Maybe you should visit the last place above ground before following it, though[else]in the middle of the three areas you've explored[end if].";
+		say "[line break]The primp rim pulsates, then crumbles. It reveals a passage sloping down. It's [if number of visited rooms is 2]oddly off to the side. Maybe you should visit the last place above ground before following it, though[else if number of visited rooms is 1]a bit forbidding. Maybe explore both paths aboveground, first[else]in the middle of the three areas you've explored[end if].";
 		change down exit of Ur Church to Dwell'd Well;
 		change south exit of Ur Church to Dwell'd Well;
 		change down exit of Strangest Range to Dwell'd Well;
@@ -499,7 +499,7 @@ to report-raider-aides:
 	let nmd be number of moot doublers;
 	if nmd is 3, continue the action;
 	if ncd > 0, say "[line break]You have found a raider-aide[if number of carried doublers > 1]. Well, [number of carried doublers in words][end if]: [the list of carried doublers].";
-	if nmd > 0, say "[line break]You have successfully used a raider-aide[if number of moot doublers > 1] or [number of moot doublers in words][end if]: [the list of moot doublers].";
+	if nmd > 0, say "[line break]You have successfully used a raider-aide[if number of moot doublers > 1], well, [number of moot doublers in words][end if]: [the list of moot doublers].";
 
 chapter score
 
