@@ -250,7 +250,7 @@ check going down in Dwell'd Well:
 		say "...and you land with a 'Lo, Plop' in ...";
 		wfas;
 		say "...Saves Ave. It is a nice enough place to live. People seem to appreciate you. Things are okay, for about a week. Then... then, you realize you are just a block over from Raver Ave leading to the shills['] hill and scamps['] camp beyond. It's not so bad at first, but the raves get bigger and bigger as time goes on, fueled by alt-salts, illicit hoot-shoots, and many a turnt urn. Everyone greets the host with a 'Shucks, Huck,' though you're never in a good enough mood to. They suggest celebrities to invite, too: 'Flavor Flav, or ... ?'[paragraph break]As time goes on, people reflexively wave away your unsocial behavior with yawny aw'n.[paragraph break]Not that it's the worst place to live, and nobody threatens to relocate you to the hack shacks on Grun-G-Run, but you sense this was the lesser of the possible ending-sendings.";
-		end the story finally saying "A 'YAY'";
+		end the story finally saying "ME: HM?! EH?!";
 		the rule succeeds;
 	if the score is 0, say "Nothing there, yet." instead;
 
@@ -517,7 +517,7 @@ to report-raider-aides:
 		say "You keep hearing 'CAD!' everywhere you go.";
 		continue the action;
 	if ncd > 0, say "[line break]You have found a raider-aide[if ncd > 1]. Well, [ncd in words][end if]: [the list of carried doublers].";
-	if nmd > 0, say "[line break]You have successfully used a raider-aide[if nmd > 1], well, [nmd in words][end if]: [the list of moot doublers].";
+	if nmd > 0 and nmd < 4, say "[line break]You have successfully used a raider-aide[if nmd > 1], well, [nmd in words][end if]: [the list of moot doublers].";
 
 chapter score
 
