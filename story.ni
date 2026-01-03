@@ -145,13 +145,12 @@ check taking off scowls cowl: say "It's stuck on you. Perhaps figuring what to d
 
 volume map basics
 
-check going nowhere:
-	if noun is up or noun is down:
-		if Well is unvisited:
-			if score is 3, say "The way forward is down, not up." instead;
-			say "There'll be passage down, but you haven't discovered enough." instead;
-		say "The only vertical passage is [in-here of well]." instead;
-	say "You try to, but you realize such idle sidles might lead into ... the INGULFIN['] GULF. You can, however, go [list of viable directions]." instead;
+check going nowhere when player is not in Well (this is the game and room specific can't go rule) :
+	if noun is up, say "You're not flying out of here." instead;
+	if noun is down:
+		if score is 0, say "There'll be passage down, but you haven't discovered enough." instead;
+		continue the action;
+	say "You try going [noun], but you realize such idle sidles might lead into ... the INGULFIN['] GULF. You can, however, go [list of viable directions]." instead;
 
 Top Stops is a region.
 
