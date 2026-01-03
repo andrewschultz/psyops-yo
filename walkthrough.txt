@@ -4,11 +4,11 @@ The point here is to find letters or letter groups that expand shorter words. Fo
 
 There are three points above ground and three points below. You can get the ones above in any order. You get a point by retrieving an item and then bringing it to the room where it can be used.
 
-The game map is a triangle to start, with a path inward/down to the final center room later.
+The game map is a triangle to start, with a path inward/down to the final center room later once you've dealt with all three rooms aboveground.
 
-You only need one below ground to win, but it's not the best one.
+You only need one command below ground to win, but it's not the best one.
 
-With that in mind, you have a cap to help someone flee.
+With that in mind, you see a cap to help someone, maybe yourself flee. You can't help the alkie right now.
 
 > ESCAPES
 
@@ -20,11 +20,17 @@ Ale, now.
 
 > SE
 
-Another hat. To make you a good person.
+You get rid of the men automatically with the cape.
+
+But what to do with the hat? To help someone be a better person?
 
 > MAHATMA
 
+Now you need to touch base with the other two people/entities hanging around, or the second passage below won't open.
+
 > W
+
+> NE
 
 Now you need to go down, and you hear you are a CAD.
 
@@ -38,4 +44,4 @@ But there is a command you can use on the Apple, or one you can use to get the g
 
 What can you do with "rate?"
 
-What can you do with "d?" The word is probably slangier than abracadabra.
+Then, what can you do with "d?" The word is probably slangier than abracadabra.

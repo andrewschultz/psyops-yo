@@ -456,7 +456,7 @@ carry out verbsing:
 	say "[this-game] has a very simplified parser. You can win just by going in the standard directions, including diagonals, and by guessing magic words based on objects lying around[if cad is in well] or, right now, the voice saying 'Cad.' [else] and saying them, with or without the object name.[end if]";
 	say "[line break]Two useful diagnostic commands are [b]SCORE[r] for score, which also gives non-spoilery nudges, and [b]I[r] for inventory, though you won't need to carry much. Other meta-commands include [b]ABOUT[r], [b]CREDITS[r], [b]EXT[r] and [b]VERSIONS[r].";
 	say "[line break][b]TALK[r]ing is also an option, e.g. [b]T NPC[r], or [b]TALK NPC[r] or [b]TALK TO NPC[r]. No subject is actually needed, since no room has more than one NPC.";
-	say "[line break]Some other standard Inform commands are implemented as jokes: for instance, the senses. But none are critical to winning the game.";
+	say "[line break]Some other standard Inform commands are implemented as jokes: for instance, the senses. But none are critical to winning the game, though [b]AMUSING[r] will list them once you've won.";
 	the rule succeeds;
 
 procedural rule: ignore the print final score rule.
