@@ -55,6 +55,8 @@ every turn when map region of location of player is Top Stops (this is the check
 rule for supplying a missing noun when talking:
 	if number of people in location of player is 2:
 		now noun is random npcish person in location of player;
+	else if apple is in location of player:
+		now noun is the apple iie;
 	else:
 		now noun is the player.
 
@@ -150,7 +152,9 @@ understand "t" and "talk" and "talk to" as talking.
 
 check talking a person: say "[talk-text of noun][line break]" instead;
 
-check talking: say "You don't need to talk to anyone or anything, though people may give some silly response." instead;
+check talking:
+	if noun is apple, say "It's not some newfangled yappy app." instead;
+	say "You don't need to talk to anyone or anything, though people may give some silly response." instead;
 
 talk-text of the player is "You give yourself a chic 'Hi' ... at 'orator.'"
 
