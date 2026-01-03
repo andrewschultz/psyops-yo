@@ -310,13 +310,13 @@ You can't see any such thing.
 >okeydokey
 Yes! You're excited! But you run down too fast. The last thing you see is a princess, whose "Huh, U?!" expression (or is it "Bub, U...") and martial-arts move leaves you doubled over, fatally injured. Your last words are "Shadows had ... OW!"
 *** You have died ***
-Okay, not really. But if you want the good ending, I'm gonna force you to name that ancient Apple IIe game. It's a classic, even with the instadeath and inability to save at the end.
+Okay, not really. But if you want the good ending, I'm gonna force you to name that ancient Apple game. It's a classic, even with the instadeath and inability to save at the end.
 
 >smell
 ROM aroma.
 
 >x apple
-The Apple IIe has the word RATE written across it in orange. You obviously don't have time for silly games right now, but if you did, maybe there's a game you could rate!
+It's an ancient Apple home computer, dappled all over, but it still seems to be running okay. It has the word RATE written across it in orange. You obviously don't have time for silly games right now, but if you did, maybe there's a game you could rate!
 
 >talk apple
 It's not some newfangled yappy app.

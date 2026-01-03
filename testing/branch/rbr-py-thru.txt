@@ -1,0 +1,775 @@
+#-- rbr-py-thru.txt
+#-- main branch file for Psyops Yo walkthroughs
+#
+
+file=reg-py-thru-min.txt,abbr=min,desc=minimum walkthrough,flags=stable
+file=reg-py-thru-max.txt,abbr=max,desc=maximum walkthrough,flags=stable
+file=reg-py-thru-tries.txt,abbr=tries,desc=Walkthrough with tries
+file=reg-py-thru-meta.txt,abbr=meta,desc=Meta command stuff
+file=reg-py-thru-verbs.txt,abbr=verbs,desc=Verbs and alt stuff
+file=reg-py-thru-details.txt,abbr=det,desc=Game text details
+file=reg-py-thru-mistakes.txt,abbr=mis,desc=Mistakes or good guesses
+
+}$REJECT=Nothing magical happens. V or VERBS gives Psyops, Yo's pared-down command list as well as pointers on commands that make progress.
+
+#these aren't necessary, but I always seem to put them in.
+}}MAX=6
+}}CURMAX=6
+}}SCORE=0
+}}CURMIN=4
+
+## *FILE
+## *FORK
+
+## *DESCRIPTION
+
+** game: /home/andrew/prt/debug-psyops-yo.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+** checkclass: /home/andrew/prt/runtime.py
+
+* main-thru
+
+@meta
+#If we must, test RESTORE normally. Here, to start, we test basic parser errors and clues.
+\\
+>abc
+{$REJECT}
+!Also,
+\\
+>abc def
+{$REJECT}
+!Also,
+\\
+>abc def ghi
+{$REJECT} Also, you don't need more than two words for any special command, and one will suffice.
+
+@det
+You finish reading the complete adventures of Tintin again. And you reflect on your life.
+What with your nice job at DecodeCo, you don't NEED to save money, but you do enjoy your nice end-of-month trip to the discount warehouse without any hiccups.
+A slogs-log by MP Kempke and Hamish Amis
+Release 4
+You're at the southwest corner of an equilateral triangle of open spaces. The two un-suns hang menacingly in the sky, blotting things out and causing general depression and dreariness. Passages through the Ingulfin' Gulf lead north (or northeast) and east. A primp-rim is wedged between those two passages, some odd direction between east and northeast.
+"Uh, hi, I'm the stalkiest alkie! People told me a pejorative like that would finally help me get it through my thick head to drink less, but somehow it made me drink more. Guess I'm stuck with it, though, unless someone can help me."
+A cap sits on the ground here. Its brim seems stuck.
+[NOTE: Psyops, Yo requires specific unusual commands to win. You may wish to type ABOUT to find out more or VERBS to see a list of useful or needed verbs. You may also get clues from walking around or from, well, the introductory text]
+\\
+>l
+!Uh, hi
+The stalkiest alkie, stuck with a pejorative name, paces back and forth, looking for something here and not looking for it.
+\\
+>x suns
+!Sadly,
+They're totally, like, dark and gloomy and stuff. Just the thought of them makes you think, "O, wow!" They're so dark, you wonder if they could be called tar stars, too.
+\\
+>x gulf
+!Sadly,
+Ingraining rain slowly keeps filling it up, limiting your travel options to north, northeast and east. You think you yourself "ew, dew'd" at the prospect of touching it. Probably filled with slices-lice, with a trap-pit of ever-severs below.
+\\
+>x rain
+!Sadly,
+Although it isn't terribly gaudy or acidic looking rain, but it's enough to prevent you from straying.
+\\
+>x rim
+!Sadly,
+It blocks passage to some odd direction between east and northeast and reflects you back. Well, a circus mirror-warped version of you. You poke at it -- it's surprisingly resilient. It seems to be guarding something, but how to get by it?
+\\
+>x me
+Not dazzling, but frankly, you're relieved not to be wearing a tutu or muumuu or ew-sews, which you never considered existed until now. You don't have a tat.
+You also examine who you are, and you hope you're anti-cantic. You're surprised you know what cantic means, actually.
+\\
+>x me
+Not dazzling, but frankly, you're relieved not to be wearing a tutu or muumuu or ew-sews, which you never considered existed until now. You don't have a tat.
+!You also examine
+\\
+>x cowl
+It makes you feel down, and you can't pull it off. Maybe helping other people will cheer you up.
+You imagine a faux-cheery voice telling you to turn that frown upside-down! You're not wearing a tutu!
+
+@det+
+##balance undos
+>escapes
+\\
+>x cowl
+!faux-cheery
+\\
+>undo
+>undo
+
+@meta
+>score
+Total score: 0 / 6. (Well, 4 is the scores core.)
+You haven't figured out a magic word to say yet, but when you do, you'll get your first point.
+
+@meta+
+#the big dump of "try everything that shouldn't break"
+# Z needed for UNDO
+>z
+\\
+>about
+Psyops, Yo was an entry to the EctoComp 2021 Petite Mort. It was originally conceived for 2020, but life got in the way. I'd had bigger plans, which took away from fun small stuff like this.
+The game is solvable in nine moves, though there are two bonus points.
+Source control is at https://github.com/andrewschultz/psyops-yo.
+VERSIONS shows version information. CREDITS shows credits. EXT shows extensions used. Abbreviations work, too.
+Psyops, Yo requires word-guessing to win. However, I hope to make the mechanic obvious if you examine or walk around enough. There's a certain pattern to it all.
+\\
+>credits
+I'd like to thank Olaf Nowacki for moral support during the original testing run-up--I left no time for testing. He had an entry in the Petite Mort too! Oh, and the IFComp 2021 authors' subforum. Several of them entered something, too!
+I would also like to thank JJ Guest for creating EctoComp, Duncan Bowsman for stepping in and Ruber Eaglenest for running it in 2021 (and before and after,) and itch.io for hosting EctoComp and other comps that help me just remember to play others' stuff.
+Wade Clarke and A. DiBianca sent transcripts which helped make version 4 more polished.
+Attributions for dirt texture in cover art: CC BY-SA 3.0 -- Heath Rezabek -- Vessel CC -- http://vessel.cc
+If you have a clever book or whatever to add, mail me at blurglecruncheon@gmail.com or post an issue at https://github.com/andrewschultz/psyops-yo.
+>cred
+I'd like to thank Olaf Nowacki for moral support during the original testing run-up--I left no time for testing. He had an entry in the Petite Mort too! Oh, and the IFComp 2021 authors' subforum. Several of them entered something, too!
+>creds
+I'd like to thank Olaf Nowacki for moral support during the original testing run-up--I left no time for testing. He had an entry in the Petite Mort too! Oh, and the IFComp 2021 authors' subforum. Several of them entered something, too!
+>credit
+I'd like to thank Olaf Nowacki for moral support during the original testing run-up--I left no time for testing. He had an entry in the Petite Mort too! Oh, and the IFComp 2021 authors' subforum. Several of them entered something, too!
+\\
+>verbs
+Psyops, Yo has a very simplified parser. You can win just by going in the standard directions, including diagonals, and by guessing magic words based on objects lying around and saying them, with or without the object name.
+Two useful diagnostic commands are SCORE for score, which also gives non-spoilery nudges, and I for inventory, though you won't need to carry much. Other meta-commands include ABOUT, CREDITS, EXT and VERSIONS, which have abbreviations.
+TALKing is also an option but unnecessary to win, and you can type T NPC, or TALK NPC or TALK TO NPC. No subject is actually needed, since no room has more than one NPC.
+Some other standard Inform commands are implemented as jokes: for instance, the senses. But none are critical to winning the game, though AMUSING will list them once you've won.
+\\
+>verb
+Some other standard Inform commands are implemented as jokes: for instance, the senses. But none are critical to winning the game, though AMUSING will list them once you've won.
+\\
+>v
+Some other standard Inform commands are implemented as jokes: for instance, the senses. But none are critical to winning the game, though AMUSING will list them once you've won.
+\\
+>versions
+Version 1 was released October 30, 2021 to Itch.io for the yearly EctoComp competition, Petite Mort division.
+Version 2 was released February 28, 2025 to Itch.io with no new technical features, but with minor bug fixes and also "appropriate" text that trickled in over the years. Since then, Martin Amis, whose name cued Hamish, had left this world for over a year. RIP.
+Version 3 was released March 1, 2025 to Itch.io with the Elite Lit/bookshelf in the final area containing random books.
+Version 4 was released January 3, 2026 to Itch.io with bug fixes and clarifications. La Palapa and a list of (un)invited people are also in place at the end.
+No further updates are planned, but if enough bugs are found, I may roll up a maintenance release.
+To see extensions used in Psyops, Yo and Inform's internal release data, type EXT or EXTS.
+!One more update
+To see extensions used in Psyops, Yo and Inform's internal release data, type EXT or EXTS.
+>version
+To see extensions used in Psyops, Yo and Inform's internal release data, type EXT or EXTS.
+>vers
+To see extensions used in Psyops, Yo and Inform's internal release data, type EXT or EXTS.
+>ver
+\\
+>ext
+Standard Rules version 2/090402 by Graham Nelson
+>exts
+Standard Rules version 2/090402 by Graham Nelson
+\\
+>undo
+Edited it!
+\\
+>
+"Um, bedumbed?" a cruel voice mocks.
+
+@verbs
+#this is the main dump for basic verb commands
+>think
+THINK is used for commands you figured but did in the wrong order or place.
+There's nothing you figured in advance that you need to do later.
+\\
+>think
+!THINK is
+There's nothing you figured in advance that you need to do later.
+\\
+>i
+You're wearing that scowls cowl, and it's a total drag.
+You haven't found anything that might help you. Stuff is lying around, but you haven't tried to take it yet.
+\\
+>no
+Discord is ... (cor!)
+\\
+>yes
+A yay! A yay!
+\\
+>z
+Meantime? ... ANTI!
+\\
+>xyzzy
+Hark! Sharks!
+*** You have died ***
+But wait, you were resurrected! Someone raised a...
+... puts on shades ...
+fund of undo!
+\\
+>talk cap
+You don't need to talk to anyone or anything, though people may give some silly response.
+\\
+>take cap
+You reach for the cap, but you feel resistance. What is going on? Another look, and, well, it just seems too plain as-is. Maybe if you jazzed it up, it would be more worth taking, or feel more worth being taken.
+\\
+>i
+You haven't found anything that might help you. Stuff is lying around, but you were unable to just scoop it up.
+\\
+>x alkie
+Like so many people who drink a lot, the Alkie may both want a drink and want an excuse never to want a drink again.
+\\
+>talk alkie
+"If you could find something that'd turn me off alcohol forever, that'd be awesome! Why, I'd take it from your hands before you had a chance to give it to me."
+\\
+>take suns
+Sadly, the un-suns leave you feeling so helpless you can't do much more than examine them. So you do.
+They're totally, like, dark and gloomy and stuff. Just the thought of them makes you think, "O, wow!" They're so dark, you wonder if they could be called tar stars, too.
+\\
+>take gulf
+Sadly, the Ingulfin' Gulf leaves you feeling so helpless you can't do much more than examine it. So you do.
+Ingraining rain slowly keeps filling it up, limiting your travel options to north, northeast and east. You think you yourself "ew, dew'd" at the prospect of touching it. Probably filled with slices-lice, with a trap-pit of ever-severs below.
+\\
+>take rain
+Sadly, the ingraining rain leaves you feeling so helpless you can't do much more than examine it. So you do.
+Although it isn't terribly gaudy or acidic looking rain, but it's enough to prevent you from straying.
+\\
+>take rim
+Sadly, the primp rim leaves you feeling so helpless you can't do much more than examine it. So you do.
+\\
+>attack cap
+Ai! Maim?! (Violence is not the keyword. You have no kill-skills.)
+\\
+>listen
+Random spooky taunts:
+!them all
+\\
+>listen
+Random spooky taunts:
+!them all
+\\
+>listen
+Random spooky taunts:
+them all
+\\
+>listen
+Random spooky taunts:
+them all
+\\
+>smell
+Ethene, then...
+\\
+>sing
+A tune you've never heard before comes in your head. You know it instinctively to be On, Sons.
+\\
+>hit
+You think, pejoratively, of people who really were pretty awful. But you don't need violent fantasies and name-calling right now.
+\\
+>hit cap
+You think, pejoratively, of people who really were pretty awful. But you don't need violent fantasies and name-calling right now.
+\\
+>d
+There'll be passage down, but you haven't discovered enough.
+\\
+>s
+You try to, but you realize such idle sidles might lead into ... the INGULFIN' GULF. You can, however, go north, northeast and east.
+\\
+>talk me
+You give yourself a chic "Hi" ... at "orator."
+\\
+>z
+Meantime? ... ANTI!
+
+@verbs+
+##balance undos
+>e
+Tormentor men stand here. They aren't even throwing light slights at you ... at least not while you're looking. They definitely go in for a gag.
+\\
+>attack men
+They'd run you through a slaps-lap, or worse.
+\\
+>talk men
+"Derider?! I?!" they all respond individually. Then, "Ain't saints!"
+It's annoying, being a sheesh-ee, but at least they're not attacking you. Maybe it's more fun for them to drag things out. Perhaps you could lure them into chasing after something that can't be tormented. They'd probably jump before you know it. If they were French, they'd definitely, be a quip-equipe, with voices smooth as Le Oleo.
+\\
+>shit
+The tormentor men mock you with "Un-taunt a..."
+\\
+>x men
+They are wearing mock-smocks indicating they all live in the same attentat tent. If they were female, perhaps they would be wearing oppressive tsarist saris. You're a bit surprised they're not wearing carve-scarves.
+You feel momentary relief not one of them is a Getting-Ettin, looking to maul you. But you still want them to just go.
+\\
+>x men
+They are wearing mock-smocks indicating they all live in the same attentat tent. If they were female, perhaps they would be wearing oppressive tsarist saris. You're a bit surprised they're not wearing carve-scarves.
+!You feel momentary relief
+\\
+>x smocks
+Even looking at them makes you feel insulted.
+\\
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
+@tries
+>cap
+The cap stays put. You'll need an additional word to describe it. Perhaps looking around to get a general feel for the area might help.
+\\
+>cap xx
+The cap stays put. You'll need another word to describe it. Perhaps looking around to get a general feel for the area might help.
+\\
+>xx cap
+The cap stays put. You'll need another word to describe it. Perhaps looking around to get a general feel for the area might help.
+\\
+>xx xx cap
+The cap stays put. You'll need just one apt word to describe it. Perhaps looking around to get a general feel for the area might help.
+\\
+>xx cap xx
+The cap stays put. You'll need just one apt word to describe it. Perhaps looking around to get a general feel for the area might help.
+\\
+>cap xx xx
+The cap stays put. You'll need just one apt word to describe it. Perhaps looking around to get a general feel for the area might help.
+
+@tries+
+##balance undos
+>ne
+\\
+>ale
+The ale stays put. You'll need an additional word to describe it. Perhaps aggregating the names of the rooms and scenery you've noticed may help.
+\\
+>ale xx
+The ale stays put. You'll need another word to describe it. Perhaps aggregating the names of the rooms and scenery you've noticed may help.
+\\
+>xx ale
+The ale stays put. You'll need another word to describe it. Perhaps aggregating the names of the rooms and scenery you've noticed may help.
+\\
+>xx xx ale
+The ale stays put. You'll need just one apt word to describe it. Perhaps aggregating the names of the rooms and scenery you've noticed may help.
+\\
+>xx ale xx
+The ale stays put. You'll need just one apt word to describe it. Perhaps aggregating the names of the rooms and scenery you've noticed may help.
+\\
+>ale xx xx
+The ale stays put. You'll need just one apt word to describe it. Perhaps aggregating the names of the rooms and scenery you've noticed may help.
+\\
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
+@det
+##balance undos
+>ne
+You're at the north corner of an equilateral triangle of open spaces. The two un-suns hang menacingly in the sky, blotting things out and causing general depression and dreariness. Passages through the Ingulfin' Gulf lead southwest and southeast. The primp-rim is wedged between those two passages, to the south.
+\\
+>x gulf
+Ingraining rain slowly keeps filling it up, limiting your travel options to south, southeast and southwest. You think you yourself "ew, dew'd" at the prospect of touching it. Probably filled with slices-lice, with a trap-pit of ever-severs below.
+\\
+>se
+You're at the southeast corner of an equilateral triangle of open spaces. The two un-suns hang menacingly in the sky, blotting things out and causing general depression and dreariness. Passages through the Ingulfin' Gulf lead north (or northwest) and west. The primp-rim is wedged between those two passages, some odd direction between west and northwest.
+\\
+>x gulf
+Ingraining rain slowly keeps filling it up, limiting your travel options to north, northwest and west. You think you yourself "ew, dew'd" at the prospect of touching it. Probably filled with slices-lice, with a trap-pit of ever-severs below.
+\\
+>undo
+>undo
+>undo
+>undo
+
+>x cap
+The way the cap lies on the ground suggests it's being held. It's not of particularly stiff material, but it's standing straight up.
+
+>escapes
+by one point
+
+@det
+The cap jumps up into your hands!
+Oh my. A raider-aide, for wherever you need to raid.
+
+@meta
+>score
+Total score: 1 / 6. (Well, 4 is the scores core.)
+You have acquired a raider aide item, the escapes cap.
+!You have successfully used
+
+@verbs
+>x cap
+It's not trying to escape you, but maybe it will help you escape a tough situation.
+\\
+>drop cap
+You never need to drop anything in Psyops, Yo. Items no longer useful should vanish.
+\\
+>x suns
+!Sadly,
+They're a little less gloomy now you've got your bearings.
+\\
+>x cowl
+It makes you feel down, and you can't pull it off. It feels less oppressive now you've helped yourself a bit.
+!You imagine a faux-cheery voice
+\\
+>i
+You're wearing that scowls cowl, and it's a considerable drag.
+You have found a raider-aide: the escapes cap.
+!You have successfully used
+
+>ne
+
+@det
+Ur-Church
+You're at the north corner of an equilateral triangle of open spaces. The two un-suns hang menacingly in the sky, blotting things out and causing general depression and dreariness. Passages through the Ingulfin' Gulf lead southwest and southeast. There's also a way down between them, to the south.
+A staidest aide stands around here, touching their head as if they need to put something on it to TRULY seem official.
+Some ale lies here at a weird angle--how has it not fallen over?
+\\
+>x aide
+The Staidest Aide looks back at you, trying to tip non-existent headgear and failing.
+\\
+>talk aide
+You have a very anti-cantic talk about erasing evil and its pawn-spawns.
+
+@verbs
+>take ale
+You reach for the ale, but you feel resistance. What is going on? Another look, and, well, it just seems too plain as-is. Maybe if you jazzed it up, it would be more worth taking, or feel more worth being taken.
+\\
+>listen
+There's a gong on somewhere.
+\\
+>n
+You try to, but you realize such idle sidles might lead into ... the INGULFIN' GULF. You can, however, go south, southeast, southwest and down.
+
+@meta
+>about
+!requires word-guessing
+
+>x ale
+It's plain, as if it could become more or less palatable, for better or worse.
+
+>stalest
+by one point
+
+@det
+The ale bubbles momentarily and seems to change to a sicklier hue. For whatever reason, you feel less guilty taking it now.
+Another raider-aide!
+
+@verbs
+>i
+You're wearing that scowls cowl, and it's a bit of a drag.
+You have found a raider-aide. Well, two: the stalest ale and the escapes cap.
+\\
+>x ale
+It doesn't look especially menacing, but you really don't want to drink it.
+\\
+>x cowl
+It makes you feel down, and you can't pull it off. You barely feel it now, but you can't throw it off just yet.
+
+@meta
+>score
+Total score: 2 / 6. (Well, 4 is the scores core.)
+You have one raider aide item left to pick up.
+!You have successfully used
+
+>se
+
+@det
+Ingrowing Row
+You're at the southeast corner of an equilateral triangle of open spaces. The two un-suns hang menacingly in the sky, blotting things out and causing general depression and dreariness. Passages through the Ingulfin' Gulf lead north (or northwest) and west. There's also a way down between them, in a direction too diagonal for this parser, so just go DOWN when ready.
+Tormentor men stand here. They aren't even throwing light slights at you ... at least not while you're looking. They definitely go in for a gag.
+You've been around everywhere. Elapse, laps, you think to yourself.
+A tall narrow hat, not looking very special, lies here. The top sways in the wind, but the bottom seems quite stiff. It feels like someone great could have worn it, great enough to inspire a nation, yet it's too plain right now.
+The Tormentor Men squint at your escapes cap. They start with the usual insults, but you deflect them with yawny aw'n. They're actually a bit impressed. They say it must be the cap, but the cap ... escapes after a breeze blows it away. The Tormentor Men go chasing after it, because they can't have anyone else wearing it and failing to heed them. The cap blows far away, taking the Tormentor Men with.
+"Ehe! Heh!" you think to yourself, which feels like cheating a bit, but it's fun, watching their shunts-hunt.
+\\
+>l
+!You've been around everywhere.
+\\
+>w
+You're at the southwest corner of an equilateral triangle of open spaces. The two un-suns hang menacingly in the sky, blotting things out and causing general depression and dreariness. Passages through the Ingulfin' Gulf lead north (or northeast) and east. There's also a way down between them, in a direction too diagonal for this parser, so just go DOWN when ready.
+\\
+>undo
+
+@verbs
+>d
+Dwell'd Well
+\\
+>d
+You can't go further down. At least, not now, you can't.
+\\
+>undo
+>undo
+
+@verbs+
+>take hat
+You reach for the hat, but you feel resistance. What is going on? Another look, and, well, it just seems too plain as-is. Maybe if you jazzed it up, it would be more worth taking, or feel more worth being taken.
+\\
+>listen
+An um-pump hidden from view builds tension.
+\\
+>s
+You try to, but you realize such idle sidles might lead into ... the INGULFIN' GULF. You can, however, go north, northwest, west and down.
+\\
+>i
+You're wearing that scowls cowl, and it's a bit of a drag.
+You have found a raider-aide: the stalest ale.
+You have successfully used a raider-aide: the escapes cap.
+\\
+>x hat
+The hat is impressive looking, yet it repels you a bit, as if you need to find out its meaning or purpose.
+
+@mis
+>hath at
+The right idea, but you need to add to the hat.
+\\
+>at hath
+The right idea, but you need to add to the hat.
+
+>mahatma
+by one point
+
+@det
+The hat suddenly looks a little more dignified.
+The final raider-aide, you assume.
+
+@verbs
+>x hat
+The hat is impressive and all, but it's not your style. You need to find someone it fits.
+\\
+>i
+You aren't carrying anything. You're even free of that scowls cowl! You can't see anything worth taking. You just need to find a way out.
+\\
+>u
+The way forward is down, not up.
+\\
+>x suns
+!Sadly,
+They're much less gloomy now you've sorted things out aboveground.
+\\
+>x cowl
+You can't see any such thing.
+
+@meta
+>score
+Total score: 3 / 6. (Well, 4 is the scores core.)
+You have successfully used a raider-aide: the escapes cap.
+You don't need any other raider aide. You should walk around to use what you have.
+!You should go DOWN to the center, where you haven't been yet.
+
+>w
+
+@det
+On seeing the stalest ale, the Stalkiest Alkie pulls it from your hands and takes a swig, then makes a face. "Ugh! How could you...?" but after some reflection, says "You know, I always wanted to give this stuff up. This reminds me how nasty it tasted once I started. Might not be a full cure, but hey, has to be better than Swines' Wine, right? Hey! You know what? This is nasty enough, it will poison some pawn-spawns outlets." Filled with purpose, the (ex-)Stalkiest Alkie walks away.
+\\
+>i
+You aren't carrying anything. You're even free of that scowls cowl! You can't see anything worth taking. You just need to find a way out.
+\\
+>score
+You don't need any other raider aide. You should walk around to use what you have.
+You have found a raider-aide: the mahatma hat.
+You have successfully used a raider-aide, well, two: the stalest ale and the escapes cap.
+
+@det+
+##balance undos
+>d
+It's almost too peaceful here. As if something is not quite ready to happen yet. It's also very plain. You feel a pull from below but see no thatch't hatch to remove or older solders to pull at.
+\\
+>undo
+
+@verbs
+##balance undos
+>d
+\\
+>abracadabra
+{$REJECT}
+\\
+>undo
+>undo
+
+>ne
+
+@det
+The Staidest Aide grabs the hat. "THAT HAT, HA!"
+You nod, impressed by such above-and-beyond dialogue.
+"This is what I need! It will give me the peace of mind to re-prep and re-prep the sanctifying rituals that will lessen the un-suns' horrible influence! It fits them perfectly. They thank you, bless you, and then go out to spread decency and kindness to others, a true 'umble rumbler.
+Shortly after, a distant "Aw! Rawr!" followed by a much more calming Om-bomb and then an "Ow! Rowr!" suggests they have done whatever they needed to, to the un-suns.
+\\
+>i
+You aren't carrying anything. You're even free of that scowls cowl! You can't see anything worth taking. You just need to find a way out.
+\\
+>score
+You don't need any other raider aide. You should go DOWN to the center, where you haven't been yet.
+
+>d
+
+@det
+Dwell'd Well
+\\
+There must be a way further down, but it can't be as easy as using the hat, cap and ale.
+An unseen voice suddenly
+!That unseen voice keeps
+\\
+>l
+There must be a way further down, but it can't be as easy as using the hat, cap and ale.
+!An unseen voice suddenly
+That unseen voice keeps
+
+@meta
+>score
+Total score: 3 / 6. (Well, 4 is the scores core.)
+You don't need any other raider aide. You should focus on what to do here.
+\\
+>u
+>score
+You don't need any other raider aide. You should focus on what to do in Dwell'd Well.
+\\
+>undo
+>undo
+
+@verbs
+>listen
+"Cad! Cad!"
+\\
+>d
+"Cad ... cad ..." that voice continues. You need to shake it off.
+
+@verbs+
+##balance undos
+>u
+\\
+>abracadabra
+This is not the right place. You need to be somewhere you can open a new passage.
+\\
+>think
+You know you need to say ABRACADABRA somewhere.
+\\
+>d
+\\
+>abracadabra
+by one point
+\\
+>think
+!ABRACADABRA
+There's nothing you figured in advance that you need to do later.
+\\
+>undo
+>undo
+>undo
+>undo
+\\
+>u
+The only vertical passage is in Dwell'd Well.
+\\
+>undo
+>undo
+>undo
+
+@mis
+>abacadabra
+Almost right! Slide one more letter in.
+
+>abracadabra
+by one point
+Perhaps it is time to go down.
+
+@det
+You hear lightning. You wonder briefly if it is about to strike you down because abracadabra isn't a real-real word.
+But you remain standing. Eh, you could probably beat yourself up until Black Friday over whether or not you had enough style points, here. You feel different, as if encompassed by something supernatural.
+Dirt is cleared away to reveal a rod and lid beneath the well. They look plain, but you know the rod must be an erode-rod. As for the lid?
+You incant "ELIDE!"
+A hole opens up below! It's in the shape of a D, which suggests you can just go (D) for down.
+And yet ... perhaps you can get style points ... for that, or the mysterious dappled Apple computer which appeared in the hole. Funny, you'd have expected Le Coleco.
+But it's not all that appears. You can also, if you like, distract yourself with a bookshelf labeled (of course) Elite Lit.
+A place called La Palapa has its entrance blocked, and an Able Tablet appears on the side of the well, listing curious names.
+You also feel you've acquired (and earned) an ur-aura!
+Perhaps it is time to go down.
+Your score has just gone up by one point.
+\\
+>l
+There are three ways to go back up, here: north, southwest, and southeast. Typing U or UP will lead you back the way you came, to the Ur-Church. But there's nothing more to do aboveground, so you probably want to go D or DOWN now you've found a way.
+The way down is a huge hole in the shape of a D--voices from it seem to say "Suss us." You could probably just go down through the D-shaped hole and get on with things, but maybe you can be fancy about it. An ancient dappled Apple home computer sits next to it.
+The bookshelf, aka Elite Lit, also stands here to distract you, if you need that. Next to it is an Able Tablet full of random author names. La Palapa is here, too, not that you an enter it, but you can examine it or read U DUD/NOT, SNOTS to see (un)-invitees.
+
+@verbs
+>i
+You aren't carrying anything. You're even free of that scowls cowl! You can't see anything worth taking. Being unburdened with stuff will be handy to make the journey down a bit quicker. You hope.
+\\
+>attack shelf
+No need to create an ex-text.
+\\
+>listen
+Random spooky taunts
+\\
+>x cowl
+You can't see any such thing.
+
+@meta
+>score
+Total score: 4 / 6. You have four points and can just go down, nothing fancy, to win.
+
+@min
+>d
+OK-APOSTROPHE: "Ingoing, O!" you shout as you explore further down...
+OK-APOSTROPHE: ...and you land with a "Lo, Plop" in ...
+OK-APOSTROPHE: ...Saves Ave. It is a nice enough place to live. People seem to appreciate you. Things are okay, for about a week. Then... then, you realize you are just a block over from Raver Ave leading to the shills' hill and scamps' camp beyond. It's not so bad at first, but the raves get bigger and bigger as time goes on, fueled by alt-salts, illicit hoot-shoots, and many a turnt urn. Everyone greets the host with a "Shucks, Huck," though you're never in a good enough mood to. They suggest celebrities to invite, too: "Flavor Flav, or ... ?"
+As time goes on, people reflexively wave away your unsocial behavior with yawny aw'n.
+Not that it's the worst place to live, and nobody threatens to relocate you to the hack shacks on Grun-G-Run, but you sense this was the lesser of the possible ending-sendings.
+    *** A "YAY" ***
+
+@verbs
+>okeydokey
+Yes! You're excited! But you run down too fast. The last thing you see is a princess, whose "Huh, U?!" expression (or is it "Bub, U...") and martial-arts move leaves you doubled over, fatally injured. Your last words are "Shadows had ... OW!"
+*** You have died ***
+Okay, not really. But if you want the good ending, I'm gonna force you to name that ancient Apple game. It's a classic, even with the instadeath and inability to save at the end.
+\\
+>smell
+ROM aroma.
+\\
+>x apple
+It's an ancient Apple home computer, dappled all over, but it still seems to be running okay. It has the word RATE written across it in orange. You obviously don't have time for silly games right now, but if you did, maybe there's a game you could rate!
+\\
+>talk apple
+It's not some newfangled yappy app.
+\\
+>x aura
+It's sort of all around you. You can't do anything with it, but it makes you feel empowered. Hopefully with no hubris.
+\\
+>think
+You would really like to say OKEY DOKEY, with or without a space, with proper prep.
+
+@!min
+>karateka
+by one point
+
+@verbs
+>d
+Hey, wait. OKEYDOKEY would work now. You should say that, instead.
+!Ingoing
+\\
+>think
+!ABRACADABRA
+
+@det
+Boy, you sure could go for a game of Karateka now. You're a bit more apprehensive of running into the hole, now, as there may be a princess waiting to deck you on the other side.
+As you contemplate this, the dappled Apple sadly, blows up. But hey, there's always emulation, and save states are handy for if you mess up, anyway.
+\\
+>l
+There are three ways to go back up, here: north, southwest, and southeast. Typing U or UP will lead you back the way you came, to the Ur-Church. But there's nothing more to do aboveground, so you probably want to go D or DOWN now you've found a way.
+You feel like you can enter the D-shaped hole with pizzazz and flair now, not just going down.
+The bookshelf, aka Elite Lit, also stands here to distract you, if you need that. Next to it is an Able Tablet full of random author names. La Palapa is here, too, not that you an enter it, but you can examine it or read U DUD/NOT, SNOTS to see (un)-invitees.
+
+@meta
+>score
+Total score: 5 / 6. You have five points and can now take the fancy way down for an extra special ending. Or just go down for a regular win.
+
+@!min
+>okeydokey
+by one point
+\\
+Yes, it's a bit reflexive and self-referential. But it's worth a try. And, equally hokey, the well swells!
+As you climb down, you wind up finding a secret passage that leads ... somewhere new. You feel smart immediately when you arrive, unable to suppress an "I DID! I DID!" and needing no estates tat with a legible gib. Why, you don't even need to visit the Smiles Mile you see!
+Of course it's easy to feel all this, walking on ...
+EINSTEIN ST.
+Now, where to visit first? Re: area, there are HELF shelfs (a hat-tip to that one Far Side comic,) and a credit union called Trust-R-Us to help new people get acclimated. Then, perhaps that restaurant called Yo, BYOB, or L'Salsa, or the snack shop Ho, Choc. In other establishments that'd please any ate-rater, hotshots eat couscous, or maybe mahi mahi, or even spies' pie. Some tout stouts to ward off beriberi. Under a chiquichiqui and mingimingi and rewa-rewa.
+You make your choice. If there was better, you don't care. You can't help feeling like ...
+*** A MUCKAMUCK! ***
+
+@meta
+>amusing
+Here is a list of things you can try. I didn't keep track of if you did, even though Psyops, Yo was a short game, but then again, since it's short, it'll be easier to check off on all these phrases.
+YES, NO, SING, or WAIT/Z give a fixed response.
+There are also responses for naughty words like BOTHER and the semi-custom verb HIT.
+Some verbs have a generic and specific response:
+ATTACK gives a slightly different response for the Tormentor Men or Elite Lit.
+SMELL is slightly different near the end, with the Apple nearby.
+LISTEN is slightly different in the Row, the Church and (with 3 points) the Well than other places.
+The empty command, asking to RESTORE a game (before and after,) and UNDO also give custom text.
+Oh, of course, XYZZY has a silly response, too.

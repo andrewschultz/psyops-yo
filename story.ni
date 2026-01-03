@@ -58,7 +58,7 @@ rule for supplying a missing noun when talking:
 	if number of people in location of player is 2:
 		now noun is random npcish person in location of player;
 	else if apple is in location of player:
-		now noun is the apple iie;
+		now noun is the dappled apple;
 	else:
 		now noun is the player.
 
@@ -234,7 +234,7 @@ book Dwell'd Well
 
 to say or-well: if score > 0, say ". There's also a way down between them, [if player is in church]to the south[else]in a direction too diagonal for this parser, so just go [b]DOWN[r] when ready[end if]";
 
-Dwell'd Well is a room. "[well-up].[paragraph break][if score is 5]You feel like you can enter the D-shaped hole with pizzazz and flair now, not just going down[else if score is 4]The way down is a huge hole in the shape of a D--voices from it seem to say 'Suss us.' You could probably just go down through the D-shaped hole and get on with things, but maybe you can be fancy about it[else if cad-around]There must be a way further down, but it can't be as easy as using the hat, cap and ale[else]It's almost too peaceful here. As if something is not quite ready to happen yet. It's also very plain. You feel a pull from below but see no thatch't hatch to remove or older solders to pull at[end if][if apple is in well]. An ancient Apple IIe sits next to it[end if][if elite lit is in well].[paragraph break]The bookshelf, aka [i]Elite Lit[r], also stands here to distract you, if you need that. Next to it is an Able Tablet full of random author names[end if][if palapa is in well]. La Palapa is here, too, not that you an enter it, but you can examine it or read [dud] to see (un)-invitees[end if]."
+Dwell'd Well is a room. "[well-up].[paragraph break][if score is 5]You feel like you can enter the D-shaped hole with pizzazz and flair now, not just going down[else if score is 4]The way down is a huge hole in the shape of a D--voices from it seem to say 'Suss us.' You could probably just go down through the D-shaped hole and get on with things, but maybe you can be fancy about it[else if cad-around]There must be a way further down, but it can't be as easy as using the hat, cap and ale[else]It's almost too peaceful here. As if something is not quite ready to happen yet. It's also very plain. You feel a pull from below but see no thatch't hatch to remove or older solders to pull at[end if][if apple is in well]. An ancient dappled Apple home computer sits next to it[end if][if elite lit is in well].[paragraph break]The bookshelf, aka [i]Elite Lit[r], also stands here to distract you, if you need that. Next to it is an Able Tablet full of random author names[end if][if palapa is in well]. La Palapa is here, too, not that you an enter it, but you can examine it or read [dud] to see (un)-invitees[end if]."
 
 to say well-up: say "There are three ways to go back up, here: north, southwest, and southeast. Typing [b]U[r] or [b]UP[r] will lead you back the way you came, to the [b][last-well-room][r]. But there's nothing more to do aboveground, so you probably want to go [b]D[r] or [b]DOWN[r] [if score is 3]once[else]now[end if] you've found a way"
 
@@ -242,7 +242,7 @@ check going down in Dwell'd Well:
 	if player is in Dwell'd Well:
 		if nmd < 3, say "You can't go further down. At least, not now, you can't." instead;
 		if score < 4, say "'Cad ... cad ...' that voice continues. You need to shake it off." instead;
-		if okeydokey-tried is true and apple iie is moot:
+		if okeydokey-tried is true and dappled apple is moot:
 			say "Hey, wait. [b]OKEYDOKEY[r] would work now. You should say that, instead." instead;
 		say "'Ingoing, O!' you shout as you explore further down...";
 		wfas;
@@ -295,9 +295,9 @@ this is the guess-cad rule:
 	wfas;
 	say "You incant 'ELIDE!'";
 	wfas;
-	say "A hole opens up below! It's in the shape of a [b]D[r], which suggests you can just go (D) for down.[paragraph break]And yet ... perhaps you can get style points ... for that, or the mysterious Apple IIe which appeared in the hole. Funny, you'd have expected Le Coleco.[paragraph break]But it's not all that appears. You can also, if you like, distract yourself with a bookshelf labeled (of course) [i]Elite Lit[r].[paragraph break]A place called La Palapa has its entrance blocked, and an Able Tablet appears on the side of the well, listing curious names.[paragraph break]You also feel you've acquired (and earned) an ur-aura!";
+	say "A hole opens up below! It's in the shape of a [b]D[r], which suggests you can just go (D) for down.[paragraph break]And yet ... perhaps you can get style points ... for that, or the mysterious dappled Apple computer which appeared in the hole. Funny, you'd have expected Le Coleco.[paragraph break]But it's not all that appears. You can also, if you like, distract yourself with a bookshelf labeled (of course) [i]Elite Lit[r].[paragraph break]A place called La Palapa has its entrance blocked, and an Able Tablet appears on the side of the well, listing curious names.[paragraph break]You also feel you've acquired (and earned) an ur-aura!";
 	move okeydokey to Dwell'd Well;
-	move Apple IIe to Dwell'd Well;
+	move Dappled Apple to Dwell'd Well;
 	move Elite Lit to Dwell'd Well;
 	move La Palapa to Dwell'd Well;
 	move the Able Tablet to Dwell'd Well;
@@ -311,8 +311,8 @@ chapter okeydokey
 the okeydokey is a privately-named not takeable doubler. it is scenery. "You shouldn't see this.". xtra-text is "okey ?dokey". guess-rule is guess-okeydokey rule.
 
 this is the guess-okeydokey rule:
-	if apple iie is not moot:
-		say "Yes! You're excited! But you run down too fast. The last thing you see is a princess, whose 'Huh, U?!' expression (or is it 'Bub, U...') and martial-arts move leaves you doubled over, fatally injured. Your last words are 'Shadows had ... OW!'[run paragraph on][died]Okay, not really. But if you want the good ending, I'm gonna force you to name that ancient Apple IIe game. It's a classic, even with the instadeath and inability to save at the end.";
+	if dappled apple is not moot:
+		say "Yes! You're excited! But you run down too fast. The last thing you see is a princess, whose 'Huh, U?!' expression (or is it 'Bub, U...') and martial-arts move leaves you doubled over, fatally injured. Your last words are 'Shadows had ... OW!'[run paragraph on][died]Okay, not really. But if you want the good ending, I'm gonna force you to name that ancient Apple game. It's a classic, even with the instadeath and inability to save at the end.";
 		now okeydokey-tried is true;
 		the rule fails;
 	say "Yes, it's a bit reflexive and self-referential. But it's worth a try. And, equally hokey, the well swells![paragraph break]As you climb down, you wind up finding a secret passage that leads ... somewhere new. You feel smart immediately when you arrive, unable to suppress an 'I DID! I DID!' and needing no estates tat with a legible gib. Why, you don't even need to visit the Smiles Mile you see![paragraph break]Of course it's easy to feel all this, walking on ...";
@@ -379,12 +379,12 @@ randtable of Able Tablet is table of initialed names.
 
 looptext of the Able Tablet is "After [one of][or]again [stopping]reviewing all the names, you feel a need to return to the profound reflection, without any prodding whatsoever, that they're all pretty cool, but none is of course as cool as MP Kempke."
 
-chapter Apple IIe
+chapter Dappled Apple
 
-the Apple IIe is a doubler. it is scenery. it is not takeable. xtra-text is "karateka". guess-rule is guess-karateka rule. "The Apple IIe has the word RATE written across it in orange. You obviously don't have time for silly games right now, but if you did, maybe there's a game you could rate!"
+the Dappled Apple is a doubler. it is scenery. it is not takeable. xtra-text is "karateka". guess-rule is guess-karateka rule. "It's an ancient Apple home computer, dappled all over, but it still seems to be running okay. It has the word RATE written across it in orange. You obviously don't have time for silly games right now, but if you did, maybe there's a game you could rate!"
 
 this is the guess-karateka rule:
-	say "Boy, you sure could go for a game of Karateka now. You're a bit more apprehensive of running into the hole, now, as there may be a princess waiting to deck you on the other side.[paragraph break]As you contemplate this, the Apple IIe, sadly, blows up. But hey, there's always emulation, and save states are handy for if you mess up, anyway.";
+	say "Boy, you sure could go for a game of Karateka now. You're a bit more apprehensive of running into the hole, now, as there may be a princess waiting to deck you on the other side.[paragraph break]As you contemplate this, the dappled Apple sadly, blows up. But hey, there's always emulation, and save states are handy for if you mess up, anyway.";
 
 volume points
 
@@ -419,8 +419,8 @@ rule for printing a parser error (this is the point score check rule):
 			process guess-rule of UT;
 			if the rule failed, the rule succeeds;
 			now UT is doubled;
-			if UT is Apple IIe:
-				moot Apple IIe;
+			if UT is Dappled Apple:
+				moot Dappled Apple;
 			if UT is takeable:
 				now player has UT;
 			else:

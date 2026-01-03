@@ -182,7 +182,7 @@ But you remain standing. Eh, you could probably beat yourself up until Black Fri
 Dirt is cleared away to reveal a rod and lid beneath the well. They look plain, but you know the rod must be an erode-rod. As for the lid?
 You incant "ELIDE!"
 A hole opens up below! It's in the shape of a D, which suggests you can just go (D) for down.
-And yet ... perhaps you can get style points ... for that, or the mysterious Apple IIe which appeared in the hole. Funny, you'd have expected Le Coleco.
+And yet ... perhaps you can get style points ... for that, or the mysterious dappled Apple computer which appeared in the hole. Funny, you'd have expected Le Coleco.
 But it's not all that appears. You can also, if you like, distract yourself with a bookshelf labeled (of course) Elite Lit.
 A place called La Palapa has its entrance blocked, and an Able Tablet appears on the side of the well, listing curious names.
 You also feel you've acquired (and earned) an ur-aura!
@@ -191,14 +191,14 @@ Your score has just gone up by one point.
 
 >l
 There are three ways to go back up, here: north, southwest, and southeast. Typing U or UP will lead you back the way you came, to the Ur-Church. But there's nothing more to do aboveground, so you probably want to go D or DOWN now you've found a way.
-The way down is a huge hole in the shape of a D--voices from it seem to say "Suss us." You could probably just go down through the D-shaped hole and get on with things, but maybe you can be fancy about it. An ancient Apple IIe sits next to it.
+The way down is a huge hole in the shape of a D--voices from it seem to say "Suss us." You could probably just go down through the D-shaped hole and get on with things, but maybe you can be fancy about it. An ancient dappled Apple home computer sits next to it.
 The bookshelf, aka Elite Lit, also stands here to distract you, if you need that. Next to it is an Able Tablet full of random author names. La Palapa is here, too, not that you an enter it, but you can examine it or read U DUD/NOT, SNOTS to see (un)-invitees.
 
 >karateka
 by one point
 
 Boy, you sure could go for a game of Karateka now. You're a bit more apprehensive of running into the hole, now, as there may be a princess waiting to deck you on the other side.
-As you contemplate this, the Apple IIe, sadly, blows up. But hey, there's always emulation, and save states are handy for if you mess up, anyway.
+As you contemplate this, the dappled Apple sadly, blows up. But hey, there's always emulation, and save states are handy for if you mess up, anyway.
 
 >l
 There are three ways to go back up, here: north, southwest, and southeast. Typing U or UP will lead you back the way you came, to the Ur-Church. But there's nothing more to do aboveground, so you probably want to go D or DOWN now you've found a way.
