@@ -59,7 +59,7 @@ You can't see any such thing.
 >d
 Dwell'd Well
 There are three ways to go back up, here: north, southwest, and southeast. Typing U or UP will lead you back the way you came, to the Strangest Range. But there's nothing more to do aboveground, so you probably want to go D or DOWN once you've found a way.
-There must be a way further down, but it can't be as easy as using the hat, cap and ale.
+It's almost too peaceful here.
 
 >u
 Going back up the way you came...

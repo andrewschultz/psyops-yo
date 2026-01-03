@@ -142,6 +142,11 @@ You don't need any other raider aide. You should walk around to use what you hav
 You have found a raider-aide: the mahatma hat.
 You have successfully used a raider-aide, well, two: the stalest ale and the escapes cap.
 
+>d
+It's almost too peaceful here. As if something is not quite ready to happen yet. It's also very plain. You feel a pull from below but see no thatch't hatch to remove or older solders to pull at.
+
+>undo
+
 >ne
 
 The Staidest Aide grabs the hat. "THAT HAT, HA!"
@@ -159,10 +164,12 @@ You don't need any other raider aide. You should go DOWN to the center, where yo
 
 Dwell'd Well
 
+There must be a way further down, but it can't be as easy as using the hat, cap and ale.
 An unseen voice suddenly
 !That unseen voice keeps
 
 >l
+There must be a way further down, but it can't be as easy as using the hat, cap and ale.
 !An unseen voice suddenly
 That unseen voice keeps
 

@@ -242,15 +242,15 @@ They're much less gloomy now you've sorted things out aboveground.
 >x cowl
 You can't see any such thing.
 
+>w
+
 >d
 
 >abracadabra
-feels right, but
+Nothing magical happens. V or VERBS gives Psyops, Yo's pared-down command list as well as pointers on commands that make progress.
 
 >undo
 >undo
-
->w
 
 >ne
 

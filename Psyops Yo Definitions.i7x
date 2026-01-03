@@ -26,7 +26,7 @@ chapter cad-around
 
 to decide whether cad-around:
 	if cad is doubled, no;
-	if number of doubled doublers < 3, no;
+	if number of moot doublers < 3, no;
 	yes;
 
 chapter directions
