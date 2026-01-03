@@ -22,6 +22,13 @@ chapter numbers
 to decide which number is ncd: decide on number of carried doublers;
 to decide which number is nmd: decide on number of moot doublers;
 
+chapter cad-around
+
+to decide whether cad-around:
+	if cad is doubled, no;
+	if number of doubled doublers < 3, no;
+	yes;
+
 chapter directions
 
 definition: a direction (called d) is viable:
