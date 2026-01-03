@@ -487,9 +487,10 @@ volume redoing diagnostic verbs
 chapter inventory
 
 The print standard inventory rule is not listed in the carry out taking inventory rulebook.
+The print empty inventory rule is not listed in the carry out taking inventory rulebook.
 
 carry out taking inventory:
-	if scowls cowl is moot, say "You aren't carrying anything. You're even free of that scowls cowl! You can't see anything worth taking. [if score is 3]You just need to find a way out[else]That'll be handy to make the journey down a bit quicker[end if]." instead;
+	if scowls cowl is moot, say "You aren't carrying anything. You're even free of that scowls cowl! You can't see anything worth taking. [if score is 3]You just need to find a way out[else]Being unburdened with stuff will be handy to make the journey down a bit quicker. You hope[end if]." instead;
 	say "You're wearing that scowls cowl, and it's a [if score is 0]total[else if score is 1]considerable[else]bit of a[end if] drag.";
 	if score is 0, say "[line break]You haven't found anything that might help you. Stuff is lying around, but you [if take-try is false]haven't tried to take it yet[else]were unable to just scoop it up[end if]." instead;
 	report-raider-aides;
