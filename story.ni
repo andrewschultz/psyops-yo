@@ -92,12 +92,12 @@ chapter general backdrops
 
 instead of doing something with a backdrop:
 	if current action is examining, continue the action;
-	say "Sadly, [the noun] leaves you so helpless you can't do much more than examine [if noun is plural-named]them[else]it[end if]. So you do.";
+	say "Sadly, [the noun] leave[if noun is not plural-named]s[end if] you feeling so helpless you can't do much more than examine [if noun is plural-named]them[else]it[end if]. So you do.";
 	try examining noun;
 
 chapter un suns
 
-the un suns are a backdrop. printed name is "un-suns". "[if score >= 3]They're much less gloomy now you've sorted things out aboveground.[else]They're totally, like, dark and gloomy and stuff. Just the thought of them makes you think, 'O, wow!' They're so dark, you wonder if they could be called tar stars, too.[end if]"
+the un suns are a plural-named backdrop. printed name is "un-suns". "[if score >= 3]They're much less gloomy now you've sorted things out aboveground.[else]They're totally, like, dark and gloomy and stuff. Just the thought of them makes you think, 'O, wow!' They're so dark, you wonder if they could be called tar stars, too.[end if]"
 
 chapter ingulfin' gulf
 
