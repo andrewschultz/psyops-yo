@@ -29,6 +29,8 @@ definition: a direction (called d) is viable:
 
 chapter people
 
+a person has text called talk-text.
+
 definition: a person (called pe) is npcish:
 	if pe is the player, no;
 	yes;
@@ -40,6 +42,22 @@ definition: a thing (called th) is moot:
 	no;
 
 volume types
+
+book doubler
+
+a doubler is a kind of thing. a doubler can be doubled. a doubler is usually not doubled. a doubler can be takeable. a doubler is usually takeable. a doubler has text called xtra-text.
+
+a doubler has a rule called a guess-rule.
+
+a doubler has text called zaptext. a doubler has a room called zaploc.
+
+before printing the name of a doubler (called dub): if dub is doubled, say "[xtra-text of dub] ".
+
+check taking a doubler:
+	now take-try is true;
+	say "You reach for [the noun], but you feel resistance. What is going on? Another look, and, well, it just seems too plain as-is. Maybe if you jazzed it up, it would be more worth taking, or feel more worth being taken." instead;
+
+book randtexter
 
 a randtexter is a kind of thing. a randtexter has a table name called randtable. a randtexter has text called firsttext. a randtexter has text called looptext. a randtexter has a number called randindex. a randtexter is usually scenery.
 

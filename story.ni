@@ -34,22 +34,6 @@ section testing - not for release
 
 include Psyops Yo Tests by Andrew Schultz.
 
-volume types
-
-a doubler is a kind of thing. a doubler can be doubled. a doubler is usually not doubled. a doubler has text called xtra-text.
-
-a doubler has a rule called a guess-rule.
-
-a doubler has text called zaptext. a doubler has a room called zaploc.
-
-before printing the name of a doubler (called dub): if dub is doubled, say "[xtra-text of dub] ".
-
-check taking a doubler:
-	now take-try is true;
-	say "You reach for [the noun], but you feel resistance. What is going on? Another look, and, well, it just seems too plain as-is. Maybe if you jazzed it up, it would be more worth taking, or feel more worth being taken." instead;
-
-a person has text called talk-text.
-
 volume main bit(s)
 
 every turn when map region of location of player is Top Stops (this is the check returned item every turn rule):
