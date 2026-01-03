@@ -259,6 +259,7 @@ check going to Dwell'd Well:
 check going up in Dwell'd Well:
 	say "Going back up the way you came...";
 	move player to last-well-room;
+	the rule succeeds;
 
 check going nowhere in dwell'd well: say "[well-up]." instead;
 
@@ -275,7 +276,7 @@ this is the guess-cad rule:
 	wfas;
 	say "You incant 'ELIDE!'";
 	wfas;
-	say "A hole opens up below! It's in the shape of a [b]D[r], which suggests you can just go (D) for down.[paragraph break]And yet ... perhaps you can get style points ... for that, or the mysterious Apple IIe which appeared in the hole. Funny, you'd have expected Le Coleco.[paragraph break]But it's not all that appears. You can also, if you like, distract yourself with a bookshelf labeled (of course) [i]Elite Lit[r].[paragraph break]A place called La Palapa has its entrance blocked, and an Able Tablet appears on the side of the well, listing curious names.";
+	say "A hole opens up below! It's in the shape of a [b]D[r], which suggests you can just go (D) for down.[paragraph break]And yet ... perhaps you can get style points ... for that, or the mysterious Apple IIe which appeared in the hole. Funny, you'd have expected Le Coleco.[paragraph break]But it's not all that appears. You can also, if you like, distract yourself with a bookshelf labeled (of course) [i]Elite Lit[r].[paragraph break]A place called La Palapa has its entrance blocked, and an Able Tablet appears on the side of the well, listing curious names.[paragraph break]You also feel you've acquired (and earned) an ur-aura!";
 	move okeydokey to Dwell'd Well;
 	move Apple IIe to Dwell'd Well;
 	move Elite Lit to Dwell'd Well;
@@ -428,7 +429,7 @@ rule for printing a parser error when the latest parser error is the not a verb 
 	say "Nothing magical happens. [b]V[r] or [b]VERBS[r] gives [this-game]'s pared-down command list as well as pointers on commands that make progress[also-3].";
 
 to say also-3:
-	if number of words in player's command > 3, say ". Also, you don't need more than two words for any special command, and one will suffice"
+	if number of words in player's command > 2, say ". Also, you don't need more than two words for any special command, and one will suffice"
 
 to say doubler-note:
 	let nw be number of words in the player's command;
