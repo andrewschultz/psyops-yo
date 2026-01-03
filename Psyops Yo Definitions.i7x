@@ -17,6 +17,11 @@ to say in-here of (rm - a room):
 to say triangle-point:
 	say "You're at the [if player is in church]north[else if player is in range]southwest[else]southeast[end if] corner of an equilateral triangle of open spaces. "
 
+chapter numbers
+
+to decide which number is ncd: decide on number of carried doublers;
+to decide which number is nmd: decide on number of moot doublers;
+
 chapter directions
 
 definition: a direction (called d) is viable:

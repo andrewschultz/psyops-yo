@@ -240,7 +240,7 @@ to say well-up: say "There are three ways to go back up, here: north, southwest,
 
 check going down in Dwell'd Well:
 	if player is in Dwell'd Well:
-		if number of moot doublers < 3, say "You can't go further down. At least, not now, you can't." instead;
+		if nmd < 3, say "You can't go further down. At least, not now, you can't." instead;
 		if score < 4, say "'Cad ... cad ...' voices say. You need to shake them off." instead;
 		if okeydokey-tried is true and apple iie is moot:
 			say "Hey, wait. [b]OKEYDOKEY[r] would work now. You should say that, instead." instead;
@@ -268,7 +268,7 @@ chapter cad
 the cad is a privately-named doubler. it is scenery. xtra-text is "abracadabra". guess-rule is guess-cad rule.
 
 this is the guess-cad rule:
-	if number of carried doublers > 0:
+	if ncd > 0:
 		say "That feels right, but now is not the time yet. Perhaps you need to do something with [the list of carried doublers].";
 		the rule fails;
 	say "You hear lightning. You wonder briefly if it is about to strike you down because abracadabra isn't a real-real word.";
@@ -496,11 +496,11 @@ carry out taking inventory:
 	report-raider-aides;
 
 to report-raider-aides:
-	let ncd be number of carried doublers;
-	let nmd be number of moot doublers;
-	if nmd is 3, continue the action;
-	if ncd > 0, say "[line break]You have found a raider-aide[if number of carried doublers > 1]. Well, [number of carried doublers in words][end if]: [the list of carried doublers].";
-	if nmd > 0, say "[line break]You have successfully used a raider-aide[if number of moot doublers > 1], well, [number of moot doublers in words][end if]: [the list of moot doublers].";
+	if nmd is 3:
+		say "You keep hearing 'CAD!' everywhere you go.";
+		continue the action;
+	if ncd > 0, say "[line break]You have found a raider-aide[if ncd > 1]. Well, [ncd in words][end if]: [the list of carried doublers].";
+	if nmd > 0, say "[line break]You have successfully used a raider-aide[if nmd > 1], well, [nmd in words][end if]: [the list of moot doublers].";
 
 chapter score
 
@@ -514,7 +514,7 @@ carry out requesting the score:
 	else if score is 2:
 		say "You have one raider aide item left to pick up.";
 	else if score is 3:
-		say "You don't need any other raider aide. You should [if number of carried doublers > 0]walk around to use what you have[else if well is visited]focus on what to do [in-here of well][else]go [b]DOWN[r] to the center, where you haven't been yet[end if].";
+		say "You don't need any other raider aide. You should [if ncd > 0]walk around to use what you have[else if well is visited]focus on what to do [in-here of well][else]go [b]DOWN[r] to the center, where you haven't been yet[end if].";
 	else if score is 4:
 		say "You have four points and can just go down, nothing fancy, to win.";
 	else if score is 5:
