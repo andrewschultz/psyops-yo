@@ -510,9 +510,10 @@ check attacking:
 	say "Ai! Maim?! (Violence is not the keyword. You have no kill-skills.)" instead;
 
 understand the command "hit" as something new.
-understand the command "hit [something]" as something new.
-
 understand "hit" as hitting.
+understand "hit [thing]" as hitting.
+
+rule for supplying a missing noun when hitting: now noun is the player
 
 hitting is an action applying to one thing.
 
@@ -635,6 +636,8 @@ understand the command "vers" as something new.
 understand the command "version" as something new.
 understand the command "versions" as something new.
 
+understand "ver" as versioning.
+understand "vers" as versioning.
 understand "version" as versioning.
 understand "versions" as versioning.
 
