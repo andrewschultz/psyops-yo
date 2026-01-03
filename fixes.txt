@@ -1,11 +1,17 @@
 Psyops Yo version change log
 
-Version 4 (March 2, 2025)
+Version 4 (January 3, 2025)
 
+--fixed puzzle bug where you could skip over visiting all the entities
+--fixed some bugs with the voice saying "cad"
+--added mistake/sensible guess checking for right "cad" solution and the hat
+--THINK for commands done before fully ready, and I and SCORE give better diagnostics
 --La Palapa, U DUD, Able Tablet are new items with random generated text in Well
 --Primp Rim added as backdrop guarding Well (disappears after first point)
 --U/UP from well now leads you to last aboveground room
 --new restaurant at end
+--changed name of Apple, and Ingulfing Gulf has the right name too now
+--more AMUSING commands
 --wrote postmortem
 --(under the hood) code overhaul for random text generation
 
