@@ -99,13 +99,11 @@ instead of doing something with a backdrop:
 
 chapter un suns
 
-the un suns are a plural-named backdrop. printed name is "un-suns". "[if score >= 3]They're much less gloomy now you've sorted things out aboveground.[else]They're totally, like, dark and gloomy and stuff. Just the thought of them makes you think, 'O, wow!' They're so dark, you wonder if they could be called tar stars, too.[end if]"
+the un suns are a plural-named backdrop. printed name is "un-suns". "[if score >= 3]They're much less gloomy now you've sorted things out aboveground.[else if score > 0]They're a little less gloomy now you've got your bearings.[else]They're totally, like, dark and gloomy and stuff. Just the thought of them makes you think, 'O, wow!' They're so dark, you wonder if they could be called tar stars, too.[end if]"
 
 chapter ingulfin' gulf
 
-the ingulfin gulf is a backdrop. "Ingraining rain slowly keeps filling it up, limiting your travel options. [if score >= 3]It's receded quite a bit, but you don't want to fight through it. You sense your destiny is down[else]You think you yourself 'ew, dew'd' at the prospect of touching it. Probably filled with slices-lice, with a trap-pit of ever-severs below[end if].". printed name is "Ingulfin['] Gulf".
-
-to say igulf: say "The Ingulfin['] Gulf surrounds you every way except [list of viable directions]"
+the ingulfin gulf is a backdrop. "Ingraining rain slowly keeps filling it up, limiting your travel options to [list of viable directions]. [if score >= 3]It's receded quite a bit, but you don't want to fight through it. You sense your destiny is down[else]You think you yourself 'ew, dew'd' at the prospect of touching it. Probably filled with slices-lice, with a trap-pit of ever-severs below[end if].". printed name is "Ingulfin['] Gulf".
 
 section ingraining rain
 
@@ -138,7 +136,8 @@ report examining the player for the first time:
 the scowls cowl is a thing. the player wears the scowls cowl. description of scowls cowl is "It makes you feel down, and you can't pull it off. [if score is 0]Maybe helping other people will cheer you up[else if score is 1]It feels less oppressive now you've helped yourself a bit[else]You barely feel it now, but you can't throw it off just yet[end if]. "
 
 after examining scowls cowl for the first time:
-	say "You imagine a faux-cheery voice telling you to turn that frown upside-down! You're not wearing a tutu!";
+	if score is 0, say "You imagine a faux-cheery voice telling you to turn that frown upside-down! You're not wearing a tutu!";
+	continue the action;
 
 check taking off scowls cowl: say "It's stuck on you. Perhaps figuring what to do will be more effective to turn that frown upside down." instead;
 
