@@ -22,6 +22,31 @@ test w2 with "test u2/test mid/test e2".
 
 test w3 with "test u1/test mid/test e3".
 
+volume testshow
+
+chapter tshing
+
+tshing is an action out of world.
+
+understand the command "tsh" as something new.
+
+understand "tsh" as tshing.
+
+carry out tshing:
+	test-show;
+	the rule succeeds;
+
+to test-show: (- testshow(); -)
+
+Include (-
+
+[ testshow ;
+  print "Testing commands are listed below. U* starts in a different room and completes the first area. E* is endgames with various endings. Wx tries Ux with Ex. I did not try all nine combinations, since U and E test runs are independent.^^" ;
+  TestScriptSub();
+];
+
+-)
+
 volume full random
 
 chapter churning
