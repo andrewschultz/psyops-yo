@@ -16,12 +16,12 @@ Wow! So many books! You have no idea how good they are. Perhaps there is a lost 
 
 You can keep examining, to skim random titles.
 
-[NOTE: there are eighty-nine books to see with Elite Lit, and if you don't want to examine continually, you can read the game source on GitHub or in the deliverable. The list is in Psyops Yo Random Text.i7x.]
+[NOTE: there are ninety books to see with Elite Lit, and if you don't want to examine continually, you can read the game source on GitHub or in the deliverable. The list is in Psyops Yo Random Text.i7x.]
 
-(1 of 89, not shown in release mode)
+(1 of 90, not shown in release mode)
 You note one book title:
 
-(2 of 89, not shown in release mode)
+(2 of 90, not shown in release mode)
 You note another book title:
 
 You've paged through everything here.

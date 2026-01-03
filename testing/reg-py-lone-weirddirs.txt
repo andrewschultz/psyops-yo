@@ -12,10 +12,16 @@
 It blocks passage to some odd direction between east and northeast and reflects you back. Well, a circus mirror-warped version of you. You poke at it -- it's surprisingly resilient. It seems to be guarding something, but how to get by it?
 
 >escapes
-The primp rim pulsates, then crumbles. It reveals a passage sloping down. It's a bit forbidding. Maybe explore both paths aboveground, first
+The primp rim pulsates, then crumbles. It reveals a passage sloping down, more intimidating and obscure than if a speaks-peak had risen. It's a bit forbidding. Maybe explore both paths aboveground, first.
 
 >x primp rim
 You can't see any such thing.
+
+>d
+It's almost too peaceful here. As if something is not quite ready to happen yet. It's also very plain. You feel a pull from below but see no thatch't hatch to remove or older solders to pull at.
+!There must be a way
+
+>u
 
 >ne
 
@@ -27,6 +33,12 @@ You can't see any such thing.
 
 >x primp rim
 You can't see any such thing.
+
+>d
+It's almost too peaceful here.
+!There must be a way
+
+>u
 
 >se
 
@@ -47,10 +59,7 @@ You can't see any such thing.
 >d
 Dwell'd Well
 There are three ways to go back up, here: north, southwest, and southeast. Typing U or UP will lead you back the way you came, to the Strangest Range. But there's nothing more to do aboveground, so you probably want to go D or DOWN once you've found a way.
-
-A voice also whispers ... "Cad!"
-
-And it makes you feel guilty and silly. You thought did well to expand some things by two letters, but it feels so basic now. Perhaps three or even four is the way to go here, for a bit of magic to pass through again.
+There must be a way further down, but it can't be as easy as using the hat, cap and ale.
 
 >u
 Going back up the way you came...
@@ -68,7 +77,7 @@ There are passages southwest and southeast, but the primp-rim blocks your way so
 It blocks passage to to the south and reflects you back. Well, a circus mirror-warped version of you. You poke at it -- it's surprisingly resilient. It seems to be guarding something, but how to get by it?
 
 >stalest
-The primp rim pulsates, then crumbles. It reveals a passage sloping down. It's in the middle of the three areas you've explored
+The primp rim pulsates, then crumbles. It reveals a passage sloping down, more intimidating and obscure than if a speaks-peak had risen. It's in the middle of the three areas you've explored.
 
 >x primp rim
 You can't see any such thing.
@@ -116,7 +125,7 @@ Ur-Church
 It blocks passage to some odd direction between west and northwest and reflects you back. Well, a circus mirror-warped version of you. You poke at it -- it's surprisingly resilient. It seems to be guarding something, but how to get by it?
 
 >mahatma
-The primp rim pulsates, then crumbles. It reveals a passage sloping down. It's oddly off to the side. Maybe you should visit the last place above ground before following it, though.
+The primp rim pulsates, then crumbles. It reveals a passage sloping down, more intimidating and obscure than if a speaks-peak had risen. It's oddly off to the side. Maybe you should visit the last place above ground before following it, though.
 
 >x primp rim
 You can't see any such thing.

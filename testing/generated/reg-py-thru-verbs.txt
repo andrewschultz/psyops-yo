@@ -10,6 +10,14 @@
 * main-thru
 
 #this is the main dump for basic verb commands
+>think
+THINK is used for commands you figured but did in the wrong order or place.
+There's nothing you figured in advance that you need to do later.
+
+>think
+!THINK is
+There's nothing you figured in advance that you need to do later.
+
 >i
 You're wearing that scowls cowl, and it's a total drag.
 You haven't found anything that might help you. Stuff is lying around, but you haven't tried to take it yet.
@@ -252,18 +260,36 @@ feels right, but
 "Cad! Cad!"
 
 >d
-"Cad ... cad ..." voices say. You need to shake them off.
+"Cad ... cad ..." that voice continues. You need to shake it off.
 
 >u
+
+>abracadabra
+This is not the right place. You need to be somewhere you can open a new passage.
+
+>think
+You know you need to say ABRACADABRA somewhere.
+
+>d
+
+>abracadabra
+by one point
+
+>think
+!ABRACADABRA
+There's nothing you figured in advance that you need to do later.
+
+>undo
+>undo
+>undo
+>undo
 
 >u
 The only vertical passage is in Dwell'd Well.
 
 >undo
 >undo
-
->abacadabra
-Almost right! Slide one more letter in.
+>undo
 
 >abracadabra
 by one point
@@ -298,12 +324,18 @@ It's not some newfangled yappy app.
 >x aura
 It's sort of all around you. You can't do anything with it, but it makes you feel empowered. Hopefully with no hubris.
 
+>think
+You would really like to say OKEY DOKEY, with or without a space, with proper prep.
+
 >karateka
 by one point
 
 >d
 Hey, wait. OKEYDOKEY would work now. You should say that, instead.
 !Ingoing
+
+>think
+!ABRACADABRA
 
 >okeydokey
 by one point

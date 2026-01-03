@@ -159,6 +159,13 @@ You don't need any other raider aide. You should go DOWN to the center, where yo
 
 Dwell'd Well
 
+An unseen voice suddenly
+!That unseen voice keeps
+
+>l
+!An unseen voice suddenly
+That unseen voice keeps
+
 >abracadabra
 by one point
 Perhaps it is time to go down.

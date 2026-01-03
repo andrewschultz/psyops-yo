@@ -9,7 +9,7 @@
 
 * main-thru
 
-#If we must, test RESTORE normally.
+#If we must, test RESTORE normally. Here, to start, we test basic parser errors and clues.
 
 >abc
 Nothing magical happens. V or VERBS gives Psyops, Yo's pared-down command list as well as pointers on commands that make progress.
@@ -52,8 +52,8 @@ I'd like to thank Olaf Nowacki for moral support during the original testing run
 
 >verbs
 Psyops, Yo has a very simplified parser. You can win just by going in the standard directions, including diagonals, and by guessing magic words based on objects lying around and saying them, with or without the object name.
-Two useful diagnostic commands are SCORE for score, which also gives non-spoilery nudges, and I for inventory, though you won't need to carry much. Other meta-commands include ABOUT, CREDITS, EXT and VERSIONS.
-TALKing is also an option, e.g. T NPC, or TALK NPC or TALK TO NPC. No subject is actually needed, since no room has more than one NPC.
+Two useful diagnostic commands are SCORE for score, which also gives non-spoilery nudges, and I for inventory, though you won't need to carry much. Other meta-commands include ABOUT, CREDITS, EXT and VERSIONS, which have abbreviations.
+TALKing is also an option but unnecessary to win, and you can type T NPC, or TALK NPC or TALK TO NPC. No subject is actually needed, since no room has more than one NPC.
 Some other standard Inform commands are implemented as jokes: for instance, the senses. But none are critical to winning the game, though AMUSING will list them once you've won.
 
 >verb
@@ -66,7 +66,7 @@ Some other standard Inform commands are implemented as jokes: for instance, the 
 Version 1 was released October 30, 2021 to Itch.io for the yearly EctoComp competition, Petite Mort division.
 Version 2 was released February 28, 2025 to Itch.io with no new technical features, but with minor bug fixes and also "appropriate" text that trickled in over the years. Since then, Martin Amis, whose name cued Hamish, had left this world for over a year. RIP.
 Version 3 was released March 1, 2025 to Itch.io with the Elite Lit/bookshelf in the final area containing random books.
-Version 4 was released January ?, 2026 to Itch.io with bug fixes and clarifications. La Palapa and a list of (un)invited people are also in place at the end.
+Version 4 was released January 3, 2026 to Itch.io with bug fixes and clarifications. La Palapa and a list of (un)invited people are also in place at the end.
 No further updates are planned, but if enough bugs are found, I may roll up a maintenance release.
 To see extensions used in Psyops, Yo and Inform's internal release data, type EXT or EXTS.
 !One more update

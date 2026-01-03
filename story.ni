@@ -394,7 +394,7 @@ to point-check:
 	increment the score;
 	say "[line break][one of]Oh my. A raider-aide, for wherever you need to raid.[or]Another raider-aide![or]The final raider-aide, you assume.[or]Perhaps it is time to go down.[stopping]";
 	if the score is 1:
-		say "[line break]The primp rim pulsates, then crumbles. It reveals a passage sloping down. It's [if number of visited rooms is 2]oddly off to the side. Maybe you should visit the last place above ground before following it, though[else if number of visited rooms is 1]a bit forbidding. Maybe explore both paths aboveground, first[else]in the middle of the three areas you've explored[end if].";
+		say "[line break]The primp rim pulsates, then crumbles. It reveals a passage sloping down, more intimidating and obscure than if a speaks-peak had risen. It's [if number of visited rooms is 2]oddly off to the side. Maybe you should visit the last place above ground before following it, though[else if number of visited rooms is 1]a bit forbidding. Maybe explore both paths aboveground, first[else]in the middle of the three areas you've explored[end if].";
 		change down exit of Ur Church to Dwell'd Well;
 		change south exit of Ur Church to Dwell'd Well;
 		change down exit of Strangest Range to Dwell'd Well;
