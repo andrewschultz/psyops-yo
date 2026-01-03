@@ -381,6 +381,7 @@ book point verbs
 the point score check rule is listed first in the for printing a parser error rules.
 
 rule for printing a parser error (this is the point score check rule):
+	if number of words in the player's command > 2, continue the action;
 	repeat with UT running through touchable not doubled doublers:
 		if the player's command matches the regular expression "\b[xtra-text of UT]\b":
 			process guess-rule of UT;
@@ -404,10 +405,23 @@ report restoring the game: say "Hi! Rehire!";
 report undoing an action: say "Edited it!";
 
 rule for printing a parser error when the latest parser error is the i beg your pardon error:
-	say "'[one of]Um, be dumb[or]Be-dumbed[in random order]?' a cruel voice mocks.";
+	say "'Um, bedumbed?' a cruel voice mocks.";
 
 rule for printing a parser error when the latest parser error is the not a verb i recognise error:
-	say "Nothing magical happens. If you're trying a more generic command, type [b]V[r] or [b]VERBS[r] to see them.";
+	if number of doublers in location of player > 0:
+		if player is in strangest range and the player's command includes "cap", say "[doubler-note]." instead;
+		if player is in ur church and the player's command includes "ale", say "[doubler-note]." instead;
+		if player is in ingrowing row and the player's command includes "hat", say "[doubler-note]." instead;
+	say "Nothing magical happens. [b]V[r] or [b]VERBS[r] gives [this-game]'s pared-down command list as well as pointers on commands that make progress[also-3].";
+
+to say also-3:
+	if number of words in player's command > 3, say ". Also, you don't need more than two words for any special command, and one will suffice"
+
+to say doubler-note:
+	let nw be number of words in the player's command;
+	say "The [random doubler in location of player] stays put. You'll need [if nw is 1]an additional word[else if nw is 2]another word[else if nw is 3]just one apt word[end if] to describe it. [if score > 0]Since you've already figured [list of carried doublers] out, this must follow the same pattern[else if number of visited rooms is 1]Perhaps looking around to get a general feel for the area might help[else]Perhaps aggregating the names of the rooms and scenery you've noticed may help[end if]";
+
+to say lkmore: if number of visited rooms > 1, say "more ";
 
 chapter verbsing
 
