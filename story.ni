@@ -265,7 +265,7 @@ check going nowhere in dwell'd well: say "[well-up]." instead;
 
 chapter cad
 
-the cad is a privately-named doubler. it is scenery. xtra-text is "abracadabra". guess-rule is guess-cad rule.
+the cad is a privately-named doubler. it is scenery. it is not takeable. xtra-text is "abracadabra". guess-rule is guess-cad rule.
 
 this is the guess-cad rule:
 	if ncd > 0:
@@ -365,7 +365,7 @@ looptext of the Able Tablet is "After [one of][or]again [stopping]reviewing all 
 
 chapter Apple IIe
 
-the Apple IIe is a doubler. it is scenery. xtra-text is "karateka". guess-rule is guess-karateka rule. "The Apple IIe has the word RATE written across it in orange. You obviously don't have time for silly games right now, but if you did, maybe there's a game you could rate!"
+the Apple IIe is a doubler. it is scenery. it is not takeable. xtra-text is "karateka". guess-rule is guess-karateka rule. "The Apple IIe has the word RATE written across it in orange. You obviously don't have time for silly games right now, but if you did, maybe there's a game you could rate!"
 
 this is the guess-karateka rule:
 	say "Boy, you sure could go for a game of Karateka now. You're a bit more apprehensive of running into the hole, now, as there may be a princess waiting to deck you on the other side.[paragraph break]As you contemplate this, the Apple IIe, sadly, blows up. But hey, there's always emulation, and save states are handy for if you mess up, anyway.";
