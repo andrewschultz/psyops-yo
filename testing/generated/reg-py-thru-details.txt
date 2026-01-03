@@ -15,6 +15,8 @@ A slogs-log by MP Kempke and Hamish Amis
 Release 4
 You're at the southwest corner of an equilateral triangle of open spaces. The two un-suns hang menacingly in the sky, blotting things out and causing general depression and dreariness. Passages through the Ingulfin' Gulf lead north (or northeast) and east. A primp-rim is wedged between those two passages, some odd direction between east and northeast.
 "Uh, hi, I'm the stalkiest alkie! People told me a pejorative like that would finally help me get it through my thick head to drink less, but somehow it made me drink more. Guess I'm stuck with it, though, unless someone can help me."
+A cap sits on the ground here. Its brim seems stuck.
+[NOTE: Psyops, Yo requires specific unusual commands to win. You may wish to type ABOUT to find out more or VERBS to see a list of useful or needed verbs. You may also get clues from walking around or from, well, the introductory text]
 
 >l
 !Uh, hi
@@ -26,7 +28,7 @@ They're totally, like, dark and gloomy and stuff. Just the thought of them makes
 
 >x gulf
 !Sadly,
-Ingraining rain slowly keeps filling it up, limiting your travel options. You think you yourself "ew, dew'd" at the prospect of touching it. Probably filled with slices-lice, with a trap-pit of ever-severs below.
+Ingraining rain slowly keeps filling it up, limiting your travel options to north, northeast and east. You think you yourself "ew, dew'd" at the prospect of touching it. Probably filled with slices-lice, with a trap-pit of ever-severs below.
 
 >x rain
 !Sadly,
@@ -44,17 +46,43 @@ You also examine who you are, and you hope you're anti-cantic. You're surprised 
 Not dazzling, but frankly, you're relieved not to be wearing a tutu or muumuu or ew-sews, which you never considered existed until now. You don't have a tat.
 !You also examine
 
+>x cowl
+It makes you feel down, and you can't pull it off. Maybe helping other people will cheer you up.
+You imagine a faux-cheery voice telling you to turn that frown upside-down! You're not wearing a tutu!
+
+>escapes
+
+>x cowl
+!faux-cheery
+
+>undo
+>undo
+
 >ne
 You're at the north corner of an equilateral triangle of open spaces. The two un-suns hang menacingly in the sky, blotting things out and causing general depression and dreariness. Passages through the Ingulfin' Gulf lead southwest and southeast. The primp-rim is wedged between those two passages, to the south.
+
+>x gulf
+Ingraining rain slowly keeps filling it up, limiting your travel options to south, southeast and southwest. You think you yourself "ew, dew'd" at the prospect of touching it. Probably filled with slices-lice, with a trap-pit of ever-severs below.
 
 >se
 You're at the southeast corner of an equilateral triangle of open spaces. The two un-suns hang menacingly in the sky, blotting things out and causing general depression and dreariness. Passages through the Ingulfin' Gulf lead north (or northwest) and west. The primp-rim is wedged between those two passages, some odd direction between west and northwest.
 
+>x gulf
+Ingraining rain slowly keeps filling it up, limiting your travel options to north, northwest and west. You think you yourself "ew, dew'd" at the prospect of touching it. Probably filled with slices-lice, with a trap-pit of ever-severs below.
+
+>undo
+>undo
 >undo
 >undo
 
+>x cap
+The way the cap lies on the ground suggests it's being held. It's not of particularly stiff material, but it's standing straight up.
+
 >escapes
 by one point
+
+The cap jumps up into your hands!
+Oh my. A raider-aide, for wherever you need to raid.
 
 >ne
 
@@ -63,17 +91,30 @@ You're at the north corner of an equilateral triangle of open spaces. The two un
 A staidest aide stands around here, touching their head as if they need to put something on it to TRULY seem official.
 Some ale lies here at a weird angle--how has it not fallen over?
 
->l
-A staidest aide stands around here, touching their head as if they need to put something on it to TRULY seem official.
+>x aide
+The Staidest Aide looks back at you, trying to tip non-existent headgear and failing.
+
+>talk aide
+You have a very anti-cantic talk about erasing evil and its pawn-spawns.
+
+>x ale
+It's plain, as if it could become more or less palatable, for better or worse.
 
 >stalest
 by one point
 
+The ale bubbles momentarily and seems to change to a sicklier hue. For whatever reason, you feel less guilty taking it now.
+Another raider-aide!
+
 >se
 
+Ingrowing Row
 You're at the southeast corner of an equilateral triangle of open spaces. The two un-suns hang menacingly in the sky, blotting things out and causing general depression and dreariness. Passages through the Ingulfin' Gulf lead north (or northwest) and west. There's also a way down between them, in a direction too diagonal for this parser, so just go DOWN when ready.
 Tormentor men stand here. They aren't even throwing light slights at you ... at least not while you're looking. They definitely go in for a gag.
 You've been around everywhere. Elapse, laps, you think to yourself.
+A tall narrow hat, not looking very special, lies here. The top sways in the wind, but the bottom seems quite stiff. It feels like someone great could have worn it, great enough to inspire a nation, yet it's too plain right now.
+The Tormentor Men squint at your escapes cap. They start with the usual insults, but you deflect them with yawny aw'n. They're actually a bit impressed. They say it must be the cap, but the cap ... escapes after a breeze blows it away. The Tormentor Men go chasing after it, because they can't have anyone else wearing it and failing to heed them. The cap blows far away, taking the Tormentor Men with.
+"Ehe! Heh!" you think to yourself, which feels like cheating a bit, but it's fun, watching their shunts-hunt.
 
 >l
 !You've been around everywhere.
@@ -86,15 +127,69 @@ You're at the southwest corner of an equilateral triangle of open spaces. The tw
 >mahatma
 by one point
 
+The hat suddenly looks a little more dignified.
+The final raider-aide, you assume.
+
+>w
+
+On seeing the stalest ale, the Stalkiest Alkie pulls it from your hands and takes a swig, then makes a face. "Ugh! How could you...?" but after some reflection, says "You know, I always wanted to give this stuff up. This reminds me how nasty it tasted once I started. Might not be a full cure, but hey, has to be better than Swines' Wine, right? Hey! You know what? This is nasty enough, it will poison some pawn-spawns outlets." Filled with purpose, the (ex-)Stalkiest Alkie walks away.
+
+>i
+You aren't carrying anything. You're even free of that scowls cowl! You can't see anything worth taking. You just need to find a way out.
+
+>score
+You don't need any other raider aide. You should walk around to use what you have.
+You have found a raider-aide: the mahatma hat.
+You have successfully used a raider-aide, well, two: the stalest ale and the escapes cap.
+
+>ne
+
+The Staidest Aide grabs the hat. "THAT HAT, HA!"
+You nod, impressed by such above-and-beyond dialogue.
+"This is what I need! It will give me the peace of mind to re-prep and re-prep the sanctifying rituals that will lessen the un-suns' horrible influence! It fits them perfectly. They thank you, bless you, and then go out to spread decency and kindness to others, a true 'umble rumbler.
+Shortly after, a distant "Aw! Rawr!" followed by a much more calming Om-bomb and then an "Ow! Rowr!" suggests they have done whatever they needed to, to the un-suns.
+
+>i
+You aren't carrying anything. You're even free of that scowls cowl! You can't see anything worth taking. You just need to find a way out.
+
+>score
+You don't need any other raider aide. You should go DOWN to the center, where you haven't been yet.
+
 >d
 
 Dwell'd Well
 
 >abracadabra
 by one point
+Perhaps it is time to go down.
+
+You hear lightning. You wonder briefly if it is about to strike you down because abracadabra isn't a real-real word.
+But you remain standing. Eh, you could probably beat yourself up until Black Friday over whether or not you had enough style points, here. You feel different, as if encompassed by something supernatural.
+Dirt is cleared away to reveal a rod and lid beneath the well. They look plain, but you know the rod must be an erode-rod. As for the lid?
+You incant "ELIDE!"
+A hole opens up below! It's in the shape of a D, which suggests you can just go (D) for down.
+And yet ... perhaps you can get style points ... for that, or the mysterious Apple IIe which appeared in the hole. Funny, you'd have expected Le Coleco.
+But it's not all that appears. You can also, if you like, distract yourself with a bookshelf labeled (of course) Elite Lit.
+A place called La Palapa has its entrance blocked, and an Able Tablet appears on the side of the well, listing curious names.
+You also feel you've acquired (and earned) an ur-aura!
+Perhaps it is time to go down.
+Your score has just gone up by one point.
+
+>l
+There are three ways to go back up, here: north, southwest, and southeast. Typing U or UP will lead you back the way you came, to the Ur-Church. But there's nothing more to do aboveground, so you probably want to go D or DOWN now you've found a way.
+The way down is a huge hole in the shape of a D--voices from it seem to say "Suss us." You could probably just go down through the D-shaped hole and get on with things, but maybe you can be fancy about it. An ancient Apple IIe sits next to it.
+The bookshelf, aka Elite Lit, also stands here to distract you, if you need that. Next to it is an Able Tablet full of random author names. La Palapa is here, too, not that you an enter it, but you can examine it or read U DUD/NOT, SNOTS to see (un)-invitees.
 
 >karateka
 by one point
+
+Boy, you sure could go for a game of Karateka now. You're a bit more apprehensive of running into the hole, now, as there may be a princess waiting to deck you on the other side.
+As you contemplate this, the Apple IIe, sadly, blows up. But hey, there's always emulation, and save states are handy for if you mess up, anyway.
+
+>l
+There are three ways to go back up, here: north, southwest, and southeast. Typing U or UP will lead you back the way you came, to the Ur-Church. But there's nothing more to do aboveground, so you probably want to go D or DOWN now you've found a way.
+You feel like you can enter the D-shaped hole with pizzazz and flair now, not just going down.
+The bookshelf, aka Elite Lit, also stands here to distract you, if you need that. Next to it is an Able Tablet full of random author names. La Palapa is here, too, not that you an enter it, but you can examine it or read U DUD/NOT, SNOTS to see (un)-invitees.
 
 >okeydokey
 by one point

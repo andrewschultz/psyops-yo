@@ -9,6 +9,19 @@
 
 * main-thru
 
+#If we must, test RESTORE normally.
+
+>abc
+Nothing magical happens. V or VERBS gives Psyops, Yo's pared-down command list as well as pointers on commands that make progress.
+!Also,
+
+>abc def
+Nothing magical happens. V or VERBS gives Psyops, Yo's pared-down command list as well as pointers on commands that make progress.
+!Also,
+
+>abc def ghi
+Nothing magical happens. V or VERBS gives Psyops, Yo's pared-down command list as well as pointers on commands that make progress. Also, you don't need more than two words for any special command, and one will suffice.
+
 >score
 Total score: 0 / 6. (Well, 4 is the scores core.)
 You haven't figured out a magic word to say yet, but when you do, you'll get your first point.
@@ -41,13 +54,13 @@ I'd like to thank Olaf Nowacki for moral support during the original testing run
 Psyops, Yo has a very simplified parser. You can win just by going in the standard directions, including diagonals, and by guessing magic words based on objects lying around and saying them, with or without the object name.
 Two useful diagnostic commands are SCORE for score, which also gives non-spoilery nudges, and I for inventory, though you won't need to carry much. Other meta-commands include ABOUT, CREDITS, EXT and VERSIONS.
 TALKing is also an option, e.g. T NPC, or TALK NPC or TALK TO NPC. No subject is actually needed, since no room has more than one NPC.
-Some other standard Inform commands are implemented as jokes: for instance, the senses. But none are critical to winning the game.
+Some other standard Inform commands are implemented as jokes: for instance, the senses. But none are critical to winning the game, though AMUSING will list them once you've won.
 
 >verb
-Some other standard Inform commands are implemented as jokes: for instance, the senses. But none are critical to winning the game.
+Some other standard Inform commands are implemented as jokes: for instance, the senses. But none are critical to winning the game, though AMUSING will list them once you've won.
 
 >v
-Some other standard Inform commands are implemented as jokes: for instance, the senses. But none are critical to winning the game.
+Some other standard Inform commands are implemented as jokes: for instance, the senses. But none are critical to winning the game, though AMUSING will list them once you've won.
 
 >versions
 Version 1 was released October 30, 2021 to Itch.io for the yearly EctoComp competition, Petite Mort division.
@@ -72,17 +85,27 @@ Standard Rules version 2/090402 by Graham Nelson
 >undo
 Edited it!
 
+>
+"Um, bedumbed?" a cruel voice mocks.
+
+>x cap
+The way the cap lies on the ground suggests it's being held. It's not of particularly stiff material, but it's standing straight up.
+
 >escapes
 by one point
 
 >score
 Total score: 1 / 6. (Well, 4 is the scores core.)
 You have acquired a raider aide item, the escapes cap.
+!You have successfully used
 
 >ne
 
 >about
 !requires word-guessing
+
+>x ale
+It's plain, as if it could become more or less palatable, for better or worse.
 
 >stalest
 by one point
@@ -90,6 +113,7 @@ by one point
 >score
 Total score: 2 / 6. (Well, 4 is the scores core.)
 You have one raider aide item left to pick up.
+!You have successfully used
 
 >se
 
@@ -98,7 +122,13 @@ by one point
 
 >score
 Total score: 3 / 6. (Well, 4 is the scores core.)
-You don't need any other raider aide. You should go DOWN to the center, where you haven't been yet.
+You have successfully used a raider-aide: the escapes cap.
+You don't need any other raider aide. You should walk around to use what you have.
+!You should go DOWN to the center, where you haven't been yet.
+
+>w
+
+>ne
 
 >d
 
@@ -115,6 +145,7 @@ You don't need any other raider aide. You should focus on what to do in Dwell'd 
 
 >abracadabra
 by one point
+Perhaps it is time to go down.
 
 >score
 Total score: 4 / 6. You have four points and can just go down, nothing fancy, to win.

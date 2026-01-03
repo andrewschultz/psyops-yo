@@ -55,10 +55,16 @@ The ale stays put. You'll need just one apt word to describe it. Perhaps aggrega
 >undo
 >undo
 
+>x cap
+The way the cap lies on the ground suggests it's being held. It's not of particularly stiff material, but it's standing straight up.
+
 >escapes
 by one point
 
 >ne
+
+>x ale
+It's plain, as if it could become more or less palatable, for better or worse.
 
 >stalest
 by one point
@@ -68,10 +74,15 @@ by one point
 >mahatma
 by one point
 
+>w
+
+>ne
+
 >d
 
 >abracadabra
 by one point
+Perhaps it is time to go down.
 
 >karateka
 by one point

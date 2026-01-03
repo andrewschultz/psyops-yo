@@ -9,10 +9,16 @@
 
 * main-thru
 
+>x cap
+The way the cap lies on the ground suggests it's being held. It's not of particularly stiff material, but it's standing straight up.
+
 >escapes
 by one point
 
 >ne
+
+>x ale
+It's plain, as if it could become more or less palatable, for better or worse.
 
 >stalest
 by one point
@@ -22,11 +28,18 @@ by one point
 >mahatma
 by one point
 
+>w
+
+>ne
+
 >d
 
 >abracadabra
 by one point
+Perhaps it is time to go down.
 
 >d
-A "YAY"
+As time goes on, people reflexively wave away your unsocial behavior with yawny aw'n.
+Not that it's the worst place to live, and nobody threatens to relocate you to the hack shacks on Grun-G-Run, but you sense this was the lesser of the possible ending-sendings.
+    *** A "YAY" ***
 

@@ -30,11 +30,20 @@ But wait, you were resurrected! Someone raised a...
 ... puts on shades ...
 fund of undo!
 
+>talk cap
+You don't need to talk to anyone or anything, though people may give some silly response.
+
 >take cap
 You reach for the cap, but you feel resistance. What is going on? Another look, and, well, it just seems too plain as-is. Maybe if you jazzed it up, it would be more worth taking, or feel more worth being taken.
 
 >i
 You haven't found anything that might help you. Stuff is lying around, but you were unable to just scoop it up.
+
+>x alkie
+Like so many people who drink a lot, the Alkie may both want a drink and want an excuse never to want a drink again.
+
+>talk alkie
+"If you could find something that'd turn me off alcohol forever, that'd be awesome! Why, I'd take it from your hands before you had a chance to give it to me."
 
 >take suns
 Sadly, the un-suns leave you feeling so helpless you can't do much more than examine them. So you do.
@@ -42,7 +51,7 @@ They're totally, like, dark and gloomy and stuff. Just the thought of them makes
 
 >take gulf
 Sadly, the Ingulfin' Gulf leaves you feeling so helpless you can't do much more than examine it. So you do.
-Ingraining rain slowly keeps filling it up, limiting your travel options. You think you yourself "ew, dew'd" at the prospect of touching it. Probably filled with slices-lice, with a trap-pit of ever-severs below.
+Ingraining rain slowly keeps filling it up, limiting your travel options to north, northeast and east. You think you yourself "ew, dew'd" at the prospect of touching it. Probably filled with slices-lice, with a trap-pit of ever-severs below.
 
 >take rain
 Sadly, the ingraining rain leaves you feeling so helpless you can't do much more than examine it. So you do.
@@ -73,6 +82,9 @@ them all
 >smell
 Ethene, then...
 
+>sing
+A tune you've never heard before comes in your head. You know it instinctively to be On, Sons.
+
 >hit
 You think, pejoratively, of people who really were pretty awful. But you don't need violent fantasies and name-calling right now.
 
@@ -82,18 +94,71 @@ You think, pejoratively, of people who really were pretty awful. But you don't n
 >d
 There'll be passage down, but you haven't discovered enough.
 
+>s
+You try to, but you realize such idle sidles might lead into ... the INGULFIN' GULF. You can, however, go north, northeast and east.
+
+>talk me
+You give yourself a chic "Hi" ... at "orator."
+
+>z
+Meantime? ... ANTI!
+
 >e
+Tormentor men stand here. They aren't even throwing light slights at you ... at least not while you're looking. They definitely go in for a gag.
+
+>attack men
+They'd run you through a slaps-lap, or worse.
+
 >talk men
 "Derider?! I?!" they all respond individually. Then, "Ain't saints!"
 It's annoying, being a sheesh-ee, but at least they're not attacking you. Maybe it's more fun for them to drag things out. Perhaps you could lure them into chasing after something that can't be tormented. They'd probably jump before you know it. If they were French, they'd definitely, be a quip-equipe, with voices smooth as Le Oleo.
+
+>shit
+The tormentor men mock you with "Un-taunt a..."
+
+>x men
+They are wearing mock-smocks indicating they all live in the same attentat tent. If they were female, perhaps they would be wearing oppressive tsarist saris. You're a bit surprised they're not wearing carve-scarves.
+You feel momentary relief not one of them is a Getting-Ettin, looking to maul you. But you still want them to just go.
+
+>x men
+They are wearing mock-smocks indicating they all live in the same attentat tent. If they were female, perhaps they would be wearing oppressive tsarist saris. You're a bit surprised they're not wearing carve-scarves.
+!You feel momentary relief
+
+>x smocks
+Even looking at them makes you feel insulted.
+
 >undo
 >undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>x cap
+The way the cap lies on the ground suggests it's being held. It's not of particularly stiff material, but it's standing straight up.
 
 >escapes
 by one point
 
+>x cap
+It's not trying to escape you, but maybe it will help you escape a tough situation.
+
 >drop cap
 You never need to drop anything in Psyops, Yo. Items no longer useful should vanish.
+
+>x suns
+!Sadly,
+They're a little less gloomy now you've got your bearings.
+
+>x cowl
+It makes you feel down, and you can't pull it off. It feels less oppressive now you've helped yourself a bit.
+!You imagine a faux-cheery voice
+
+>i
+You're wearing that scowls cowl, and it's a considerable drag.
+You have found a raider-aide: the escapes cap.
+!You have successfully used
 
 >ne
 
@@ -103,10 +168,35 @@ You reach for the ale, but you feel resistance. What is going on? Another look, 
 >listen
 There's a gong on somewhere.
 
+>n
+You try to, but you realize such idle sidles might lead into ... the INGULFIN' GULF. You can, however, go south, southeast, southwest and down.
+
+>x ale
+It's plain, as if it could become more or less palatable, for better or worse.
+
 >stalest
 by one point
 
+>i
+You're wearing that scowls cowl, and it's a bit of a drag.
+You have found a raider-aide. Well, two: the stalest ale and the escapes cap.
+
+>x ale
+It doesn't look especially menacing, but you really don't want to drink it.
+
+>x cowl
+It makes you feel down, and you can't pull it off. You barely feel it now, but you can't throw it off just yet.
+
 >se
+
+>d
+Dwell'd Well
+
+>d
+You can't go further down. At least, not now, you can't.
+
+>undo
+>undo
 
 >take hat
 You reach for the hat, but you feel resistance. What is going on? Another look, and, well, it just seems too plain as-is. Maybe if you jazzed it up, it would be more worth taking, or feel more worth being taken.
@@ -114,16 +204,55 @@ You reach for the hat, but you feel resistance. What is going on? Another look, 
 >listen
 An um-pump hidden from view builds tension.
 
+>s
+You try to, but you realize such idle sidles might lead into ... the INGULFIN' GULF. You can, however, go north, northwest, west and down.
+
+>i
+You're wearing that scowls cowl, and it's a bit of a drag.
+You have found a raider-aide: the stalest ale.
+You have successfully used a raider-aide: the escapes cap.
+
+>x hat
+The hat is impressive looking, yet it repels you a bit, as if you need to find out its meaning or purpose.
+
 >mahatma
 by one point
 
+>x hat
+The hat is impressive and all, but it's not your style. You need to find someone it fits.
+
+>i
+You aren't carrying anything. You're even free of that scowls cowl! You can't see anything worth taking. You just need to find a way out.
+
 >u
 The way forward is down, not up.
+
+>x suns
+!Sadly,
+They're much less gloomy now you've sorted things out aboveground.
+
+>x cowl
+You can't see any such thing.
+
+>d
+
+>abracadabra
+feels right, but
+
+>undo
+>undo
+
+>w
+
+>ne
 
 >d
 
 >listen
 "Cad! Cad!"
+
+>d
+"Cad ... cad ..." voices say. You need to shake them off.
 
 >u
 
@@ -133,11 +262,24 @@ The only vertical passage is in Dwell'd Well.
 >undo
 >undo
 
+>abacadabra
+Almost right! Slide one more letter in.
+
 >abracadabra
 by one point
+Perhaps it is time to go down.
+
+>i
+You aren't carrying anything. You're even free of that scowls cowl! You can't see anything worth taking. Being unburdened with stuff will be handy to make the journey down a bit quicker. You hope.
+
+>attack shelf
+No need to create an ex-text.
 
 >listen
 Random spooky taunts
+
+>x cowl
+You can't see any such thing.
 
 >okeydokey
 Yes! You're excited! But you run down too fast. The last thing you see is a princess, whose "Huh, U?!" expression (or is it "Bub, U...") and martial-arts move leaves you doubled over, fatally injured. Your last words are "Shadows had ... OW!"
@@ -147,8 +289,21 @@ Okay, not really. But if you want the good ending, I'm gonna force you to name t
 >smell
 ROM aroma.
 
+>x apple
+The Apple IIe has the word RATE written across it in orange. You obviously don't have time for silly games right now, but if you did, maybe there's a game you could rate!
+
+>talk apple
+It's not some newfangled yappy app.
+
+>x aura
+It's sort of all around you. You can't do anything with it, but it makes you feel empowered. Hopefully with no hubris.
+
 >karateka
 by one point
+
+>d
+Hey, wait. OKEYDOKEY would work now. You should say that, instead.
+!Ingoing
 
 >okeydokey
 by one point
