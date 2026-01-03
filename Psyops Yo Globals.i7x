@@ -4,24 +4,30 @@ Version 1/250301 of Psyops Yo Globals by Andrew Schultz begins here.
 
 volume main variables
 
-chapter inventory stuff
+chapter game states
+
+section initial stuff
+
+init-about is a truth state that varies.
+
+section room tracking
+
+first-loop is a truth state that varies.
+last-well-room is a room that varies.
+
+section standard verb tries
 
 take-try is a truth state that varies.
 
-chapter initial stuff
+section odd verb tries
 
-first-loop is a truth state that varies.
-init-about is a truth state that varies.
-
-chapter room stuff
-
-last-well-room is a room that varies.
-
-chapter end stuff
+random-swear-known is a truth state that varies.
 
 okeydokey-tried is a truth state that varies.
+abracadabra-guess is a truth state that varies.
+think-try is a truth state that varies.
 
-chapter random text
+section random text
 
 skip-period is a truth state that varies.
 

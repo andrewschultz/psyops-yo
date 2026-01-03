@@ -586,8 +586,14 @@ the block swearing mildly rule is not listed in any rulebook.
 the block swearing obscenely rule is not listed in any rulebook.
 
 check swearing obscenely:
-	if tormentor men are in location of the player, say "The tormentor men mock you with 'Un-taunt a...'" instead;
-	say "[one of]Crap! Scraps[or]Yucky! Uck[or]Sheesh! Ee[or]Sucks, uck[or]Shush, U[or]Sin's IN[or]Oo, poop[in random order]! [one of](There's four more. Because I care.)[or][line break][stopping]" instead;
+	if tormentor men are in location of the player:
+		say "The tormentor men mock you with 'Un-taunt a...'";
+	else:
+		now random-swear-known is true;
+		say "[one of]Crap! Scraps[or]Yucky! Uck[or]Sheesh! Ee[or]Sucks, uck[or]Shush, U[or]Sin's IN[or]Oo, poop[in random order]! [one of](There's four more. Because I care.)[or][line break][stopping]" instead;
+	if random-swear-known is false:
+		say "[line break]In general, this will give random responses, unless you around people who react.";
+		now random-swear-known is true;
 
 check swearing mildly: try swearing obscenely instead;
 
