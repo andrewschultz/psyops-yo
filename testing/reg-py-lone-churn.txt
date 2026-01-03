@@ -6,7 +6,110 @@
 ** game: /home/andrew/prt/debug-psyops-yo.z8
 ** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
 
-* main
+* main_warp
+
+>abstract elite lit to range
+>x elite lit
+Wow! So many books! You have no idea how good they are. Perhaps there is a lost novel of F. Kafka in here. Or not.
+You can keep examining, to skim random titles.
+[NOTE: there are ninety books to see with Elite Lit, and if you don't want to examine continually, you can read the game source on GitHub or in the deliverable. The list is in Psyops Yo Random Text.i7x.]
+
+>x elite lit
+You note one book title:
+
+>warplast 1
+Randindex of Elite Lit is now 89.
+
+>x elite lit
+You note another book title:
+You've paged through everything here.
+
+>x elite lit
+You note another book title:
+
+>warplast 1
+Randindex of Elite Lit is now 89.
+
+>x elite lit
+You note another book title:
+You've paged through everything here once again.
+
+>abstract palapa to range
+>x palapa
+Whoah! All sorts of names are written here. Names of people welcome and, on something you now notice called "U DUD/NOT, SNOTS," people unwelcome by Toronto Ron. "Whew, he..." you think.
+[NOTE: there are twelve names to see with La Palapa.]
+
+>x palapa
+Beneath a stamp saying PROPERTY OF TORONTO RON, you note one person allowed in: 
+
+>warplast 2
+Randindex of La Palapa is now 11.
+
+>x palapa
+You note another person allowed in:
+Alas, you can lay claim to no such cool nicknames. But you bet none of those people could ever see whatever's below here. It must be pretty cool!
+
+>x palapa
+You note another person allowed in:
+
+>warplast 2
+Randindex of La Palapa is now 11.
+
+>x palapa
+You note another person allowed in:
+
+>abstract dud to range
+>x dud
+Wow! That's a lot of uninvited people. Way more than invited. That Toronto Ron sure has standards! Or, at least, he thinks he does.
+[NOTE: there are eighty names to see with U DUD/NOT, SNOTS.]
+
+>x dud
+Someone uninvited is
+
+>warplast 3
+Randindex of U DUD/NOT, SNOTS is now 79.
+
+>x dud
+Someone else uninvited is
+That's a lot of people! Perhaps they could get together to form their own much kinder group than Toronto Ron's. Maybe the Oft-Softs or whatever.
+
+>x dud
+Someone else uninvited is
+
+>warplast 3
+Randindex of U DUD/NOT, SNOTS is now 79.
+
+>x dud
+Someone else uninvited is
+That's a lot of people! Perhaps they could get together to form their own much kinder group than Toronto Ron's. Maybe the Oft-Softs or whatever.
+
+>abstract tablet to range
+>x tablet
+It's pretty exclusive! Man, the names listed must be pretty clever. Either their last names, or their first and maybe middle names are initialed. None is as cool as, say, MP Kempke. That's only to be expected. But there are a lot to peruse!
+[NOTE: there are one hundred and eighty-seven names to see with the Able Tablet.]
+
+>x tablet
+You read an initialed name:
+
+>warplast 4
+Randindex of Able Tablet is now 186.
+
+>x tablet
+You read another initialed name:
+After reviewing all the names, you feel a need to return to the profound reflection, without any prodding whatsoever, that they're all pretty cool, but none is of course as cool as MP Kempke.
+
+
+>x tablet
+You read another initialed name:
+
+>warplast 4
+Randindex of Able Tablet is now 186.
+
+>x tablet
+You read another initialed name:
+After again reviewing all the names, you feel a need to return to the profound reflection, without any prodding whatsoever, that they're all pretty cool, but none is of course as cool as MP Kempke.
+
+* main_churn
 
 >churn 1
 You've paged through everything here.

@@ -49,6 +49,41 @@ Include (-
 
 volume full random
 
+chapter warplasting
+
+warplasting is an action out of world applying to one visible thing.
+
+understand the command "warplast" as something new.
+
+understand "warplast" as warplasting.
+understand "warplast [any thing]" as warplasting.
+
+carry out warplasting:
+	if noun is not a randtexter:
+		say "You need a random text generating object. Here is the list:";
+		try churnnuming 0;
+		the rule fails;
+	move noun to location of player;
+	now randindex of noun is (number of rows in randtable of noun) - 1;
+	say "Randindex of [noun] is now [(number of rows in randtable of noun) - 1].";
+
+section warpnum
+
+warpnuming is an action out of world applying to one number.
+
+understand "warplast [number]" as warpnuming.
+
+carry out warpnuming:
+	let rtlist be the list of randtexters;
+	if number understood is 0:
+		repeat with X running from 1 to number of entries in rtlist:
+			say "[X]. [entry X of rtlist].";
+		the rule succeeds;
+	if number understood < 0 or number understood > number of entries in rtlist:
+		say "You need to type 0 for a list or 1-[number of entries in rtlist].";
+		the rule succeeds;
+	try warplasting entry (number understood) of rtlist;
+
 chapter churning
 
 churning is an action out of world applying to one visible thing.
