@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<trizbort version="1.7.0.0">
+	<info />
+	<map>
+		<room id="1" name="Ur-Church" subtitle="" x="-128" y="-352" w="96" h="64" region="NoRegion" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0">
+			<objects at="n" custom="yes" customRight="-32" customDown="0">Staidest Aide|       Ale</objects>
+		</room>
+		<room id="2" name="Strangest Range" subtitle="" x="-288" y="-96" w="96" h="64" region="NoRegion" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" isStartRoom="yes" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0">
+			<objects custom="yes" customRight="-36" customDown="0">Stalkiest Alkie|        Cap</objects>
+		</room>
+		<line id="3" name="" description="">
+			<dock index="0" id="1" port="sw" />
+			<dock index="1" id="2" port="nne" />
+		</line>
+		<room id="4" name="Ingrowing Row" subtitle="" x="32" y="-96" w="96" h="64" region="NoRegion" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0">
+			<objects custom="yes" customRight="-36" customDown="0">Torment Men|        Hat</objects>
+		</room>
+		<line id="5" name="" description="">
+			<dock index="0" id="2" port="e" />
+			<dock index="1" id="4" port="w" />
+		</line>
+		<line id="6" name="" description="">
+			<dock index="0" id="1" port="se" />
+			<dock index="1" id="4" port="nnw" />
+		</line>
+		<room id="7" name="Dwell'd Well" subtitle="" x="-128" y="-192" w="96" h="64" region="NoRegion" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" isEndRoom="yes" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
+		<line id="8" name="" description="" style="dashed" startText="down" endText="up">
+			<dock index="0" id="2" port="ne" />
+			<dock index="1" id="7" port="sw" />
+		</line>
+		<line id="9" name="" description="" style="dashed" startText="down" endText="up">
+			<dock index="0" id="1" port="s" />
+			<dock index="1" id="7" port="n" />
+		</line>
+		<line id="10" name="" description="" style="dashed" startText="down" endText="up">
+			<dock index="0" id="4" port="nw" />
+			<dock index="1" id="7" port="se" />
+		</line>
+		<line id="11" name="" description="" style="dashed" startText="down" endText="up">
+			<dock index="0" id="7" port="s" />
+			<dock index="1" id="12" port="n" />
+		</line>
+		<room id="12" name="(Alternate Endings)" subtitle="" x="-128" y="0" w="96" h="64" region="NoRegion" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0">
+			<objects at="n" />
+		</room>
+	</map>
+	<settings>
+		<colors>
+			<canvas>White</canvas>
+			<border>MidnightBlue</border>
+			<line>MidnightBlue</line>
+			<selectedLine>Gold</selectedLine>
+			<hoverLine>DarkOrange</hoverLine>
+			<subTitle>MidnightBlue</subTitle>
+			<smallText>MidnightBlue</smallText>
+			<lineText>MidnightBlue</lineText>
+			<grid>#F5F5F5</grid>
+			<startRoom>GreenYellow</startRoom>
+			<endRoom>Red</endRoom>
+		</colors>
+		<regions>
+			<NoRegion Name="NoRegion" TextColor="Black">White</NoRegion>
+		</regions>
+		<fonts>
+			<room size="13">Arial</room>
+			<object size="11">Arial</object>
+			<subTitle size="9">Arial</subTitle>
+			<line size="9">Arial</line>
+		</fonts>
+		<grid>
+			<snapTo>yes</snapTo>
+			<visible>yes</visible>
+			<showOrigin>yes</showOrigin>
+			<size>32</size>
+		</grid>
+		<lines>
+			<width>2</width>
+			<arrowSize>12</arrowSize>
+			<textOffset>4</textOffset>
+		</lines>
+		<rooms>
+			<darknessStripeSize>24</darknessStripeSize>
+			<objectListOffset>4</objectListOffset>
+			<connectionStalkLength>0</connectionStalkLength>
+			<preferredDistanceBetweenRooms>64</preferredDistanceBetweenRooms>
+			<defaultRoomName>Rum Room</defaultRoomName>
+			<defaultRoomShape>0</defaultRoomShape>
+		</rooms>
+		<ui>
+			<handleSize>12</handleSize>
+			<snapToElementSize>16</snapToElementSize>
+		</ui>
+		<margins>
+			<documentSpecific>yes</documentSpecific>
+			<horizontal>64</horizontal>
+			<vertical>64</vertical>
+		</margins>
+		<keypadNavigation>
+			<creationModifier>control</creationModifier>
+			<unexploredModifier>alt</unexploredModifier>
+		</keypadNavigation>
+	</settings>
+</trizbort>
