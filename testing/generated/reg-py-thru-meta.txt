@@ -1,0 +1,148 @@
+## reg-py-thru-meta.txt
+## GENERATOR FILE: rbr-py-thru.txt
+
+## Meta command stuff
+
+** game: /home/andrew/prt/debug-psyops-yo.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+** checkclass: /home/andrew/prt/runtime.py
+
+* main-thru
+
+>score
+Total score: 0 / 6. (Well, 4 is the scores core.)
+You haven't figured out a magic word to say yet, but when you do, you'll get your first point.
+
+#the big dump of "try everything that shouldn't break"
+# Z needed for UNDO
+>z
+
+>about
+Psyops, Yo was an entry to the EctoComp 2021 Petite Mort. It was originally conceived for 2020, but life got in the way. I'd had bigger plans, which took away from fun small stuff like this.
+The game is solvable in nine moves, though there are two bonus points.
+Source control is at https://github.com/andrewschultz/psyops-yo.
+VERSIONS shows version information. CREDITS shows credits. EXT shows extensions used. Abbreviations work, too.
+Psyops, Yo requires word-guessing to win. However, I hope to make the mechanic obvious if you examine or walk around enough. There's a certain pattern to it all.
+
+>credits
+I'd like to thank Olaf Nowacki for moral support during the original testing run-up--I left no time for testing. He had an entry in the Petite Mort too! Oh, and the IFComp 2021 authors' subforum. Several of them entered something, too!
+I would also like to thank JJ Guest for creating EctoComp, Duncan Bowsman for stepping in and Ruber Eaglenest for running it in 2021 (and before and after,) and itch.io for hosting EctoComp and other comps that help me just remember to play others' stuff.
+Wade Clarke and A. DiBianca sent transcripts which helped make version 4 more polished.
+Attributions for dirt texture in cover art: CC BY-SA 3.0 -- Heath Rezabek -- Vessel CC -- http://vessel.cc
+If you have a clever book or whatever to add, mail me at blurglecruncheon@gmail.com or post an issue at https://github.com/andrewschultz/psyops-yo.
+>cred
+I'd like to thank Olaf Nowacki for moral support during the original testing run-up--I left no time for testing. He had an entry in the Petite Mort too! Oh, and the IFComp 2021 authors' subforum. Several of them entered something, too!
+>creds
+I'd like to thank Olaf Nowacki for moral support during the original testing run-up--I left no time for testing. He had an entry in the Petite Mort too! Oh, and the IFComp 2021 authors' subforum. Several of them entered something, too!
+>credit
+I'd like to thank Olaf Nowacki for moral support during the original testing run-up--I left no time for testing. He had an entry in the Petite Mort too! Oh, and the IFComp 2021 authors' subforum. Several of them entered something, too!
+
+>verbs
+Psyops, Yo has a very simplified parser. You can win just by going in the standard directions, including diagonals, and by guessing magic words based on objects lying around and saying them, with or without the object name.
+Two useful diagnostic commands are SCORE for score, which also gives non-spoilery nudges, and I for inventory, though you won't need to carry much. Other meta-commands include ABOUT, CREDITS, EXT and VERSIONS.
+TALKing is also an option, e.g. T NPC, or TALK NPC or TALK TO NPC. No subject is actually needed, since no room has more than one NPC.
+Some other standard Inform commands are implemented as jokes: for instance, the senses. But none are critical to winning the game.
+
+>verb
+Some other standard Inform commands are implemented as jokes: for instance, the senses. But none are critical to winning the game.
+
+>v
+Some other standard Inform commands are implemented as jokes: for instance, the senses. But none are critical to winning the game.
+
+>versions
+Version 1 was released October 30, 2021 to Itch.io for the yearly EctoComp competition, Petite Mort division.
+Version 2 was released February 28, 2025 to Itch.io with no new technical features, but with minor bug fixes and also "appropriate" text that trickled in over the years. Since then, Martin Amis, whose name cued Hamish, had left this world for over a year. RIP.
+Version 3 was released March 1, 2025 to Itch.io with the Elite Lit/bookshelf in the final area containing random books.
+Version 4 was released January ?, 2026 to Itch.io with bug fixes and clarifications. La Palapa and a list of (un)invited people are also in place at the end.
+No further updates are planned, but if enough bugs are found, I may roll up a maintenance release.
+To see extensions used in Psyops, Yo and Inform's internal release data, type EXT or EXTS.
+!One more update
+To see extensions used in Psyops, Yo and Inform's internal release data, type EXT or EXTS.
+>version
+To see extensions used in Psyops, Yo and Inform's internal release data, type EXT or EXTS.
+>vers
+To see extensions used in Psyops, Yo and Inform's internal release data, type EXT or EXTS.
+>ver
+
+>ext
+Standard Rules version 2/090402 by Graham Nelson
+>exts
+Standard Rules version 2/090402 by Graham Nelson
+
+>undo
+Edited it!
+
+>escapes
+by one point
+
+>score
+Total score: 1 / 6. (Well, 4 is the scores core.)
+You have acquired a raider aide item, the escapes cap.
+
+>ne
+
+>about
+!requires word-guessing
+
+>stalest
+by one point
+
+>score
+Total score: 2 / 6. (Well, 4 is the scores core.)
+You have one raider aide item left to pick up.
+
+>se
+
+>mahatma
+by one point
+
+>score
+Total score: 3 / 6. (Well, 4 is the scores core.)
+You don't need any other raider aide. You should go DOWN to the center, where you haven't been yet.
+
+>d
+
+>score
+Total score: 3 / 6. (Well, 4 is the scores core.)
+You don't need any other raider aide. You should focus on what to do here.
+
+>u
+>score
+You don't need any other raider aide. You should focus on what to do in Dwell'd Well.
+
+>undo
+>undo
+
+>abracadabra
+by one point
+
+>score
+Total score: 4 / 6. You have four points and can just go down, nothing fancy, to win.
+
+>karateka
+by one point
+
+>score
+Total score: 5 / 6. You have five points and can now take the fancy way down for an extra special ending. Or just go down for a regular win.
+
+>okeydokey
+by one point
+
+Yes, it's a bit reflexive and self-referential. But it's worth a try. And, equally hokey, the well swells!
+As you climb down, you wind up finding a secret passage that leads ... somewhere new. You feel smart immediately when you arrive, unable to suppress an "I DID! I DID!" and needing no estates tat with a legible gib. Why, you don't even need to visit the Smiles Mile you see!
+Of course it's easy to feel all this, walking on ...
+EINSTEIN ST.
+Now, where to visit first? Re: area, there are HELF shelfs (a hat-tip to that one Far Side comic,) and a credit union called Trust-R-Us to help new people get acclimated. Then, perhaps that restaurant called Yo, BYOB, or L'Salsa, or the snack shop Ho, Choc. In other establishments that'd please any ate-rater, hotshots eat couscous, or maybe mahi mahi, or even spies' pie. Some tout stouts to ward off beriberi. Under a chiquichiqui and mingimingi and rewa-rewa.
+You make your choice. If there was better, you don't care. You can't help feeling like ...
+*** A MUCKAMUCK! ***
+
+>amusing
+Here is a list of things you can try. I didn't keep track of if you did, even though Psyops, Yo was a short game, but then again, since it's short, it'll be easier to check off on all these phrases.
+YES, NO, SING, or WAIT/Z give a fixed response.
+There are also responses for naughty words like BOTHER and the semi-custom verb HIT.
+Some verbs have a generic and specific response:
+ATTACK gives a slightly different response for the Tormentor Men or Elite Lit.
+SMELL is slightly different near the end, with the Apple nearby.
+LISTEN is slightly different in the Row, the Church and (with 3 points) the Well than other places.
+The empty command, asking to RESTORE a game (before and after,) and UNDO also give custom text.
+Oh, of course, XYZZY has a silly response, too.

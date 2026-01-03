@@ -1,0 +1,43 @@
+## reg-py-thru-max.txt
+## GENERATOR FILE: rbr-py-thru.txt
+
+## maximum walkthrough
+
+** game: /home/andrew/prt/debug-psyops-yo.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+** checkclass: /home/andrew/prt/runtime.py
+
+* main-thru
+
+>escapes
+by one point
+
+>ne
+
+>stalest
+by one point
+
+>se
+
+>mahatma
+by one point
+
+>d
+
+>abracadabra
+by one point
+
+>karateka
+by one point
+
+>okeydokey
+by one point
+
+Yes, it's a bit reflexive and self-referential. But it's worth a try. And, equally hokey, the well swells!
+As you climb down, you wind up finding a secret passage that leads ... somewhere new. You feel smart immediately when you arrive, unable to suppress an "I DID! I DID!" and needing no estates tat with a legible gib. Why, you don't even need to visit the Smiles Mile you see!
+Of course it's easy to feel all this, walking on ...
+EINSTEIN ST.
+Now, where to visit first? Re: area, there are HELF shelfs (a hat-tip to that one Far Side comic,) and a credit union called Trust-R-Us to help new people get acclimated. Then, perhaps that restaurant called Yo, BYOB, or L'Salsa, or the snack shop Ho, Choc. In other establishments that'd please any ate-rater, hotshots eat couscous, or maybe mahi mahi, or even spies' pie. Some tout stouts to ward off beriberi. Under a chiquichiqui and mingimingi and rewa-rewa.
+You make your choice. If there was better, you don't care. You can't help feeling like ...
+*** A MUCKAMUCK! ***
+

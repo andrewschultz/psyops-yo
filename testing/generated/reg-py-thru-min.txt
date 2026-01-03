@@ -1,0 +1,32 @@
+## reg-py-thru-min.txt
+## GENERATOR FILE: rbr-py-thru.txt
+
+## minimum walkthrough
+
+** game: /home/andrew/prt/debug-psyops-yo.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+** checkclass: /home/andrew/prt/runtime.py
+
+* main-thru
+
+>escapes
+by one point
+
+>ne
+
+>stalest
+by one point
+
+>se
+
+>mahatma
+by one point
+
+>d
+
+>abracadabra
+by one point
+
+>d
+A "YAY"
+

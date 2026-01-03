@@ -1,0 +1,163 @@
+## reg-py-thru-verbs.txt
+## GENERATOR FILE: rbr-py-thru.txt
+
+## Verbs and alt stuff
+
+** game: /home/andrew/prt/debug-psyops-yo.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+** checkclass: /home/andrew/prt/runtime.py
+
+* main-thru
+
+#this is the main dump for basic verb commands
+>i
+You're wearing that scowls cowl, and it's a total drag.
+You haven't found anything that might help you. Stuff is lying around, but you haven't tried to take it yet.
+
+>no
+Discord is ... (cor!)
+
+>yes
+A yay! A yay!
+
+>z
+Meantime? ... ANTI!
+
+>xyzzy
+Hark! Sharks!
+*** You have died ***
+But wait, you were resurrected! Someone raised a...
+... puts on shades ...
+fund of undo!
+
+>take cap
+You reach for the cap, but you feel resistance. What is going on? Another look, and, well, it just seems too plain as-is. Maybe if you jazzed it up, it would be more worth taking, or feel more worth being taken.
+
+>i
+You haven't found anything that might help you. Stuff is lying around, but you were unable to just scoop it up.
+
+>take suns
+Sadly, the un-suns leave you feeling so helpless you can't do much more than examine them. So you do.
+They're totally, like, dark and gloomy and stuff. Just the thought of them makes you think, "O, wow!" They're so dark, you wonder if they could be called tar stars, too.
+
+>take gulf
+Sadly, the Ingulfin' Gulf leaves you feeling so helpless you can't do much more than examine it. So you do.
+Ingraining rain slowly keeps filling it up, limiting your travel options. You think you yourself "ew, dew'd" at the prospect of touching it. Probably filled with slices-lice, with a trap-pit of ever-severs below.
+
+>take rain
+Sadly, the ingraining rain leaves you feeling so helpless you can't do much more than examine it. So you do.
+Although it isn't terribly gaudy or acidic looking rain, but it's enough to prevent you from straying.
+
+>take rim
+Sadly, the primp rim leaves you feeling so helpless you can't do much more than examine it. So you do.
+
+>attack cap
+Ai! Maim?! (Violence is not the keyword. You have no kill-skills.)
+
+>listen
+Random spooky taunts:
+!them all
+
+>listen
+Random spooky taunts:
+!them all
+
+>listen
+Random spooky taunts:
+them all
+
+>listen
+Random spooky taunts:
+them all
+
+>smell
+Ethene, then...
+
+>hit
+You think, pejoratively, of people who really were pretty awful. But you don't need violent fantasies and name-calling right now.
+
+>hit cap
+You think, pejoratively, of people who really were pretty awful. But you don't need violent fantasies and name-calling right now.
+
+>d
+There'll be passage down, but you haven't discovered enough.
+
+>e
+>talk men
+"Derider?! I?!" they all respond individually. Then, "Ain't saints!"
+It's annoying, being a sheesh-ee, but at least they're not attacking you. Maybe it's more fun for them to drag things out. Perhaps you could lure them into chasing after something that can't be tormented. They'd probably jump before you know it. If they were French, they'd definitely, be a quip-equipe, with voices smooth as Le Oleo.
+>undo
+>undo
+
+>escapes
+by one point
+
+>drop cap
+You never need to drop anything in Psyops, Yo. Items no longer useful should vanish.
+
+>ne
+
+>take ale
+You reach for the ale, but you feel resistance. What is going on? Another look, and, well, it just seems too plain as-is. Maybe if you jazzed it up, it would be more worth taking, or feel more worth being taken.
+
+>listen
+There's a gong on somewhere.
+
+>stalest
+by one point
+
+>se
+
+>take hat
+You reach for the hat, but you feel resistance. What is going on? Another look, and, well, it just seems too plain as-is. Maybe if you jazzed it up, it would be more worth taking, or feel more worth being taken.
+
+>listen
+An um-pump hidden from view builds tension.
+
+>mahatma
+by one point
+
+>u
+The way forward is down, not up.
+
+>d
+
+>listen
+"Cad! Cad!"
+
+>u
+
+>u
+The only vertical passage is in Dwell'd Well.
+
+>undo
+>undo
+
+>abracadabra
+by one point
+
+>listen
+Random spooky taunts
+
+>okeydokey
+Yes! You're excited! But you run down too fast. The last thing you see is a princess, whose "Huh, U?!" expression (or is it "Bub, U...") and martial-arts move leaves you doubled over, fatally injured. Your last words are "Shadows had ... OW!"
+*** You have died ***
+Okay, not really. But if you want the good ending, I'm gonna force you to name that ancient Apple IIe game. It's a classic, even with the instadeath and inability to save at the end.
+
+>smell
+ROM aroma.
+
+>karateka
+by one point
+
+>okeydokey
+by one point
+
+Yes, it's a bit reflexive and self-referential. But it's worth a try. And, equally hokey, the well swells!
+As you climb down, you wind up finding a secret passage that leads ... somewhere new. You feel smart immediately when you arrive, unable to suppress an "I DID! I DID!" and needing no estates tat with a legible gib. Why, you don't even need to visit the Smiles Mile you see!
+Of course it's easy to feel all this, walking on ...
+EINSTEIN ST.
+Now, where to visit first? Re: area, there are HELF shelfs (a hat-tip to that one Far Side comic,) and a credit union called Trust-R-Us to help new people get acclimated. Then, perhaps that restaurant called Yo, BYOB, or L'Salsa, or the snack shop Ho, Choc. In other establishments that'd please any ate-rater, hotshots eat couscous, or maybe mahi mahi, or even spies' pie. Some tout stouts to ward off beriberi. Under a chiquichiqui and mingimingi and rewa-rewa.
+You make your choice. If there was better, you don't care. You can't help feeling like ...
+*** A MUCKAMUCK! ***
+

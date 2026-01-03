@@ -1,0 +1,109 @@
+## reg-py-thru-details.txt
+## GENERATOR FILE: rbr-py-thru.txt
+
+## Game text details
+
+** game: /home/andrew/prt/debug-psyops-yo.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+** checkclass: /home/andrew/prt/runtime.py
+
+* main-thru
+
+You finish reading the complete adventures of Tintin again. And you reflect on your life.
+What with your nice job at DecodeCo, you don't NEED to save money, but you do enjoy your nice end-of-month trip to the discount warehouse without any hiccups.
+A slogs-log by MP Kempke and Hamish Amis
+Release 4
+You're at the southwest corner of an equilateral triangle of open spaces. The two un-suns hang menacingly in the sky, blotting things out and causing general depression and dreariness. Passages through the Ingulfin' Gulf lead north (or northeast) and east. A primp-rim is wedged between those two passages, some odd direction between east and northeast.
+"Uh, hi, I'm the stalkiest alkie! People told me a pejorative like that would finally help me get it through my thick head to drink less, but somehow it made me drink more. Guess I'm stuck with it, though, unless someone can help me."
+
+>l
+!Uh, hi
+The stalkiest alkie, stuck with a pejorative name, paces back and forth, looking for something here and not looking for it.
+
+>x suns
+!Sadly,
+They're totally, like, dark and gloomy and stuff. Just the thought of them makes you think, "O, wow!" They're so dark, you wonder if they could be called tar stars, too.
+
+>x gulf
+!Sadly,
+Ingraining rain slowly keeps filling it up, limiting your travel options. You think you yourself "ew, dew'd" at the prospect of touching it. Probably filled with slices-lice, with a trap-pit of ever-severs below.
+
+>x rain
+!Sadly,
+Although it isn't terribly gaudy or acidic looking rain, but it's enough to prevent you from straying.
+
+>x rim
+!Sadly,
+It blocks passage to some odd direction between east and northeast and reflects you back. Well, a circus mirror-warped version of you. You poke at it -- it's surprisingly resilient. It seems to be guarding something, but how to get by it?
+
+>x me
+Not dazzling, but frankly, you're relieved not to be wearing a tutu or muumuu or ew-sews, which you never considered existed until now. You don't have a tat.
+You also examine who you are, and you hope you're anti-cantic. You're surprised you know what cantic means, actually.
+
+>x me
+Not dazzling, but frankly, you're relieved not to be wearing a tutu or muumuu or ew-sews, which you never considered existed until now. You don't have a tat.
+!You also examine
+
+>ne
+You're at the north corner of an equilateral triangle of open spaces. The two un-suns hang menacingly in the sky, blotting things out and causing general depression and dreariness. Passages through the Ingulfin' Gulf lead southwest and southeast. The primp-rim is wedged between those two passages, to the south.
+
+>se
+You're at the southeast corner of an equilateral triangle of open spaces. The two un-suns hang menacingly in the sky, blotting things out and causing general depression and dreariness. Passages through the Ingulfin' Gulf lead north (or northwest) and west. The primp-rim is wedged between those two passages, some odd direction between west and northwest.
+
+>undo
+>undo
+
+>escapes
+by one point
+
+>ne
+
+Ur-Church
+You're at the north corner of an equilateral triangle of open spaces. The two un-suns hang menacingly in the sky, blotting things out and causing general depression and dreariness. Passages through the Ingulfin' Gulf lead southwest and southeast. There's also a way down between them, to the south.
+A staidest aide stands around here, touching their head as if they need to put something on it to TRULY seem official.
+Some ale lies here at a weird angle--how has it not fallen over?
+
+>l
+A staidest aide stands around here, touching their head as if they need to put something on it to TRULY seem official.
+
+>stalest
+by one point
+
+>se
+
+You're at the southeast corner of an equilateral triangle of open spaces. The two un-suns hang menacingly in the sky, blotting things out and causing general depression and dreariness. Passages through the Ingulfin' Gulf lead north (or northwest) and west. There's also a way down between them, in a direction too diagonal for this parser, so just go DOWN when ready.
+Tormentor men stand here. They aren't even throwing light slights at you ... at least not while you're looking. They definitely go in for a gag.
+You've been around everywhere. Elapse, laps, you think to yourself.
+
+>l
+!You've been around everywhere.
+
+>w
+You're at the southwest corner of an equilateral triangle of open spaces. The two un-suns hang menacingly in the sky, blotting things out and causing general depression and dreariness. Passages through the Ingulfin' Gulf lead north (or northeast) and east. There's also a way down between them, in a direction too diagonal for this parser, so just go DOWN when ready.
+
+>undo
+
+>mahatma
+by one point
+
+>d
+
+Dwell'd Well
+
+>abracadabra
+by one point
+
+>karateka
+by one point
+
+>okeydokey
+by one point
+
+Yes, it's a bit reflexive and self-referential. But it's worth a try. And, equally hokey, the well swells!
+As you climb down, you wind up finding a secret passage that leads ... somewhere new. You feel smart immediately when you arrive, unable to suppress an "I DID! I DID!" and needing no estates tat with a legible gib. Why, you don't even need to visit the Smiles Mile you see!
+Of course it's easy to feel all this, walking on ...
+EINSTEIN ST.
+Now, where to visit first? Re: area, there are HELF shelfs (a hat-tip to that one Far Side comic,) and a credit union called Trust-R-Us to help new people get acclimated. Then, perhaps that restaurant called Yo, BYOB, or L'Salsa, or the snack shop Ho, Choc. In other establishments that'd please any ate-rater, hotshots eat couscous, or maybe mahi mahi, or even spies' pie. Some tout stouts to ward off beriberi. Under a chiquichiqui and mingimingi and rewa-rewa.
+You make your choice. If there was better, you don't care. You can't help feeling like ...
+*** A MUCKAMUCK! ***
+
