@@ -544,7 +544,9 @@ the block listening rule is not listed in any rulebook.
 the block smelling rule is not listed in any rulebook.
 
 check listening:
-	if player is in Ingrowing Row, say "An um-pump hidden from view builds tension." instead;
+	if player is in Ingrowing Row:
+		if tormentor men are in Ingrowing Row, say "The Tormentor Men barely acknowledge your existence with 'Coo-coo,' 'Dum-dum,' 'Wah-wah' and 'Haw-haw.'" instead;
+		say "An um-pump hidden from view builds tension." instead;
 	if player is in Ur Church, say "There's a gong on somewhere." instead;
 	if player is in Dwell'd Well and score is 3, say "'Cad! Cad!'" instead;
 	say "Random spooky taunts: '[one of]O tot[or]Er, perp[or]U pup[in random order]!' [one of][line break][or][line break][or](You've heard them all.)[stopping]" instead;
