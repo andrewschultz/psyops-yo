@@ -271,6 +271,10 @@ this is the guess-cad rule:
 	if ncd > 0:
 		say "That feels right, but now is not the time yet. Perhaps you need to do something with [the list of carried doublers].";
 		the rule fails;
+	if player is not in well:
+		say "This is not the right place. You need to be somewhere you can open a new passage.";
+		now abracadabra-guess is true;
+		the rule fails;
 	say "You hear lightning. You wonder briefly if it is about to strike you down because abracadabra isn't a real-real word.";
 	wfas;
 	say "But you remain standing. Eh, you could probably beat yourself up until Black Friday over whether or not you had enough style points, here. You feel different, as if encompassed by something supernatural.";
@@ -522,6 +526,22 @@ carry out requesting the score:
 	else:
 		say "How did you manage to check the score? You should've won the game by now. That's a bug!";
 	report-raider-aides;
+
+chapter THINK
+
+the block thinking rule is not listed in any rulebook.
+
+check thinking when think-try is false:
+	say "[b]THINK[r] is used for commands you figured but did in the wrong order or place.";
+	now think-try is true;
+
+carry out thinking:
+	if abracadabra-guess is true and cad is not doubled:
+		say "You know you need to say [b]ABRACADABRA[r] somewhere.";
+	else if okeydokey-tried is true:
+		say "You would really like to say [b]OKEY DOKEY[r], with or without a space, [if score is 5]now you've prepped[else]with proper prep[end if].";
+	else:
+		say "There's nothing you figured in advance that you need to do later."
 
 volume standard rejectable verbs
 
