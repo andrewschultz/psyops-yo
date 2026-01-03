@@ -37,6 +37,7 @@ randtext
 "Delude Lu"
 "Deluded? Elude"
 "Devolved? Evolve"
+"E-Base, Debased"
 "Edged, G"
 "Ender-Senders"
 "E's Test"

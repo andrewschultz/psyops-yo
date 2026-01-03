@@ -454,8 +454,8 @@ understand "v" as verbsing.
 
 carry out verbsing:
 	say "[this-game] has a very simplified parser. You can win just by going in the standard directions, including diagonals, and by guessing magic words based on objects lying around[if cad is in well] or, right now, the voice saying 'Cad.' [else] and saying them, with or without the object name.[end if]";
-	say "[line break]Two useful diagnostic commands are [b]SCORE[r] for score, which also gives non-spoilery nudges, and [b]I[r] for inventory, though you won't need to carry much. Other meta-commands include [b]ABOUT[r], [b]CREDITS[r], [b]EXT[r] and [b]VERSIONS[r].";
-	say "[line break][b]TALK[r]ing is also an option, e.g. [b]T NPC[r], or [b]TALK NPC[r] or [b]TALK TO NPC[r]. No subject is actually needed, since no room has more than one NPC.";
+	say "[line break]Two useful diagnostic commands are [b]SCORE[r] for score, which also gives non-spoilery nudges, and [b]I[r] for inventory, though you won't need to carry much. Other meta-commands include [b]ABOUT[r], [b]CREDITS[r], [b]EXT[r] and [b]VERSIONS[r], which have abbreviations.";
+	say "[line break][b]TALK[r]ing is also an option but unnecessary to win, and you can type [b]T NPC[r], or [b]TALK NPC[r] or [b]TALK TO NPC[r]. No subject is actually needed, since no room has more than one NPC.";
 	say "[line break]Some other standard Inform commands are implemented as jokes: for instance, the senses. But none are critical to winning the game, though [b]AMUSING[r] will list them once you've won.";
 	the rule succeeds;
 
@@ -672,7 +672,7 @@ carry out versioning:
 	say "Version 1 was released October 30, 2021 to Itch.io for the yearly EctoComp competition, Petite Mort division.";
 	say "Version 2 was released February 28, 2025 to Itch.io with no new technical features, but with minor bug fixes and also 'appropriate' text that trickled in over the years. Since then, Martin Amis, whose name cued Hamish, had left this world for over a year. RIP.";
 	say "Version 3 was released March 1, 2025 to Itch.io with the Elite Lit/bookshelf in the final area containing random books.";
-	say "Version 4 was released January ?, 2026 to Itch.io with bug fixes and clarifications. La Palapa and a list of (un)invited people are also in place at the end.";
+	say "Version 4 was released January 3, 2026 to Itch.io with bug fixes and clarifications. La Palapa and a list of (un)invited people are also in place at the end.";
 	say "No further updates are planned, but if enough bugs are found, I may roll up a maintenance release.";
 	the rule succeeds;
 
