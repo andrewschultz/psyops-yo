@@ -1,0 +1,84 @@
+## reg-py-churn.txt
+## STANDALONE FILE
+
+## tests bug found in-comp, when they appear, etc.
+
+** game: /home/andrew/prt/debug-psyops-yo.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main
+
+>churn 1
+You've paged through everything here.
+
+Initial examination to display firsttext property:
+Wow! So many books! You have no idea how good they are. Perhaps there is a lost novel of F. Kafka in here. Or not.
+
+You can keep examining, to skim random titles.
+
+[NOTE: there are eighty-nine books to see with Elite Lit, and if you don't want to examine continually, you can read the game source on GitHub or in the deliverable. The list is in Psyops Yo Random Text.i7x.]
+
+(1 of 89, not shown in release mode)
+You note one book title:
+
+(2 of 89, not shown in release mode)
+You note another book title:
+
+You've paged through everything here.
+
+>churn 1
+!Wow! So many
+!NOTE:
+You've paged through everything here once again.
+!You note one book title:
+
+>churn 2
+Initial examination to display firsttext property:
+Whoah! All sorts of names are written here. Names of people welcome and, on something you now notice called "U DUD/NOT, SNOTS," people unwelcome by Toronto Ron. "Whew, he..." you think.
+
+[NOTE: there are twelve names to see with La Palapa.]
+
+(1 of 12, not shown in release mode)
+Beneath a stamp saying PROPERTY OF TORONTO RON, you note one person allowed in:
+
+(2 of 12, not shown in release mode)
+You note another person allowed in:
+
+>churn 2
+!Whoah! All sorts
+!NOTE:
+Alas, you can lay claim to no such cool nicknames. But you bet none of those people could ever see whatever's below here. It must be pretty cool!
+!Beneath a stamp saying PROPERTY OF TORONTO RON
+
+>churn 3
+Initial examination to display firsttext property:
+Wow! That's a lot of uninvited people. Way more than invited. That Toronto Ron sure has standards! Or, at least, he thinks he does.
+
+[NOTE: there are eighty names to see with U DUD/NOT, SNOTS.]
+
+(1 of 80, not shown in release mode)
+Someone uninvited is
+
+(2 of 80, not shown in release mode)
+Someone else uninvited is
+
+That's a lot of people! Perhaps they could get together to form their own much kinder group than Toronto Ron's. Maybe the Oft-Softs or whatever.
+
+>churn 3
+!Wow! That's
+!NOTE:
+That's a lot of people! Perhaps they could get together to form their own much kinder group than Toronto Ron's. Maybe the Oft-Softs or whatever.
+
+>churn 4
+
+Initial examination to display firsttext property:
+It's pretty exclusive! Man, the names listed must be pretty clever. Either their last names, or their first and maybe middle names are initialed. None is as cool as, say, MP Kempke. That's only to be expected. But there are a lot to peruse!
+
+[NOTE: there are one hundred and eighty-seven names to see with the Able Tablet.]
+
+After reviewing all the names, you feel a need to return to the profound reflection, without any prodding whatsoever, that they're all pretty cool, but none is of course as cool as MP Kempke.
+
+>churn 4
+After again reviewing all the names, you feel a need to return to the profound reflection, without any prodding whatsoever, that they're all pretty cool, but none is of course as cool as MP Kempke.
+!It's pretty exclusive
+!NOTE:
