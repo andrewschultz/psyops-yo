@@ -103,8 +103,12 @@ You think, pejoratively, of people who really were pretty awful. But you don't n
 There'll be passage down, but you haven't discovered enough.
 
 >s
-You try to, but you realize such idle sidles might lead into ... the INGULFIN' GULF. You can, however, go north, northeast and east.
+You try going south, but you realize such idle sidles might lead into ... the INGULFIN' GULF. You can, however, go north, northeast and east.
 
+>u
+You're not flying out of here.
+
+>undo
 >talk me
 You give yourself a chic "Hi" ... at "orator."
 
@@ -149,6 +153,9 @@ The way the cap lies on the ground suggests it's being held. It's not of particu
 >escapes
 by one point
 
+>s
+You try going south, but you realize such idle sidles might lead into ... the INGULFIN' GULF. You can, however, go north, northeast, east and down.
+
 >x cap
 It's not trying to escape you, but maybe it will help you escape a tough situation.
 
@@ -177,7 +184,7 @@ You reach for the ale, but you feel resistance. What is going on? Another look, 
 There's a gong on somewhere.
 
 >n
-You try to, but you realize such idle sidles might lead into ... the INGULFIN' GULF. You can, however, go south, southeast, southwest and down.
+You try going north, but you realize such idle sidles might lead into ... the INGULFIN' GULF. You can, however, go south, southeast, southwest and down.
 
 >x ale
 It's plain, as if it could become more or less palatable, for better or worse.
@@ -213,7 +220,7 @@ You reach for the hat, but you feel resistance. What is going on? Another look, 
 An um-pump hidden from view builds tension.
 
 >s
-You try to, but you realize such idle sidles might lead into ... the INGULFIN' GULF. You can, however, go north, northwest, west and down.
+You try going south, but you realize such idle sidles might lead into ... the INGULFIN' GULF. You can, however, go north, northwest, west and down.
 
 >i
 You're wearing that scowls cowl, and it's a bit of a drag.
@@ -233,11 +240,11 @@ The hat is impressive and all, but it's not your style. You need to find someone
 You aren't carrying anything. You're even free of that scowls cowl! You can't see anything worth taking. You just need to find a way out.
 
 >u
-The way forward is down, not up.
+You're not flying out of here.
 
 >x suns
 !Sadly,
-They're much less gloomy now you've sorted things out aboveground.
+They're much less gloomy now you've figured how to change the cap, hat and ale.
 
 >x cowl
 You can't see any such thing.
@@ -253,6 +260,10 @@ Nothing magical happens. V or VERBS gives Psyops, Yo's pared-down command list a
 >undo
 
 >ne
+
+>x suns
+!Sadly,
+They're much less gloomy now you've figured what to do with the cap, hat and ale.
 
 >d
 
@@ -284,16 +295,11 @@ There's nothing you figured in advance that you need to do later.
 >undo
 >undo
 
->u
-The only vertical passage is in Dwell'd Well.
-
->undo
 >undo
 >undo
 
 >abracadabra
 by one point
-Perhaps it is time to go down.
 
 >i
 You aren't carrying anything. You're even free of that scowls cowl! You can't see anything worth taking. Being unburdened with stuff will be handy to make the journey down a bit quicker. You hope.

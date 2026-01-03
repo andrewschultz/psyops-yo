@@ -58,7 +58,7 @@ You can't see any such thing.
 
 >d
 Dwell'd Well
-There are three ways to go back up, here: north, southwest, and southeast. Typing U or UP will lead you back the way you came, to the Strangest Range. But there's nothing more to do aboveground, so you probably want to go D or DOWN once you've found a way.
+There are three ways to go back up, here: north, southwest, and southeast. Typing U or UP will lead you back the way you just came, to the Strangest Range. But there's nothing more to do aboveground, so you probably want to go D or DOWN once you've found a way.
 It's almost too peaceful here.
 
 >u
@@ -111,7 +111,7 @@ You can't see any such thing.
 
 >d
 Dwell'd Well
-There are three ways to go back up, here: north, southwest, and southeast. Typing U or UP will lead you back the way you came, to the Ur-Church. But there's nothing more to do aboveground, so you probably want to go D or DOWN once you've found a way.
+There are three ways to go back up, here: north, southwest, and southeast. Typing U or UP will lead you back the way you just came, to the Ur-Church. But there's nothing more to do aboveground, so you probably want to go D or DOWN once you've found a way.
 
 >u
 Going back up the way you came...
@@ -157,7 +157,7 @@ You can't see any such thing.
 
 >d
 Dwell'd Well
-There are three ways to go back up, here: north, southwest, and southeast. Typing U or UP will lead you back the way you came, to the Ingrowing Row. But there's nothing more to do aboveground, so you probably want to go D or DOWN once you've found a way.
+There are three ways to go back up, here: north, southwest, and southeast. Typing U or UP will lead you back the way you just came, to the Ingrowing Row. But there's nothing more to do aboveground, so you probably want to go D or DOWN once you've found a way.
 
 >u
 Going back up the way you came...

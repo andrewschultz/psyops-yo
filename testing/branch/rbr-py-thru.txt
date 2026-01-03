@@ -258,8 +258,12 @@ You think, pejoratively, of people who really were pretty awful. But you don't n
 There'll be passage down, but you haven't discovered enough.
 \\
 >s
-You try to, but you realize such idle sidles might lead into ... the INGULFIN' GULF. You can, however, go north, northeast and east.
+You try going south, but you realize such idle sidles might lead into ... the INGULFIN' GULF. You can, however, go north, northeast and east.
 \\
+>u
+You're not flying out of here.
+\\
+>undo
 >talk me
 You give yourself a chic "Hi" ... at "orator."
 \\
@@ -385,6 +389,9 @@ You have acquired a raider aide item, the escapes cap.
 !You have successfully used
 
 @verbs
+>s
+You try going south, but you realize such idle sidles might lead into ... the INGULFIN' GULF. You can, however, go north, northeast, east and down.
+\\
 >x cap
 It's not trying to escape you, but maybe it will help you escape a tough situation.
 \\
@@ -426,7 +433,7 @@ You reach for the ale, but you feel resistance. What is going on? Another look, 
 There's a gong on somewhere.
 \\
 >n
-You try to, but you realize such idle sidles might lead into ... the INGULFIN' GULF. You can, however, go south, southeast, southwest and down.
+You try going north, but you realize such idle sidles might lead into ... the INGULFIN' GULF. You can, however, go south, southeast, southwest and down.
 
 @meta
 >about
@@ -496,7 +503,7 @@ You reach for the hat, but you feel resistance. What is going on? Another look, 
 An um-pump hidden from view builds tension.
 \\
 >s
-You try to, but you realize such idle sidles might lead into ... the INGULFIN' GULF. You can, however, go north, northwest, west and down.
+You try going south, but you realize such idle sidles might lead into ... the INGULFIN' GULF. You can, however, go north, northwest, west and down.
 \\
 >i
 You're wearing that scowls cowl, and it's a bit of a drag.
@@ -528,11 +535,11 @@ The hat is impressive and all, but it's not your style. You need to find someone
 You aren't carrying anything. You're even free of that scowls cowl! You can't see anything worth taking. You just need to find a way out.
 \\
 >u
-The way forward is down, not up.
+You're not flying out of here.
 \\
 >x suns
 !Sadly,
-They're much less gloomy now you've sorted things out aboveground.
+They're much less gloomy now you've figured how to change the cap, hat and ale.
 \\
 >x cowl
 You can't see any such thing.
@@ -587,6 +594,11 @@ You aren't carrying anything. You're even free of that scowls cowl! You can't se
 \\
 >score
 You don't need any other raider aide. You should go DOWN to the center, where you haven't been yet.
+
+@verbs
+>x suns
+!Sadly,
+They're much less gloomy now you've figured what to do with the cap, hat and ale.
 
 >d
 
@@ -645,10 +657,6 @@ There's nothing you figured in advance that you need to do later.
 >undo
 >undo
 \\
->u
-The only vertical passage is in Dwell'd Well.
-\\
->undo
 >undo
 >undo
 
@@ -658,7 +666,6 @@ Almost right! Slide one more letter in.
 
 >abracadabra
 by one point
-Perhaps it is time to go down.
 
 @det
 You hear lightning. You wonder briefly if it is about to strike you down because abracadabra isn't a real-real word.
@@ -670,11 +677,11 @@ And yet ... perhaps you can get style points ... for that, or the mysterious dap
 But it's not all that appears. You can also, if you like, distract yourself with a bookshelf labeled (of course) Elite Lit.
 A place called La Palapa has its entrance blocked, and an Able Tablet appears on the side of the well, listing curious names.
 You also feel you've acquired (and earned) an ur-aura!
-Perhaps it is time to go down.
+Perhaps it is time to go further down.
 Your score has just gone up by one point.
 \\
 >l
-There are three ways to go back up, here: north, southwest, and southeast. Typing U or UP will lead you back the way you came, to the Ur-Church. But there's nothing more to do aboveground, so you probably want to go D or DOWN now you've found a way.
+There are three ways to go back up, here: north, southwest, and southeast. Typing U or UP will lead you back the way you just came, to the Ur-Church. But there's nothing more to do aboveground, so you probably want to go D or DOWN now you've found a way.
 The way down is a huge hole in the shape of a D--voices from it seem to say "Suss us." You could probably just go down through the D-shaped hole and get on with things, but maybe you can be fancy about it. An ancient dappled Apple home computer sits next to it.
 The bookshelf, aka Elite Lit, also stands here to distract you, if you need that. Next to it is an Able Tablet full of random author names. La Palapa is here, too, not that you an enter it, but you can examine it or read U DUD/NOT, SNOTS to see (un)-invitees.
 
@@ -693,7 +700,14 @@ You can't see any such thing.
 
 @meta
 >score
-Total score: 4 / 6. You have four points and can just go down, nothing fancy, to win.
+Total score: 4 / 6. You have four points and can just go down here, nothing fancy, to win.
+!You have successfully used
+\\
+>u
+>score
+Total score: 4 / 6. You have four points and can just go down in Dwell'd Well, nothing fancy, to win.
+\\
+>d
 
 @min
 >d
@@ -702,7 +716,7 @@ OK-APOSTROPHE: ...and you land with a "Lo, Plop" in ...
 OK-APOSTROPHE: ...Saves Ave. It is a nice enough place to live. People seem to appreciate you. Things are okay, for about a week. Then... then, you realize you are just a block over from Raver Ave leading to the shills' hill and scamps' camp beyond. It's not so bad at first, but the raves get bigger and bigger as time goes on, fueled by alt-salts, illicit hoot-shoots, and many a turnt urn. Everyone greets the host with a "Shucks, Huck," though you're never in a good enough mood to. They suggest celebrities to invite, too: "Flavor Flav, or ... ?"
 As time goes on, people reflexively wave away your unsocial behavior with yawny aw'n.
 Not that it's the worst place to live, and nobody threatens to relocate you to the hack shacks on Grun-G-Run, but you sense this was the lesser of the possible ending-sendings.
-    *** A "YAY" ***
+ME: HM?! EH?!
 
 @verbs
 >okeydokey
@@ -742,13 +756,14 @@ Boy, you sure could go for a game of Karateka now. You're a bit more apprehensiv
 As you contemplate this, the dappled Apple sadly, blows up. But hey, there's always emulation, and save states are handy for if you mess up, anyway.
 \\
 >l
-There are three ways to go back up, here: north, southwest, and southeast. Typing U or UP will lead you back the way you came, to the Ur-Church. But there's nothing more to do aboveground, so you probably want to go D or DOWN now you've found a way.
+There are three ways to go back up, here: north, southwest, and southeast. Typing U or UP will lead you back the way you just came, to the Ur-Church. But there's nothing more to do aboveground, so you probably want to go D or DOWN now you've found a way.
 You feel like you can enter the D-shaped hole with pizzazz and flair now, not just going down.
 The bookshelf, aka Elite Lit, also stands here to distract you, if you need that. Next to it is an Able Tablet full of random author names. La Palapa is here, too, not that you an enter it, but you can examine it or read U DUD/NOT, SNOTS to see (un)-invitees.
 
 @meta
 >score
 Total score: 5 / 6. You have five points and can now take the fancy way down for an extra special ending. Or just go down for a regular win.
+!You have successfully used
 
 @!min
 >okeydokey

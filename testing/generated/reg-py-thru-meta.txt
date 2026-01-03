@@ -145,16 +145,23 @@ You don't need any other raider aide. You should focus on what to do in Dwell'd 
 
 >abracadabra
 by one point
-Perhaps it is time to go down.
 
 >score
-Total score: 4 / 6. You have four points and can just go down, nothing fancy, to win.
+Total score: 4 / 6. You have four points and can just go down here, nothing fancy, to win.
+!You have successfully used
+
+>u
+>score
+Total score: 4 / 6. You have four points and can just go down in Dwell'd Well, nothing fancy, to win.
+
+>d
 
 >karateka
 by one point
 
 >score
 Total score: 5 / 6. You have five points and can now take the fancy way down for an extra special ending. Or just go down for a regular win.
+!You have successfully used
 
 >okeydokey
 by one point

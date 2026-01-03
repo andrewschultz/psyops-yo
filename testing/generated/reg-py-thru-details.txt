@@ -175,7 +175,6 @@ That unseen voice keeps
 
 >abracadabra
 by one point
-Perhaps it is time to go down.
 
 You hear lightning. You wonder briefly if it is about to strike you down because abracadabra isn't a real-real word.
 But you remain standing. Eh, you could probably beat yourself up until Black Friday over whether or not you had enough style points, here. You feel different, as if encompassed by something supernatural.
@@ -186,11 +185,11 @@ And yet ... perhaps you can get style points ... for that, or the mysterious dap
 But it's not all that appears. You can also, if you like, distract yourself with a bookshelf labeled (of course) Elite Lit.
 A place called La Palapa has its entrance blocked, and an Able Tablet appears on the side of the well, listing curious names.
 You also feel you've acquired (and earned) an ur-aura!
-Perhaps it is time to go down.
+Perhaps it is time to go further down.
 Your score has just gone up by one point.
 
 >l
-There are three ways to go back up, here: north, southwest, and southeast. Typing U or UP will lead you back the way you came, to the Ur-Church. But there's nothing more to do aboveground, so you probably want to go D or DOWN now you've found a way.
+There are three ways to go back up, here: north, southwest, and southeast. Typing U or UP will lead you back the way you just came, to the Ur-Church. But there's nothing more to do aboveground, so you probably want to go D or DOWN now you've found a way.
 The way down is a huge hole in the shape of a D--voices from it seem to say "Suss us." You could probably just go down through the D-shaped hole and get on with things, but maybe you can be fancy about it. An ancient dappled Apple home computer sits next to it.
 The bookshelf, aka Elite Lit, also stands here to distract you, if you need that. Next to it is an Able Tablet full of random author names. La Palapa is here, too, not that you an enter it, but you can examine it or read U DUD/NOT, SNOTS to see (un)-invitees.
 
@@ -201,7 +200,7 @@ Boy, you sure could go for a game of Karateka now. You're a bit more apprehensiv
 As you contemplate this, the dappled Apple sadly, blows up. But hey, there's always emulation, and save states are handy for if you mess up, anyway.
 
 >l
-There are three ways to go back up, here: north, southwest, and southeast. Typing U or UP will lead you back the way you came, to the Ur-Church. But there's nothing more to do aboveground, so you probably want to go D or DOWN now you've found a way.
+There are three ways to go back up, here: north, southwest, and southeast. Typing U or UP will lead you back the way you just came, to the Ur-Church. But there's nothing more to do aboveground, so you probably want to go D or DOWN now you've found a way.
 You feel like you can enter the D-shaped hole with pizzazz and flair now, not just going down.
 The bookshelf, aka Elite Lit, also stands here to distract you, if you need that. Next to it is an Able Tablet full of random author names. La Palapa is here, too, not that you an enter it, but you can examine it or read U DUD/NOT, SNOTS to see (un)-invitees.
 
