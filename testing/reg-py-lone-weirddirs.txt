@@ -1,0 +1,156 @@
+## reg-py-churn.txt
+## STANDALONE FILE
+
+## tests bug found in-comp, when they appear, etc.
+
+** game: /home/andrew/prt/debug-psyops-yo.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* dirs_range
+
+>x primp rim
+It blocks passage to some odd direction between east and northeast and reflects you back. Well, a circus mirror-warped version of you. You poke at it -- it's surprisingly resilient. It seems to be guarding something, but how to get by it?
+
+>escapes
+The primp rim pulsates, then crumbles. It reveals a passage sloping down. It's a bit forbidding. Maybe explore both paths aboveground, first
+
+>x primp rim
+You can't see any such thing.
+
+>ne
+
+>x primp rim
+You can't see any such thing.
+
+>stalest
+!The primp rim
+
+>x primp rim
+You can't see any such thing.
+
+>se
+
+>x primp rim
+You can't see any such thing.
+
+>mahatma
+!The primp rim
+"Oo! Noon!" a voice cries. But then a louder one booms "I ... DERIDER!" The un-suns become less dark, as pink spinks fly by them, and the Ingulfin' Gulf wanes and retreats.
+The scowls cowl flies off you and blows away.
+Yet with its absence you still feel you haven't done enough, or you've gotten lucky. You feel like such a ... well, CAD. Yes. No other word will do, and probably only one word will fix how you feel.
+
+>x primp rim
+You can't see any such thing.
+
+>w
+
+>d
+Dwell'd Well
+There are three ways to go back up, here: north, southwest, and southeast. Typing U or UP will lead you back the way you came, to the Strangest Range. But there's nothing more to do aboveground, so you probably want to go D or DOWN once you've found a way.
+
+A voice also whispers ... "Cad!"
+
+And it makes you feel guilty and silly. You thought did well to expand some things by two letters, but it feels so basic now. Perhaps three or even four is the way to go here, for a bit of magic to pass through again.
+
+>u
+Going back up the way you came...
+Strangest Range
+
+* dirs_church
+
+>e
+>nw
+
+>s
+There are passages southwest and southeast, but the primp-rim blocks your way south. For now.
+
+>x primp rim
+It blocks passage to to the south and reflects you back. Well, a circus mirror-warped version of you. You poke at it -- it's surprisingly resilient. It seems to be guarding something, but how to get by it?
+
+>stalest
+The primp rim pulsates, then crumbles. It reveals a passage sloping down. It's in the middle of the three areas you've explored
+
+>x primp rim
+You can't see any such thing.
+
+>se
+
+>x primp rim
+You can't see any such thing.
+
+>mahatma
+!The primp rim
+
+>x primp rim
+You can't see any such thing.
+
+>w
+
+>x primp rim
+You can't see any such thing.
+
+>escapes
+!The primp rim
+"Oo! Noon!" a voice cries. But then a louder one booms "I ... DERIDER!" The un-suns become less dark, as pink spinks fly by them, and the Ingulfin' Gulf wanes and retreats.
+The scowls cowl flies off you and blows away.
+Yet with its absence you still feel you haven't done enough, or you've gotten lucky. You feel like such a ... well, CAD. Yes. No other word will do, and probably only one word will fix how you feel.
+
+>x primp rim
+You can't see any such thing.
+
+>ne
+
+>d
+Dwell'd Well
+There are three ways to go back up, here: north, southwest, and southeast. Typing U or UP will lead you back the way you came, to the Ur-Church. But there's nothing more to do aboveground, so you probably want to go D or DOWN once you've found a way.
+
+>u
+Going back up the way you came...
+Ur-Church
+
+* dirs_row
+
+>e
+
+>x primp rim
+It blocks passage to some odd direction between west and northwest and reflects you back. Well, a circus mirror-warped version of you. You poke at it -- it's surprisingly resilient. It seems to be guarding something, but how to get by it?
+
+>mahatma
+The primp rim pulsates, then crumbles. It reveals a passage sloping down. It's oddly off to the side. Maybe you should visit the last place above ground before following it, though.
+
+>x primp rim
+You can't see any such thing.
+
+>w
+
+>x primp rim
+You can't see any such thing.
+
+>escapes
+
+>x primp rim
+You can't see any such thing.
+
+>ne
+
+>x primp rim
+You can't see any such thing.
+
+>stalest
+"Oo! Noon!" a voice cries. But then a louder one booms "I ... DERIDER!" The un-suns become less dark, as pink spinks fly by them, and the Ingulfin' Gulf wanes and retreats.
+The scowls cowl flies off you and blows away.
+Yet with its absence you still feel you haven't done enough, or you've gotten lucky. You feel like such a ... well, CAD. Yes. No other word will do, and probably only one word will fix how you feel.
+
+>x primp rim
+You can't see any such thing.
+
+>se
+
+>d
+Dwell'd Well
+There are three ways to go back up, here: north, southwest, and southeast. Typing U or UP will lead you back the way you came, to the Ingrowing Row. But there's nothing more to do aboveground, so you probably want to go D or DOWN once you've found a way.
+
+>u
+Going back up the way you came...
+Ingrowing Row
+
