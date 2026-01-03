@@ -186,7 +186,7 @@ the Stalkiest Alkie is a person in Strangest Range. "[one of]'Uh, hi, I'm the st
 
 chapter cap
 
-the cap is a doubler in Strangest Range. xtra-text of cap is "escapes". "A cap sits on the ground here. Its brim seems stuck.". description is "[if player has cap]It's not trying to escape you, but maybe it will help you escape[else]The way the cap lies on the ground suggests it's being held. It's not of particularly stiff material, but it's standing straight up[end if].". guess-rule is guess-cap rule. zaploc is Ingrowing Row. zaptext is "The Tormentor Men squint at your escapes cap. They start with the usual insults, but you deflect them with yawny aw'n. They're actually a bit impressed. They say it must be the cap, but the cap ... escapes after a breeze blows it away. The Tormentor Men go chasing after it, because they can't have anyone else wearing it and failing to heed them. The cap blows far away, taking the Tormentor Men with.[paragraph break]'Ehe! Heh!' you think to yourself, which feels like cheating a bit, but it's fun, watching their shunts-hunt."
+the cap is a doubler in Strangest Range. xtra-text of cap is "escapes". "A cap sits on the ground here. Its brim seems stuck.". description is "[if player has cap]It's not trying to escape you, but maybe it will help you escape a tough situation[else]The way the cap lies on the ground suggests it's being held. It's not of particularly stiff material, but it's standing straight up[end if].". guess-rule is guess-cap rule. zaploc is Ingrowing Row. zaptext is "The Tormentor Men squint at your escapes cap. They start with the usual insults, but you deflect them with yawny aw'n. They're actually a bit impressed. They say it must be the cap, but the cap ... escapes after a breeze blows it away. The Tormentor Men go chasing after it, because they can't have anyone else wearing it and failing to heed them. The cap blows far away, taking the Tormentor Men with.[paragraph break]'Ehe! Heh!' you think to yourself, which feels like cheating a bit, but it's fun, watching their shunts-hunt."
 
 this is the guess-cap rule: say "The cap jumps up into your hands!"
 
@@ -198,7 +198,7 @@ chapter Tormentor Men
 
 The Tormentor Men are plural-named people in Ingrowing Row. "Tormentor men stand here. They aren't even throwing light slights at you ... at least not while you're looking. They definitely go in for a gag.". talk-text is "'Derider?! I?!' they all respond individually. Then, 'Ain't saints!'[paragraph break]It's annoying, being a sheesh-ee, but at least they're not attacking you. Maybe it's more fun for them to drag things out. Perhaps you could lure them into chasing after something that can't be tormented. They'd probably jump before you know it[one of]. If they were French, they'd definitely, be a quip-equipe, with voices smooth as Le Oleo[or][stopping].". description is "They are wearing mock-smocks indicating they all live in the same attentat tent. If they were female, perhaps they would be wearing oppressive tsarist saris. You're a bit surprised they're not wearing carve-scarves.".
 
-after examining tormentor men for the first time: say "You feel momentary relief they're not a Getting-Ettin, looking to maul you. But you still want them to just go."
+after examining tormentor men for the first time: say "You feel momentary relief not one of them is a Getting-Ettin, looking to maul you. But you still want them to just go."
 
 The Tormentor Men wear the mock smocks. description of smocks is "Even looking at them makes you feel insulted."
 
@@ -225,7 +225,7 @@ the Staidest Aide is a person in Ur Church. "A staidest aide stands around here,
 
 chapter Stalest Ale
 
-the ale is a doubler in Ur Church. xtra-text is "stalest". description is "[if ale is doubled]It doesn't look especially menacing, but you really don't want to drink it[else]It's plain, as if it could become something else, or be more or less palatable, for better or worse[end if].". "Some ale lies here at a weird angle--how has it not fallen over?". guess-rule is guess-ale rule. zaptext is "On seeing the [ale], the [alkie] pulls it from your hands and takes a swig, then makes a face. 'Ugh! How could you...?' but after some reflection, says 'You know, I always wanted to give this stuff up. This reminds me how nasty it tasted once I started. Might not be a full cure, but hey, has to be better than Swines['] Wine, right? Hey! You know what? This is nasty enough, it will poison some pawn-spawns outlets.' Filled with purpose, the (ex-)[alkie] walks away.". zaploc is Strangest Range.
+the ale is a doubler in Ur Church. xtra-text is "stalest". description is "[if ale is doubled]It doesn't look especially menacing, but you really don't want to drink it[else]It's plain, as if it could become more or less palatable, for better or worse[end if].". "Some ale lies here at a weird angle--how has it not fallen over?". guess-rule is guess-ale rule. zaptext is "On seeing the [ale], the [alkie] pulls it from your hands and takes a swig, then makes a face. 'Ugh! How could you...?' but after some reflection, says 'You know, I always wanted to give this stuff up. This reminds me how nasty it tasted once I started. Might not be a full cure, but hey, has to be better than Swines['] Wine, right? Hey! You know what? This is nasty enough, it will poison some pawn-spawns outlets.' Filled with purpose, the (ex-)[alkie] walks away.". zaploc is Strangest Range.
 
 this is the guess-ale rule: say "The ale bubbles momentarily and seems to change to a sicklier hue. For whatever reason, you feel less guilty taking it now."
 
@@ -285,7 +285,7 @@ this is the guess-cad rule:
 	move U DUD to Dwell'd Well;
 	now player has ur aura;
 
-the ur aura is a thing. printed name is "ur-aura". description is "It's sort of all about you. It makes you feel empowered."
+the ur aura is a thing. printed name is "ur-aura". description is "It's sort of all around you. You can't do anything with it, but it makes you feel empowered. Hopefully with no hubris."
 
 chapter okeydokey
 
@@ -354,11 +354,11 @@ looptext of U DUD NOT SNOTS is "That's a lot of people! Perhaps they could get t
 
 section Able Tablet
 
-the Able Tablet is a randtexter. firsttext of the Able Tablet is "It's pretty exclusive! Man, the names listed must be pretty clever. Either their last names, or their first and maybe middle names are initialed. None is as cool as, say, MP Kempke. That's only to be expected. But there are a lot to peruse!". description of Able Tablet is "You read an[one of][or]other[stopping] initialled name: [next-text of Able Tablet]."
+the Able Tablet is a randtexter. firsttext of the Able Tablet is "It's pretty exclusive! Man, the names listed must be pretty clever. Either their last names, or their first and maybe middle names are initialed. None is as cool as, say, MP Kempke. That's only to be expected. But there are a lot to peruse!". description of Able Tablet is "You read an[one of][or]other[stopping] initialed name: [next-text of Able Tablet]."
 
 randtable of Able Tablet is table of initialed names.
 
-looptext of the Able Tablet is "After [one of]again [or][stopping]reviewing all the names, you feel a need to return to the reflection, without any prodding whatsoever, that they're all pretty cool, but none is of course as cool as MP Kempke."
+looptext of the Able Tablet is "After [one of][or]again [stopping]reviewing all the names, you feel a need to return to the profound reflection, without any prodding whatsoever, that they're all pretty cool, but none is of course as cool as MP Kempke."
 
 chapter Apple IIe
 
@@ -582,7 +582,7 @@ the block swearing mildly rule is not listed in any rulebook.
 the block swearing obscenely rule is not listed in any rulebook.
 
 check swearing obscenely:
-	if tormentor men are in location of the player, say "They mock you 'Un-taunt a...'" instead;
+	if tormentor men are in location of the player, say "The tormentor men mock you with 'Un-taunt a...'" instead;
 	say "[one of]Crap! Scraps[or]Yucky! Uck[or]Sheesh! Ee[or]Sucks, uck[or]Shush, U[or]Sin's IN[or]Oo, poop[in random order]! [one of](There's four more. Because I care.)[or][line break][stopping]" instead;
 
 check swearing mildly: try swearing obscenely instead;
