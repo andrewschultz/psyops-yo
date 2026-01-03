@@ -127,7 +127,11 @@ the primp rim is a backdrop. "It blocks passage to [rimdir of location of player
 
 volume the player
 
-the description of the player is "Not dazzling, but frankly, you're relieved not to be wearing a tutu or muumuu. You don't have a tat.".
+the description of the player is "Not dazzling, but frankly, you're relieved not to be wearing a tutu or muumuu or ew-sews, which you never considered existed until now. You don't have a tat.".
+
+report examining the player for the first time:
+	say "You also examine who you are, and you hope you're anti-cantic. You're surprised you know what cantic means, actually.";
+	continue the action;
 
 the scowls cowl is a thing. the player wears the scowls cowl. description of scowls cowl is "It makes you feel down, and you can't pull it off. [if score is 0]Maybe helping other people will cheer you up[else if score is 1]It feels less oppressive now you've helped yourself a bit[else]You barely feel it now, but you can't throw it off just yet[end if]. "
 
@@ -237,7 +241,7 @@ check going down in Dwell'd Well:
 		wfas;
 		say "...and you land with a 'Lo, Plop' in ...";
 		wfas;
-		say "...Saves Ave. It is a nice enough place to live. People seem to appreciate you. Things are okay, for about a week. Then... then, you realize you are just a block over from Raver Ave. It's not so bad at first, but the raves get bigger and bigger as time goes on. Everyone greets the host with a 'Shucks, Huck,' though you're never in a good enough mood to. Not that it's the worst place to live, but you sense you could have done better.";
+		say "...Saves Ave. It is a nice enough place to live. People seem to appreciate you. Things are okay, for about a week. Then... then, you realize you are just a block over from Raver Ave leading to the shills['] hill and scamps['] camp beyond. It's not so bad at first, but the raves get bigger and bigger as time goes on, fueled by alt-salts, illicit hoot-shoots, and many a turnt urn. Everyone greets the host with a 'Shucks, Huck,' though you're never in a good enough mood to. They suggest celebrities to invite, too: 'Flavor Flav, or ... ?'[paragraph break]As time goes on, people reflexively wave away your unsocial behavior with yawny aw'n.[paragraph break]Not that it's the worst place to live, and nobody threatens to relocate you to the hack shacks on Grun-G-Run, but you sense this was the lesser of the possible ending-sendings.";
 		end the story finally saying "A 'YAY'";
 		the rule succeeds;
 	if the score is 0, say "Nothing there, yet." instead;
