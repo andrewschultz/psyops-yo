@@ -441,15 +441,15 @@ Mo Demode is a room.
 book post-completion
 
 Rule for amusing a victorious player:
-	say "Here is a list of things you can try. I didn't keep track of them, so maybe you already did.[paragraph break]";
+	say "Here is a list of things you can try. I didn't keep track of if you did, even though [this-game] was a short game, but then again, since it's short, it'll be easier to check off on all these phrases.[paragraph break]";
 	say "[b]YES[r], [b]NO[r], [b]SING[r], or [b]WAIT[r]/[b]Z[r] give a fixed response.";
 	say "There are also responses for naughty words like [b]BOTHER[r] and the semi-custom verb [b]HIT[r].";
 	say "[line break]Some verbs have a generic and specific response:[paragraph break]";
-	say "[b]ATTACK[r] gives a slightly different response for the Tormentor Men.";
+	say "[b]ATTACK[r] gives a slightly different response for the Tormentor Men or Elite Lit.";
 	say "[b]SMELL[r] is slightly different near the end, with the Apple nearby.";
-	say "[b]LISTEN[r] is slightly different in the Church than other places.";
-	say "[line break]Empty commands and [b]UNDO[r] also give text.";
-	say "Oh, of course, [b]XYZZY[r], too.";
+	say "[b]LISTEN[r] is slightly different in the Row, the Church and (with 3 points) the Well than other places.";
+	say "[line break]Waiting, the empty command, restoring a game (before and after) and [b]UNDO[r] also give text.";
+	say "[line break]Oh, of course, [b]XYZZY[r], too.";
 
 volume redoing diagnostic verbs
 
@@ -486,7 +486,8 @@ the block attacking rule is not listed in any rulebook.
 
 check attacking:
 	if noun is tormentor men, say "They'd run you through a slaps-lap, or worse." instead;
-	say "Ai! Maim?! (Violence is not the keyword.)" instead;
+	if noun is Elite Lit, say "No need to create an ex-text." instead;
+	say "Ai! Maim?! (Violence is not the keyword. You have no kill-skills.)" instead;
 
 understand the command "hit" as something new.
 understand the command "hit [something]" as something new.
@@ -516,6 +517,7 @@ the block listening rule is not listed in any rulebook.
 the block smelling rule is not listed in any rulebook.
 
 check listening:
+	if player is in Ingrowing Row, say "An um-pump hidden from view builds tension." instead;
 	if player is in Ur Church, say "There's a gong on somewhere." instead;
 	if player is in Dwell'd Well and score is 3, say "'Cad! Cad!'" instead;
 	say "Random taunts: '[one of]O tot[or]Er, perp[or]U pop[in random order]!'" instead;
@@ -535,7 +537,9 @@ chapter swearing
 the block swearing mildly rule is not listed in any rulebook.
 the block swearing obscenely rule is not listed in any rulebook.
 
-check swearing obscenely: say "[one of]Yucky! Uck[or]Sheesh! Ee[or]Shush, U[in random order]! [one of](There's two more. Because I care.)[or][line break][stopping]" instead;
+check swearing obscenely:
+	if tormentor men are in location of the player, say "They mock you 'Un-taunt a...'" instead;
+	say "[one of]Crap! Scraps[or]Yucky! Uck[or]Sheesh! Ee[or]Sucks, uck[or]Shush, U[or]Sin's IN[or]Oo, poop[in random order]! [one of](There's four more. Because I care.)[or][line break][stopping]" instead;
 
 check swearing mildly: try swearing obscenely instead;
 
