@@ -66,7 +66,7 @@ a room has text called clue-text.
 
 to say unsuns-gulf:
 	if un suns are not moot, say "The two un-suns hang menacingly in the sky, blotting things out and causing general depression and dreariness. ";
-	say "Passages through the Ingulfing Gulf lead ";
+	say "Passages through the Ingulfin['] Gulf lead ";
 
 volume when play begins
 
@@ -81,7 +81,7 @@ when play begins:
 	wfas;
 	say "The ghost points to the dark blobs in the sky. 'Lo! Blob?!' you say. 'Un-Suns!' it replies. Then to the distance, where sounds speak for themselves. A yowly owl! Wan swans! 'It sits!' cried the ghost, un-grammatically. You ask for more help, but the ghost taunts you with 'Un-begun? Beg!' Before you have a chance, it fades away with an 'I.e. ... DIED!'";
 	move un suns backdrop to all rooms in Top Stops;
-	move ingulfing gulf backdrop to all rooms in Top Stops;
+	move ingulfin gulf backdrop to all rooms in Top Stops;
 	move ingraining rain backdrop to all rooms in Top Stops;
 	move primp rim backdrop to all rooms in Top Stops;
 	now the right hand status line is "[score]/[maximum score]";
@@ -99,11 +99,11 @@ chapter un suns
 
 the un suns are a backdrop. printed name is "un-suns". "[if score >= 3]They're much less gloomy now you've sorted things out aboveground.[else]They're totally, like, dark and gloomy and stuff. Just the thought of them makes you think, 'O, wow!' They're so dark, you wonder if they could be called tar stars, too.[end if]"
 
-chapter ingulfing gulf
+chapter ingulfin' gulf
 
-the ingulfing gulf is a backdrop. "Ingraining rain slowly keeps filling it up, limiting your travel options. [if score >= 3]It's receded quite a bit, but you don't want to fight through it. You sense your destiny is down[else]You really don't want to even touch it[end if]."
+the ingulfin gulf is a backdrop. "Ingraining rain slowly keeps filling it up, limiting your travel options. [if score >= 3]It's receded quite a bit, but you don't want to fight through it. You sense your destiny is down[else]You think you yourself 'ew, dew'd' at the prospect of touching it. Probably filled with slices-lice, with a trap-pit of ever-severs below[end if].". printed name is "Ingulfin['] Gulf".
 
-to say igulf: say "The Ingulfing Gulf surrounds you every way except [list of viable directions]"
+to say igulf: say "The Ingulfin['] Gulf surrounds you every way except [list of viable directions]"
 
 section ingraining rain
 
