@@ -304,6 +304,8 @@ section Elite Lit
 
 Elite Lit is a randtexter. description is "You note [one of]one[or]another[stopping] book title: [i][next-text of Elite Lit][r][conditional-period]".
 
+understand "books/shelf/bookshelf/book" and "book shelf" as elite lit when elite lit is in location of player.
+
 randtable of Elite Lit is table of elite lit books.
 
 firsttext of Elite Lit is "Wow! So many books! You have no idea how good they are. Perhaps there is a lost novel of F. Kafka in here. Or not.[paragraph break]You can keep examining, to skim random titles.".
@@ -363,7 +365,7 @@ chapter point-check
 
 to point-check:
 	increment the score;
-	say "[line break][one of]Oh my. A raider-aide, for wherever you need to raid.[or]Another raider-aide![or]The final raider-aide, you assume.[stopping]";
+	say "[line break][one of]Oh my. A raider-aide, for wherever you need to raid.[or]Another raider-aide![or]The final raider-aide, you assume.[or]Perhaps it is time to go down.[stopping]";
 	if the score is 1:
 		say "[line break]The primp rim pulsates, then crumbles. It reveals a passage sloping down. It's [if number of visited rooms is 2]oddly off to the side. Maybe you should visit the last place above ground before following it, though[else]in the middle of the three areas you've explored[end if].";
 		change down exit of Ur Church to Dwell'd Well;
