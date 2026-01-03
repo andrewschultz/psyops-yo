@@ -234,14 +234,14 @@ book Dwell'd Well
 
 to say or-well: if score > 0, say ". There's also a way down between them, [if player is in church]to the south[else]in a direction too diagonal for this parser, so just go [b]DOWN[r] when ready[end if]";
 
-Dwell'd Well is a room. "[well-up].[paragraph break][if score is 5]You feel like you can enter the D-shaped hole with pizzazz and flair now, not just going down[else if score is 4]The way down is a huge hole in the shape of a D--voices from it seem to say 'Suss us.' You could probably just go down through the D-shaped hole and get on with things, but maybe you can be fancy about it[else if score is 3]A voice also whispers ... 'Cad!'[paragraph break]And it makes you feel guilty and silly. You thought did well to expand some things by two letters, but it feels so basic now. Perhaps three or even four is the way to go here, for a bit of magic to pass through again[else]It's almost too peaceful here. As if something is not quite ready to happen yet. It's also very plain. You feel a pull from below but see no thatch't hatch to remove or older solders to pull at[end if][if apple is in well]. An ancient Apple IIe sits next to it[end if][if elite lit is in well].[paragraph break]The bookshelf, aka [i]Elite Lit[r], also stands here to distract you, if you need that. Next to it is an Able Tablet full of random author names[end if][if palapa is in well]. La Palapa is here, too, not that you an enter it, but you can examine it or read [dud] to see (un)-invitees[end if]."
+Dwell'd Well is a room. "[well-up].[paragraph break][if score is 5]You feel like you can enter the D-shaped hole with pizzazz and flair now, not just going down[else if score is 4]The way down is a huge hole in the shape of a D--voices from it seem to say 'Suss us.' You could probably just go down through the D-shaped hole and get on with things, but maybe you can be fancy about it[else if cad-around]There must be a way further down, but it can't be as easy as using the hat, cap and ale[else]It's almost too peaceful here. As if something is not quite ready to happen yet. It's also very plain. You feel a pull from below but see no thatch't hatch to remove or older solders to pull at[end if][if apple is in well]. An ancient Apple IIe sits next to it[end if][if elite lit is in well].[paragraph break]The bookshelf, aka [i]Elite Lit[r], also stands here to distract you, if you need that. Next to it is an Able Tablet full of random author names[end if][if palapa is in well]. La Palapa is here, too, not that you an enter it, but you can examine it or read [dud] to see (un)-invitees[end if]."
 
 to say well-up: say "There are three ways to go back up, here: north, southwest, and southeast. Typing [b]U[r] or [b]UP[r] will lead you back the way you came, to the [b][last-well-room][r]. But there's nothing more to do aboveground, so you probably want to go [b]D[r] or [b]DOWN[r] [if score is 3]once[else]now[end if] you've found a way"
 
 check going down in Dwell'd Well:
 	if player is in Dwell'd Well:
 		if nmd < 3, say "You can't go further down. At least, not now, you can't." instead;
-		if score < 4, say "'Cad ... cad ...' voices say. You need to shake them off." instead;
+		if score < 4, say "'Cad ... cad ...' that voice continues. You need to shake it off." instead;
 		if okeydokey-tried is true and apple iie is moot:
 			say "Hey, wait. [b]OKEYDOKEY[r] would work now. You should say that, instead." instead;
 		say "'Ingoing, O!' you shout as you explore further down...";
@@ -260,6 +260,18 @@ check going up in Dwell'd Well:
 	say "Going back up the way you came...";
 	move player to last-well-room;
 	the rule succeeds;
+
+after printing the locale description when cad is not off-stage and cad-around (this is the move cad rule):
+	if cad-around and cad is not off-stage, move cad to location of player;
+	say "That unseen voice keeps whispering 'Cad...' [if abracadabra-guess is true]Where to use the magic word to repel it?[else][line break]";
+	continue the action;
+
+after printing the locale description of well when cad is off-stage and cad-around (this is the place cad rule):
+	say "An unseen voice suddenly starts whispering 'Cad...'";
+	move cad to location of player;
+	continue the action;
+
+the place cad rule is listed after the move cad rule in the after printing the locale description rules.
 
 check going nowhere in dwell'd well: say "[well-up]." instead;
 
@@ -394,7 +406,6 @@ to point-check:
 	if the score is 3:
 		say "[line break]'Oo! Noon!' a voice cries. But then a louder one booms 'I ... DERIDER!' The un-suns become less dark, as pink spinks fly by them, and the Ingulfin['] Gulf wanes and retreats.[paragraph break]The scowls cowl flies off you and blows away.[paragraph break]Yet with its absence you still feel you haven't done enough, or you've gotten lucky. You feel like such a ... well, CAD. Yes. No other word will do, and probably only one word will fix how you feel.";
 		moot cowl;
-		move cad to well;
 	process the notify score changes rule;
 
 book point verbs
