@@ -418,13 +418,14 @@ rule for printing a parser error (this is the point score check rule):
 		if the player's command matches the regular expression "\b[xtra-text of UT]\b":
 			process guess-rule of UT;
 			if the rule failed, the rule succeeds;
+			now UT is doubled;
 			if UT is Apple IIe:
 				moot Apple IIe;
-				point-check;
-			else if UT is takeable:
+			if UT is takeable:
 				now player has UT;
-				now UT is doubled;
-				point-check;
+			else:
+				moot UT;
+			point-check;
 			the rule succeeds;
 	continue the action;
 
