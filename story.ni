@@ -107,7 +107,7 @@ to say igulf: say "The Ingulfin['] Gulf surrounds you every way except [list of 
 
 section ingraining rain
 
-the ingraining rain is a backdrop. "Well, it isn't terribly gaudy looking rain, but it's enough to prevent you from straying."
+the ingraining rain is a backdrop. "Although it isn't terribly gaudy or acidic looking rain, but it's enough to prevent you from straying."
 
 section primp rim
 
@@ -117,13 +117,13 @@ the primp rim is a backdrop. "It blocks passage to [rimdir of location of player
 
  to say rimdir of (rm - a room):
 	if rm is ur church:
-		say "south";
+		say "to the south";
 	else if rm is strangest range:
 		say "some odd direction between east and northeast";
 	else if rm is ingrowing row:
 		say "some odd direction between west and northwest";
 	else:
-		say "some weird direction it shouldn't--it shouldn't be here"
+		say "some weird direction it shouldn't--the rim shouldn't be here, and this is a bug"
 
 volume the player
 
@@ -188,7 +188,7 @@ Ingrowing Row is east of Strangest Range. It is in Top Stops. "[triangle-point][
 
 chapter Tormentor Men
 
-The Tormentor Men are plural-named people in Ingrowing Row. "Tormentor men stand here. They aren't even throwing light slights at you ... at least not while you're looking. They definitely go in for a gag.". talk-text is "'Derider?! I?!' they all respond individually. Then, 'Ain't saints!'[paragraph break]There's a bit more of this, well above 'Coo-coo,' 'Dum-dum,' 'Wah-wah' or 'Haw-haw.'[paragraph break]It's annoying, being a sheesh-ee, but at least they're not attacking you. Maybe it's more fun for them to drag things out. Perhaps you could lure them into chasing after something that can't be tormented. They'd probably jump before you know it[one of]. If they were French, they'd definitely, be a quip-equipe, with voices smooth as Le Oleo[or][stopping].". description is "They are wearing mock-smocks indicating they all live in the same attentat tent. If they were female, perhaps they would be wearing oppressive tsarist saris. You're a bit surprised they're not wearing carve-scarves.".
+The Tormentor Men are plural-named people in Ingrowing Row. "Tormentor men stand here. They aren't even throwing light slights at you ... at least not while you're looking. They definitely go in for a gag.". talk-text is "'Derider?! I?!' they all respond individually. Then, 'Ain't saints!'[paragraph break]It's annoying, being a sheesh-ee, but at least they're not attacking you. Maybe it's more fun for them to drag things out. Perhaps you could lure them into chasing after something that can't be tormented. They'd probably jump before you know it[one of]. If they were French, they'd definitely, be a quip-equipe, with voices smooth as Le Oleo[or][stopping].". description is "They are wearing mock-smocks indicating they all live in the same attentat tent. If they were female, perhaps they would be wearing oppressive tsarist saris. You're a bit surprised they're not wearing carve-scarves.".
 
 after examining tormentor men for the first time: say "You feel momentary relief they're not a Getting-Ettin, looking to maul you. But you still want them to just go."
 
@@ -225,7 +225,7 @@ understand "stalest" and "stalest ale" as ale when ale is doubled.
 
 book Dwell'd Well
 
-to say or-well: if score > 0, say ". There's also a way down between them, to [if player is in church]the south[else]a direction too diagonal for this parser[end if]";
+to say or-well: if score > 0, say ". There's also a way down between them, [if player is in church]to the south[else]in a direction too diagonal for this parser, so just go [b]DOWN[r] when ready[end if]";
 
 Dwell'd Well is a room. "[well-up].[paragraph break][if score is 5]You feel like you can enter the D-shaped hole with pizzazz and flair now, not just going down[else if score is 4]The way down is a huge hole in the shape of a D--voices from it seem to say 'Suss us.' You could probably just go down through the D-shaped hole and get on with things, but maybe you can be fancy about it[else if score is 3]A voice also whispers ... 'Cad!'[paragraph break]And it makes you feel guilty and silly. You thought did well to expand some things by two letters, but it feels so basic now. Perhaps three or even four is the way to go here, for a bit of magic to pass through again[else]It's almost too peaceful here. As if something is not quite ready to happen yet. It's also very plain. You feel a pull from below but see no thatch't hatch to remove or older solders to pull at[end if][if apple is in well]. An ancient Apple IIe sits next to it[end if][if elite lit is in well].[paragraph break]The bookshelf, aka [i]Elite Lit[r], also stands here to distract you, if you need that. Next to it is an Able Tablet full of random author names[end if][if palapa is in well]. La Palapa is here, too, not that you an enter it, but you can examine it or read [dud] to see (un)-invitees[end if]."
 
@@ -468,8 +468,8 @@ Rule for amusing a victorious player:
 	say "[b]ATTACK[r] gives a slightly different response for the Tormentor Men or Elite Lit.";
 	say "[b]SMELL[r] is slightly different near the end, with the Apple nearby.";
 	say "[b]LISTEN[r] is slightly different in the Row, the Church and (with 3 points) the Well than other places.";
-	say "[line break]Waiting, the empty command, restoring a game (before and after) and [b]UNDO[r] also give text.";
-	say "[line break]Oh, of course, [b]XYZZY[r], too.";
+	say "[line break]The empty command, asking to [b]RESTORE[r] a game (before and after,) and [b]UNDO[r] also give custom text.";
+	say "[line break]Oh, of course, [b]XYZZY[r] has a silly response, too.";
 
 volume redoing diagnostic verbs
 
@@ -493,7 +493,7 @@ carry out requesting the score:
 	if score is 0, say "You haven't figured out a magic word to say yet, but when you do, you'll get your first point." instead;
 	if score is 1, say "You have acquired a raider aide item, [the random carried doubler]." instead;
 	if score is 2, say "You have one raider aide item left to pick up." instead;
-	if score is 3, say "You don't need any other raider aide. You should [if well is visited]focus on what to do [in-here of well]go to the center, where you haven't been yet[end if]." instead;
+	if score is 3, say "You don't need any other raider aide. You should [if well is visited]focus on what to do [in-here of well][else]go [b]DOWN[r] to the center, where you haven't been yet[end if]." instead;
 	if score is 4, say "You have four points and can just go down, nothing fancy, to win." instead;
 	if score is 5, say "You have five points and can now take the fancy way down for an extra special ending. Or just go down for a regular win." instead;
 	say "How did you get here? You should've won the game by now." instead;
@@ -540,10 +540,10 @@ check listening:
 	if player is in Ingrowing Row, say "An um-pump hidden from view builds tension." instead;
 	if player is in Ur Church, say "There's a gong on somewhere." instead;
 	if player is in Dwell'd Well and score is 3, say "'Cad! Cad!'" instead;
-	say "Random taunts: '[one of]O tot[or]Er, perp[or]U pop[in random order]!'" instead;
+	say "Random spooky taunts: '[one of]O tot[or]Er, perp[or]U pup[in random order]!' [one of][line break][or][line break][or](You've heard them all.)[stopping]" instead;
 
 check smelling:
-	if player is in well and apple is in well, say "ROM Aroma." instead;
+	if player is in well and apple is in well, say "ROM aroma." instead;
 	say "Ethene, then..." instead;
 
 chapter singing
@@ -642,7 +642,8 @@ carry out versioning:
 	say "Version 1 was released October 30, 2021 to Itch.io for the yearly EctoComp competition, Petite Mort division.";
 	say "Version 2 was released February 28, 2025 to Itch.io with no new technical features, but with minor bug fixes and also 'appropriate' text that trickled in over the years. Since then, Martin Amis, whose name cued Hamish, had left this world for over a year. RIP.";
 	say "Version 3 was released March 1, 2025 to Itch.io with the Elite Lit/bookshelf in the final area containing random books.";
-	say "Version 4 was released January ?, 2026 to Itch.io with more bug fixes and clarifications.";
+	say "Version 4 was released January ?, 2026 to Itch.io with bug fixes and clarifications. La Palapa and a list of (un)invited people are also in place at the end.";
+	say "No further updates are planned, but if enough bugs are found, I may roll up a maintenance release.";
 	the rule succeeds;
 
 report versioning: say "To see extensions used in [this-game] and Inform's internal release data, type [b]EXT[r] or [b]EXTS[r].";
