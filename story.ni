@@ -138,7 +138,7 @@ check taking off scowls cowl: say "It's stuck on you. Perhaps figuring what to d
 
 volume map basics
 
-check going nowhere: say "You try to, but you realize you might step into ... the INGULFING GULF. You can, however, go [list of viable directions]." instead;
+check going nowhere: say "You try to, but you realize such idle sidles might lead into ... the INGULFIN['] GULF. You can, however, go [list of viable directions]." instead;
 
 Top Stops is a region.
 
@@ -170,11 +170,11 @@ after printing the locale description for Strangest Range when init-about is fal
 
 chapter alkie
 
-the Stalkiest Alkie is a person in Strangest Range. "[one of]'Uh, hi, I'm the stalkiest alkie! People told me a pejorative like that would help me drink less, but somehow it made me drink more. Guess I'm stuck with it, though, unless someone can help me.'[or]The stalkiest alkie, stuck with a pejorative name, paces back and forth, looking for something here and not looking for it.[stopping]". description is "Like so many people who drink a lot, the Alkie may both want a drink and want an excuse never to want a drink again.". talk-text is "'If you could find something that'd turn me off alcohol forever, that'd be awesome! Why, I'd take it from your hands before you had a chance to give it to me.'"
+the Stalkiest Alkie is a person in Strangest Range. "[one of]'Uh, hi, I'm the stalkiest alkie! People told me a pejorative like that would finally help me get it through my thick head to drink less, but somehow it made me drink more. Guess I'm stuck with it, though, unless someone can help me.'[or]The stalkiest alkie, stuck with a pejorative name, paces back and forth, looking for something here and not looking for it.[stopping]". description is "Like so many people who drink a lot, the Alkie may both want a drink and want an excuse never to want a drink again.". talk-text is "'If you could find something that'd turn me off alcohol forever, that'd be awesome! Why, I'd take it from your hands before you had a chance to give it to me.'"
 
 chapter cap
 
-the cap is a doubler in Strangest Range. xtra-text of cap is "escapes". "A cap sits on the ground here. Its brim seems stuck.". description is "[if player has cap]It's not trying to escape you, but maybe it will help you escape[else]The way the cap lies on the ground suggests it's being held. It's not of particularly stiff material, but it's standing straight up[end if].". guess-rule is guess-cap rule. zaploc is Ingrowing Row. zaptext is "The Tormentor Men squint at your escapes cap. They start with the usual insults, but you deflect them with yawny aw'n. They're actually a bit impressed. They say it must be the cap, but the cap ... escapes after a breeze blows it away. The Tormentor Men go chasing after it, because they can't have anyone else wearing it and failing to heed them. The cap blows far away, taking the Tormentor Men with.[paragraph break]'Ehe! Heh!' you think to yourself, not even worrying if they'd chide you for cheating just now."
+the cap is a doubler in Strangest Range. xtra-text of cap is "escapes". "A cap sits on the ground here. Its brim seems stuck.". description is "[if player has cap]It's not trying to escape you, but maybe it will help you escape[else]The way the cap lies on the ground suggests it's being held. It's not of particularly stiff material, but it's standing straight up[end if].". guess-rule is guess-cap rule. zaploc is Ingrowing Row. zaptext is "The Tormentor Men squint at your escapes cap. They start with the usual insults, but you deflect them with yawny aw'n. They're actually a bit impressed. They say it must be the cap, but the cap ... escapes after a breeze blows it away. The Tormentor Men go chasing after it, because they can't have anyone else wearing it and failing to heed them. The cap blows far away, taking the Tormentor Men with.[paragraph break]'Ehe! Heh!' you think to yourself, which feels like cheating a bit, but it's fun, watching their shunts-hunt."
 
 this is the guess-cap rule: say "The cap jumps up into your hands!"
 
@@ -184,7 +184,7 @@ Ingrowing Row is east of Strangest Range. It is in Top Stops. "[triangle-point][
 
 chapter Tormentor Men
 
-The Tormentor Men are plural-named people in Ingrowing Row. "Tormentor men stand here. They aren't even throwing light slights at you ... at least not while you're looking. They definitely go in for a gag.". talk-text is "'Derider?! I?!' they all respond individually. Then, 'Ain't saints!'[paragraph break]There are a few mor taunts, well above 'Coo-coo,' 'Dum-dum,' 'Wah-wah' or 'Haw-haw.'[paragraph break]It's annoying, being a sheesh-ee, but at least they're not attacking you. Maybe it's more fun for them to drag things out. Perhaps you could lure them into chasing after something that can't be tormented. They'd probably jump before you know it[one of]. If they were French, they'd definitely, be a quip-equipe, with voices smooth as Le Oleo[or][stopping].". description is "They are wearing mock-smocks. If they were female, perhaps they would be wearing oppressive tsarist saris.".
+The Tormentor Men are plural-named people in Ingrowing Row. "Tormentor men stand here. They aren't even throwing light slights at you ... at least not while you're looking. They definitely go in for a gag.". talk-text is "'Derider?! I?!' they all respond individually. Then, 'Ain't saints!'[paragraph break]There's a bit more of this, well above 'Coo-coo,' 'Dum-dum,' 'Wah-wah' or 'Haw-haw.'[paragraph break]It's annoying, being a sheesh-ee, but at least they're not attacking you. Maybe it's more fun for them to drag things out. Perhaps you could lure them into chasing after something that can't be tormented. They'd probably jump before you know it[one of]. If they were French, they'd definitely, be a quip-equipe, with voices smooth as Le Oleo[or][stopping].". description is "They are wearing mock-smocks indicating they all live in the same attentat tent. If they were female, perhaps they would be wearing oppressive tsarist saris. You're a bit surprised they're not wearing carve-scarves.".
 
 after examining tormentor men for the first time: say "You feel momentary relief they're not a Getting-Ettin, looking to maul you. But you still want them to just go."
 
@@ -192,7 +192,7 @@ The Tormentor Men wear the mock smocks. description of smocks is "Even looking a
 
 chapter hat
 
-the hat is a doubler in Ingrowing Row. xtra-text of hat is "mahatma". guess-rule is guess-hat rule. "A tall narrow hat, not looking very special, lies here. The top sways in the wind, but the bottom seems quite stiff.". description is "The hat is [if hat is doubled]impressive and all, but it's not your style. You need to find someone it fits[else]impressive looking, yet it repels you a bit, as if you need to find out its meaning or purpose[end if].". zaploc is Ur Church. zaptext is "The [aide] grabs the hat. 'THAT HAT, HA!'[paragraph break]You nod, impressed by such above-and-beyond dialogue.[paragraph break]'This is what I need! It will give me the peace of mind to re-prep and re-prep the sanctifying rituals that will lessen the un-suns['] horrible influence! It fits them perfectly. They thank you, bless you, and then go out to spread decency and kindness to others, a true [']umble rumbler.[paragraph break]Shortly after, a distant 'Aw! Rawr!' followed by a much more calming Om-bomb and then an 'Ow! Rowr!' suggests they have done whatever they needed to, to the un-suns."
+the hat is a doubler in Ingrowing Row. xtra-text of hat is "mahatma". guess-rule is guess-hat rule. "A tall narrow hat, not looking very special, lies here. The top sways in the wind, but the bottom seems quite stiff. It feels like someone great could have worn it, great enough to inspire a nation, yet it's too plain right now.". description is "The hat is [if hat is doubled]impressive and all, but it's not your style. You need to find someone it fits[else]impressive looking, yet it repels you a bit, as if you need to find out its meaning or purpose[end if].". zaploc is Ur Church. zaptext is "The [aide] grabs the hat. 'THAT HAT, HA!'[paragraph break]You nod, impressed by such above-and-beyond dialogue.[paragraph break]'This is what I need! It will give me the peace of mind to re-prep and re-prep the sanctifying rituals that will lessen the un-suns['] horrible influence! It fits them perfectly. They thank you, bless you, and then go out to spread decency and kindness to others, a true [']umble rumbler.[paragraph break]Shortly after, a distant 'Aw! Rawr!' followed by a much more calming Om-bomb and then an 'Ow! Rowr!' suggests they have done whatever they needed to, to the un-suns."
 
 this is the guess-hat rule: say "The hat suddenly looks a little more dignified."
 
@@ -223,9 +223,9 @@ book Dwell'd Well
 
 to say or-well: if score > 0, say ". There's also a way down between them, to [if player is in church]the south[else]a direction too diagonal for this parser[end if]";
 
-Dwell'd Well is a room. "[well-up].[paragraph break][if score >= 4]The way down is a huge hole in the shape of a D--voices from it seem to say 'Suss us.' You could probably just go down and get on with things, but maybe it's not all that simple[else if score is 3]A voice also whispers ... 'Cad!'[paragraph break]And it makes you feel guilty and silly. You thought did well to expand some things by two letters, but it feels so basic now. Perhaps three or even four is the way to go here, for a bit of magic to pass through again[else]It's almost too peaceful here. As if something is not quite ready to happen yet. It's also very plain. You feel a pull from below but see no thatch't hatch to remove or older solders to pull at[end if][if elite lit is in well].[paragraph break]The bookshelf, aka [i]Elite Lit[r], also stands here to distract you, if you need that[end if]."
+Dwell'd Well is a room. "[well-up].[paragraph break][if score is 5]You feel like you can enter the D-shaped hole with pizzazz and flair now, not just going down[else if score is 4]The way down is a huge hole in the shape of a D--voices from it seem to say 'Suss us.' You could probably just go down through the D-shaped hole and get on with things, but maybe you can be fancy about it[else if score is 3]A voice also whispers ... 'Cad!'[paragraph break]And it makes you feel guilty and silly. You thought did well to expand some things by two letters, but it feels so basic now. Perhaps three or even four is the way to go here, for a bit of magic to pass through again[else]It's almost too peaceful here. As if something is not quite ready to happen yet. It's also very plain. You feel a pull from below but see no thatch't hatch to remove or older solders to pull at[end if][if apple is in well]. An ancient Apple IIe sits next to it[end if][if elite lit is in well].[paragraph break]The bookshelf, aka [i]Elite Lit[r], also stands here to distract you, if you need that. Next to it is an Able Tablet full of random author names[end if][if palapa is in well]. La Palapa is here, too, not that you an enter it, but you can examine it or read [dud] to see (un)-invitees[end if]."
 
-to say well-up: say "There are three ways to go back up, here: north, southwest, and southeast. Typing [b]U[r] or [b]UP[r] will lead you back the way you came, to the [b][last-well-room][r]"
+to say well-up: say "There are three ways to go back up, here: north, southwest, and southeast. Typing [b]U[r] or [b]UP[r] will lead you back the way you came, to the [b][last-well-room][r]. But there's nothing more to do aboveground, so you probably want to go [b]D[r] or [b]DOWN[r] [if score is 3]once[else]now[end if] you've found a way"
 
 check going down in Dwell'd Well:
 	if player is in Dwell'd Well:
@@ -280,16 +280,16 @@ the okeydokey is a privately-named doubler. it is scenery. "You shouldn't see th
 
 this is the guess-okeydokey rule:
 	if apple iie is not moot:
-		say "Yes! You're excited! But you run down too fast. The last thing you see is a princess, whose 'Huh, U?!' expression (or is it 'Bub, U...') and martial-arts move leaves you doubled over, fatally injured.[run paragraph on][died]Okay, not really. But if you want the good ending, I'm gonna force you to name that ancient Apple IIe game. It's a classic.";
+		say "Yes! You're excited! But you run down too fast. The last thing you see is a princess, whose 'Huh, U?!' expression (or is it 'Bub, U...') and martial-arts move leaves you doubled over, fatally injured. Your last words are 'Shadows had ... OW!'[run paragraph on][died]Okay, not really. But if you want the good ending, I'm gonna force you to name that ancient Apple IIe game. It's a classic, even with the instadeath and inability to save at the end.";
 		now okeydokey-tried is true;
 		the rule fails;
-	say "Yes, it's a bit reflexive and self-referential. But it's worth a try. And, equaly hokey, the well swells![paragraph break]As you climb down, you wind up finding a secret passage that leads ... somewhere new. You feel smart immediately when you arrive, unable to suppress an 'I DID! I DID!'and needing no estates tat with a legible gib. Why, you don't even need to visit the Smiles Mile you see![paragraph break]Of course it's easy to feel all this, walking on ...";
+	say "Yes, it's a bit reflexive and self-referential. But it's worth a try. And, equally hokey, the well swells![paragraph break]As you climb down, you wind up finding a secret passage that leads ... somewhere new. You feel smart immediately when you arrive, unable to suppress an 'I DID! I DID!' and needing no estates tat with a legible gib. Why, you don't even need to visit the Smiles Mile you see![paragraph break]Of course it's easy to feel all this, walking on ...";
 	wfas;
 	say "[b]EINSTEIN ST.[r]";
 	increment the score;
 	follow the notify score changes rule;
 	wfas;
-	say "Now, where to visit first? Perhaps that restaurant called [i]Yo, BYOB[r], or [i]L'Salsa[r], or the snack shop [i]Ho, Choc[r]. In other establishments that'd please any ate-rater, hotshots eat couscous, or maybe mahi mahi, or tout stouts to ward off beriberi. Under a chiquichiqui and mingimingi and rewa-rewa.[paragraph break]You make your choice. If there was better, you don't care. You can't help feeling like ...";
+	say "Now, where to visit first? Re: area, there are HELF shelfs (a hat-tip to that one Far Side comic,) and a credit union called [i]Trust-R-Us[r] to help new people get acclimated. Then, perhaps that restaurant called [i]Yo, BYOB[r], or [i]L'Salsa[r], or the snack shop [i]Ho, Choc[r]. In other establishments that'd please any ate-rater, hotshots eat couscous, or maybe mahi mahi, or even spies['] pie. Some tout stouts to ward off beriberi. Under a chiquichiqui and mingimingi and rewa-rewa.[paragraph break]You make your choice. If there was better, you don't care. You can't help feeling like ...";
 	end the story finally saying "A MUCKAMUCK!";
 	process the shutdown rules;
 
@@ -329,7 +329,7 @@ section U DUD NOT SNOTS
 
 U DUD NOT SNOTS is a randtexter. printed name is "U DUD/NOT, SNOTS". description is "Someone[one of][or] else[stopping] uninvited is [next-text of U DUD]."
 
-firsttext of U DUD is "Wow! That's a lot of unnvited people. Way more than invited. That Toronto Ron sure has standards! Or, at least, he thinks he does."
+firsttext of U DUD is "Wow! That's a lot of uninvited people. Way more than invited. That Toronto Ron sure has standards! Or, at least, he thinks he does."
 
 randtable of U DUD is table of uninvited people.
 
@@ -343,7 +343,7 @@ the Able Tablet is a randtexter. firsttext of the Able Tablet is "It's pretty ex
 
 randtable of Able Tablet is table of initialed names.
 
-looptext of the Able Tablet is "After [one of]again [or][stopping]reviewing all the names, you reflect again, without any prodding whatsoever, that they're all pretty cool, but none is of course as cool as MP Kempke."
+looptext of the Able Tablet is "After [one of]again [or][stopping]reviewing all the names, you feel a need to return to the reflection, without any prodding whatsoever, that they're all pretty cool, but none is of course as cool as MP Kempke."
 
 chapter Apple IIe
 
@@ -370,7 +370,7 @@ to point-check:
 		change southeast exit of Dwell'd Well to Ingrowing Row;
 		remove primp rim from play;
 	if the score is 3:
-		say "[line break]'Oo! Noon!' a voice cries. But then a louder one booms 'I ... DERIDER!' The un-suns become less dark, as pink spinks fly by them, and the Ingulfing Gulf wanes and retreats.[paragraph break]The scowls cowl flies off you and blows away.[paragraph break]Yet with its absence you still feel you haven't done enough, or you've gotten lucky. You feel like such a ... well, CAD. Yes. No other word will do, and probably only one word will fix how you feel.";
+		say "[line break]'Oo! Noon!' a voice cries. But then a louder one booms 'I ... DERIDER!' The un-suns become less dark, as pink spinks fly by them, and the Ingulfin['] Gulf wanes and retreats.[paragraph break]The scowls cowl flies off you and blows away.[paragraph break]Yet with its absence you still feel you haven't done enough, or you've gotten lucky. You feel like such a ... well, CAD. Yes. No other word will do, and probably only one word will fix how you feel.";
 		moot cowl;
 		move cad to well;
 	process the notify score changes rule;
@@ -466,7 +466,7 @@ chapter score
 the announce the score rule is not listed in any rulebook.
 
 carry out requesting the score:
-	say "Total score: [score] / [maximum score].[paragraph break]";
+	say "Total score: [score] / [maximum score]. [if score < 4](Well, 4 is the scores core.)[paragraph break]";
 	if score is 0, say "You haven't figured out a magic word to say yet, but when you do, you'll get your first point." instead;
 	if score is 1, say "You have acquired a raider aide item, [the random carried doubler]." instead;
 	if score is 2, say "You have one raider aide item left to pick up." instead;
